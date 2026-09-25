@@ -1,0 +1,100 @@
+{
+  "tasks": [
+    {
+      "id": "intake",
+      "stage": "intake",
+      "agent": "main",
+      "instructions": "pipelines/stages/intake.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:ch01",
+      "stage": "unit",
+      "unit": "ch01",
+      "kind": "prose",
+      "agent": "writer",
+      "instructions": "pipelines/stages/unit-prose.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:ch02",
+      "stage": "unit",
+      "unit": "ch02",
+      "kind": "prose",
+      "agent": "writer",
+      "instructions": "pipelines/stages/unit-prose.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:ch03",
+      "stage": "unit",
+      "unit": "ch03",
+      "kind": "prose",
+      "agent": "writer",
+      "instructions": "pipelines/stages/unit-prose.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "matter",
+      "stage": "matter",
+      "agent": "writer",
+      "instructions": "pipelines/stages/matter.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "build",
+      "stage": "build",
+      "agent": "main",
+      "instructions": "pipelines/stages/build.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "editorial",
+      "stage": "editorial",
+      "agent": "book-editor",
+      "instructions": "pipelines/stages/editorial.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "listing",
+      "stage": "listing",
+      "agent": "listing-writer",
+      "instructions": "pipelines/stages/listing.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "cover",
+      "stage": "cover",
+      "agent": "main",
+      "instructions": "pipelines/stages/cover.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "finalize",
+      "stage": "finalize",
+      "agent": "main",
+      "instructions": "pipelines/stages/finalize.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+intro: Circle the answer you remember.
+questions:
+  - q: In what year did Neil Armstrong walk on the Moon?
+    options: ["1967", "1969", "1971"]
+    answer: "1969"
+    fact: Apollo 11 landed on July 20.
+    source: NASA
+  - q: Which band sang "I Want to Hold Your Hand"?
+    options: [The Beatles, The Beach Boys, The Monkees]
+    answer: The Beatles
+    source: Billboard

@@ -1,0 +1,3 @@
+pages:
+  - {image: p01-sun.png, text: "The sun came up over the *little* garden.", mode: full}
+  - {image: p01-sun.png, text: "Then it rained.", mode: top}

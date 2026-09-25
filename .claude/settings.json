@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./st:*)",
+      "Bash(bash scripts/setup.sh)",
+      "Bash(bash scripts/selftest.sh)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Edit(books/**)",
+      "Write(books/**)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          { "type": "command", "command": "bash \"$CLAUDE_PROJECT_DIR/scripts/setup.sh\"", "timeout": 300 }
+        ]
+      }
+    ]
+  }
+}

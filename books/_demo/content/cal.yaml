@@ -1,0 +1,5 @@
+year: 2027
+week_start: sunday
+us_holidays: true
+jewish: true
+months: [4, 9]

@@ -1,0 +1,39 @@
+# Pipeline único para todos os tipos de livro. O que muda por tipo são as unidades (units: no book.yaml)
+# e as regras em rules/formats/. Ordem = ordem de execução.
+#
+# agent: quem executa. "main" = a própria sessão (orquestrador); os demais estão em .claude/agents/.
+
+stages:
+  - id: intake
+    agent: main
+    instructions: pipelines/stages/intake.md
+  - id: unit            # uma tarefa por unidade (capítulo, seção de puzzles, mês...)
+    per_unit: true
+  - id: matter          # front/back matter: how-to-use, bônus, pedido de review, about
+    agent: writer
+    instructions: pipelines/stages/matter.md
+  - id: build
+    agent: main
+    instructions: pipelines/stages/build.md
+  - id: editorial       # revisão do livro inteiro + inspeção visual por amostragem
+    agent: book-editor
+    instructions: pipelines/stages/editorial.md
+  - id: listing
+    agent: listing-writer
+    instructions: pipelines/stages/listing.md
+  - id: cover
+    agent: main
+    instructions: pipelines/stages/cover.md
+  - id: finalize
+    agent: main
+    instructions: pipelines/stages/finalize.md
+
+# Como cada tipo de unidade é produzido
+unit_kinds:
+  prose:      {agent: writer,           instructions: pipelines/stages/unit-prose.md}
+  wordsearch: {agent: activity-builder, instructions: pipelines/stages/unit-activity.md}
+  sudoku:     {agent: activity-builder, instructions: pipelines/stages/unit-activity.md}
+  trivia:     {agent: activity-builder, instructions: pipelines/stages/unit-activity.md}
+  calendar:   {agent: activity-builder, instructions: pipelines/stages/unit-calendar.md}
+  pictures:   {agent: writer,           instructions: pipelines/stages/unit-pictures.md}
+  typst:      {agent: activity-builder, instructions: pipelines/stages/unit-typst.md}   # planners, trackers, formatos novos

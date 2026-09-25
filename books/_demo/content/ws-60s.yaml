@@ -1,0 +1,137 @@
+size: 13
+level: easy
+puzzles:
+- title: At the Drive-In
+  words:
+  - Popcorn
+  - Speaker
+  - Convertible
+  - Double Feature
+  - Intermission
+  - Ticket
+  - Screen
+  - Snack Bar
+  grid:
+  - USPEAKERAMEKO
+  - TDMSEMSCNWQIL
+  - IQPYKNDOZXBNC
+  - LQWWERBNUPRTX
+  - IBWRKWJVDFJEX
+  - DOUBLEFEATURE
+  - SNACKBARHIQMG
+  - ZWGJKLQTBCNIJ
+  - VABAJGJIBKMSI
+  - EQUAUABBNEISK
+  - JXLNDFYLETCIM
+  - LCJSCREENIIOA
+  - IGHYVPOPCORNG
+  placements:
+  - word: Popcorn
+    grid_word: POPCORN
+    row: 12
+    col: 5
+    dir: E
+  - word: Speaker
+    grid_word: SPEAKER
+    row: 0
+    col: 1
+    dir: E
+  - word: Convertible
+    grid_word: CONVERTIBLE
+    row: 1
+    col: 7
+    dir: S
+  - word: Double Feature
+    grid_word: DOUBLEFEATURE
+    row: 5
+    col: 0
+    dir: E
+  - word: Intermission
+    grid_word: INTERMISSION
+    row: 1
+    col: 11
+    dir: S
+  - word: Ticket
+    grid_word: TICKET
+    row: 5
+    col: 9
+    dir: S
+  - word: Screen
+    grid_word: SCREEN
+    row: 11
+    col: 3
+    dir: E
+  - word: Snack Bar
+    grid_word: SNACKBAR
+    row: 6
+    col: 0
+    dir: E
+  size: 13
+  level: easy
+- title: Sounds of the Sixties
+  words:
+  - Motown
+  - Beatles
+  - Supremes
+  - Jukebox
+  - Vinyl
+  - Transistor
+  - Surf Rock
+  - Folk
+  grid:
+  - QQIBEATLESJXV
+  - RBHHTULQQEEBF
+  - JYJNWYOMRSZYT
+  - NJNXVSHVFEVBR
+  - WBBPCUTIZOFHA
+  - QIVFTPDNMMNNN
+  - PJWCYRUYPMIFS
+  - MUDZBEDLKOKPI
+  - DKPPAMITPTMCS
+  - EEKGGECXFOLKT
+  - XBAJZSAJYWHSO
+  - LOKMTUGTHNYQR
+  - MXVSURFROCKRT
+  placements:
+  - word: Motown
+    grid_word: MOTOWN
+    row: 6
+    col: 9
+    dir: S
+  - word: Beatles
+    grid_word: BEATLES
+    row: 0
+    col: 3
+    dir: E
+  - word: Supremes
+    grid_word: SUPREMES
+    row: 3
+    col: 5
+    dir: S
+  - word: Jukebox
+    grid_word: JUKEBOX
+    row: 6
+    col: 1
+    dir: S
+  - word: Vinyl
+    grid_word: VINYL
+    row: 3
+    col: 7
+    dir: S
+  - word: Transistor
+    grid_word: TRANSISTOR
+    row: 2
+    col: 12
+    dir: S
+  - word: Surf Rock
+    grid_word: SURFROCK
+    row: 12
+    col: 3
+    dir: E
+  - word: Folk
+    grid_word: FOLK
+    row: 9
+    col: 8
+    dir: E
+  size: 13
+  level: easy

@@ -1,0 +1,27 @@
+# Ficha técnica do livro. A etapa "intake" completa este arquivo a partir do toc.md.
+slug: ""
+title: ""
+subtitle: ""
+author: ""                 # nome na página de rosto (pen name ou imprint)
+imprint: golden-chapter    # golden-chapter | silvia-press | emily-harper | jonah-feldman
+imprint_name: "Golden Chapter Press"
+copyright_holder: ""       # vazio = imprint_name
+year: 2026
+type: prose                # prose | activity | calendar | planner | children
+language: en-US
+market: US
+trim:                      # vazio = padrão do tipo (prose 6x9, activity 8.5x11...). Ver studio/kdp.py
+bleed:                     # vazio = padrão do tipo; true se houver imagem encostando na borda
+paper: bw-white            # bw-white | bw-cream | color-standard | color-premium
+large_print: false
+primary_keyword: ""        # validado no Publisher Rocket/BookBeam (nunca inventar)
+reader: ""                 # leitor e comprador exatos
+positioning: ""            # a frase de posicionamento aprovada no TOC
+require_sources: true      # trivia/fatos exigem 'source'
+style: {}                  # sobrescreve o preset (size, body_font, chapter_start, ...)
+front: [title, copyright, toc]
+back: [answers]
+cover: {}                  # background, spine_text, spine_color, spine_font
+units: []                  # preenchido no intake. Ex.:
+#  - {id: ch01, kind: prose, title: "Chapter 1 — ...", target_words: 1500, brief: "..."}
+#  - {id: ws-60s, kind: wordsearch, title: "1960s Word Search", brief: "20 puzzles, temas dos anos 60"}

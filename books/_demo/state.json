@@ -1,0 +1,144 @@
+{
+  "tasks": [
+    {
+      "id": "intake",
+      "stage": "intake",
+      "agent": "main",
+      "instructions": "pipelines/stages/intake.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:intro",
+      "stage": "unit",
+      "unit": "intro",
+      "kind": "prose",
+      "agent": "writer",
+      "instructions": "pipelines/stages/unit-prose.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:ws-60s",
+      "stage": "unit",
+      "unit": "ws-60s",
+      "kind": "wordsearch",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-activity.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:sudoku-easy",
+      "stage": "unit",
+      "unit": "sudoku-easy",
+      "kind": "sudoku",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-activity.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:trivia-60s",
+      "stage": "unit",
+      "unit": "trivia-60s",
+      "kind": "trivia",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-activity.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:cal",
+      "stage": "unit",
+      "unit": "cal",
+      "kind": "calendar",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-calendar.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:habits",
+      "stage": "unit",
+      "unit": "habits",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:pics",
+      "stage": "unit",
+      "unit": "pics",
+      "kind": "pictures",
+      "agent": "writer",
+      "instructions": "pipelines/stages/unit-pictures.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "matter",
+      "stage": "matter",
+      "agent": "writer",
+      "instructions": "pipelines/stages/matter.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "build",
+      "stage": "build",
+      "agent": "main",
+      "instructions": "pipelines/stages/build.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "editorial",
+      "stage": "editorial",
+      "agent": "book-editor",
+      "instructions": "pipelines/stages/editorial.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "listing",
+      "stage": "listing",
+      "agent": "listing-writer",
+      "instructions": "pipelines/stages/listing.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "cover",
+      "stage": "cover",
+      "agent": "main",
+      "instructions": "pipelines/stages/cover.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "finalize",
+      "stage": "finalize",
+      "agent": "main",
+      "instructions": "pipelines/stages/finalize.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    }
+  ]
+}

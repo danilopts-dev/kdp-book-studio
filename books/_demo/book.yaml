@@ -1,0 +1,51 @@
+slug: _demo
+title: Engine Demo (Large Print)
+subtitle: ''
+author: Golden Chapter Press
+imprint: golden-chapter
+imprint_name: Golden Chapter Press
+copyright_holder: ''
+year: 2026
+type: activity
+language: en-US
+market: US
+trim: null
+bleed: null
+paper: bw-white
+large_print: true
+primary_keyword: ''
+reader: ''
+positioning: ''
+require_sources: true
+style: {}
+front:
+- title
+- copyright
+- toc
+- how-to-use
+back:
+- answers
+cover: {}
+units:
+- id: intro
+  kind: prose
+  title: Welcome
+  target_words: 200
+- id: ws-60s
+  kind: wordsearch
+  title: 1960s Word Search
+- id: sudoku-easy
+  kind: sudoku
+  title: Easy Sudoku
+- id: trivia-60s
+  kind: trivia
+  title: 1960s Trivia
+- id: cal
+  kind: calendar
+  title: Calendar
+- id: habits
+  kind: typst
+  title: Habit Tracker
+- id: pics
+  kind: pictures
+  title: Pictures

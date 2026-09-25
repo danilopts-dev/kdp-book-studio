@@ -1,0 +1,40 @@
+slug: _demo-prose
+title: A Quiet Kind of Order
+subtitle: Demo prose book
+author: Emily P. Harper
+imprint: emily-harper
+imprint_name: Emily P. Harper
+copyright_holder: ''
+year: 2026
+type: prose
+language: en-US
+market: US
+trim: null
+bleed: null
+paper: bw-white
+large_print: false
+primary_keyword: ''
+reader: ''
+positioning: ''
+require_sources: true
+style: {}
+front:
+- title
+- copyright
+- toc
+back:
+- answers
+cover: {}
+units:
+- id: ch01
+  kind: prose
+  title: Chapter 1
+  target_words: 900
+- id: ch02
+  kind: prose
+  title: Chapter 2
+  target_words: 900
+- id: ch03
+  kind: prose
+  title: Chapter 3
+  target_words: 900
