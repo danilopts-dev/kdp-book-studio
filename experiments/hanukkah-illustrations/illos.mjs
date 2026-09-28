@@ -301,37 +301,7 @@ function compare() {
 }
 
 
-// ---------- Teste figurativo: família acendendo na janela (1.4) ----------
-function familyWindow() {
-  const W = 740, H = 220;
-  let s = '';
-  // janela ao fundo com céu noturno
-  const wx = 230, wy = 8, ww = 280, wh = 150;
-  s += rect(wx, wy, ww, wh, 4);
-  s += line(wx + ww / 2, wy, wx + ww / 2, wy + wh * 0.55);
-  s += path(`M${wx + 40},${wy + 44} A18,18 0 1 0 ${wx + 64},${wy + 18} A14,14 0 1 1 ${wx + 40},${wy + 44}Z`);
-  for (const [x, y] of [[wx + 110, 26], [wx + 200, 40], [wx + 240, 20], [wx + 160, 60]]) s += L.sparkle(x, y, 8);
-  // cortinas
-  s += path(`M${wx - 30},0 L${wx + 10},0 Q${wx + 24},${wh * 0.6} ${wx + 4},${wh + 8} L${wx - 30},${wh + 8}Z`);
-  s += path(`M${wx + ww + 30},0 L${wx + ww - 10},0 Q${wx + ww - 24},${wh * 0.6} ${wx + ww - 4},${wh + 8} L${wx + ww + 30},${wh + 8}Z`);
-  // parapeito + hanukiá (1ª noite: 1 vela à direita; shamash na mão do pai)
-  s += rect(wx - 40, wy + wh, ww + 80, 12, 3);
-  const h = L.hanukkiah({ cx: wx + ww / 2 + 10, baseY: wy + wh, W: 170, candles: [0, 0, 0, 0, 0, 0, 0, 1], lit: NONE, shamashCandle: false });
-  s += h.svg;
-  // pessoas
-  const tx = h.xs[7], ty = h.candleTop - 8;
-  s += L.person({ x: 150, neckY: 92, r: 26, hair: 'kippah', hands: [[tx - 26, ty + 14]], face: 0.6 });
-  s += L.candle(tx - 22, ty + 6, 6, 30, true);
-  s += L.person({ x: 600, neckY: 94, r: 25, hair: 'long', hands: [[548, 150]], face: -0.4 });
-  s += L.person({ x: 250, neckY: 150, r: 21, hair: 'curly', shirt: 'stripes', face: 0.5 });
-  s += L.person({ x: 480, neckY: 146, r: 22, hair: 'ponytail', shirt: 'star', face: -0.5 });
-  // mesa em primeiro plano esconde a cintura
-  s += rect(-10, 196, W + 20, 40, 0);
-  return s;
-}
-
 export const ILLOS = [
-  { id: '1-4', title: 'TESTE figurativo: família', w: 7.4, h: 2.2, svg: familyWindow },
   { id: '1-2', title: 'Hanukiá simples', w: 3.0, h: 2.1, svg: () => L.hanukkiah({ cx: 150, baseY: 200, W: 270, candles: ALL, lit: NONE }).svg },
   { id: '2-2', title: 'Jogo dos 5 erros', w: 7.4, h: 6.0, svg: () => spotTheDifference(false) },
   { id: '2-3', title: 'Jogo dos 10 erros', w: 7.4, h: 6.0, svg: () => spotTheDifference(true) },
