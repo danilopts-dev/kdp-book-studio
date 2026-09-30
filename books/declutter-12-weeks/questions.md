@@ -19,3 +19,5 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 
 - [ASSUMIDA] wk02: "Plan Your Landing Zone" inclui coluna "Who uses it" para o caso de família (sem nomear pessoas); sem fatos [REVISAR] nesta semana. Sugestão de mail-stop (cancelar correio) só como campo em branco, sem citar serviços.
 - [ASSUMIDA] wk03: frase sobre datas de alimentos (USDA) genérica, sem prazos; conferência humana rápida recomendada.
+
+- [ASSUMIDA] wk04: nenhum fato [REVISAR] no TOC; usei só orientação genérica (vidro quebrado embrulhado, "check your local guidelines" para eletrônicos) sem afirmações regulatórias. Cabeçalho de página 1 reduzido (~170 palavras) para caber as 7 tarefas na mesma página.

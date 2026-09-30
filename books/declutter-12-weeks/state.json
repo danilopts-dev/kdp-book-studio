@@ -71,9 +71,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "7 págs, cozinha 2: armários, gadgets, potes",
+      "updated": "2026-09-30T22:40"
     },
     {
       "id": "unit:wk05",
