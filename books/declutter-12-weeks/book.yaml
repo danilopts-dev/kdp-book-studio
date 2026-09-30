@@ -1,0 +1,152 @@
+slug: declutter-12-weeks
+title: Clear the Clutter in 12 Weeks
+subtitle: ''
+author: Emily P. Harper
+imprint: emily-harper
+imprint_name: Emily P. Harper
+copyright_holder: ''
+year: 2026
+type: planner
+language: en-US
+market: US
+trim: 8.5x11
+bleed: false
+paper: bw-white
+large_print: false
+primary_keyword: ''
+reader: US adults who feel overwhelmed by the stuff in their home and want a slow, doable plan; mostly women 30-65, homeowners or renters with families.
+positioning: 12-week fill-in declutter workbook, 15 minutes a day, room by room from easiest to hardest (sentimental last); tracks what was sold and donated (money earned, deductible value) and hands off
+  to the House Cleaning Checklist Planner for maintenance.
+require_sources: true
+style: {}
+front:
+- title
+- copyright
+- toc
+back:
+- bonus
+- review
+- also-by
+cover: {}
+units:
+- id: intro
+  kind: prose
+  title: Introduction — Fifteen Minutes, One Room at a Time
+  target_words: 1100
+  brief: What the book promises (12 weeks, 15 min/day) and does not (not about organizing or buying bins). Why deciding comes before organizing; the four boxes Keep/Donate/Sell/Toss and the tie-breaker
+    rule; why rooms go easiest to hardest with sentimental last; where to get the printable kit (bonus placeholder line, see questions.md).
+- id: wk00
+  kind: typst
+  title: Week 0 — Walk Through Your Home Before You Touch Anything
+  brief: Measured baseline. Room rating table (1-5 per room, matching the rooms of weeks 1-12) with 'before photo taken' checkbox; pick start date and fixed 15-minute time slot; what to have on hand (bags,
+    boxes, labels) — nothing to buy beyond that. Short guidance text on the first page.
+  target_pages: 5
+- id: wk01
+  kind: typst
+  title: 'Week 1 — The Bathroom: A Fast First Win'
+  brief: 'Fixed sections every week (identical layout wk01-wk12): ''This Week, 15 Minutes a Day'' (7 daily tasks with checkboxes, room-specific) and ''Keep / Donate / Sell / Toss Count'' (weekly tally).
+    Open with a short guidance page (150-250 words, human-voice-writing rules). Daily tasks by drawer/cabinet. Expiration table: makeup, sunscreen, medicines, and correct US medicine disposal. [VERIFY with
+    FDA sources; keep claims general, cite source in notes.md; no medical claims].'
+  target_pages: 7
+- id: wk02
+  kind: typst
+  title: Week 2 — The Entryway and Coat Closet
+  brief: 'Fixed sections every week (identical layout wk01-wk12): ''This Week, 15 Minutes a Day'' (7 daily tasks with checkboxes, room-specific) and ''Keep / Donate / Sell / Toss Count'' (weekly tally).
+    Open with a short guidance page (150-250 words, human-voice-writing rules). Coats, shoes, bags, keys and mail. The ''landing zone'': one spot for everything that comes into the house (planning box).'
+  target_pages: 7
+- id: wk03
+  kind: typst
+  title: 'Week 3 — Kitchen, Part One: Counters, Pantry and Fridge'
+  brief: 'Fixed sections every week (identical layout wk01-wk12): ''This Week, 15 Minutes a Day'' (7 daily tasks with checkboxes, room-specific) and ''Keep / Donate / Sell / Toss Count'' (weekly tally).
+    Open with a short guidance page (150-250 words, human-voice-writing rules). Kitchen split over two weeks. Clear counters as the goal. Pantry: expired, duplicates, what to donate to a food bank.'
+  target_pages: 7
+- id: wk04
+  kind: typst
+  title: 'Week 4 — Kitchen, Part Two: Cabinets, Gadgets and Containers'
+  brief: 'Fixed sections every week (identical layout wk01-wk12): ''This Week, 15 Minutes a Day'' (7 daily tasks with checkboxes, room-specific) and ''Keep / Donate / Sell / Toss Count'' (weekly tally).
+    Open with a short guidance page (150-250 words, human-voice-writing rules). Where kitchen clutter hides. ''Used it in the last year?'' test for utensils/gadgets (checklist). Lids without containers
+    and containers without lids (matching exercise).'
+  target_pages: 7
+- id: wk05
+  kind: typst
+  title: Week 5 — The Living Room
+  brief: 'Fixed sections every week (identical layout wk01-wk12): ''This Week, 15 Minutes a Day'' (7 daily tasks with checkboxes, room-specific) and ''Keep / Donate / Sell / Toss Count'' (weekly tally).
+    Open with a short guidance page (150-250 words, human-voice-writing rules). Shared family space. Media, cables, remotes and magazines. A page to agree with the family on what stays in the living room.'
+  target_pages: 7
+- id: wk06
+  kind: typst
+  title: Week 6 — Your Bedroom
+  brief: 'Fixed sections every week (identical layout wk01-wk12): ''This Week, 15 Minutes a Day'' (7 daily tasks with checkboxes, room-specific) and ''Keep / Donate / Sell / Toss Count'' (weekly tally).
+    Open with a short guidance page (150-250 words, human-voice-writing rules). The room that most affects mood and sleep (no health claims). Nightstands, under the bed, the ''clothes chair''. Space to
+    describe how the reader wants the room to feel.'
+  target_pages: 7
+- id: wk07
+  kind: typst
+  title: Week 7 — The Closet
+  brief: 'Fixed sections every week (identical layout wk01-wk12): ''This Week, 15 Minutes a Day'' (7 daily tasks with checkboxes, room-specific) and ''Keep / Donate / Sell / Toss Count'' (weekly tally).
+    Open with a short guidance page (150-250 words, human-voice-writing rules). Clothes: biggest volume and most sellable items. The reverse-hanger test. Clothes that don''t fit, ''when I lose weight''
+    clothes, party clothes. Direct link to the Sell Tracker in Part 3.'
+  target_pages: 7
+- id: wk08
+  kind: typst
+  title: Week 8 — Kids' Rooms and Toys (or the Hobby Room)
+  brief: 'Fixed sections every week (identical layout wk01-wk12): ''This Week, 15 Minutes a Day'' (7 daily tasks with checkboxes, room-specific) and ''Keep / Donate / Sell / Toss Count'' (weekly tally).
+    Open with a short guidance page (150-250 words, human-voice-writing rules). Two tracks in the same week: with kids (involving the child in the decision; toy rotation) and without kids (hobby supplies
+    and stalled projects). Reader picks a track.'
+  target_pages: 7
+- id: wk09
+  kind: typst
+  title: Week 9 — The Home Office and the Paper Pile
+  brief: 'Fixed sections every week (identical layout wk01-wk12): ''This Week, 15 Minutes a Day'' (7 daily tasks with checkboxes, room-specific) and ''Keep / Donate / Sell / Toss Count'' (weekly tally).
+    Open with a short guidance page (150-250 words, human-voice-writing rules). Paper is what stalls people; clear rules. Table: how long to keep each document (taxes, bills, warranties) [VERIFY against
+    IRS guidance; cite source in notes.md]. What to shred and what to scan.'
+  target_pages: 7
+- id: wk10
+  kind: typst
+  title: Week 10 — Linen Closet, Laundry and Cleaning Supplies
+  brief: 'Fixed sections every week (identical layout wk01-wk12): ''This Week, 15 Minutes a Day'' (7 daily tasks with checkboxes, room-specific) and ''Keep / Donate / Sell / Toss Count'' (weekly tally).
+    Open with a short guidance page (150-250 words, human-voice-writing rules). Support closets that fill up quietly. How many sets of sheets and towels to keep. Cleaning products: gather, toss expired,
+    bridge to the House Cleaning Checklist Planner.'
+  target_pages: 7
+- id: wk11
+  kind: typst
+  title: Week 11 — Garage, Basement, Attic and Storage
+  brief: 'Fixed sections every week (identical layout wk01-wk12): ''This Week, 15 Minutes a Day'' (7 daily tasks with checkboxes, room-specific) and ''Keep / Donate / Sell / Toss Count'' (weekly tally).
+    Open with a short guidance page (150-250 words, human-voice-writing rules). Biggest volume; bigger jobs broken into 15-minute blocks. Tools, holiday decorations, boxes unopened since the last move.
+    Garage sale planning page (links to Part 3).'
+  target_pages: 7
+- id: wk12
+  kind: typst
+  title: Week 12 — Sentimental Things, Saved for Last on Purpose
+  brief: 'Fixed sections every week (identical layout wk01-wk12): ''This Week, 15 Minutes a Day'' (7 daily tasks with checkboxes, room-specific) and ''Keep / Donate / Sell / Toss Count'' (weekly tally).
+    Open with a short guidance page (150-250 words, human-voice-writing rules). Hardest week. Keep the memory without keeping the object: pages to photograph and write the item''s story. Heirlooms, kids''
+    drawings, letters and photos. What to do with things that belong to another family member.'
+  target_pages: 7
+- id: part3
+  kind: typst
+  title: 'Part 3 — Where It All Went: Selling and Donating'
+  target_pages: 14
+  brief: Result in money and donations. Quick guide of where to sell and where to donate by item type (clothes, furniture, electronics, books, building materials) — generic channel types, no endorsements.
+    Sell Tracker (item, where listed, asking price, sold price, date). Donation Log (item, condition, fair market value, organization, receipt kept); note on receipts and Form 8283 for noncash donations
+    over $500 [VERIFY on irs.gov; informational, not tax advice].
+- id: part4
+  kind: typst
+  title: Part 4 — Keep It Clear
+  target_pages: 6
+  brief: Stop the house from sliding back; hand off to the next book. Monthly 15-minute reset per room (tracker). The one-in, one-out rule. Where the House Cleaning Checklist Planner routine picks up the
+    work.
+- id: conclusion
+  kind: typst
+  title: Conclusion — Your Before and After
+  target_pages: 4
+  brief: 'Close with measured results. Week 0 room ratings vs now (same room list) and ''after photo'' checkbox. Grand total: items out, money earned, value donated, hours invested. Pointer to the next
+    book in the series (generic: series on closets, kitchen, garage, paperwork, downsizing — no titles unless confirmed).'
+target_pages: 120-140
+planner:
+  dated: false
+  week_start: null
+  note: 'Undated: reader writes start date in Week 0. Weeks numbered 0-12.'
+cross_reference:
+  title: House Cleaning Checklist Planner
+  imprint: Emily P. Harper
+  note: 'Companion book (maintenance after decluttering). Referenced in wk10, part4, conclusion, also-by. Match its B&W 8.5x11 look: 15-minute boxes, Notes + Wins blocks.'

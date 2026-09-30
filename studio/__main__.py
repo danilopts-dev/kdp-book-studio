@@ -31,6 +31,9 @@ def cmd_new(a):
     shutil.copytree(ROOT / "templates" / "book", b.dir)
     meta = yaml.safe_load((b.dir / "book.yaml").read_text(encoding="utf-8"))
     meta.update(slug=a.slug, type=a.type, imprint=a.imprint or meta.get("imprint"), title=a.title or meta.get("title"))
+    names = {"golden-chapter": "Golden Chapter Press", "silvia-press": "Silvia Press",
+             "emily-harper": "Emily P. Harper", "jonah-feldman": "Jonah Feldman"}
+    meta["imprint_name"] = names.get(meta["imprint"], meta.get("imprint_name"))
     b.save_meta(meta)
     replan(b)
     print(f"Criado books/{a.slug}/ — cole o TOC aprovado em books/{a.slug}/toc.md e rode /proximo {a.slug}")
