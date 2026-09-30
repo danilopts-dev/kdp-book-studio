@@ -148,9 +148,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "7 págs, garagem/porão/sótão, planejamento de garage sale",
+      "updated": "2026-09-30T20:09"
     },
     {
       "id": "unit:wk12",
