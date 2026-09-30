@@ -25,3 +25,4 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - [ASSUMIDA] wk05: "Discs, Books and Magazines" e "Media, Cables and Remotes" cobrem mídia/cabos/revistas do TOC; página de acordo familiar = "What Stays in the Living Room". Sem fato externo a verificar (descarte de eletrônicos só "check your local guidelines").
 
 - [ASSUMIDA] wk06: o TOC diz "cômodo que mais afeta o humor e o sono"; omitido da orientação por regra do style sheet (sem claims de saúde). Página "How I Want My Bedroom to Look" cobre o espaço para anotar como o quarto deve ficar.
+- ASSUMIDA (wk07): nenhuma nova; usou o layout semanal padrão e _wk-blank para campos em branco em cabeçalhos de tabela.
