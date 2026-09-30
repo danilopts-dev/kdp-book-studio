@@ -29,3 +29,4 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - ASSUMIDA wk09: linhas de bills/warranties/insurance na tabela de retenção são hábito geral conservador (não regra), sem fonte oficial; revisão humana opcional.
 
 - [ASSUMIDA] part3: Sell Tracker e Donation Log com 5 páginas cada (22 e 20 linhas de ~0,33"), página final "Part 3 Totals" que alimenta a Conclusion; continuações sem heading para não inflar o sumário. Linhas ampliadas pelo orquestrador após a contact sheet (antes ~0,25").
+- [ASSUMIDA] part4: tracker mensal dividido em 2 páginas (Month 1-6, 7-12) com 12 cômodos de Week 0; p6 tem tabela própria de planejamento da rotina (dia/hora por cômodo) em vez de descrever o conteúdo do outro livro.

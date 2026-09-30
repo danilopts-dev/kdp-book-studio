@@ -181,9 +181,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "6 págs, reset mensal, Keep for now, one in one out, ponte",
+      "updated": "2026-09-30T20:17"
     },
     {
       "id": "unit:conclusion",

@@ -4,7 +4,7 @@ Support closets fill up quietly. Nobody plans a shelf of mismatched sheets or a 
 
 Work in three zones: the linen closet, the laundry area and the cleaning supplies. Empty one zone at a time so you can see what you really have, then sort into the four boxes. Clean, good towels and blankets can be Donate. Stained or torn ones can be Toss, or go in the rag bag if you really use rags. Sheets for a bed you no longer own are an easy yes for Donate. Keep extras only for guests you actually host.
 
-Page 3 sets a number for sheets and towels. Page 4 covers cleaning products, and page 5 bridges to the *House Cleaning Checklist Planner*. One safety rule for the whole week: never mix cleaning products.
+Page 3 sets a number for sheets and towels. Page 4 covers cleaning products, and page 5 bridges to the #emph[House Cleaning Checklist Planner]. One safety rule for the whole week: never mix cleaning products.
 
 #v(0.05in)
 == This Week, 15 Minutes a Day
@@ -113,7 +113,7 @@ Bring every cleaner, spray and refill to one table. You will find duplicates and
 
 == From Supplies to a Cleaning Routine
 
-What you kept now has a home. The *House Cleaning Checklist Planner* turns that shelf into a simple routine, room by room, in 15-minute blocks. Use this page to set up the supplies so the routine is easy to start.
+What you kept now has a home. The #emph[House Cleaning Checklist Planner] turns that shelf into a simple routine, room by room, in 15-minute blocks. Use this page to set up the supplies so the routine is easy to start.
 
 #v(0.15in)
 #_wk-table(
