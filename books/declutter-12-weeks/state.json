@@ -192,9 +192,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "4 págs, antes/depois 12 cômodos, placar, fechamento, série genérica",
+      "updated": "2026-09-30T20:20"
     },
     {
       "id": "matter",

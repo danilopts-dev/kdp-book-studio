@@ -30,3 +30,4 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 
 - [ASSUMIDA] part3: Sell Tracker e Donation Log com 5 páginas cada (22 e 20 linhas de ~0,33"), página final "Part 3 Totals" que alimenta a Conclusion; continuações sem heading para não inflar o sumário. Linhas ampliadas pelo orquestrador após a contact sheet (antes ~0,25").
 - [ASSUMIDA] part4: tracker mensal dividido em 2 páginas (Month 1-6, 7-12) com 12 cômodos de Week 0; p6 tem tabela própria de planejamento da rotina (dia/hora por cômodo) em vez de descrever o conteúdo do outro livro.
+- ASSUMIDA conclusion: "Items out" = Donate + Sell + Toss (Keep não conta como saída); horas = dias trabalhados × 15 min; placar sem linha separada para Keep.
