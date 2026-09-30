@@ -82,9 +82,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "7 págs, sala: mídia, cabos, acordo familiar",
+      "updated": "2026-09-30T22:41"
     },
     {
       "id": "unit:wk06",

@@ -21,3 +21,5 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - [ASSUMIDA] wk03: frase sobre datas de alimentos (USDA) genérica, sem prazos; conferência humana rápida recomendada.
 
 - [ASSUMIDA] wk04: nenhum fato [REVISAR] no TOC; usei só orientação genérica (vidro quebrado embrulhado, "check your local guidelines" para eletrônicos) sem afirmações regulatórias. Cabeçalho de página 1 reduzido (~170 palavras) para caber as 7 tarefas na mesma página.
+
+- [ASSUMIDA] wk05: "Discs, Books and Magazines" e "Media, Cables and Remotes" cobrem mídia/cabos/revistas do TOC; página de acordo familiar = "What Stays in the Living Room". Sem fato externo a verificar (descarte de eletrônicos só "check your local guidelines").
