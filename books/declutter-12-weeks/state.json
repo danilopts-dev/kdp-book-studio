@@ -115,9 +115,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "7 págs, duas trilhas: crianças (decidir junto, rodízio) ou hobby",
+      "updated": "2026-09-30T20:05"
     },
     {
       "id": "unit:wk09",
