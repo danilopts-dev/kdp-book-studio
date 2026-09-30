@@ -53,6 +53,8 @@ def check_content(book: Book, unit_id: str | None = None) -> list[dict]:
                 if key in seen_paras:
                     out.append(_f(MAJ, where, f"Parágrafo repetido (também em {seen_paras[key]}): {para[:60]}…"))
                 seen_paras[key] = where
+        elif kind == "typst":
+            continue
         else:
             try:
                 data = yaml.safe_load(txt) or {}

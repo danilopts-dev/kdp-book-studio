@@ -102,7 +102,7 @@ Tie the 15 minutes to something you already do, like the morning coffee, school 
 #block(stroke: 1.5pt, inset: 16pt, radius: 4pt, width: 100%, breakable: false)[
   #text(size: 1.5em, weight: "bold")[My sell threshold: \$ #_w0-blank(1.3in)]
   #v(0.5em)
-  Items worth less than this go to Donate, not Sell. Items worth this much or more are worth the time it takes to list them and meet a buyer. Many people pick a number between \$20 and \$50. You can change it later, but set it now so you aren't debating every object.
+  Items worth less than this go to Donate, not Sell. Items worth this much or more are worth the time it takes to list them and meet a buyer. Some people pick \$20, others \$50 or more. You can change it later, but set it now so you aren't debating every object.
 ]
 
 #v(0.1in)
@@ -118,8 +118,7 @@ Go through these steps, in order, for every item you pick up. There is no "maybe
   align: (center + horizon, left + horizon, left + horizon),
   [*1*], [Is it broken, expired, stained or missing its parts?], [*Toss* it. Recycle what you can.],
   [*2*], [If this were gone tomorrow, would I go out and buy it again?], [*Yes:* Keep. It goes back in the room, in a place where you can find it.],
-  [*3*], [The answer is no, or "I'd have to think about it." Is it worth my sell threshold or more?], [*Yes:* Sell. *No:* Donate.],
-  [*4*], [I truly can't answer today.], [*Keep* it for now and meet it again at your 15-minute reset in Part 4.],
+  [*3*], [If the answer is no, or "I'd have to think about it": is it worth my sell threshold or more?], [*Yes:* Sell. *No:* Donate.],
 )
 
 #pagebreak()
@@ -145,8 +144,8 @@ Collect these before Week 1. Everything here is something most homes already hav
 
 Pick spots now so you aren't deciding while you're holding a stack of towels.
 
-#_w0-field([*Keep box, between sessions, stays:*])
-#_w0-field([*Donate box stays by (the door, the car, the garage):*])
+#_w0-field([*The Keep box waits here between sessions:*])
+#_w0-field([*The Donate box lives by (the door, the car, the garage):*])
 #_w0-field([*Sell items wait here until I list them:*])
 #_w0-field([*The day I take the Donate box out of the house:*])
 

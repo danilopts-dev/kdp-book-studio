@@ -27,9 +27,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "in_progress",
-      "note": "",
-      "updated": "2026-09-30T21:14"
+      "status": "done",
+      "note": "5 páginas: diagnóstico, valor mínimo de venda, desempate",
+      "updated": "2026-09-30T21:17"
     },
     {
       "id": "unit:wk01",
