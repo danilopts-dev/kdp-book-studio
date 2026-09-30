@@ -60,9 +60,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "7 págs, cozinha 1: bancadas, despensa, geladeira",
+      "updated": "2026-09-30T22:39"
     },
     {
       "id": "unit:wk04",
