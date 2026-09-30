@@ -170,9 +170,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "14 págs, guia de canais, Form 8283 com fonte, trackers, totais",
+      "updated": "2026-09-30T20:14"
     },
     {
       "id": "unit:part4",

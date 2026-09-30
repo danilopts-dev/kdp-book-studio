@@ -27,3 +27,5 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - [ASSUMIDA] wk06: o TOC diz "cômodo que mais afeta o humor e o sono"; omitido da orientação por regra do style sheet (sem claims de saúde). Página "How I Want My Bedroom to Look" cobre o espaço para anotar como o quarto deve ficar.
 - ASSUMIDA (wk07): nenhuma nova; usou o layout semanal padrão e _wk-blank para campos em branco em cabeçalhos de tabela.
 - ASSUMIDA wk09: linhas de bills/warranties/insurance na tabela de retenção são hábito geral conservador (não regra), sem fonte oficial; revisão humana opcional.
+
+- [ASSUMIDA] part3: Sell Tracker e Donation Log com 5 páginas cada (22 e 20 linhas de ~0,33"), página final "Part 3 Totals" que alimenta a Conclusion; continuações sem heading para não inflar o sumário. Linhas ampliadas pelo orquestrador após a contact sheet (antes ~0,25").
