@@ -27,9 +27,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
+      "status": "in_progress",
       "note": "",
-      "updated": ""
+      "updated": "2026-09-30T21:14"
     },
     {
       "id": "unit:wk01",
