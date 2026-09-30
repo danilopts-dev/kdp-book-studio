@@ -49,9 +49,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "in_progress",
-      "note": "",
-      "updated": "2026-09-30T22:36"
+      "status": "done",
+      "note": "7 págs, entrada/landing zone, layout wk01 reusado",
+      "updated": "2026-09-30T22:37"
     },
     {
       "id": "unit:wk03",
