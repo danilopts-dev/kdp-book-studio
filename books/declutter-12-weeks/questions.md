@@ -12,5 +12,6 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - [ ] [ASSUMIDA] (intake) Fatos [REVISAR] do TOC verificados pelos agentes da unidade em fonte oficial (FDA, IRS), com URL em notes.md; se não confirmar, vira BLOQUEANTE.
 - [ ] [ASSUMIDA] (intake) Copyright com disclaimer curto (informativo, não é conselho fiscal/médico) — criar `_copyright.md` na etapa matter.
 - [ ] [ASSUMIDA] (intake) also-by: só o House Cleaning Checklist Planner; próximos livros da série citados de forma genérica (sem títulos).
+- [ ] [ASSUMIDA] (unit:intro) Regra de desempate das quatro caixas: "If this were gone tomorrow, would I go out and buy it again?" + valor mínimo de venda definido pelo leitor na Week 0 (Donate abaixo dele). Sem caixa "maybe". wk00 deve incluir o campo do valor.
 
 ## Resolvidas

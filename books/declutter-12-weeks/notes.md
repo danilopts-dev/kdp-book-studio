@@ -25,3 +25,6 @@
 
 <!-- Cada unidade concluída adiciona 3-5 linhas: o que cobriu, histórias/dados usados, ganchos para as próximas.
      Os agentes leem ISTO em vez de reler os capítulos anteriores (economia de tokens). -->
+
+**intro** (≈1280 palavras, prosa, 1ª pessoa leve de Emily + "you"): promessa (12 semanas × 15 min, sem organizar/comprar bins; Week 0 lista o que juntar); opinião central "clutter é problema de decisão, não de armazenamento"; as quatro caixas definidas (Keep = volta para um lugar certo, não "para depois"; Toss inclui reciclar). Tie-breaker: **"If this were gone tomorrow, would I go out and buy it again?"** sim = Keep; não = sai; Donate vs Sell por um **valor mínimo de venda que o leitor escreve na Week 0** (exemplos $20/$50) → wk00 precisa ter esse campo. Sem "maybe box"; dúvida real = Keep por ora, revisto no 15-minute reset (Part 4).
+Ordem dos cômodos justificada por dificuldade (banheiro = primeira vitória rápida; closet = maior volume e mais vendável; sentimental por último porque o leitor já treinou centenas de decisões e tem espaço). Sem histórias pessoais inventadas (não há raw). Aponta Part 3 (Sell Tracker, Donation Log), Part 4, *House Cleaning Checklist Planner* e a página do Printable Declutter Kit "at the back of this book" (sem URL). Fecha mandando para a Week 0 "with a pencil, and don't touch anything yet".

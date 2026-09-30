@@ -38,8 +38,9 @@ units:
 - id: wk00
   kind: typst
   title: Week 0 — Walk Through Your Home Before You Touch Anything
-  brief: Measured baseline. Room rating table (1-5 per room, matching the rooms of weeks 1-12) with 'before photo taken' checkbox; pick start date and fixed 15-minute time slot; what to have on hand (bags,
-    boxes, labels) — nothing to buy beyond that. Short guidance text on the first page.
+  brief: 'Measured baseline. Room rating table (1-5 per room, matching the rooms of weeks 1-12) with ''before photo taken'' checkbox; pick start date and fixed 15-minute time slot; what to have on hand
+    (bags, boxes, labels) — nothing to buy beyond that. Short guidance text on the first page. Include a fill-in field ''My sell threshold: $____'' (items worth less than this go to Donate, not Sell), as
+    set up in the intro.'
   target_pages: 5
 - id: wk01
   kind: typst

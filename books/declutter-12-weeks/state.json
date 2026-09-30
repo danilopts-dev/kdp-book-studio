@@ -16,9 +16,9 @@
       "kind": "prose",
       "agent": "writer",
       "instructions": "pipelines/stages/unit-prose.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "1278 palavras, voz OK",
+      "updated": "2026-09-30T20:13"
     },
     {
       "id": "unit:wk00",
