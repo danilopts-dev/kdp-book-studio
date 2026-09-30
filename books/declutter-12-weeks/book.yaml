@@ -4,7 +4,7 @@ subtitle: ''
 author: Emily P. Harper
 imprint: emily-harper
 imprint_name: Emily P. Harper
-copyright_holder: ''
+copyright_holder: Read Publishing LLC
 year: 2026
 type: planner
 language: en-US
@@ -148,5 +148,8 @@ planner:
   note: 'Undated: reader writes start date in Week 0. Weeks numbered 0-12.'
 cross_reference:
   title: House Cleaning Checklist Planner
+  subtitle: Weekly & Monthly Cleaning Checklists, Home Routines, and Declutter Tools to Keep Your Home Organized
   imprint: Emily P. Harper
-  note: 'Companion book (maintenance after decluttering). Referenced in wk10, part4, conclusion, also-by. Match its B&W 8.5x11 look: 15-minute boxes, Notes + Wins blocks.'
+  source: inputs/reference/house-cleaning-checklist-planner.md (texto integral; ler só as seções necessárias com grep)
+  note: 'Livro irmão (manutenção). Reusar convenções: ''NOTES + WINS'' em caixa alta, slot diário de 15 min, tom ''move at your own pace''. Ele já tem 30-Day Declutter Challenge, Digital Declutter, One
+    Room a Month e Declutter Log: não duplicar formatos; referenciar como próximo passo.'
