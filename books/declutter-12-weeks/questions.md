@@ -15,3 +15,4 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - [ ] [ASSUMIDA] (unit:intro) Regra de desempate das quatro caixas: "If this were gone tomorrow, would I go out and buy it again?" + valor mínimo de venda definido pelo leitor na Week 0 (Donate abaixo dele). Sem caixa "maybe". wk00 deve incluir o campo do valor.
 
 ## Resolvidas
+- [ ] [ASSUMIDA] (unit:wk01) Helpers do layout semanal `_wk-*` ficam em content/wk01.typ (inline); sugestão de promover a studio/render/lib.typ. wk01 tem 7 páginas com 6 folhas + Count/Notes/Wins na última. Fatos FDA confirmados só via resultados de busca (fda.gov bloqueado no fetch); validar antes do build final. Regra de cosméticos mantida genérica (sem prazos em meses).
