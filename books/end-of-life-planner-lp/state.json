@@ -223,9 +223,9 @@
       "stage": "matter",
       "agent": "writer",
       "instructions": "pipelines/stages/matter.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "blocked",
+      "note": "where-kept/what-this-is/start-here prontos; falta bonus e back-page (links)",
+      "updated": "2026-09-30T22:58"
     },
     {
       "id": "build",

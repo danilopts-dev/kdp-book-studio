@@ -1,7 +1,7 @@
 """Conversor mínimo Markdown -> Typst para o texto dos livros.
 
 Suporta: # / ## / ###, parágrafos, **negrito**, *itálico* / _itálico_, listas (- e 1.),
-> citação, ![legenda](imagem), --- (quebra de cena) e <!-- pagebreak -->.
+> citação, ![legenda](imagem), --- (quebra de cena), <!-- pagebreak --> e ____ (linha de escrever).
 Qualquer outro caractere especial do Typst é escapado, então o texto sai literal.
 """
 from __future__ import annotations
@@ -10,15 +10,25 @@ import re
 
 _SPECIAL = re.compile(r"([\\#$@<>\[\]`~/=+])")
 _BOLD, _ITAL = "\x01", "\x02"
+# 3+ sublinhados = linha de escrever (12+ ocupa o resto da linha). Usado em páginas de preencher do front matter.
+_FILL = re.compile(r"_{3,}")
+_FILL_TOK = re.compile("\x03(\\d+)\x03")
+
+
+def _fill(n: int) -> str:
+    w = "1fr" if n >= 12 else f"{n * 0.55:.2f}em"
+    return f"#box(width: {w}, height: 0.9em, stroke: (bottom: 0.6pt))"
 
 
 def inline(text: str) -> str:
+    text = _FILL.sub(lambda m: "\x03" + str(len(m.group(0))) + "\x03", text)
     text = re.sub(r"\*\*(.+?)\*\*", lambda m: _BOLD + m.group(1) + _BOLD, text)
     text = re.sub(r"(?<![\w*])\*(?!\s)(.+?)(?<!\s)\*(?![\w*])", lambda m: _ITAL + m.group(1) + _ITAL, text)
     text = re.sub(r"(?<!\w)_(?!\s)(.+?)(?<!\s)_(?!\w)", lambda m: _ITAL + m.group(1) + _ITAL, text)
     text = _SPECIAL.sub(r"\\\1", text)
     text = text.replace("*", r"\*").replace("_", r"\_")
-    return text.replace(_BOLD, "*").replace(_ITAL, "_")
+    text = text.replace(_BOLD, "*").replace(_ITAL, "_")
+    return _FILL_TOK.sub(lambda m: _fill(int(m.group(1))), text)
 
 
 def _typ_str(s: str) -> str:
@@ -52,7 +62,7 @@ def convert(md: str, image_root: str = "") -> str:
             continue
         if s.startswith("<!--"):
             continue
-        if re.fullmatch(r"(-{3,}|\*{3,}|_{3,})", s):
+        if re.fullmatch(r"(-{3,}|\*{3,})", s):
             flush()
             out.append("#scene-break()")
             continue

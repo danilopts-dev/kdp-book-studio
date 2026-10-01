@@ -62,3 +62,4 @@ lib.typ: `opt`/`choice` promovidos do ch13 (ch13 agora usa a versão da lib).
 lib.typ: novo `plan-notice()` (variante do room-notice; trocar só este bloco quando houver URL/QR).
 
 - notes: 8 paginas de linhas largas (0,4", 16 linhas; 15 na primeira com heading "Notes"); cabecalho discreto "NOTES" nas demais. Sem temas/palavras.
+- matter (parcial): _copyright (disclaimer: não é aconselhamento; nada aqui cria testamento/POA/diretiva; sem senhas/números), _where-kept (1 pág de preencher), _what-this-is (1 pág), _start-here (2 págs, mapa por Weekend + "Finished on" por fim de semana). Faltam _bonus e _back-page (links). Engine: markdown "____" (3+) vira linha de escrever; plain-page com "# Título" fora do sumário e sem página em branco antes.

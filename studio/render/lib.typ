@@ -84,7 +84,18 @@
   ]
 }
 
-#let plain-page(body) = page(header: none, footer: none, body)
+// Página de front/back matter vinda de Markdown. O "# Título" fica fora do sumário e não força quebra
+// (o show global de heading 1 gerava uma página em branco antes de cada uma). Mantém o par <chap-end>/heading
+// para não desalinhar o _is-blank.
+#let plain-page(body) = page(header: none, footer: none)[
+  #set heading(outlined: false)
+  #show heading.where(level: 1): it => {
+    [#metadata("end") <chap-end>]
+    set par(justify: false, first-line-indent: 0em)
+    block(width: 100%, above: 0pt, below: 0.3in, text(size: 1.6em, weight: "bold", it.body))
+  }
+  #body
+]
 
 #let copyright-page(body) = page(header: none, footer: none)[
   #set par(justify: false, first-line-indent: 0em, spacing: 1em)
