@@ -15,36 +15,36 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - [ ] [ASSUMIDA] (intake) Planner sem datas. Marcador do fim de semana ("Weekend 1 of 4") na abertura de cada capítulo; aviso "Running out of room?" só nos capítulos 2, 4, 6 e 11.
 - [ ] [ASSUMIDA] (unit:ch01) A pasta `fonts/` está vazia; o build usa Verdana no lugar da Atkinson Hyperlegible Next. Sigo montando os capítulos com Verdana (mais larga, então o que cabe nela cabe na Atkinson). Antes do build final, baixe a Atkinson Hyperlegible Next do Google Fonts para `fonts/` (README, passo 3).
 - [ ] [ASSUMIDA] (unit:ch04) Médicos, farmácia e hospital aparecem no ch02 (lista de ligações: nome e telefone) e no ch04 (ficha médica detalhada). Mantive os dois porque o TOC pede os dois; se preferir, o ch02 p.4 pode remeter ao ch04.
+- [ ] [ASSUMIDA] (unit:ch01) Layout do sistema visual: abertura compacta (marcador "WEEKEND N OF 4" em caixa alta 14 pt, título 26 pt, intro 16 pt, régua), sem página ímpar forçada nem v(0.9in) do engine, para caber em 2 págs; subtítulos de bloco 18 pt; rótulos de campo 14 pt; tabelas com cabeçalho cinza e linhas de 0,4". Blocos promovidos para lib.typ com prefixo `elp-`.
+- [ ] [ASSUMIDA] ch02 (ASSUMIDA): numeração de chamadas contínua 1-24 entre páginas via novo parâmetro start em elp-table; página 8 só com room-notice (fim de capítulo, conforme bonus_notice).
+- [ ] [ASSUMIDA] (ch03): `elp-role-table` promovido de ch02.typ para studio/render/lib.typ (agora com headers/widths/row-h); definição local removida do ch02.
+- [ ] [ASSUMIDA] (ch03): inclui páginas de seguros, dinheiro/impostos e funeral além da lista do brief, para fechar 6 págs; só locais, sem números.
+- [ ] [ASSUMIDA] ch04 12 páginas distribuídas como em notes.md; tabelas de remédios com 3 páginas de 12 linhas + 1 de uso eventual/suplementos; room-notice na última página junto do registro de mudanças. "Hospital I Do Not Want" incluído como opcional.
+- [ ] [ASSUMIDA] (ch05): religião/fé incluída como campo opcional ("if any"); certidão de nascimento e passaporte não repetidos, apenas remetidos ao ch03; SS card só "where kept".
+- [ ] [ASSUMIDA] ch06 16 págs distribuídas como em notes.md; inclui o telefone público do Social Security (1-800-772-1213) e "who I believe is named" em retirement (sem afirmar regra); linhas 0,6". Sem blocos novos.
+- [ ] [ASSUMIDA] ch07 dois telefones oficiais incluídos (Medicare 1-800-633-4227; VA 1-800-827-1000). Se preferir nenhum telefone, remover as duas linhas finais das págs. 3 e 7.
+- [ ] [ASSUMIDA] ch07 "Medicare Advantage / Medigap / Part D" citados só como exemplos de rótulo, sem explicação ou conselho.
+- [ ] [ASSUMIDA] ch08 sem blocos novos; local dos returns só remete a ch03 p.18; "Date of My Last Return" como campo de data; 6 págs exatas.
+- [ ] [ASSUMIDA] ch09 pagina de chaves/alarme sem códigos; utilities em 2 tabelas de 5 linhas (genéricas, sem empresas pré-preenchidas); 'Seasonal Routines' em campos por estação.
+- [ ] [ASSUMIDA] (ch10): 4 págs = P1 abertura + campos gerais de cuidado imediato; P2-4 um pet por página. Macro `pet-page` fica no ch10.typ, não em lib.typ.
+- [ ] [ASSUMIDA] (ch11): 10 págs; sem coluna de senha; rótulos genéricos (Keep/Memorialize/Close, Legacy Contact) sem procedimentos de empresas; bancos remetem ao ch06; sem blocos novos.
+- [ ] [ASSUMIDA] (ch13): caixas de marcar via macro local `choice` no ch13.typ (não promovido ao lib.typ); sem room-notice (alvo de 8 págs); "Who Should Be Told First" fica na p.8 como lista de avisos.
+- [ ] [ASSUMIDA] (ch13): ch12 nao usa caixas de marcar (so dica de texto "Yes, No, or Still Deciding"), entao nao ha conflito visual; macros opt/choice ficam locais ao ch13. Se ch14+ precisar de caixas, promover a lib.typ.
+- [ ] [ASSUMIDA] (ch14): `opt`/`choice` promovidos do ch13 para lib.typ. Tabela de itens com 37 linhas no total (5+8+8+8) e 1" de altura para a coluna "Why". Página extra "Things I Have Already Promised or Given" e campos de "se duas pessoas querem a mesma coisa" (sem prometer evitar conflito). Nota legal só na P1.
+- [ ] [ASSUMIDA] (ch15): distribuição das 6 págs = opener+carta 1 / carta 1 cont. / carta 2 / carta 3 / What I Want You to Know / continuação. Cartas sem nome pré-preenchido ("To:" em branco); perguntas de apoio sob "Some things you might say:" (14 pt cinza). Macros locais ao ch15 (não promovidas ao lib.typ).
+- [ ] [ASSUMIDA] (ch16): criado `plan-notice()` no lib.typ ("Want a reminder?"), variante do room-notice sem URL/QR. Texto de ch16 usa os rótulos "Review Date (MM/DD/YYYY)" e datas MM/DD/YYYY nas tabelas. Checklist agrupado por tema (não por capítulo numerado) para caber em 2 páginas.
 
 ## Resolvidas
-- [ ] [ASSUMIDA] (unit:ch01) Layout do sistema visual: abertura compacta (marcador "WEEKEND N OF 4" em caixa alta 14 pt, título 26 pt, intro 16 pt, régua), sem página ímpar forçada nem v(0.9in) do engine, para caber em 2 págs; subtítulos de bloco 18 pt; rótulos de campo 14 pt; tabelas com cabeçalho cinza e linhas de 0,4". Blocos promovidos para lib.typ com prefixo `elp-`.
-- ch02 (ASSUMIDA): numeração de chamadas contínua 1-24 entre páginas via novo parâmetro start em elp-table; página 8 só com room-notice (fim de capítulo, conforme bonus_notice).
 
-- ASSUMIDA (ch03): `elp-role-table` promovido de ch02.typ para studio/render/lib.typ (agora com headers/widths/row-h); definição local removida do ch02.
-- ASSUMIDA (ch03): inclui páginas de seguros, dinheiro/impostos e funeral além da lista do brief, para fechar 6 págs; só locais, sem números.
 
-- ch04 ASSUMIDA: 12 páginas distribuídas como em notes.md; tabelas de remédios com 3 páginas de 12 linhas + 1 de uso eventual/suplementos; room-notice na última página junto do registro de mudanças. "Hospital I Do Not Want" incluído como opcional.
 
-- ASSUMIDA (ch05): religião/fé incluída como campo opcional ("if any"); certidão de nascimento e passaporte não repetidos, apenas remetidos ao ch03; SS card só "where kept".
 
-- ch06 ASSUMIDA: 16 págs distribuídas como em notes.md; inclui o telefone público do Social Security (1-800-772-1213) e "who I believe is named" em retirement (sem afirmar regra); linhas 0,6". Sem blocos novos.
 
-- ch07 ASSUMIDA: dois telefones oficiais incluídos (Medicare 1-800-633-4227; VA 1-800-827-1000). Se preferir nenhum telefone, remover as duas linhas finais das págs. 3 e 7.
-- ch07 ASSUMIDA: "Medicare Advantage / Medigap / Part D" citados só como exemplos de rótulo, sem explicação ou conselho.
 
-- ch08 ASSUMIDA: sem blocos novos; local dos returns só remete a ch03 p.18; "Date of My Last Return" como campo de data; 6 págs exatas.
-- ch09 ASSUMIDA: pagina de chaves/alarme sem códigos; utilities em 2 tabelas de 5 linhas (genéricas, sem empresas pré-preenchidas); 'Seasonal Routines' em campos por estação.
 
-- ASSUMIDA (ch10): 4 págs = P1 abertura + campos gerais de cuidado imediato; P2-4 um pet por página. Macro `pet-page` fica no ch10.typ, não em lib.typ.
-- ASSUMIDA (ch11): 10 págs; sem coluna de senha; rótulos genéricos (Keep/Memorialize/Close, Legacy Contact) sem procedimentos de empresas; bancos remetem ao ch06; sem blocos novos.
 - ch12 (assumida): p.1 aviso de 'não é documento legal' fica na abertura; nenhuma opção médica pré-redigida, só perguntas abertas.
 
-- ASSUMIDA (ch13): caixas de marcar via macro local `choice` no ch13.typ (não promovido ao lib.typ); sem room-notice (alvo de 8 págs); "Who Should Be Told First" fica na p.8 como lista de avisos.
 
-- ASSUMIDA (ch13): ch12 nao usa caixas de marcar (so dica de texto "Yes, No, or Still Deciding"), entao nao ha conflito visual; macros opt/choice ficam locais ao ch13. Se ch14+ precisar de caixas, promover a lib.typ.
 
-- ASSUMIDA (ch14): `opt`/`choice` promovidos do ch13 para lib.typ. Tabela de itens com 37 linhas no total (5+8+8+8) e 1" de altura para a coluna "Why". Página extra "Things I Have Already Promised or Given" e campos de "se duas pessoas querem a mesma coisa" (sem prometer evitar conflito). Nota legal só na P1.
 
-- ASSUMIDA (ch15): distribuição das 6 págs = opener+carta 1 / carta 1 cont. / carta 2 / carta 3 / What I Want You to Know / continuação. Cartas sem nome pré-preenchido ("To:" em branco); perguntas de apoio sob "Some things you might say:" (14 pt cinza). Macros locais ao ch15 (não promovidas ao lib.typ).
 
-- ASSUMIDA (ch16): criado `plan-notice()` no lib.typ ("Want a reminder?"), variante do room-notice sem URL/QR. Texto de ch16 usa os rótulos "Review Date (MM/DD/YYYY)" e datas MM/DD/YYYY nas tabelas. Checklist agrupado por tema (não por capítulo numerado) para caber em 2 páginas.
