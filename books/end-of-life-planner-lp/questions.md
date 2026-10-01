@@ -33,3 +33,4 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - ch07 ASSUMIDA: "Medicare Advantage / Medigap / Part D" citados só como exemplos de rótulo, sem explicação ou conselho.
 
 - ch08 ASSUMIDA: sem blocos novos; local dos returns só remete a ch03 p.18; "Date of My Last Return" como campo de data; 6 págs exatas.
+- ch09 ASSUMIDA: pagina de chaves/alarme sem códigos; utilities em 2 tabelas de 5 linhas (genéricas, sem empresas pré-preenchidas); 'Seasonal Routines' em campos por estação.
