@@ -4,7 +4,6 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 
 ## Abertas
 - [ ] [BLOQUEANTE p/ finalize] (matter) Link/QR real do Printable Declutter Kit — placeholder [DANILO: bonus link + QR code] em _bonus.md, a pedido do Danilo
-- [ ] [ASSUMIDA] (intake) Título provisório "Clear the Clutter in 12 Weeks", sem subtítulo; decisão final no listing (evitar "challenge"). Pedido do Danilo.
 - [ ] [ASSUMIDA] (matter) Página do bônus (Printable Declutter Kit) com link/QR placeholder, a pedido do Danilo. ATENÇÃO: o check final bloqueia placeholder; precisa do link real antes do build final.
 - [ ] [ASSUMIDA] (intake) Livro sem data (undated), semanas 0-12 numeradas; 8,5x11 P&B, alvo 120-140 páginas (preset planner).
 - [ ] [ASSUMIDA] (intake) Orientação semanal (150-250 palavras) escrita dentro da unidade typst de cada semana, não como unidade de prosa separada, para economizar tarefas; segue human-voice-writing.
@@ -14,10 +13,11 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - [ ] [ASSUMIDA] (intake) also-by: só o House Cleaning Checklist Planner; próximos livros da série citados de forma genérica (sem títulos).
 - [ ] [ASSUMIDA] (unit:intro) Regra de desempate das quatro caixas: "If this were gone tomorrow, would I go out and buy it again?" + valor mínimo de venda definido pelo leitor na Week 0 (Donate abaixo dele). Sem caixa "maybe". wk00 deve incluir o campo do valor.
 - [ ] [ASSUMIDA] (listing) Keyword primária "decluttering workbook" (SERP ~$61k/mês, workbooks KDP guiados $540-1.700/mês), secundária "room by room declutter"; base: análise de 2026-09-21 no Drive (SellerSprite, sem volume de busca). Validar no Publisher Rocket.
-- [ ] [ASSUMIDA] (listing) Recomendado título opção 1 "The 12-Week Decluttering Workbook" + subtítulo opção 1. Se aprovado, atualizar title/subtitle/primary_keyword no book.yaml (folha de rosto) e na capa. Danilo escolhe.
 - [ ] [ASSUMIDA] (listing) Prompts do Google Flow (aplus-prompts.md) só depois da arte da capa e da aprovação do plano de A+.
 
 ## Resolvidas
+- [x] [ASSUMIDA] (intake) Título provisório "Clear the Clutter in 12 Weeks", sem subtítulo; decisão final no listing (evitar "challenge"). Pedido do Danilo. — Danilo aprovou (2026-09-30): "The 12-Week Decluttering Workbook" / "15 Minutes a Day, One Room a Week: Keep, Donate, Sell or Toss Your Way Through the Whole House, No Storage Bins Required".
+- [x] [ASSUMIDA] (listing) Recomendado título opção 1 "The 12-Week Decluttering Workbook" + subtítulo opção 1. Se aprovado, atualizar title/subtitle/primary_keyword no book.yaml (folha de rosto) e na capa. Danilo escolhe. — Danilo aprovou (2026-09-30): "The 12-Week Decluttering Workbook" / "15 Minutes a Day, One Room a Week: Keep, Donate, Sell or Toss Your Way Through the Whole House, No Storage Bins Required".
 - [x] [ASSUMIDA] (intake) copyright_holder = "Read Publishing LLC" — Danilo confirmou: Read Publishing LLC
 - [ ] [ASSUMIDA] (unit:wk01) Helpers do layout semanal `_wk-*` ficam em content/wk01.typ (inline); sugestão de promover a studio/render/lib.typ. wk01 tem 7 páginas com 6 folhas + Count/Notes/Wins na última. Fatos FDA confirmados só via resultados de busca (fda.gov bloqueado no fetch); validar antes do build final. Regra de cosméticos mantida genérica (sem prazos em meses).
 

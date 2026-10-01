@@ -1,4 +1,4 @@
-# Style sheet — Clear the Clutter in 12 Weeks
+# Style sheet — The 12-Week Decluttering Workbook
 
 **Voz:** Emily P. Harper. Prática, calma, aspiracional sem exagero. Fala como uma amiga organizada que já passou por isso: frases curtas, instruções concretas, zero culpa e zero sermão sobre consumo. Nada de "life-changing", "transform your life", "joy" em excesso ou jargão de minimalismo. O leitor decide; o livro dá o método e o espaço para escrever.
 

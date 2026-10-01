@@ -215,7 +215,7 @@
 #let title-page(title, subtitle: none, author: none, imprint: none) = page(header: none, footer: none, {
   v(1.5in)
   box(fill: ink, radius: 6pt, inset: (x: 10pt, y: 6pt),
-    text(fill: white, font: display, size: 10pt, tracking: 0.25em, weight: "bold")[12 WEEKS · 15 MINUTES A DAY])
+    text(fill: white, font: display, size: 10pt, tracking: 0.25em, weight: "bold")[CLEAR THE CLUTTER · ROOM BY ROOM])
   v(0.2in)
   set par(leading: 0.4em)
   text(font: display, size: 46pt, weight: "bold", title)

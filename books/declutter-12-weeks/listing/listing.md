@@ -1,4 +1,13 @@
-# Listing — Clear the Clutter in 12 Weeks (Emily P. Harper)
+# Listing — The 12-Week Decluttering Workbook (Emily P. Harper)
+
+## APROVADO pelo Danilo (2026-09-30)
+
+- **Título:** The 12-Week Decluttering Workbook
+- **Subtítulo:** 15 Minutes a Day, One Room a Week: Keep, Donate, Sell or Toss Your Way Through the Whole House, No Storage Bins Required
+- **Autora:** Emily P. Harper
+- **Keyword primária:** decluttering workbook
+- Keywords e descrição abaixo valem como estão (as 7 keywords não repetem palavras do título escolhido).
+
 
 Mercado: Amazon US · 8.5 x 11 in · P&B · 123 páginas · undated · preço sugerido no TOC: $11.99–12.99
 
