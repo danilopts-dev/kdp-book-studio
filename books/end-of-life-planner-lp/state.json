@@ -170,9 +170,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "8 págs, herança de objetos, revisado",
+      "updated": "2026-09-30T22:49"
     },
     {
       "id": "unit:ch15",

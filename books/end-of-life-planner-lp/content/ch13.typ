@@ -1,8 +1,3 @@
-#let opt(label) = box(baseline: 0.04in, stroke: 1pt + black, width: 0.2in, height: 0.2in)
-#let choice(..items) = for it in items.pos() [
-  #opt(it) #h(0.1in) #it \
-  #v(0.06in)
-]
 
 #chapter-opener(4, "Funeral and Memorial: How I'd Like It Done",
   [Write down what you want so nobody has to guess at a hard time. Check a box or write a few words. If you have no preference, say so. That helps too.])

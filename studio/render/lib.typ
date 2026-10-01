@@ -396,6 +396,12 @@
   )
 }
 
+// Caixas de marcar: choice([A], [B]) lista opções verticais com quadrado para marcar (ch12-ch14).
+#let opt(label) = box(baseline: 0.04in, stroke: 1pt + black, width: 0.2in, height: 0.2in)
+#let choice(..items) = for it in items.pos() [
+  #opt(it) #h(0.1in) #it   #v(0.06in)
+]
+
 // Aviso "Running out of room?" (capítulos 2, 4, 6, 11). Hoje aponta para a página do bônus no início do livro.
 // Quando existir o QR, mude SÓ este bloco (adicionar a imagem ao lado do texto).
 #let room-notice() = block(breakable: false, width: 100%, above: 0.25in, stroke: 1pt + luma(60), inset: 12pt, radius: 4pt, {
