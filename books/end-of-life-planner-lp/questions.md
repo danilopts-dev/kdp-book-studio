@@ -28,3 +28,6 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - ASSUMIDA (ch05): religião/fé incluída como campo opcional ("if any"); certidão de nascimento e passaporte não repetidos, apenas remetidos ao ch03; SS card só "where kept".
 
 - ch06 ASSUMIDA: 16 págs distribuídas como em notes.md; inclui o telefone público do Social Security (1-800-772-1213) e "who I believe is named" em retirement (sem afirmar regra); linhas 0,6". Sem blocos novos.
+
+- ch07 ASSUMIDA: dois telefones oficiais incluídos (Medicare 1-800-633-4227; VA 1-800-827-1000). Se preferir nenhum telefone, remover as duas linhas finais das págs. 3 e 7.
+- ch07 ASSUMIDA: "Medicare Advantage / Medigap / Part D" citados só como exemplos de rótulo, sem explicação ou conselho.
