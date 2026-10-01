@@ -13,6 +13,9 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - [ ] [ASSUMIDA] (intake) Copyright com disclaimer curto (informativo, não é conselho fiscal/médico) — criar `_copyright.md` na etapa matter.
 - [ ] [ASSUMIDA] (intake) also-by: só o House Cleaning Checklist Planner; próximos livros da série citados de forma genérica (sem títulos).
 - [ ] [ASSUMIDA] (unit:intro) Regra de desempate das quatro caixas: "If this were gone tomorrow, would I go out and buy it again?" + valor mínimo de venda definido pelo leitor na Week 0 (Donate abaixo dele). Sem caixa "maybe". wk00 deve incluir o campo do valor.
+- [ ] [ASSUMIDA] (listing) Keyword primária "decluttering workbook" (SERP ~$61k/mês, workbooks KDP guiados $540-1.700/mês), secundária "room by room declutter"; base: análise de 2026-09-21 no Drive (SellerSprite, sem volume de busca). Validar no Publisher Rocket.
+- [ ] [ASSUMIDA] (listing) Recomendado título opção 1 "The 12-Week Decluttering Workbook" + subtítulo opção 1. Se aprovado, atualizar title/subtitle/primary_keyword no book.yaml (folha de rosto) e na capa. Danilo escolhe.
+- [ ] [ASSUMIDA] (listing) Prompts do Google Flow (aplus-prompts.md) só depois da arte da capa e da aprovação do plano de A+.
 
 ## Resolvidas
 - [x] [ASSUMIDA] (intake) copyright_holder = "Read Publishing LLC" — Danilo confirmou: Read Publishing LLC
