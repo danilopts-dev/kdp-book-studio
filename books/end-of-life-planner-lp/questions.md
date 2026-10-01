@@ -36,3 +36,4 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - ch09 ASSUMIDA: pagina de chaves/alarme sem códigos; utilities em 2 tabelas de 5 linhas (genéricas, sem empresas pré-preenchidas); 'Seasonal Routines' em campos por estação.
 
 - ASSUMIDA (ch10): 4 págs = P1 abertura + campos gerais de cuidado imediato; P2-4 um pet por página. Macro `pet-page` fica no ch10.typ, não em lib.typ.
+- ASSUMIDA (ch11): 10 págs; sem coluna de senha; rótulos genéricos (Keep/Memorialize/Close, Legacy Contact) sem procedimentos de empresas; bancos remetem ao ch06; sem blocos novos.
