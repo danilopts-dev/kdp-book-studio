@@ -31,3 +31,5 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 
 - ch07 ASSUMIDA: dois telefones oficiais incluídos (Medicare 1-800-633-4227; VA 1-800-827-1000). Se preferir nenhum telefone, remover as duas linhas finais das págs. 3 e 7.
 - ch07 ASSUMIDA: "Medicare Advantage / Medigap / Part D" citados só como exemplos de rótulo, sem explicação ou conselho.
+
+- ch08 ASSUMIDA: sem blocos novos; local dos returns só remete a ch03 p.18; "Date of My Last Return" como campo de data; 6 págs exatas.
