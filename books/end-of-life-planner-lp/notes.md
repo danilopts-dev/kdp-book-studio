@@ -23,3 +23,6 @@
 **ch01 (Weekend 1, 2 págs).** Página 1: About Me (nome, endereço, telefone/e-mail, nascimento) + tabela "Call These People First" (4 linhas). Página 2: Where This Book Is Kept / Who Has a Copy, Where My Main Documents Are, Allergies, Medications I Must Not Miss (tabela 5 linhas). Sem números de documento/conta; sem nomes de exemplo.
 Blocos em lib.typ (reusar nos ch02–16): `chapter-opener(weekend, title, intro)`; `elp-heading(title)`; `elp-field(label, lines: 1, hint: none)` (1 = rótulo+linha inline; >1 = rótulo acima + N linhas de 0,4"); `elp-field-row(..labels)`; `elp-gap`; `elp-table(headers, rows: 5, widths: none, first-numbered: false, row-h: 0.4in)`; `room-notice()` (texto da página do bônus, sem QR/URL; trocar só o bloco depois). Rótulos 14 pt, corpo 16 pt.
 Correção de engine: `checks.py` não tenta mais parsear unidades `kind: typst` como YAML.
+
+**ch02 (Weekend 1, 8 págs, PDF págs. 7-14).** P1-2 Family (tabela com ordem numerada 1-15, coluna "In Person?"), P3 Close Friends (16-24), P4 My Doctors/pharmacy/hospital, P5 Attorney/Accountant/Advisors (campos Phone, sem nº de conta), P6 Neighbor/Employer/Community, P7 Tell Them in Person / Phone / Message, P8 room-notice (sozinho). Sem nomes de exemplo.
+lib.typ: `elp-table` ganhou `start:` (numeração contínua entre páginas; padrão 1, retrocompatível).

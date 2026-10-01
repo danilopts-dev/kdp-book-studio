@@ -374,7 +374,7 @@
 
 // Tabela larga para preencher: headers (3-4 colunas), rows linhas vazias de altura >= 0,4".
 // widths: lista de larguras (padrão: colunas iguais). first-numbered: coluna 1 pré-numerada (1., 2., ...).
-#let elp-table(headers, rows: 5, widths: none, first-numbered: false, row-h: elp-line-h) = {
+#let elp-table(headers, rows: 5, widths: none, first-numbered: false, row-h: elp-line-h, start: 1) = {
   let n = headers.len()
   let cols = if widths == none { (1fr,) * n } else { widths }
   table(
@@ -382,7 +382,7 @@
     ..headers.map(h => table.cell(fill: luma(235), text(size: elp-label-size, weight: "bold", h))),
     ..range(rows).map(i => range(n).map(j =>
       table.cell(box(height: row-h - 10pt, width: 100%,
-        if first-numbered and j == 0 { align(horizon, text(size: 16pt, weight: "bold")[#(i + 1).]) } else { [] }
+        if first-numbered and j == 0 { align(horizon, text(size: 16pt, weight: "bold")[#(i + start).]) } else { [] }
       )))).flatten(),
   )
 }
