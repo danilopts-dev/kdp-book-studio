@@ -71,9 +71,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "5 págs, Weekend 2, revisado",
+      "updated": "2026-09-30T22:35"
     },
     {
       "id": "unit:ch06",

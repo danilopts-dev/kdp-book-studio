@@ -24,3 +24,5 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - ASSUMIDA (ch03): inclui páginas de seguros, dinheiro/impostos e funeral além da lista do brief, para fechar 6 págs; só locais, sem números.
 
 - ch04 ASSUMIDA: 12 páginas distribuídas como em notes.md; tabelas de remédios com 3 páginas de 12 linhas + 1 de uso eventual/suplementos; room-notice na última página junto do registro de mudanças. "Hospital I Do Not Want" incluído como opcional.
+
+- ASSUMIDA (ch05): religião/fé incluída como campo opcional ("if any"); certidão de nascimento e passaporte não repetidos, apenas remetidos ao ch03; SS card só "where kept".
