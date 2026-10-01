@@ -1,9 +1,3 @@
-#let elp-role-table(roles) = table(
-  columns: (2.5in, 2.7in, 1.8in), stroke: 0.7pt + luma(110), inset: (x: 6pt, y: 5pt),
-  ..("Who", "Name", "Phone").map(h => table.cell(fill: luma(235), text(size: elp-label-size, weight: "bold", h))),
-  ..roles.map(r => (table.cell(align(horizon, text(size: elp-label-size, weight: "bold", r))), table.cell(box(height: 0.55in - 10pt, width: 100%)), table.cell([]))).flatten(),
-)
-
 #chapter-opener(1, "Who to Call, and in What Order",
   [Your family should not have to guess who to phone first. List the people below in the order you want them called. Number 1 is the first call.])
 

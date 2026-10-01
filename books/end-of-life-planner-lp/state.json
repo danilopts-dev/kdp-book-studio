@@ -49,9 +49,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "6 págs, escopo ajustado, revisado",
+      "updated": "2026-09-30T22:31"
     },
     {
       "id": "unit:ch04",

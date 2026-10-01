@@ -372,6 +372,15 @@
 // Espaçamento padrão entre campos.
 #let elp-gap = v(0.08in)
 
+// Tabela de papéis/itens: coluna 1 pré-preenchida (rótulo em negrito), demais colunas vazias.
+// Padrão (Who/Name/Phone) usado no ch02; headers/widths/row-h permitem outras formas (ex.: documentos).
+#let elp-role-table(roles, headers: ("Who", "Name", "Phone"), widths: (2.5in, 2.7in, 1.8in), row-h: 0.55in) = table(
+  columns: widths, stroke: 0.7pt + luma(110), inset: (x: 6pt, y: 5pt),
+  ..headers.map(h => table.cell(fill: luma(235), text(size: elp-label-size, weight: "bold", h))),
+  ..roles.map(r => (table.cell(align(horizon, text(size: elp-label-size, weight: "bold", r))),
+    ..range(headers.len() - 1).map(_ => table.cell(box(height: row-h - 10pt, width: 100%))))).flatten(),
+)
+
 // Tabela larga para preencher: headers (3-4 colunas), rows linhas vazias de altura >= 0,4".
 // widths: lista de larguras (padrão: colunas iguais). first-numbered: coluna 1 pré-numerada (1., 2., ...).
 #let elp-table(headers, rows: 5, widths: none, first-numbered: false, row-h: elp-line-h, start: 1) = {

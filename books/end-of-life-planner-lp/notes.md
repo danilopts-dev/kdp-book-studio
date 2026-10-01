@@ -26,3 +26,7 @@ Correção de engine: `checks.py` não tenta mais parsear unidades `kind: typst`
 
 **ch02 (Weekend 1, 8 págs, PDF págs. 7-14).** P1-2 Family (tabela com ordem numerada 1-15, coluna "In Person?"), P3 Close Friends (16-24), P4 My Doctors/pharmacy/hospital, P5 Attorney/Accountant/Advisors (campos Phone, sem nº de conta), P6 Neighbor/Employer/Community, P7 Tell Them in Person / Phone / Message, P8 room-notice (sozinho). Sem nomes de exemplo.
 lib.typ: `elp-table` ganhou `start:` (numeração contínua entre páginas; padrão 1, retrocompatível).
+
+**ch03 (Weekend 1, 6 págs, PDF págs. 15-20).** Só ONDE ficam os papéis (local, quem tem cópia, data), sem conteúdo/números. P1 Wills and Legal Papers (will, trust, POAs, advance directive, living will), P2 Personal Records, P3 Home and Vehicles, P4 Insurance, Money, and Taxes, P5 Military Service + Safe Deposit Box (campos de local/chave/quem abre/onde o nº está anotado), P6 Home Safe + Papers My Attorney Holds + Missing Papers + Other Hiding Places. Sem room-notice.
+lib.typ: `elp-role-table(roles, headers:, widths:, row-h:)` promovido do ch02 (padrão Who/Name/Phone, retrocompatível); ch03 usa headers Document / Where It's Kept / Who Has a Copy / Date.
+- ch03 (revisão): p.18 já registra ONDE estão apólices e declarações de imposto; ch07 e ch08 devem remeter a ela ("see Where My Important Papers Are") em vez de repetir o local do papel.
