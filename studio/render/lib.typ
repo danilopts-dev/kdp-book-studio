@@ -318,3 +318,80 @@
     block(above: 0.7em, [#box(width: box-size, height: box-size, stroke: 0.8pt) #h(0.5em) #it])
   }
 }
+
+// ---------------------------------------------------------------- elp: organizer em letra grande
+// Blocos reutilizáveis dos capítulos do End of Life Planner (e de outros organizers 8.5x11 em letra grande).
+// Regras: linhas de escrita 0,4"; texto de rótulo/cabeçalho nunca abaixo de 14pt.
+#let elp-line-h = 0.4in
+#let elp-label-size = 14pt
+#let elp-rule = 0.6pt + luma(110)
+
+// Abertura de capítulo: marcador "Weekend N of 4" + heading nível 1 (entra no sumário) + intro curta.
+// Compacto de propósito (o heading padrão do engine ocupa ~1,5"); não força quebra de página para capítulo ímpar.
+#let chapter-opener(weekend, title, intro) = {
+  [#metadata("end") <chap-end>]
+  pagebreak(weak: true)
+  set par(first-line-indent: 0em, justify: false)
+  block(below: 0.12in, text(size: 14pt, weight: "bold", tracking: 0.06em, fill: luma(70), upper[Weekend #weekend of 4]))
+  {
+    show heading.where(level: 1): it => block(above: 0pt, below: 0.15in, width: 100%,
+      text(size: 26pt, weight: "bold", it.body))
+    heading(level: 1, title)
+  }
+  block(below: 0.2in, text(size: 16pt, intro))
+  line(length: 100%, stroke: 1.2pt + black)
+  v(0.15in)
+}
+
+// Subtítulo de bloco dentro de um capítulo.
+#let elp-heading(title) = block(above: 0.28in, below: 0.1in, sticky: true,
+  text(size: 18pt, weight: "bold", title))
+
+// Campo de escrita com rótulo. lines: 1 = rótulo e linha na mesma faixa; >1 = rótulo acima e N linhas.
+// hint: texto pequeno (>=14pt) depois do rótulo, p.ex. "(optional)".
+#let elp-field(label, lines: 1, hint: none) = {
+  let lab = text(size: elp-label-size, weight: "bold", label)
+  let hnt = if hint == none { [] } else { text(size: elp-label-size, fill: luma(80), [ #hint]) }
+  if lines == 1 {
+    grid(columns: (auto, 1fr), column-gutter: 8pt, align: bottom,
+      box(height: elp-line-h, align(horizon + left, lab + hnt)),
+      box(height: elp-line-h, width: 100%, stroke: (bottom: elp-rule)))
+  } else {
+    block(breakable: false, {
+      lab + hnt
+      v(0pt)
+      for _ in range(lines) { box(height: elp-line-h, width: 100%, stroke: (bottom: elp-rule)); linebreak() }
+    })
+  }
+}
+
+// Vários campos de linha única lado a lado: elp-field-row(("Phone", none), ("Email", none)) ou só rótulos.
+#let elp-field-row(..labels) = grid(columns: (1fr,) * labels.pos().len(), column-gutter: 0.3in,
+  ..labels.pos().map(l => elp-field(l)))
+
+// Espaçamento padrão entre campos.
+#let elp-gap = v(0.08in)
+
+// Tabela larga para preencher: headers (3-4 colunas), rows linhas vazias de altura >= 0,4".
+// widths: lista de larguras (padrão: colunas iguais). first-numbered: coluna 1 pré-numerada (1., 2., ...).
+#let elp-table(headers, rows: 5, widths: none, first-numbered: false, row-h: elp-line-h) = {
+  let n = headers.len()
+  let cols = if widths == none { (1fr,) * n } else { widths }
+  table(
+    columns: cols, stroke: 0.7pt + luma(110), inset: (x: 6pt, y: 5pt),
+    ..headers.map(h => table.cell(fill: luma(235), text(size: elp-label-size, weight: "bold", h))),
+    ..range(rows).map(i => range(n).map(j =>
+      table.cell(box(height: row-h - 10pt, width: 100%,
+        if first-numbered and j == 0 { align(horizon, text(size: 16pt, weight: "bold")[#(i + 1).]) } else { [] }
+      )))).flatten(),
+  )
+}
+
+// Aviso "Running out of room?" (capítulos 2, 4, 6, 11). Hoje aponta para a página do bônus no início do livro.
+// Quando existir o QR, mude SÓ este bloco (adicionar a imagem ao lado do texto).
+#let room-notice() = block(breakable: false, width: 100%, above: 0.25in, stroke: 1pt + luma(60), inset: 12pt, radius: 4pt, {
+  set par(first-line-indent: 0em, justify: false)
+  text(size: 16pt, weight: "bold")[Running out of room?]
+  linebreak()
+  text(size: 16pt)[The Extra Pages Pack has more pages just like these. See the Bonus page at the front of this book.]
+})

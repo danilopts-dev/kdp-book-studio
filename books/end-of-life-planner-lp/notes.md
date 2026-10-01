@@ -19,3 +19,7 @@
 
 <!-- Cada unidade concluída adiciona 3-5 linhas: o que cobriu, histórias/dados usados, ganchos para as próximas.
      Os agentes leem ISTO em vez de reler os capítulos anteriores (economia de tokens). -->
+
+**ch01 (Weekend 1, 2 págs).** Página 1: About Me (nome, endereço, telefone/e-mail, nascimento) + tabela "Call These People First" (4 linhas). Página 2: Where This Book Is Kept / Who Has a Copy, Where My Main Documents Are, Allergies, Medications I Must Not Miss (tabela 5 linhas). Sem números de documento/conta; sem nomes de exemplo.
+Blocos em lib.typ (reusar nos ch02–16): `chapter-opener(weekend, title, intro)`; `elp-heading(title)`; `elp-field(label, lines: 1, hint: none)` (1 = rótulo+linha inline; >1 = rótulo acima + N linhas de 0,4"); `elp-field-row(..labels)`; `elp-gap`; `elp-table(headers, rows: 5, widths: none, first-numbered: false, row-h: 0.4in)`; `room-notice()` (texto da página do bônus, sem QR/URL; trocar só o bloco depois). Rótulos 14 pt, corpo 16 pt.
+Correção de engine: `checks.py` não tenta mais parsear unidades `kind: typst` como YAML.

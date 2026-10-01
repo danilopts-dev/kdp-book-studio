@@ -16,9 +16,9 @@
       "kind": "prose",
       "agent": "writer",
       "instructions": "pipelines/stages/unit-prose.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "blocked",
+      "note": "falta história real da Emily (questions.md)",
+      "updated": "2026-09-30T22:24"
     },
     {
       "id": "unit:ch01",
@@ -27,9 +27,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "2 págs, blocos elp no lib.typ, revisado",
+      "updated": "2026-09-30T22:27"
     },
     {
       "id": "unit:ch02",

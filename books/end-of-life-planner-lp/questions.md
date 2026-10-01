@@ -13,5 +13,7 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - [ ] [ASSUMIDA] (intake) Ordem: o "Welcome" aparece uma vez só, como primeira unidade depois do front matter (título, copyright, "Where this book is kept", sumário, "What this book is, and what it isn't", "Start here: four weekends", página do bônus). O TOC listava Welcome tanto no front matter quanto como seção própria; tratei como a mesma página.
 - [ ] [ASSUMIDA] (intake) Disclaimer jurídico curto vai em "What this book is, and what it isn't" (não é testamento, procuração nem diretiva; não substitui advogado) e é repetido em uma linha nos capítulos 12 e 14, como o TOC pede.
 - [ ] [ASSUMIDA] (intake) Planner sem datas. Marcador do fim de semana ("Weekend 1 of 4") na abertura de cada capítulo; aviso "Running out of room?" só nos capítulos 2, 4, 6 e 11.
+- [ ] [ASSUMIDA] (unit:ch01) A pasta `fonts/` está vazia; o build usa Verdana no lugar da Atkinson Hyperlegible Next. Sigo montando os capítulos com Verdana (mais larga, então o que cabe nela cabe na Atkinson). Antes do build final, baixe a Atkinson Hyperlegible Next do Google Fonts para `fonts/` (README, passo 3).
 
 ## Resolvidas
+- [ ] [ASSUMIDA] (unit:ch01) Layout do sistema visual: abertura compacta (marcador "WEEKEND N OF 4" em caixa alta 14 pt, título 26 pt, intro 16 pt, régua), sem página ímpar forçada nem v(0.9in) do engine, para caber em 2 págs; subtítulos de bloco 18 pt; rótulos de campo 14 pt; tabelas com cabeçalho cinza e linhas de 0,4". Blocos promovidos para lib.typ com prefixo `elp-`.
