@@ -14,6 +14,7 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - [ ] [ASSUMIDA] (intake) Disclaimer jurídico curto vai em "What this book is, and what it isn't" (não é testamento, procuração nem diretiva; não substitui advogado) e é repetido em uma linha nos capítulos 12 e 14, como o TOC pede.
 - [ ] [ASSUMIDA] (intake) Planner sem datas. Marcador do fim de semana ("Weekend 1 of 4") na abertura de cada capítulo; aviso "Running out of room?" só nos capítulos 2, 4, 6 e 11.
 - [ ] [ASSUMIDA] (unit:ch01) A pasta `fonts/` está vazia; o build usa Verdana no lugar da Atkinson Hyperlegible Next. Sigo montando os capítulos com Verdana (mais larga, então o que cabe nela cabe na Atkinson). Antes do build final, baixe a Atkinson Hyperlegible Next do Google Fonts para `fonts/` (README, passo 3).
+- [ ] [ASSUMIDA] (unit:ch04) Médicos, farmácia e hospital aparecem no ch02 (lista de ligações: nome e telefone) e no ch04 (ficha médica detalhada). Mantive os dois porque o TOC pede os dois; se preferir, o ch02 p.4 pode remeter ao ch04.
 
 ## Resolvidas
 - [ ] [ASSUMIDA] (unit:ch01) Layout do sistema visual: abertura compacta (marcador "WEEKEND N OF 4" em caixa alta 14 pt, título 26 pt, intro 16 pt, régua), sem página ímpar forçada nem v(0.9in) do engine, para caber em 2 págs; subtítulos de bloco 18 pt; rótulos de campo 14 pt; tabelas com cabeçalho cinza e linhas de 0,4". Blocos promovidos para lib.typ com prefixo `elp-`.
@@ -21,3 +22,5 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 
 - ASSUMIDA (ch03): `elp-role-table` promovido de ch02.typ para studio/render/lib.typ (agora com headers/widths/row-h); definição local removida do ch02.
 - ASSUMIDA (ch03): inclui páginas de seguros, dinheiro/impostos e funeral além da lista do brief, para fechar 6 págs; só locais, sem números.
+
+- ch04 ASSUMIDA: 12 páginas distribuídas como em notes.md; tabelas de remédios com 3 páginas de 12 linhas + 1 de uso eventual/suplementos; room-notice na última página junto do registro de mudanças. "Hospital I Do Not Want" incluído como opcional.
