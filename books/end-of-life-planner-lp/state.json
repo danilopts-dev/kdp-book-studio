@@ -126,9 +126,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "4 págs, 3 pets, revisado",
+      "updated": "2026-09-30T22:43"
     },
     {
       "id": "unit:ch11",
