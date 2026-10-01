@@ -44,3 +44,5 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - ASSUMIDA (ch13): ch12 nao usa caixas de marcar (so dica de texto "Yes, No, or Still Deciding"), entao nao ha conflito visual; macros opt/choice ficam locais ao ch13. Se ch14+ precisar de caixas, promover a lib.typ.
 
 - ASSUMIDA (ch14): `opt`/`choice` promovidos do ch13 para lib.typ. Tabela de itens com 37 linhas no total (5+8+8+8) e 1" de altura para a coluna "Why". Página extra "Things I Have Already Promised or Given" e campos de "se duas pessoas querem a mesma coisa" (sem prometer evitar conflito). Nota legal só na P1.
+
+- ASSUMIDA (ch15): distribuição das 6 págs = opener+carta 1 / carta 1 cont. / carta 2 / carta 3 / What I Want You to Know / continuação. Cartas sem nome pré-preenchido ("To:" em branco); perguntas de apoio sob "Some things you might say:" (14 pt cinza). Macros locais ao ch15 (não promovidas ao lib.typ).
