@@ -1,14 +1,14 @@
 // Week 0 — 5 paginas: (1) orientacao, (2) notas dos comodos, (3) data/horario/valor minimo + regra das quatro caixas,
 // (4) o que ter a mao, (5) anotacoes + conferencia. Lista de comodos = mesma da Conclusion (Week 1-12).
 
-#let _w0-rule = 0.6pt + luma(120)
+#let _w0-rule = _wk-rule
 #let _w0-field(label, above: 0.32in) = block(above: above, width: 100%,
   [#label #box(width: 1fr, height: 0.2in, stroke: (bottom: _w0-rule))])
 #let _w0-blank(w) = box(width: w, height: 0.2in, stroke: (bottom: _w0-rule))
 #let _w0-lines(n, gap: 0.36in) = stack(spacing: gap, ..range(n).map(_ => line(length: 100%, stroke: 0.5pt + luma(160))))
 #let _w0-dot(n) = box(width: 1.25em, height: 1.25em, radius: 50%, stroke: _w0-rule, baseline: 0.3em,
   align(center + horizon, text(size: 0.72em, str(n))))
-#let _w0-box = box(width: 1em, height: 1em, stroke: 0.8pt, baseline: 0.15em)
+#let _w0-box = _wk-box
 #let _w0-rooms = (
   ("Week 1", "Bathroom"),
   ("Week 2", "Entryway and coat closet"),
@@ -62,9 +62,8 @@ Walk through each space and circle one number. Trust your first reaction. Check 
 ]
 
 #v(0.15in)
-#table(
+#_styled-table(
   columns: (0.85in, 1fr, 1.95in, 0.85in),
-  stroke: 0.5pt + luma(140),
   inset: (x: 6pt, y: 9pt),
   align: (left + horizon, left + horizon, center + horizon, center + horizon),
   table.header(
@@ -111,9 +110,8 @@ Tie the 15 minutes to something you already do, like the morning coffee, school 
 Go through these steps, in order, for every item you pick up. There is no "maybe" box.
 
 #v(0.3em)
-#table(
+#_styled-table(head: false,
   columns: (2.2em, 1.2fr, 1fr),
-  stroke: 0.5pt + luma(140),
   inset: (x: 7pt, y: 8pt),
   align: (center + horizon, left + horizon, left + horizon),
   [*1*], [Is it broken, expired, stained or missing its parts?], [*Toss* it. Recycle what you can.],

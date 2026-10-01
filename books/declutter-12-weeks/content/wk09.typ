@@ -54,9 +54,8 @@ List each place paper piles up. Pick a day for each one and check the boxes as y
 Here is what the IRS says about tax records, and some general habits for the rest. This is information, not tax advice. Your situation may differ, so check with a tax professional.
 
 #v(0.1in)
-#table(
+#_styled-table(
   columns: (1fr, 1.25fr),
-  stroke: 0.5pt + luma(140),
   inset: (x: 6pt, y: 5.5pt),
   align: left + horizon,
   table.header(text(size: 0.8em, weight: "bold")[Document], text(size: 0.8em, weight: "bold")[How long]),

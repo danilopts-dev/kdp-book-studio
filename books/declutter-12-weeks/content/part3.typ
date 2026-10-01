@@ -82,9 +82,8 @@ Match the item to the kind of place that handles it well. These are channel type
 
 #v(0.1in)
 #let _g(a, b, c) = (text(weight: "bold", a), text(size: 0.92em, b), text(size: 0.92em, c))
-#table(
+#_styled-table(
   columns: (0.75fr, 1.4fr, 1.4fr),
-  stroke: 0.5pt + luma(140),
   inset: (x: 7pt, y: 12pt),
   align: left + horizon,
   table.header(_wk-head[Item type], _wk-head[Where it can sell], _wk-head[Where it can go]),

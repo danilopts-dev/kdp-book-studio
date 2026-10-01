@@ -36,9 +36,8 @@ Copy your Week 0 ratings from "Rate Your Rooms" into the first column, then writ
 ]
 
 #v(0.1in)
-#table(
+#_styled-table(
   columns: (0.9in, 1fr, 0.75in, 0.75in, 0.75in),
-  stroke: 0.5pt + luma(140),
   inset: (x: 5pt, y: 5.5pt),
   align: (left + horizon, left + horizon, center + horizon, center + horizon, center + horizon),
   table.header(
@@ -65,9 +64,8 @@ Copy your Week 0 ratings from "Rate Your Rooms" into the first column, then writ
 Copy the totals from the "Keep / Donate / Sell / Toss Count" page at the end of each week. Then add up each column. Items out are the items that left the house: Donate, Sell and Toss.
 
 #v(0.15in)
-#table(
+#_styled-table(
   columns: (5.4em, 1fr, 1fr, 1fr, 1fr, 1.2fr),
-  stroke: 0.5pt + luma(140),
   inset: (x: 6pt, y: 11pt),
   align: center + horizon,
   table.header([], _wk-head[Keep], _wk-head[Donate], _wk-head[Sell], _wk-head[Toss], _wk-head[Items out]),
@@ -89,9 +87,8 @@ Copy the totals from the "Keep / Donate / Sell / Toss Count" page at the end of 
 Four numbers sum up the 12 weeks. Take the first three from your counts and from "Part 3 Totals", and work out the fourth below.
 
 #v(0.15in)
-#table(
+#_styled-table(head: false,
   columns: (1fr, 1.7in),
-  stroke: 1pt + luma(100),
   inset: (x: 10pt, y: 19pt),
   align: (left + horizon, center + horizon),
   [*Items out* \ #text(size: 0.85em)[Donate + Sell + Toss, from the weekly counts]], [],
@@ -136,14 +133,5 @@ You can go further whenever you want to. The other books in this series take on 
   [My monthly reset day is on my calendar],
 ))
 
-#v(0.2in)
-== NOTES + WINS
-
-#v(-0.2em)
-*Notes*
-#v(0.05in)
-#_wk-lines(5, gap: 0.36in)
-#v(0.2in)
-*Wins*
-#v(0.05in)
-#_wk-lines(5, gap: 0.36in)
+#v(0.25in)
+#_notes-wins(height: 2.2in, lines: 4)

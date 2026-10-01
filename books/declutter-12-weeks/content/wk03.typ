@@ -30,9 +30,8 @@ Work one zone a day. Take everything out, wipe the shelf and sort as you put thi
 Write in each counter, shelf and storage spot you will sort this week. Choose a day for it and check the boxes as you go.
 
 #v(0.15in)
-#table(
+#_styled-table(
   columns: (1fr, 3.2em, 4.6em, 4.2em, 5.2em),
-  stroke: 0.5pt + luma(140),
   inset: (x: 6pt, y: 11pt),
   align: (left + horizon, center + horizon, center + horizon, center + horizon, center + horizon),
   table.header(_wk-head[Space], _wk-head[Day], _wk-head[Emptied], _wk-head[Sorted], _wk-head[Back in place]),

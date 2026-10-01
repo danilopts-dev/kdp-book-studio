@@ -1,94 +1,10 @@
-// Week 1 — 7 paginas. LAYOUT SEMANAL REUTILIZAVEL (wk02-wk12): helpers _wk-* definidos aqui (inline, herdados pelas unidades seguintes).
+// Week 1 — 7 paginas. LAYOUT SEMANAL (wk01-wk12): helpers _wk-* definidos em theme.typ.
 //  p1 orientacao (~200 palavras) + "This Week, 15 Minutes a Day" (_wk-daily)
 //  p2..p5 folhas do comodo (== titulos, _wk-table, _wk-field, checklist)
 //  p6 "Where It's Going This Week" (_wk-where)
 //  p7 "Keep / Donate / Sell / Toss Count" (_wk-count) + NOTES + WINS
 
-#let _wk-rule = 0.6pt + luma(120)
-#let _wk-box = box(width: 1em, height: 1em, stroke: 0.8pt, baseline: 0.15em)
-#let _wk-blank(w) = box(width: w, height: 0.2in, stroke: (bottom: _wk-rule))
-#let _wk-field(label, above: 0.3in) = block(above: above, width: 100%,
-  [#label #box(width: 1fr, height: 0.2in, stroke: (bottom: _wk-rule))])
-#let _wk-date = [#_wk-blank(0.5in) / #_wk-blank(0.5in) / #_wk-blank(0.8in)]
-#let _wk-lines(n, gap: 0.36in) = stack(spacing: gap, ..range(n).map(_ => line(length: 100%, stroke: 0.5pt + luma(160))))
-#let _wk-head(body) = text(size: 0.8em, weight: "bold", body)
-
-// 7 tarefas diarias com checkbox + bloco de 15 minutos; tasks = 7 conteudos
-#let _wk-daily(tasks) = {
-  v(0.1in)
-  table(
-    columns: (2.6em, 4.4em, 1fr),
-    stroke: 0.5pt + luma(140),
-    inset: (x: 7pt, y: 6.5pt),
-    align: (center + horizon, left + horizon, left + horizon),
-    table.header(_wk-head[Done], _wk-head[Day], _wk-head[15-minute task]),
-    ..tasks.enumerate().map(((i, t)) => (_wk-box, text(weight: "bold")[Day #(i + 1)], t)).flatten(),
-  )
-}
-
-// tabela generica de escrita: cols = cabecalhos, rows = textos da 1a coluna (resto em branco), extra = linhas em branco
-#let _wk-table(widths, heads, rows, extra: 0, y: 10pt) = table(
-  columns: widths,
-  stroke: 0.5pt + luma(140),
-  inset: (x: 6pt, y: y),
-  align: (left + horizon,) + (center + horizon,) * (widths.len() - 1),
-  table.header(..heads.map(h => _wk-head(h))),
-  ..rows.map(r => (text(size: 0.92em, r),) + ([],) * (widths.len() - 1)).flatten(),
-  ..range(extra).map(_ => ([],) * widths.len()).flatten(),
-)
-
-// pagina "Where It's Going This Week": Donate / Sell / Toss
-#let _wk-where(donate-hint, sell-hint, toss-hint) = {
-  set par(first-line-indent: 0em)
-  block(breakable: false, above: 0.2in)[
-    *Donate.* #donate-hint
-    #_wk-field([Where it's going:], above: 0.22in)
-    #block(above: 0.22in)[The day I'll drop it off: #_wk-date]
-    #_wk-lines(2, gap: 0.34in)
-  ]
-  block(breakable: false, above: 0.3in)[
-    *Sell.* #sell-hint
-    #_wk-field([Where I'll list it:], above: 0.22in)
-    #_wk-lines(3, gap: 0.34in)
-  ]
-  block(breakable: false, above: 0.3in)[
-    *Toss.* #toss-hint
-    #_wk-field([What needs special handling:], above: 0.22in)
-    #_wk-lines(3, gap: 0.34in)
-  ]
-}
-
-// "Keep / Donate / Sell / Toss Count" + NOTES + WINS (mesma pagina)
-#let _wk-count() = {
-  set par(first-line-indent: 0em)
-  [== Keep / Donate / Sell / Toss Count]
-  v(-0.3em)
-  [Each day, write how many items went into each box. Then add up the week.]
-  v(0.05in)
-  table(
-    columns: (4.6em, 1fr, 1fr, 1fr, 1fr),
-    stroke: 0.5pt + luma(140),
-    inset: (x: 6pt, y: 10.5pt),
-    align: center + horizon,
-    table.header([], _wk-head[Keep], _wk-head[Donate], _wk-head[Sell], _wk-head[Toss]),
-    ..range(1, 8).map(d => (align(left, text(size: 0.9em)[Day #d]), [], [], [], [])).flatten(),
-    table.cell(align: left)[#text(weight: "bold", size: 0.9em)[Total]], [], [], [], [],
-  )
-  v(0.12in)
-  [#text(size: 0.92em)[*Value of Sell items:* \$ #_wk-blank(0.8in) #h(0.25in) *Value of Donate items:* \$ #_wk-blank(0.8in)]]
-  v(0.05in)
-  [#text(size: 0.92em)[*Minutes this week:* #_wk-blank(0.6in) #h(0.25in) *Items out (Donate + Sell + Toss):* #_wk-blank(0.6in)]]
-  v(0.2in)
-  [== NOTES + WINS]
-  v(-0.2em)
-  [*Notes*]
-  v(0.05in)
-  _wk-lines(4, gap: 0.34in)
-  v(0.15in)
-  [*Wins*]
-  v(0.05in)
-  _wk-lines(3, gap: 0.34in)
-}
+// Helpers _wk-* agora vivem em books/declutter-12-weeks/theme.typ (tema visual do livro).
 
 = Week 1 — The Bathroom: A Fast First Win
 
@@ -118,9 +34,8 @@ Expired medicines and old products need a couple of extra steps. The next pages 
 Every bathroom hides its clutter in different places. Write in each drawer, cabinet and shelf you have, choose a day for it and check the boxes as you go.
 
 #v(0.15in)
-#table(
+#_styled-table(
   columns: (1fr, 3.2em, 4.6em, 4.2em, 5.2em),
-  stroke: 0.5pt + luma(140),
   inset: (x: 6pt, y: 11pt),
   align: (left + horizon, center + horizon, center + horizon, center + horizon, center + horizon),
   table.header(_wk-head[Space], _wk-head[Day], _wk-head[Emptied], _wk-head[Sorted], _wk-head[Back in place]),
@@ -179,9 +94,8 @@ Count what you have before you decide. Seeing five of the same thing written dow
 Some things have a date on them, and some only have a rule of thumb. Use the table to decide, then log what you find below it.
 
 #v(0.15in)
-#table(
+#_styled-table(
   columns: (1.15in, 1fr, 1.8in),
-  stroke: 0.5pt + luma(140),
   inset: (x: 7pt, y: 8pt),
   align: (left + horizon, left + horizon, left + horizon),
   table.header(_wk-head[Item], _wk-head[What to check], _wk-head[Then]),

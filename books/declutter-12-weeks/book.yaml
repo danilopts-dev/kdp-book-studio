@@ -18,7 +18,7 @@ reader: US adults who feel overwhelmed by the stuff in their home and want a slo
 positioning: 12-week fill-in declutter workbook, 15 minutes a day, room by room from easiest to hardest (sentimental last); tracks what was sold and donated (money earned, deductible value) and hands off
   to the House Cleaning Checklist Planner for maintenance.
 require_sources: true
-style: {}
+style: {body_font: ["Atkinson Hyperlegible", "Verdana"], heading_font: ["Barlow", "Verdana"], size: 11, inside: 0.75, outside: 0.6, top: 0.65, bottom: 0.75}  # tema visual em theme.typ
 front:
 - title
 - copyright

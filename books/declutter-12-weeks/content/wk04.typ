@@ -25,9 +25,8 @@ Work one cabinet or drawer a day. Take everything out, wipe the shelf and put ba
 Write in each cabinet, drawer and shelf you'll go through, choose a day for it and check the boxes as you go.
 
 #v(0.15in)
-#table(
+#_styled-table(
   columns: (1fr, 3.2em, 4.6em, 4.2em, 5.2em),
-  stroke: 0.5pt + luma(140),
   inset: (x: 6pt, y: 11pt),
   align: (left + horizon, center + horizon, center + horizon, center + horizon, center + horizon),
   table.header(_wk-head[Space], _wk-head[Day], _wk-head[Emptied], _wk-head[Sorted], _wk-head[Back in place]),

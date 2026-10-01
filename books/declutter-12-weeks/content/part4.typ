@@ -28,9 +28,8 @@
     v(0.1in)
   }
   let cols = last - first + 1
-  table(
+  _styled-table(
     columns: (2.6fr,) + (0.6fr,) * cols,
-    stroke: 0.5pt + luma(140),
     inset: (x: 5pt, y: 14pt),
     align: (left + horizon,) + (center + horizon,) * cols,
     table.header([#_wk-head[Room]], ..range(first, last + 1).map(m => _wk-head[Month #m])),
@@ -99,7 +98,7 @@ Ask the same question you asked in Week 0: *If this were gone tomorrow, would I 
   (2fr, 1.1fr, 0.6fr, 0.6fr, 0.6fr, 0.6fr),
   ([Item I kept for now], [Room], [Keep], [Donate], [Sell], [Toss]),
   (),
-  extra: 17,
+  extra: 14,
   y: 12pt,
 )
 
@@ -152,16 +151,15 @@ Decluttering and cleaning work together. Clear surfaces are much quicker to wipe
 Use this table to plan where the routine starts. Pick a day and a time for each room, and check it off once the room is in your routine.
 
 #v(0.1in)
-#table(
+#_styled-table(
   columns: (2.6fr, 1fr, 1fr, 0.6fr),
-  stroke: 0.5pt + luma(140),
   inset: (x: 6pt, y: 6pt),
   align: (left + horizon, center + horizon, center + horizon, center + horizon),
   table.header(_wk-head[Room], _wk-head[Day], _wk-head[Time], _wk-head[Set]),
   .._p4-rooms.map(r => (text(size: 0.88em, r), [], [], align(center, _wk-box))).flatten(),
 )
 
-#v(0.15in)
+#v(0.02in)
 #checklist("Before I pick up the routine", (
   [My surfaces are clear and everything has a place],
   [My cleaning supplies are gathered from Week 10],
@@ -169,7 +167,6 @@ Use this table to plan where the routine starts. Pick a day and a time for each 
   [I know my one in, one out rule],
 ))
 
-#v(0.1in)
 #_wk-field([*The day I will start my cleaning routine:* #_wk-date], above: 0.1in)
 #_wk-field([*My reset day each month:*], above: 0.15in)
 #_wk-field([*One room I want to keep clear above all:*], above: 0.15in)
