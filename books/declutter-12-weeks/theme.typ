@@ -35,14 +35,14 @@
 
   // Aberturas: "Week N — Título" ganha o bloco numérico; "Part 3 — Título", "Introduction — Título" etc. ganham kicker.
   show heading.where(level: 1): it => {
-    [#metadata("end") <chap-end>]
     let t = _plain(it.body)
     let m = t.match(regex("^Week (\d+) — (.+)$"))
     let parts = t.split(" — ")
     let (num, kick, title) = if m != none { (m.captures.at(0), none, m.captures.at(1)) }
       else if parts.len() > 1 { (none, parts.at(0), parts.slice(1).join(" — ")) }
       else { (none, none, t) }
-    pagebreak(weak: true)
+    pagebreak(weak: true)  // metadata depois da quebra: dentro de page() (matter) não gera página em branco
+    [#metadata("end") <chap-end>]
     _week-label.update(if num != none { "Week " + num + " · " + title } else if kick != none { kick } else { title })
     set par(leading: 0.45em)
     block(width: 100%, below: 0.26in, if num != none {
@@ -239,15 +239,18 @@
     let parts = t.split(" — ")
     let (k, rest) = if m != none { ("Week " + m.captures.at(0), m.captures.at(1)) }
       else if parts.len() > 1 { (parts.at(0), parts.slice(1).join(" — ")) } else { ("", t) }
-    block(width: 100%, above: 0pt, below: 0pt, inset: (y: 6pt), stroke: (bottom: 0.5pt + soft),
+    block(width: 100%, above: 0pt, below: 0pt, inset: (y: 4pt), stroke: (bottom: 0.5pt + soft),
       link(it.element.location(), grid(
       columns: (1.15in, 1fr, auto), column-gutter: 10pt, align: (left + horizon, left + horizon, right + horizon),
       _kicker(k, size: 9pt),
       text(size: 12.5pt, rest),
-      box(width: 0.42in, height: 0.3in, radius: 50%, fill: if k.starts-with("Week") { tint } else { ink },
+      box(width: 0.42in, height: 0.27in, radius: 50%, fill: if k.starts-with("Week") { tint } else { ink },
         align(center + horizon, text(font: display, weight: "bold", size: 11pt,
           fill: if k.starts-with("Week") { ink } else { white }, it.page()))),
     )))
   }
   outline(title: none, depth: 1)
 })
+
+// back matter: página normal do tema (com fólio), sem o page() do lib, que gerava página em branco antes de cada seção
+#let plain-page(body) = { pagebreak(weak: true); body }

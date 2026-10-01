@@ -3,7 +3,7 @@
 Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marque [x] quando resolvida.
 
 ## Abertas
-- [ ] [ASSUMIDA] (intake) copyright_holder = "Read Publishing LLC" (como no House Cleaning). O House Cleaning diz também "Published by Read KDP, LLC": confirmar qual é o nome jurídico certo.
+- [ ] [BLOQUEANTE p/ finalize] (matter) Link/QR real do Printable Declutter Kit — placeholder [DANILO: bonus link + QR code] em _bonus.md, a pedido do Danilo
 - [ ] [ASSUMIDA] (intake) Título provisório "Clear the Clutter in 12 Weeks", sem subtítulo; decisão final no listing (evitar "challenge"). Pedido do Danilo.
 - [ ] [ASSUMIDA] (matter) Página do bônus (Printable Declutter Kit) com link/QR placeholder, a pedido do Danilo. ATENÇÃO: o check final bloqueia placeholder; precisa do link real antes do build final.
 - [ ] [ASSUMIDA] (intake) Livro sem data (undated), semanas 0-12 numeradas; 8,5x11 P&B, alvo 120-140 páginas (preset planner).
@@ -15,6 +15,7 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - [ ] [ASSUMIDA] (unit:intro) Regra de desempate das quatro caixas: "If this were gone tomorrow, would I go out and buy it again?" + valor mínimo de venda definido pelo leitor na Week 0 (Donate abaixo dele). Sem caixa "maybe". wk00 deve incluir o campo do valor.
 
 ## Resolvidas
+- [x] [ASSUMIDA] (intake) copyright_holder = "Read Publishing LLC" — Danilo confirmou: Read Publishing LLC
 - [ ] [ASSUMIDA] (unit:wk01) Helpers do layout semanal `_wk-*` ficam em content/wk01.typ (inline); sugestão de promover a studio/render/lib.typ. wk01 tem 7 páginas com 6 folhas + Count/Notes/Wins na última. Fatos FDA confirmados só via resultados de busca (fda.gov bloqueado no fetch); validar antes do build final. Regra de cosméticos mantida genérica (sem prazos em meses).
 
 - [ASSUMIDA] wk02: "Plan Your Landing Zone" inclui coluna "Who uses it" para o caso de família (sem nomear pessoas); sem fatos [REVISAR] nesta semana. Sugestão de mail-stop (cancelar correio) só como campo em branco, sem citar serviços.

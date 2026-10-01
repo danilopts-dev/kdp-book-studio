@@ -201,9 +201,9 @@
       "stage": "matter",
       "agent": "writer",
       "instructions": "pipelines/stages/matter.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "copyright c/ disclaimer, bônus (link placeholder a pedido), review, also-by",
+      "updated": "2026-09-30T22:30"
     },
     {
       "id": "build",

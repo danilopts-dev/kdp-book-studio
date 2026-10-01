@@ -63,8 +63,15 @@ def check_content(book: Book, unit_id: str | None = None) -> list[dict]:
                 continue
             out += _check_activity(kind, data, where, meta)
     for item in meta.get("front", []) + meta.get("back", []):
-        if item not in ("title", "copyright", "toc", "answers") and not book.path("content", f"_{item}.md").exists():
-            out.append(_f(CRIT, f"content/_{item}.md", f"Seção '{item}' listada em front/back mas o arquivo não existe."))
+        if item in ("title", "toc", "answers"):
+            continue
+        mf = book.path("content", f"_{item}.md")
+        if not mf.exists():
+            if item != "copyright":
+                out.append(_f(CRIT, f"content/_{item}.md", f"Seção '{item}' listada em front/back mas o arquivo não existe."))
+            continue
+        for m in PLACEHOLDER.finditer(mf.read_text(encoding="utf-8")):
+            out.append(_f(CRIT, f"content/{mf.name}", f"Placeholder/pendência no texto: {m.group(0)[:80]}"))
     return out
 
 
