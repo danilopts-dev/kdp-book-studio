@@ -14,6 +14,13 @@ import yaml
 
 from .book import BOOKS, ROOT, Book, next_task, replan, set_status
 
+IMPRINT_NAMES = {
+    "golden-chapter": "Golden Chapter Press",
+    "silvia-press": "Silvia Press",
+    "emily-harper": "Emily P. Harper",
+    "jonah-feldman": "Jonah Feldman",
+}
+
 ICON = {"pending": "·", "in_progress": "▶", "done": "✓", "blocked": "⛔", "skipped": "–"}
 
 
@@ -31,6 +38,8 @@ def cmd_new(a):
     shutil.copytree(ROOT / "templates" / "book", b.dir)
     meta = yaml.safe_load((b.dir / "book.yaml").read_text(encoding="utf-8"))
     meta.update(slug=a.slug, type=a.type, imprint=a.imprint or meta.get("imprint"), title=a.title or meta.get("title"))
+    if a.imprint:
+        meta["imprint_name"] = IMPRINT_NAMES.get(a.imprint, a.imprint)
     b.save_meta(meta)
     replan(b)
     print(f"Criado books/{a.slug}/ — cole o TOC aprovado em books/{a.slug}/toc.md e rode /proximo {a.slug}")

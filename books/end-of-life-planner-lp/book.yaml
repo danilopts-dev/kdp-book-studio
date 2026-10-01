@@ -1,0 +1,153 @@
+slug: end-of-life-planner-lp
+title: End of Life Planner, Large Print
+subtitle: A Guided Organizer with Room to Write — Fill It In Four Weekends
+author: Emily P. Harper
+imprint: emily-harper
+imprint_name: ''
+copyright_holder: ''
+year: 2026
+type: planner
+language: en-US
+market: US
+trim: 8.5x11
+bleed: false
+paper: bw-white
+large_print: true
+primary_keyword: ''
+reader: Adults 60+ organizing their own affairs, and adult children who buy it for (or fill it in with) an aging parent. Wants big type, wide lines, real room to write and a clear place to start.
+positioning: The end-of-life planner for people who write slowly — large print, wide lines and a clear order of where to start, built around four weekends. Individual edition (couples edition is a future SKU).
+require_sources: true
+target_pages: 136-150
+dated: false
+style: {}
+front:
+- title
+- copyright
+- where-kept
+- toc
+- what-this-is
+- start-here
+- bonus
+back:
+- back-page
+cover: {}
+units:
+- id: welcome
+  kind: prose
+  title: Welcome — Why I Wrote This the Way I Did
+  brief: Open with the real reason for the book and the promise of large print, room and a clear order; tell the reader they don't have to do it all at once. 1 page.
+  target_words: 230
+  pages: 1
+  raw: '[DANILO: needs input — por que a Emily faz este livro; alguma experiência real de organizar os assuntos de um parente]'
+- id: ch01
+  kind: typst
+  title: The One Page Your Family Will Read First
+  weekend: 1
+  brief: Everything someone needs in the first minutes, on one page. Name and contact, who to call, where this book is, where the main documents are, allergies and critical medications.
+  pages: 2
+- id: ch02
+  kind: typst
+  title: Who to Call, and in What Order
+  weekend: 1
+  brief: People list with a numbered calling order. Family, close friends, doctors, attorney, accountant, neighbor, employer, church or community; who should be told in person vs. by phone. "Running out of room?" bonus 1 notice.
+  pages: 8
+  bonus_notice: true
+- id: ch03
+  kind: typst
+  title: Where My Important Papers Are
+  weekend: 1
+  brief: The location of each important document, not its contents. Will, trust, powers of attorney, directives, certificates, deeds, vehicle titles, passport, military service, safe deposit box.
+  pages: 6
+- id: ch04
+  kind: typst
+  title: What a Doctor Needs to Know About Me in an Emergency
+  weekend: 1
+  brief: Health in large print with wide medication tables. Conditions, medications (name, dose, what for, prescriber), allergies, doctors, pharmacy, preferred hospital, equipment. Bonus 1 notice.
+  pages: 12
+  bonus_notice: true
+- id: ch05
+  kind: typst
+  title: The Basics About Me, Written Down Once
+  weekend: 2
+  brief: Personal details the family always needs and almost nobody has written down. Names, dates, birthplace, family, education, military service, where ID documents are kept.
+  pages: 5
+- id: ch06
+  kind: typst
+  title: Where the Money Is and What Gets Paid Each Month
+  weekend: 2
+  brief: Longest chapter; accounts and payments without cramped space. Banks, investments, retirement and pensions, Social Security, cards, loans, recurring bills and autopay. Bonus 1 notice.
+  pages: 16
+  bonus_notice: true
+- id: ch07
+  kind: typst
+  title: Policies and Benefits Someone Should Claim
+  weekend: 2
+  brief: Insurance and benefits the family may not know exist. Life, health, Medicare and supplements, long-term care, auto, homeowners, annuities, veterans benefits.
+  pages: 8
+- id: ch08
+  kind: typst
+  title: Property, Taxes and Anything I Own a Piece Of
+  weekend: 2
+  brief: Assets that aren't bank accounts and who handles taxes. Real estate, vehicles, businesses and partnerships, accountant, where tax returns are kept.
+  pages: 6
+- id: ch09
+  kind: typst
+  title: Running the House Without Me
+  weekend: 3
+  brief: What the person left behind needs to keep the house running. Utilities, shutoff valves and breaker, keys and alarm, trusted service people, mail, garage and storage.
+  pages: 8
+- id: ch10
+  kind: typst
+  title: 'My Pets: Who Takes Them and How'
+  weekend: 3
+  brief: Room for more than one animal. One page per pet (up to 3), vet, food and medications, who takes them and whether they've agreed.
+  pages: 4
+- id: ch11
+  kind: typst
+  title: Getting Into My Phone, Email and Online Accounts
+  weekend: 3
+  brief: Digital access without writing passwords on paper. Where the master password or manager is, phone and computer, email, social media (what to do with each), subscriptions and auto-renewals, photos and cloud. Bonus 1 notice.
+  pages: 10
+  bonus_notice: true
+- id: ch12
+  kind: typst
+  title: If I Can't Speak for Myself
+  weekend: 4
+  brief: In plain words, who speaks for me and what matters to me. Decision-maker's name, where the legal documents are, care wishes, organ donation, home or facility; note that this page doesn't replace the legal documents.
+  pages: 5
+- id: ch13
+  kind: typst
+  title: 'Funeral and Memorial: How I''d Like It Done'
+  weekend: 4
+  brief: Make my wishes clear so nobody decides in a panic. Burial or cremation, service, music and readings, who speaks, flowers or donations, obituary notes, prepaid contracts and plot.
+  pages: 8
+- id: ch14
+  kind: typst
+  title: What I'm Leaving and Who Should Have It
+  weekend: 4
+  brief: List of belongings and the reason for each, to prevent fights. Item, where it is, who should get it, why; what to donate or sell; short note that legal transfer requires a will or trust.
+  pages: 8
+- id: ch15
+  kind: typst
+  title: A Few Words for the People I Love
+  weekend: 4
+  brief: Short, optional section at the end for anyone who wants to leave something personal. Three letters with supporting prompts, one "what I want you to know" page.
+  pages: 6
+- id: ch16
+  kind: typst
+  title: Keeping This Book Up to Date
+  weekend: 4
+  brief: Keep the book valid. Annual review checklist, change log, who has a copy, notice of the four-weekend plan and the annual email reminder (bonus 2).
+  pages: 4
+- id: conclusion
+  kind: prose
+  title: You're Done With the Hard Part
+  brief: Close the arc; say where to keep the book and whom to tell it exists. May point to the couples edition only if confirmed.
+  target_words: 200
+  pages: 1
+  raw: '[DANILO: needs input]'
+- id: notes
+  kind: typst
+  title: Notes
+  brief: 8 wide-ruled notes pages.
+  pages: 8

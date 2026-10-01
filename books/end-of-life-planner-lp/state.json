@@ -1,0 +1,276 @@
+{
+  "tasks": [
+    {
+      "id": "intake",
+      "stage": "intake",
+      "agent": "main",
+      "instructions": "pipelines/stages/intake.md",
+      "status": "done",
+      "note": "book.yaml com 19 unidades, style sheet, 3 bloqueantes registradas",
+      "updated": "2026-09-30T22:23"
+    },
+    {
+      "id": "unit:welcome",
+      "stage": "unit",
+      "unit": "welcome",
+      "kind": "prose",
+      "agent": "writer",
+      "instructions": "pipelines/stages/unit-prose.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:ch01",
+      "stage": "unit",
+      "unit": "ch01",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:ch02",
+      "stage": "unit",
+      "unit": "ch02",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:ch03",
+      "stage": "unit",
+      "unit": "ch03",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:ch04",
+      "stage": "unit",
+      "unit": "ch04",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:ch05",
+      "stage": "unit",
+      "unit": "ch05",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:ch06",
+      "stage": "unit",
+      "unit": "ch06",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:ch07",
+      "stage": "unit",
+      "unit": "ch07",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:ch08",
+      "stage": "unit",
+      "unit": "ch08",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:ch09",
+      "stage": "unit",
+      "unit": "ch09",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:ch10",
+      "stage": "unit",
+      "unit": "ch10",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:ch11",
+      "stage": "unit",
+      "unit": "ch11",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:ch12",
+      "stage": "unit",
+      "unit": "ch12",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:ch13",
+      "stage": "unit",
+      "unit": "ch13",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:ch14",
+      "stage": "unit",
+      "unit": "ch14",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:ch15",
+      "stage": "unit",
+      "unit": "ch15",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:ch16",
+      "stage": "unit",
+      "unit": "ch16",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:conclusion",
+      "stage": "unit",
+      "unit": "conclusion",
+      "kind": "prose",
+      "agent": "writer",
+      "instructions": "pipelines/stages/unit-prose.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:notes",
+      "stage": "unit",
+      "unit": "notes",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "matter",
+      "stage": "matter",
+      "agent": "writer",
+      "instructions": "pipelines/stages/matter.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "build",
+      "stage": "build",
+      "agent": "main",
+      "instructions": "pipelines/stages/build.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "editorial",
+      "stage": "editorial",
+      "agent": "book-editor",
+      "instructions": "pipelines/stages/editorial.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "listing",
+      "stage": "listing",
+      "agent": "listing-writer",
+      "instructions": "pipelines/stages/listing.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "cover",
+      "stage": "cover",
+      "agent": "main",
+      "instructions": "pipelines/stages/cover.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "finalize",
+      "stage": "finalize",
+      "agent": "main",
+      "instructions": "pipelines/stages/finalize.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    }
+  ]
+}
