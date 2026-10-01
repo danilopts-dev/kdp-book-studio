@@ -60,3 +60,5 @@ lib.typ: `opt`/`choice` promovidos do ch13 (ch13 agora usa a versão da lib).
 
 **ch16 (Weekend 4, 4 págs, PDF págs. 117-120).** P1-2 Yearly Review Checklist (caixas, agrupado: People and Health / Papers and Money / Home and Pets / My Wishes / This Book Itself; campo Review Date (MM/DD/YYYY) + Done By; notas) + `plan-notice()` ("Want a reminder?": Four-Weekend Plan + e-mail anual, remete à "Bonus page at the front of this book", sem URL/QR). P3 Change Log (Date / What I Changed / Chapter, 12 linhas). P4 Who Has a Copy or Knows Where This Book Is (tabela 7 linhas) + onde fica o original, quem abre, quando avisar. Sem room-notice. Fecha o Weekend 4; conclusion segue.
 lib.typ: novo `plan-notice()` (variante do room-notice; trocar só este bloco quando houver URL/QR).
+
+- notes: 8 paginas de linhas largas (0,4", 16 linhas; 15 na primeira com heading "Notes"); cabecalho discreto "NOTES" nas demais. Sem temas/palavras.

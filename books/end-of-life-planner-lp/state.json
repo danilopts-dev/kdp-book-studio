@@ -203,9 +203,9 @@
       "kind": "prose",
       "agent": "writer",
       "instructions": "pipelines/stages/unit-prose.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "blocked",
+      "note": "aguarda material (questions.md); fecha o arco do Welcome",
+      "updated": "2026-09-30T22:53"
     },
     {
       "id": "unit:notes",
@@ -214,9 +214,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "8 págs de notas, revisado",
+      "updated": "2026-09-30T22:54"
     },
     {
       "id": "matter",
