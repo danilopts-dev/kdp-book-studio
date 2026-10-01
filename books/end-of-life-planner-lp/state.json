@@ -159,9 +159,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "8 págs, funeral, revisado",
+      "updated": "2026-09-30T22:47"
     },
     {
       "id": "unit:ch14",

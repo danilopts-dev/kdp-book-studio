@@ -38,3 +38,7 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - ASSUMIDA (ch10): 4 págs = P1 abertura + campos gerais de cuidado imediato; P2-4 um pet por página. Macro `pet-page` fica no ch10.typ, não em lib.typ.
 - ASSUMIDA (ch11): 10 págs; sem coluna de senha; rótulos genéricos (Keep/Memorialize/Close, Legacy Contact) sem procedimentos de empresas; bancos remetem ao ch06; sem blocos novos.
 - ch12 (assumida): p.1 aviso de 'não é documento legal' fica na abertura; nenhuma opção médica pré-redigida, só perguntas abertas.
+
+- ASSUMIDA (ch13): caixas de marcar via macro local `choice` no ch13.typ (não promovido ao lib.typ); sem room-notice (alvo de 8 págs); "Who Should Be Told First" fica na p.8 como lista de avisos.
+
+- ASSUMIDA (ch13): ch12 nao usa caixas de marcar (so dica de texto "Yes, No, or Still Deciding"), entao nao ha conflito visual; macros opt/choice ficam locais ao ch13. Se ch14+ precisar de caixas, promover a lib.typ.
