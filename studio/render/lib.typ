@@ -410,3 +410,12 @@
   linebreak()
   text(size: 16pt)[The Extra Pages Pack has more pages just like these. See the Bonus page at the front of this book.]
 })
+
+// Aviso do Four-Weekend Plan + lembrete anual por e-mail (bonus 2) no ch16. Mesmo estilo do room-notice.
+// Ainda sem URL/QR; quando existirem, mude SÓ este bloco.
+#let plan-notice() = block(breakable: false, width: 100%, above: 0.25in, stroke: 1pt + luma(60), inset: 12pt, radius: 4pt, {
+  set par(first-line-indent: 0em, justify: false)
+  text(size: 16pt, weight: "bold")[Want a reminder?]
+  linebreak()
+  text(size: 16pt)[The Four-Weekend Plan and a yearly reminder email are free with this book. See the Bonus page at the front of this book.]
+})

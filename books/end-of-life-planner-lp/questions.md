@@ -46,3 +46,5 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - ASSUMIDA (ch14): `opt`/`choice` promovidos do ch13 para lib.typ. Tabela de itens com 37 linhas no total (5+8+8+8) e 1" de altura para a coluna "Why". Página extra "Things I Have Already Promised or Given" e campos de "se duas pessoas querem a mesma coisa" (sem prometer evitar conflito). Nota legal só na P1.
 
 - ASSUMIDA (ch15): distribuição das 6 págs = opener+carta 1 / carta 1 cont. / carta 2 / carta 3 / What I Want You to Know / continuação. Cartas sem nome pré-preenchido ("To:" em branco); perguntas de apoio sob "Some things you might say:" (14 pt cinza). Macros locais ao ch15 (não promovidas ao lib.typ).
+
+- ASSUMIDA (ch16): criado `plan-notice()` no lib.typ ("Want a reminder?"), variante do room-notice sem URL/QR. Texto de ch16 usa os rótulos "Review Date (MM/DD/YYYY)" e datas MM/DD/YYYY nas tabelas. Checklist agrupado por tema (não por capítulo numerado) para caber em 2 páginas.
