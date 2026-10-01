@@ -82,9 +82,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "16 págs, room-notice, revisado",
+      "updated": "2026-09-30T22:37"
     },
     {
       "id": "unit:ch07",

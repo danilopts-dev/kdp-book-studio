@@ -26,3 +26,5 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - ch04 ASSUMIDA: 12 páginas distribuídas como em notes.md; tabelas de remédios com 3 páginas de 12 linhas + 1 de uso eventual/suplementos; room-notice na última página junto do registro de mudanças. "Hospital I Do Not Want" incluído como opcional.
 
 - ASSUMIDA (ch05): religião/fé incluída como campo opcional ("if any"); certidão de nascimento e passaporte não repetidos, apenas remetidos ao ch03; SS card só "where kept".
+
+- ch06 ASSUMIDA: 16 págs distribuídas como em notes.md; inclui o telefone público do Social Security (1-800-772-1213) e "who I believe is named" em retirement (sem afirmar regra); linhas 0,6". Sem blocos novos.
