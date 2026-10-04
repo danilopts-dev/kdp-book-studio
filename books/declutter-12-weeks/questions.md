@@ -3,7 +3,7 @@
 Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marque [x] quando resolvida.
 
 ## Abertas
-- [ ] [BLOQUEANTE p/ finalize] (matter) Link/QR real do Printable Declutter Kit — placeholder [DANILO: bonus link + QR code] em _bonus.md, a pedido do Danilo
+- [ ] [BLOQUEANTE p/ finalize] (matter) URL em texto do Printable Declutter Kit — QR recebido em 2026-10-04 (inputs/bonus-qr.png, já na página); falta o link escrito, placeholder [DANILO: bonus URL em texto] em _bonus.md. PDF do kit já existe no OneDrive (14 - Decluttering Workbook).
 - [ ] [ASSUMIDA] (matter) Página do bônus (Printable Declutter Kit) com link/QR placeholder, a pedido do Danilo. ATENÇÃO: o check final bloqueia placeholder; precisa do link real antes do build final.
 - [ ] [ASSUMIDA] (intake) Livro sem data (undated), semanas 0-12 numeradas; 8,5x11 P&B, alvo 120-140 páginas (preset planner).
 - [ ] [ASSUMIDA] (intake) Orientação semanal (150-250 palavras) escrita dentro da unidade typst de cada semana, não como unidade de prosa separada, para economizar tarefas; segue human-voice-writing.

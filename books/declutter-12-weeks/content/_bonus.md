@@ -10,6 +10,8 @@ What's in the kit:
 
 To get the kit, scan the code or type in the link below. You'll be asked for an email address to get the download.
 
-[DANILO: bonus link + QR code]
+![](bonus-qr.png "1.7in")
+
+[DANILO: bonus URL em texto]
 
 If other people in the house are joining in, print a flowchart for each of them, which saves a lot of "which box does this go in?" questions while you work.
