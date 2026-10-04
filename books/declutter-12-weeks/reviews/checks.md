@@ -1,4 +1,4 @@
 # Checagem automática — livro inteiro
 
-## 🟠 MAJOR (1)
-- **inputs/bonus-qr.png** — 960x960px: ~134 DPI na largura do texto (mínimo 300).
+## 🟡 MINOR (1)
+- **inputs/bonus-qr.png** — OK para largura do texto, mas só 218 DPI em página inteira.
