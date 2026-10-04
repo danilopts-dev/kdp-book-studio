@@ -1,4 +1,4 @@
 # Checagem automática — livro inteiro
 
-## 🔴 CRITICAL (1)
-- **content/_bonus.md** — Placeholder/pendência no texto: [DANILO: bonus link + QR code]
+## 🟠 MAJOR (1)
+- **inputs/bonus-qr.png** — 960x960px: ~134 DPI na largura do texto (mínimo 300).

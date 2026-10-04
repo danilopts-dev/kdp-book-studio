@@ -254,3 +254,12 @@
 
 // back matter: página normal do tema (com fólio), sem o page() do lib, que gerava página em branco antes de cada seção
 #let plain-page(body) = { pagebreak(weak: true); body }
+
+// página de copyright: letra pequena, centralizada na vertical (o lib.typ empurra tudo para o pé da página)
+#let copyright-page(body) = page(header: none, footer: none, {
+  set par(justify: false, first-line-indent: 0em, spacing: 1.1em, leading: 0.6em)
+  set text(size: 8pt, fill: luma(50))
+  v(1fr)
+  block(width: 100%, inset: (x: 0.6in), body)
+  v(1.2fr)
+})
