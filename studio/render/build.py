@@ -4,7 +4,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-import typst
+from . import typst_compat as typst
 import yaml
 
 from .. import kdp

@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import json
 
-import typst
+from . import typst_compat as typst
 
 from .. import kdp
 from ..book import ROOT, Book
