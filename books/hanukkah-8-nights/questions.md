@@ -21,6 +21,8 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 
 - [ ] [ASSUMIDA] (unit:n2) DECISÃO SUA: o "ligar os pontos até 30" (hanukkiah, ★) já aprovado não forma uma hanukkiah quando ligado: o gabarito é um serrote assimétrico, e os rótulos 13/16, 14/17 e 15/18 ficam colados. Mantido como está (a diagramação segue). Para corrigir, preciso da sua autorização para redesenhar a silhueta (braços curvos, 30 pontos) e sobrescrever `inputs/puzzle-assets/noite2_ligar_pontos_hanukia*.png` e o recorte.
 
+- [ ] [ASSUMIDA] (unit:n3) A `33.png` (hanukkiah com 1 vela acesa) saiu da Noite 3: ficaria solta (a noite 3 teria 3 velas) e a lista de ilustrações a marca como reserva. Fica disponível para outro uso (ex.: fechamento do bônus). As páginas do jarro diferente e do Before the Candles ficaram com bastante branco, por falta de conteúdo aprovado.
+
 ## Resolvidas
 - [x] [BLOQUEANTE] (unit:n2) Falta a ilustração 2.2/2.3 (Templo bagunçado, base do jogo dos erros): `inputs/illustrations/22.png` — prompt pronto em `legacy/docs/ilustracoes-prompts-geracao.md`; recorte final 7.4x3.0 in. → GERADA em 2026-10-05 via codex com referências 11/21/14 (arquivos em inputs/illustrations/).
 - [x] [BLOQUEANTE] (unit:n5) Falta a ilustração 5.2 (dreidel grande em branco, 4x4 in): `inputs/illustrations/52.png`. A 5.1 (`51.png`) existe. → GERADA em 2026-10-05 via codex com referências 11/21/14 (arquivos em inputs/illustrations/).

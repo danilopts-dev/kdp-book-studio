@@ -38,9 +38,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "6 págs; puzzles reverificados",
+      "updated": "2026-10-05T17:56"
     },
     {
       "id": "unit:n4",

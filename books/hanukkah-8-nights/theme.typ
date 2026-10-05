@@ -196,3 +196,14 @@
     fill: (_, y) => if y == 0 { tint } else { none },
     ..head.map(h => text(font: display, size: 11pt, weight: "bold", tracking: 0.04em, upper(h))),
     ..rows.pos().flatten().enumerate().map(((i, c)) => if calc.rem(i, 3) == 0 { text(weight: "bold", size: 12.5pt, c) } else { text(size: 12.5pt, c) })))
+
+// Legenda de símbolos de um sudoku: itens (arquivo-em-puzzle-assets, rótulo). Cada símbolo em caixa de altura fixa + rótulo.
+#let symbol-key(..items) = block(width: 100%, above: 0.1in, below: 0.14in, breakable: false,
+  stroke: 1.4pt + ink, radius: 8pt, inset: (x: 14pt, y: 10pt), {
+    _kicker(size: 10pt)[Symbol key]
+    v(0.06in)
+    grid(columns: (1fr,) * items.pos().len(), column-gutter: 8pt, align: center + top,
+      ..items.pos().map(((f, l)) => stack(spacing: 6pt,
+        box(height: 0.62in, width: 100%, align(center + horizon, image(_pz + f, height: 100%, fit: "contain"))),
+        text(font: display, size: 12pt, weight: "bold", tracking: 0.03em, upper(l)))))
+  })
