@@ -51,3 +51,8 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - ASSUMIDA (n5): placar usa círculos (Scoreboard): "Fill in one circle for every round you win." no lugar de "Mark one tally line...".
 - ASSUMIDA (n5): "What's gelt?" sem artigo (`whats-a(..., a: false)`); "What Do the Letters Spell?" é caixa cinza simples, sem selo de nível.
 - ASSUMIDA (n5, impressão): o template do dreidel precisa estar em página ÍMPAR (recto) para o verso em branco ser a página par seguinte. Hoje: PDF p31 (template) e p32 (branca). Se N1-N4 mudarem de tamanho, conferir a paridade (reordenar Design/Gelt Math).
+
+## After (diagramação)
+- [ASSUMIDA] (unit:after) Bônus só com QR code, sem URL em texto (o manuscrito diz "Scan the code below or visit [readpublishingco.com/hanukkah-pack]"; ficou só "Scan the code below with your phone's camera."). Mesmo critério do declutter-12-weeks. O placeholder da URL não é impresso em lugar nenhum.
+- [ ] PENDENTE (unit:after/matter) A página final ainda precisa do QR real: hoje mostra caixa tracejada vazia (2.0in). Quando `inputs/bonus-qr.png` existir, trocar `#let has-bonus-qr = false` para `true` em `theme.typ` (o mesmo QR serve ao front matter).
+- [ASSUMIDA] (unit:after) Placar do dreidel com 5 caixinhas por jogador (como no manuscrito), sem pontuação; enfeite da página 1 é uma hanukkiah desenhada em Typst (não existe arte em inputs/illustrations).

@@ -216,3 +216,13 @@
         box(height: 0.62in, width: 100%, align(center + horizon, image(_pz + f, height: 100%, fit: "contain"))),
         text(font: display, size: 12pt, weight: "bold", tracking: 0.03em, upper(l)))))
   })
+
+// QR code do bônus (página final). Enquanto não houver arte, mostra a caixa tracejada vazia do mesmo tamanho.
+#let has-bonus-qr = false  // trocar para true quando inputs/bonus-qr.png existir
+#let bonus-qr(w: 1.6in) = if has-bonus-qr {
+  image("/books/hanukkah-8-nights/inputs/bonus-qr.png", width: w, height: w, fit: "contain")
+} else {
+  // Rótulo TEMPORÁRIO (some quando has-bonus-qr = true): evita que a caixa vazia pareça falha no PDF de revisão.
+  box(width: w, height: w, stroke: (paint: ink, thickness: 1.6pt, dash: "dashed"), radius: 8pt,
+    align(center + horizon, text(font: display, weight: "bold", size: 16pt, tracking: 0.06em, upper[QR code])))
+}

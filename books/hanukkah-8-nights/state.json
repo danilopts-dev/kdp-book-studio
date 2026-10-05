@@ -104,9 +104,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "2 págs; QR do bônus como caixa temporária",
+      "updated": "2026-10-05T18:28"
     },
     {
       "id": "unit:answer-key",
