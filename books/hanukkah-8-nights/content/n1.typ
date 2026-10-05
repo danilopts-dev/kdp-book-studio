@@ -8,17 +8,17 @@
   Up in the hills of Judea, they were cold, they were outnumbered, and they were free. That was where the fight for Hanukkah began, one family, one no, one mountain at a time.
 ]
 
-#art("11.png")
+#art("11.png", below: 0.1in)
 
-#grid(columns: (1fr, 2.5in), column-gutter: 0.2in, align: horizon,
-  whats-a("Maccabee")[Mattathias's sons and the fighters who joined them were called the Maccabees. Some say the name comes from a Hebrew word for "hammer," because that's exactly how they fought: small, fast, and impossible to ignore.],
-  art("12.png", w: 100%))
+#v(0.12in)
+
+#whats-a("Maccabee")[Mattathias's sons and the fighters who joined them were called the Maccabees. Some say the name comes from a Hebrew word for "hammer," because that's exactly how they fought: small, fast, and impossible to ignore.]
 
 #pagebreak()
 
 #activity(1, "Escape to the Hills")[Help Mattathias and his sons escape the soldiers and reach the safety of the hills! Start at the town of Modiin and find your way through the maze to the mountaintop.]
 
-#align(center, maze-ends("Modiin", "The Hills", "labirinto_facil.png", w: 6in))
+#align(center, maze-ends("labirinto_facil"))
 
 #pagebreak()
 
@@ -32,7 +32,7 @@
 
 #activity(2, "Back to Modiin (The Hard Way)")[This trail has more twists. Start where the family hides in the hills and find the one true path back down to warn the next village. Watch out for the dead ends, a soldier could be waiting around any of them!]
 
-#align(center, maze-ends("The Hills", "Modiin", "labirinto_medio.png", w: 6in))
+#align(center, maze-ends("labirinto_medio"))
 
 #pagebreak()
 

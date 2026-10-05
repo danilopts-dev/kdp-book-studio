@@ -75,8 +75,12 @@
 // Tonight's Story: kicker + texto um pouco maior.
 #let story(body) = {
   _kicker[Tonight's Story]
-  v(0.04in)
-  block(width: 100%, text(size: 15pt, body))
+  v(0.1in)
+  block(width: 100%, {
+    set par(leading: 0.9em, spacing: 1.45em)
+    text(size: 15pt, body)
+  })
+  v(0.14in)
 }
 
 // Ilustração da pasta inputs/illustrations. `w` largura (padrão: coluna inteira); `h` limita a altura.
@@ -126,14 +130,17 @@
   })
 
 // Rótulos de entrada/saída acima e abaixo de um labirinto.
-#let maze-ends(start, finish, file, w: 5.9in) = {
-  box(width: w, {
-    v(0.08in)
-    align(left, text(font: display, size: 12pt, weight: "bold", tracking: 0.08em)[START (top left): #start])
-    v(0.04in)
-    image(_pz + file, width: w)
-    v(0.04in)
-    align(right, text(font: display, size: 12pt, weight: "bold", tracking: 0.08em)[FINISH (bottom right): #finish])
+// Labirinto com rótulos NA abertura: lê rotulos e posição da entrada (esquerda) e da saída (direita) do <name>_gabarito.json.
+// Ex.: #align(center, maze-ends("labirinto_facil")). O PNG é quadrado e sem texto.
+#let maze-ends(name, w: 4.95in, side: 1.15in) = {
+  let d = json(_pz + name + "_gabarito.json")
+  let lab(t) = text(font: display, size: 10.5pt, weight: "bold", tracking: 0.03em, upper(t))
+  let yi = d.abertura_entrada.y_rel * w
+  let yo = d.abertura_saida.y_rel * w
+  box(width: w + 2 * side, height: w, {
+    place(left + top, dx: side, image(_pz + name + ".png", width: w))
+    place(left + top, dy: yi - 0.1in, box(width: side - 0.07in, align(right, lab(d.rotulo_inicio + " →"))))
+    place(left + top, dx: side + w + 0.07in, dy: yo - 0.1in, box(width: side - 0.07in, align(left, lab("→ " + d.rotulo_fim))))
   })
 }
 
