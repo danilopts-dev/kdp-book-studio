@@ -1,0 +1,254 @@
+{
+  "tasks": [
+    {
+      "id": "intake",
+      "stage": "intake",
+      "agent": "main",
+      "instructions": "pipelines/stages/intake.md",
+      "status": "done",
+      "note": "TOC gravado, 17 unidades, style sheet, 8 assumidas",
+      "updated": "2026-09-30T20:04"
+    },
+    {
+      "id": "unit:intro",
+      "stage": "unit",
+      "unit": "intro",
+      "kind": "prose",
+      "agent": "writer",
+      "instructions": "pipelines/stages/unit-prose.md",
+      "status": "done",
+      "note": "1278 palavras, voz OK",
+      "updated": "2026-09-30T20:13"
+    },
+    {
+      "id": "unit:wk00",
+      "stage": "unit",
+      "unit": "wk00",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "done",
+      "note": "5 páginas: diagnóstico, valor mínimo de venda, desempate",
+      "updated": "2026-09-30T21:17"
+    },
+    {
+      "id": "unit:wk01",
+      "stage": "unit",
+      "unit": "wk01",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "done",
+      "note": "7 págs, layout semanal base, fatos FDA com URL",
+      "updated": "2026-09-30T22:36"
+    },
+    {
+      "id": "unit:wk02",
+      "stage": "unit",
+      "unit": "wk02",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "done",
+      "note": "7 págs, entrada/landing zone, layout wk01 reusado",
+      "updated": "2026-09-30T22:37"
+    },
+    {
+      "id": "unit:wk03",
+      "stage": "unit",
+      "unit": "wk03",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "done",
+      "note": "7 págs, cozinha 1: bancadas, despensa, geladeira",
+      "updated": "2026-09-30T22:39"
+    },
+    {
+      "id": "unit:wk04",
+      "stage": "unit",
+      "unit": "wk04",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "done",
+      "note": "7 págs, cozinha 2: armários, gadgets, potes",
+      "updated": "2026-09-30T22:40"
+    },
+    {
+      "id": "unit:wk05",
+      "stage": "unit",
+      "unit": "wk05",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "done",
+      "note": "7 págs, sala: mídia, cabos, acordo familiar",
+      "updated": "2026-09-30T22:41"
+    },
+    {
+      "id": "unit:wk06",
+      "stage": "unit",
+      "unit": "wk06",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "done",
+      "note": "7 págs, quarto: criados-mudos, cama, cadeira de roupa",
+      "updated": "2026-09-30T22:42"
+    },
+    {
+      "id": "unit:wk07",
+      "stage": "unit",
+      "unit": "wk07",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "done",
+      "note": "7 págs, closet: reverse-hanger, fit/someday/festa, ponte Sell Tracker",
+      "updated": "2026-09-30T20:01"
+    },
+    {
+      "id": "unit:wk08",
+      "stage": "unit",
+      "unit": "wk08",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "done",
+      "note": "7 págs, duas trilhas: crianças (decidir junto, rodízio) ou hobby",
+      "updated": "2026-09-30T20:05"
+    },
+    {
+      "id": "unit:wk09",
+      "stage": "unit",
+      "unit": "wk09",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "done",
+      "note": "7 págs, papel: prazos IRS com fonte, scan/shred, sistema simples",
+      "updated": "2026-09-30T20:06"
+    },
+    {
+      "id": "unit:wk10",
+      "stage": "unit",
+      "unit": "wk10",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "done",
+      "note": "7 págs, rouparia/lavanderia/limpeza, ponte House Cleaning Planner",
+      "updated": "2026-09-30T20:08"
+    },
+    {
+      "id": "unit:wk11",
+      "stage": "unit",
+      "unit": "wk11",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "done",
+      "note": "7 págs, garagem/porão/sótão, planejamento de garage sale",
+      "updated": "2026-09-30T20:09"
+    },
+    {
+      "id": "unit:wk12",
+      "stage": "unit",
+      "unit": "wk12",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "done",
+      "note": "7 págs, sentimental: guardar a memória, fotos/cartas, itens de outros",
+      "updated": "2026-09-30T20:11"
+    },
+    {
+      "id": "unit:part3",
+      "stage": "unit",
+      "unit": "part3",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "done",
+      "note": "14 págs, guia de canais, Form 8283 com fonte, trackers, totais",
+      "updated": "2026-09-30T20:14"
+    },
+    {
+      "id": "unit:part4",
+      "stage": "unit",
+      "unit": "part4",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "done",
+      "note": "6 págs, reset mensal, Keep for now, one in one out, ponte",
+      "updated": "2026-09-30T20:17"
+    },
+    {
+      "id": "unit:conclusion",
+      "stage": "unit",
+      "unit": "conclusion",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "done",
+      "note": "4 págs, antes/depois 12 cômodos, placar, fechamento, série genérica",
+      "updated": "2026-09-30T20:20"
+    },
+    {
+      "id": "matter",
+      "stage": "matter",
+      "agent": "writer",
+      "instructions": "pipelines/stages/matter.md",
+      "status": "done",
+      "note": "copyright c/ disclaimer, bônus (link placeholder a pedido), review, also-by",
+      "updated": "2026-09-30T22:30"
+    },
+    {
+      "id": "build",
+      "stage": "build",
+      "agent": "main",
+      "instructions": "pipelines/stages/build.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "editorial",
+      "stage": "editorial",
+      "agent": "book-editor",
+      "instructions": "pipelines/stages/editorial.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "listing",
+      "stage": "listing",
+      "agent": "listing-writer",
+      "instructions": "pipelines/stages/listing.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "cover",
+      "stage": "cover",
+      "agent": "main",
+      "instructions": "pipelines/stages/cover.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "finalize",
+      "stage": "finalize",
+      "agent": "main",
+      "instructions": "pipelines/stages/finalize.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    }
+  ]
+}

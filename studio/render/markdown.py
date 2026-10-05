@@ -72,12 +72,12 @@ def convert(md: str, image_root: str = "") -> str:
             out.append("=" * len(m.group(1)) + " " + inline(m.group(2)))
             out.append("")
             continue
-        m = re.fullmatch(r"!\[(.*?)\]\((.+?)\)", s)
+        m = re.fullmatch(r'!\[(.*?)\]\((\S+?)(?:\s+"([\d.]+(?:in|cm|mm|pt|%))")?\)', s)
         if m:
             flush()
-            cap, src = m.groups()
+            cap, src, width = m.groups()  # ![legenda](arquivo.png "1.6in"): largura opcional
             path = src if src.startswith("/") else f"{image_root}/{src}"
-            fig = f"#figure(image({_typ_str(path)}, width: 100%)"
+            fig = f"#figure(image({_typ_str(path)}, width: {width or '100%'})"
             fig += f", caption: [{inline(cap)}])" if cap else ")"
             out.append(fig)
             out.append("")

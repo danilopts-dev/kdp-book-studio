@@ -134,6 +134,9 @@ def assemble(book: Book, est_pages: int = 150) -> tuple[str, dict]:
         f"folios: {str(st['folios']).lower()}, chapter-start: {_s(st['chapter_start'])})"
     )
     L.append("")
+    theme = book.path("theme.typ")
+    if theme.exists():  # tema visual por livro (inline, para enxergar o lib.typ); define `theme` e helpers
+        L += [f"// --- {rel(theme)}", theme.read_text(encoding="utf-8"), "#show: theme", ""]
 
     front = meta.get("front", ["title", "copyright", "toc"])
     back = meta.get("back", ["answers"])
