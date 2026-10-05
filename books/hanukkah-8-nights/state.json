@@ -49,9 +49,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "6 págs; conta 36+8=44 verificada",
+      "updated": "2026-10-05T18:00"
     },
     {
       "id": "unit:n5",

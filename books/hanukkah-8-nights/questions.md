@@ -23,6 +23,8 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 
 - [ ] [ASSUMIDA] (unit:n3) A `33.png` (hanukkiah com 1 vela acesa) saiu da Noite 3: ficaria solta (a noite 3 teria 3 velas) e a lista de ilustrações a marca como reserva. Fica disponível para outro uso (ex.: fechamento do bônus). As páginas do jarro diferente e do Before the Candles ficaram com bastante branco, por falta de conteúdo aprovado.
 
+- [ ] [ASSUMIDA] (unit:n4) As artes 42b e 42d (passos do acendimento) mostram a hanukkiah com 8 velas e a 42c com 3, mas a Noite 4 conta 4 velas + shamash na atividade seguinte. Mantidas (arte aprovada); pode confundir a criança. Sugestão: regerar 42b/42d (e 42c) com 4 velas.
+
 ## Resolvidas
 - [x] [BLOQUEANTE] (unit:n2) Falta a ilustração 2.2/2.3 (Templo bagunçado, base do jogo dos erros): `inputs/illustrations/22.png` — prompt pronto em `legacy/docs/ilustracoes-prompts-geracao.md`; recorte final 7.4x3.0 in. → GERADA em 2026-10-05 via codex com referências 11/21/14 (arquivos em inputs/illustrations/).
 - [x] [BLOQUEANTE] (unit:n5) Falta a ilustração 5.2 (dreidel grande em branco, 4x4 in): `inputs/illustrations/52.png`. A 5.1 (`51.png`) existe. → GERADA em 2026-10-05 via codex com referências 11/21/14 (arquivos em inputs/illustrations/).
