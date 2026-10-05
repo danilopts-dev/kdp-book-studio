@@ -210,9 +210,9 @@
       "stage": "build",
       "agent": "main",
       "instructions": "pipelines/stages/build.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "PDF 122 págs, 0 críticos; 1 menor (QR 218 DPI)",
+      "updated": "2026-10-05T17:36"
     },
     {
       "id": "editorial",
