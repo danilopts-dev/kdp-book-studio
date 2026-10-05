@@ -61,6 +61,10 @@ Leia conforme a etapa (os subagentes já sabem quais):
 - `rules/formats/<tipo>.md` — produção e checklist por formato.
 - `rules/skills/` — cópias das skills do Cowork (`human-voice-writing`, `kdp-editorial-review`, `kdp-listing-copy`). Se o Danilo atualizar uma skill no Cowork, atualize a cópia aqui.
 
+## Pasta no OneDrive
+
+O Danilo mantém uma pasta por livro em `Amazon KDP/NN - Título/`. Cada livro tem `onedrive_folder` no `book.yaml`; `./st link <slug>` cria o atalho `Estudio` lá dentro e `./st publish <slug>` copia as entregas para `Entrega/`. Ao criar um livro, pergunte o nome da pasta e use `./st new ... --onedrive "NN - Título"`. A raiz fica em `local.yaml` (fora do git; ausente na nuvem, onde o publish é no-op).
+
 ## Git
 
 - Commit ao fim de cada tarefa concluída: `git add books/<slug> && git commit -m "<slug>: <tarefa>"`. `build/` fica fora do git.

@@ -12,6 +12,7 @@ from pathlib import Path
 
 import yaml
 
+from . import onedrive
 from .book import BOOKS, ROOT, Book, next_task, replan, set_status
 
 IMPRINT_NAMES = {
@@ -40,8 +41,12 @@ def cmd_new(a):
     meta.update(slug=a.slug, type=a.type, imprint=a.imprint or meta.get("imprint"), title=a.title or meta.get("title"))
     if a.imprint:
         meta["imprint_name"] = IMPRINT_NAMES.get(a.imprint, a.imprint)
+    if a.onedrive:
+        meta["onedrive_folder"] = a.onedrive
     b.save_meta(meta)
     replan(b)
+    if a.onedrive:
+        onedrive.link(b)
     print(f"Criado books/{a.slug}/ — cole o TOC aprovado em books/{a.slug}/toc.md e rode /proximo {a.slug}")
 
 
@@ -160,6 +165,14 @@ def cmd_gen(a):
     print(f"{a.unit}: {len(d.get('puzzles', []))} puzzles prontos.")
 
 
+def cmd_link(a):
+    onedrive.link(_book(a.slug))
+
+
+def cmd_publish(a):
+    onedrive.publish(_book(a.slug), quiet=a.quiet)
+
+
 def cmd_list(a):
     for d in sorted(BOOKS.glob("*/book.yaml")):
         b = Book(d.parent.name)
@@ -173,7 +186,8 @@ def main():
     s = p.add_subparsers(dest="cmd", required=True)
     n = s.add_parser("new"); n.add_argument("slug"); n.add_argument("--type", required=True,
         choices=["prose", "activity", "calendar", "planner", "children"])
-    n.add_argument("--imprint"); n.add_argument("--title"); n.set_defaults(f=cmd_new)
+    n.add_argument("--imprint"); n.add_argument("--title")
+    n.add_argument("--onedrive", help='nome da pasta no OneDrive, ex.: "15 - Meu Livro"'); n.set_defaults(f=cmd_new)
     for name, f in (("plan", cmd_plan), ("status", cmd_status)):
         x = s.add_parser(name); x.add_argument("slug"); x.set_defaults(f=f)
     nx = s.add_parser("next"); nx.add_argument("slug")
@@ -191,6 +205,9 @@ def main():
     v = s.add_parser("voice"); v.add_argument("slug"); v.add_argument("--unit"); v.set_defaults(f=cmd_voice)
     cv = s.add_parser("cover"); cv.add_argument("slug"); cv.add_argument("--pages", type=int); cv.set_defaults(f=cmd_cover)
     g = s.add_parser("gen"); g.add_argument("slug"); g.add_argument("unit"); g.set_defaults(f=cmd_gen)
+    lk = s.add_parser("link"); lk.add_argument("slug"); lk.set_defaults(f=cmd_link)
+    pb = s.add_parser("publish"); pb.add_argument("slug"); pb.add_argument("--quiet", action="store_true")
+    pb.set_defaults(f=cmd_publish)
     ls = s.add_parser("list"); ls.set_defaults(f=cmd_list)
     a = p.parse_args()
     a.f(a)

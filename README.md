@@ -23,6 +23,8 @@ Um livro pode misturar unidades: capítulos em prosa, seções de puzzles, meses
 
 **Imagens e material seu**: ponha em `books/<slug>/inputs/` (capa: `cover-front.png`, `cover-back.png`; material bruto de capítulo: `inputs/raw/<id-da-unidade>.md`).
 
+**Pasta no OneDrive** (só na máquina local): `./st new ... --onedrive "NN - Título"` (ou `onedrive_folder` no `book.yaml` + `./st link <slug>`) cria o atalho `Estudio` dentro de `Amazon KDP/NN - Título/`. `./st publish <slug>` copia PDFs, listing e READY.md para `Entrega/` (roda no `finalize`). A raiz fica em `local.yaml` (fora do git), com uma linha: `onedrive_root: 'C:\Users\<você>\OneDrive\Amazon KDP'`.
+
 **Resultado**: `books/<slug>/build/<slug>-interior.pdf`, `<slug>-cover.pdf` (ou `-cover-guide.pdf`), `listing/` e `READY.md`.
 
 ## Etapas de cada livro

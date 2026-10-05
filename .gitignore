@@ -4,3 +4,4 @@ __pycache__/
 books/*/build/
 .DS_Store
 Thumbs.db
+local.yaml
