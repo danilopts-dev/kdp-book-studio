@@ -117,7 +117,7 @@
 #let draw-box(h, label: none, body: none) = block(width: 100%, height: h, stroke: (paint: ink, thickness: 1.6pt, dash: "dashed"),
   radius: 8pt, inset: 10pt, {
     if body != none { align(center + horizon, body) }
-    else if label != none { align(top + left, text(size: 10.5pt, fill: mid, label)) }
+    else if label != none { align(top + left, text(size: 12pt, fill: mid, label)) }
   })
 
 // Lista de palavras do caça-palavras em colunas, letra grande.
@@ -173,3 +173,26 @@
     v(0.08in)
   }
 })
+
+// Jogo dos erros: "antes" em cima, "depois" embaixo (imagens de inputs/puzzle-assets, mesma proporção),
+// rótulos BEFORE / AFTER e caixinha com N círculos para a criança marcar as diferenças achadas.
+#let spot-diff(before, after, n, w: 100%) = {
+  let lab(t) = block(above: 0.08in, below: 0.05in, sticky: true, _kicker(size: 11pt, t))
+  let pic(f) = block(width: w, stroke: 1.4pt + ink, radius: 4pt, clip: true, image(_pz + f, width: 100%))
+  lab[Before]
+  pic(before)
+  lab[After]
+  pic(after)
+  v(0.1in)
+  block(width: 100%, breakable: false, stroke: 1.6pt + ink, radius: 10pt, inset: (x: 14pt, y: 9pt),
+    grid(columns: (auto, 1fr), column-gutter: 14pt, align: horizon,
+      text(font: display, weight: "bold", size: 13pt, tracking: 0.04em, upper[Differences found:]),
+      stack(dir: ltr, spacing: 12pt, ..range(n).map(_ => circle(radius: 0.15in, stroke: 1.4pt + ink)))))
+}
+
+// Quadro comparativo simples: cabeçalho + linhas (cada linha = array de conteúdos), 1ª coluna em negrito.
+#let compare-table(head, ..rows) = block(width: 100%, above: 0.1in, breakable: false,
+  table(columns: (0.8fr, 1.1fr, 1.3fr), stroke: 1.2pt + ink, inset: (x: 9pt, y: 7pt), align: left + horizon,
+    fill: (_, y) => if y == 0 { tint } else { none },
+    ..head.map(h => text(font: display, size: 11pt, weight: "bold", tracking: 0.04em, upper(h))),
+    ..rows.pos().flatten().enumerate().map(((i, c)) => if calc.rem(i, 3) == 0 { text(weight: "bold", size: 12.5pt, c) } else { text(size: 12.5pt, c) })))

@@ -1,0 +1,221 @@
+{
+  "nome": "noite2_erros",
+  "imagem_base": "inputs/illustrations/22.png",
+  "tamanho_px": [
+    1969,
+    799
+  ],
+  "unidade_caixa": "px relativos à imagem 1969x799: [x, y, largura, altura]; caixa = o objeto, area_alterada = tudo que muda ao apagá-lo (inclui o tijolo de parede que reaparece)",
+  "estrela_1_ids": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "estrela_2_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "objetos": [
+    {
+      "id": 1,
+      "nome": "broken clay jar",
+      "caixa": [
+        42,
+        494,
+        284,
+        218
+      ],
+      "area_alterada": [
+        40,
+        492,
+        288,
+        222
+      ],
+      "estrelas": 1,
+      "pixels_diferentes_5": 7216,
+      "pixels_diferentes_10": 7216
+    },
+    {
+      "id": 2,
+      "nome": "cobweb in the upper right corner",
+      "caixa": [
+        1657,
+        0,
+        173,
+        180
+      ],
+      "area_alterada": [
+        1655,
+        0,
+        187,
+        182
+      ],
+      "estrelas": 1,
+      "pixels_diferentes_5": 3090,
+      "pixels_diferentes_10": 3090
+    },
+    {
+      "id": 3,
+      "nome": "wooden table lying on its side",
+      "caixa": [
+        428,
+        373,
+        383,
+        300
+      ],
+      "area_alterada": [
+        426,
+        371,
+        388,
+        304
+      ],
+      "estrelas": 1,
+      "pixels_diferentes_5": 20476,
+      "pixels_diferentes_10": 20966
+    },
+    {
+      "id": 4,
+      "nome": "torn curtain on the wall",
+      "caixa": [
+        272,
+        10,
+        373,
+        416
+      ],
+      "area_alterada": [
+        249,
+        8,
+        411,
+        420
+      ],
+      "estrelas": 1,
+      "pixels_diferentes_5": 18458,
+      "pixels_diferentes_10": 18458
+    },
+    {
+      "id": 5,
+      "nome": "pile of dust on the floor",
+      "caixa": [
+        826,
+        573,
+        271,
+        117
+      ],
+      "area_alterada": [
+        823,
+        571,
+        276,
+        122
+      ],
+      "estrelas": 1,
+      "pixels_diferentes_5": 2225,
+      "pixels_diferentes_10": 2240
+    },
+    {
+      "id": 6,
+      "nome": "fallen stone column drum",
+      "caixa": [
+        1078,
+        403,
+        394,
+        217
+      ],
+      "area_alterada": [
+        1075,
+        400,
+        399,
+        222
+      ],
+      "estrelas": 2,
+      "pixels_diferentes_5": null,
+      "pixels_diferentes_10": 12745
+    },
+    {
+      "id": 7,
+      "nome": "torn banner hanging crooked",
+      "caixa": [
+        1317,
+        10,
+        297,
+        408
+      ],
+      "area_alterada": [
+        1314,
+        8,
+        302,
+        412
+      ],
+      "estrelas": 2,
+      "pixels_diferentes_5": null,
+      "pixels_diferentes_10": 11496
+    },
+    {
+      "id": 8,
+      "nome": "wooden bench with a broken leg",
+      "caixa": [
+        1553,
+        471,
+        391,
+        222
+      ],
+      "area_alterada": [
+        1550,
+        469,
+        396,
+        226
+      ],
+      "estrelas": 2,
+      "pixels_diferentes_5": null,
+      "pixels_diferentes_10": 12582
+    },
+    {
+      "id": 9,
+      "nome": "candle stand knocked over",
+      "caixa": [
+        447,
+        634,
+        278,
+        151
+      ],
+      "area_alterada": [
+        445,
+        632,
+        282,
+        156
+      ],
+      "estrelas": 2,
+      "pixels_diferentes_5": null,
+      "pixels_diferentes_10": 6726
+    },
+    {
+      "id": 10,
+      "nome": "tipped-over wooden bucket",
+      "caixa": [
+        1265,
+        609,
+        257,
+        173
+      ],
+      "area_alterada": [
+        1262,
+        607,
+        263,
+        178
+      ],
+      "estrelas": 2,
+      "pixels_diferentes_5": null,
+      "pixels_diferentes_10": 10877
+    }
+  ],
+  "verificacao": "diff de pixels: cada caixa difere; fora das caixas das diferenças, 0 pixels diferentes"
+}

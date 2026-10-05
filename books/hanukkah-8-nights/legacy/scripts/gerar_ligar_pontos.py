@@ -26,7 +26,15 @@ import math
 
 from PIL import Image, ImageDraw, ImageFont
 
-OUT_DIR = "/home/claude/n2fix/puzzle-assets"
+import os
+import sys
+
+_AQUI = os.path.dirname(os.path.abspath(__file__))
+# Saida: puzzle-assets do livro (o script mora em legacy/scripts).
+OUT_DIR = os.environ.get("N2_OUT_DIR") or os.path.normpath(
+    os.path.join(_AQUI, "..", "..", "inputs", "puzzle-assets"))
+_FONTE_LIVRO = os.path.normpath(
+    os.path.join(_AQUI, "..", "..", "..", "..", "fonts", "AtkinsonHyperlegible-Bold.ttf"))
 
 
 # ---------------------------------------------------------------------------
@@ -248,16 +256,136 @@ def contorno_menora():
 # Desenho
 # ---------------------------------------------------------------------------
 
-def _fonte(tamanho):
-    try:
-        return ImageFont.truetype(
-            "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", tamanho)
-    except Exception:
-        return ImageFont.load_default()
+def _fonte(tamanho, livro=False):
+    candidatos = ([_FONTE_LIVRO] if livro else []) + [
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+        "C:/Windows/Fonts/arialbd.ttf"]
+    for c in candidatos:
+        try:
+            return ImageFont.truetype(c, tamanho)
+        except Exception:
+            continue
+    return ImageFont.load_default()
+
+
+# ---------------------------------------------------------------------------
+# Colocacao de rotulos sem colisao (usada na menora, de 80 pontos)
+# ---------------------------------------------------------------------------
+
+def _seg_dist_pts(a, b, passo=3.0):
+    n = max(1, int(math.dist(a, b) / passo))
+    return [(a[0] + (b[0] - a[0]) * t / n, a[1] + (b[1] - a[1]) * t / n)
+            for t in range(n + 1)]
+
+
+def _normais_externas(pts):
+    n = len(pts)
+    area = sum(pts[i][0] * pts[(i + 1) % n][1] - pts[(i + 1) % n][0] * pts[i][1]
+               for i in range(n))
+    sinal = 1 if area > 0 else -1  # no espaco da imagem (y para baixo)
+    saida = []
+    for i in range(n):
+        a, b = pts[i - 1], pts[(i + 1) % n]
+        tx, ty = b[0] - a[0], b[1] - a[1]
+        L = math.hypot(tx, ty) or 1.0
+        nx, ny = ty / L, -tx / L
+        saida.append((nx * sinal, ny * sinal))
+    return saida
+
+
+def posicionar_rotulos(pts_img, raio, fonte, largura, altura, folga=5):
+    """Escolhe, para cada ponto, a posicao do rotulo (caixa) que nao toca
+    outros pontos, outros rotulos nem o contorno, preferindo o lado de fora.
+    Busca por descida de coordenadas sobre candidatos (16 angulos x 4 distancias).
+    Devolve lista de caixas (x0, y0, x1, y1) e o numero de conflitos restantes."""
+    n = len(pts_img)
+    normais = _normais_externas(pts_img)
+    seg_pts = []
+    for i in range(n):
+        seg_pts.extend(_seg_dist_pts(pts_img[i], pts_img[(i + 1) % n]))
+
+    candidatos = []
+    for i, (px, py) in enumerate(pts_img):
+        bb = fonte.getbbox(str(i + 1))
+        w, h = bb[2] - bb[0], bb[3] - bb[1]
+        lista = []
+        for k in range(16):
+            ang = 2 * math.pi * k / 16
+            dx, dy = math.cos(ang), math.sin(ang)
+            for g in (raio + 6, raio + 14, raio + 24, raio + 36):
+                cx = px + dx * g + dx * w / 2
+                cy = py + dy * g + dy * h / 2
+                box = (cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2)
+                if box[0] < 8 or box[1] < 8 or box[2] > largura - 8 or box[3] > altura - 8:
+                    continue
+                pref = (1 - (dx * normais[i][0] + dy * normais[i][1])) * 14 + g * 0.35
+                lista.append((box, pref))
+        candidatos.append(lista)
+
+    def toca_ponto(box, j):
+        qx, qy = pts_img[j]
+        cx = min(max(qx, box[0]), box[2])
+        cy = min(max(qy, box[1]), box[3])
+        return math.hypot(qx - cx, qy - cy) < raio + folga
+
+    def toca_caixa(a, b, m=folga):
+        return not (a[2] + m < b[0] or b[2] + m < a[0] or a[3] + m < b[1] or b[3] + m < a[1])
+
+    def toca_contorno(box):
+        for (sx, sy) in seg_pts:
+            if box[0] - folga <= sx <= box[2] + folga and box[1] - folga <= sy <= box[3] + folga:
+                return True
+        return False
+
+    fixo = []
+    for i, lista in enumerate(candidatos):
+        fx = []
+        for box, pref in lista:
+            c = pref
+            if any(toca_ponto(box, j) for j in range(n)):
+                c += 1e5
+            if toca_contorno(box):
+                c += 1e5
+            # evita ambiguidade: o rotulo deve estar claramente mais perto do
+            # proprio ponto do que de qualquer outro
+            def dist_caixa(j):
+                qx, qy = pts_img[j]
+                return math.hypot(qx - min(max(qx, box[0]), box[2]),
+                                  qy - min(max(qy, box[1]), box[3]))
+            d_own = dist_caixa(i)
+            d_out = min(dist_caixa(j) for j in range(n) if j != i)
+            if d_out < d_own + 40:
+                c += 80 + (d_own + 40 - d_out)
+            fx.append(c)
+        fixo.append(fx)
+
+    escolha = [min(range(len(candidatos[i])), key=lambda k: fixo[i][k]) for i in range(n)]
+
+    def custo_total_i(i, k):
+        c = fixo[i][k]
+        bi = candidatos[i][k][0]
+        for j in range(n):
+            if j != i and toca_caixa(bi, candidatos[j][escolha[j]][0]):
+                c += 1e5
+        return c
+
+    for _ in range(40):
+        mudou = False
+        for i in range(n):
+            melhor = min(range(len(candidatos[i])), key=lambda k: custo_total_i(i, k))
+            if custo_total_i(i, melhor) < custo_total_i(i, escolha[i]) - 1e-9:
+                escolha[i] = melhor
+                mudou = True
+        if not mudou:
+            break
+
+    caixas = [candidatos[i][escolha[i]][0] for i in range(n)]
+    conflitos = sum(1 for i in range(n) if custo_total_i(i, escolha[i]) >= 1e5)
+    return caixas, conflitos
 
 
 def desenhar_ligar_pontos(pontos, caminho_png, com_linhas, margem=50, raio=3.2,
-                           escala=4.0):
+                           escala=4.0, rotulos_inteligentes=False, fonte_un=11):
     """Correcao (mesma pixelizacao encontrada no piloto da Noite 1): a
     escala=1.0 original desenhava o contorno na resolucao "nativa" das
     coordenadas de design (~400-440 unidades), baixa demais para o
@@ -284,24 +412,35 @@ def desenhar_ligar_pontos(pontos, caminho_png, com_linhas, margem=50, raio=3.2,
     if com_linhas:
         draw.line(pts_img + [pts_img[0]], fill=(200, 30, 30), width=max(4, int(4 * escala)))
 
-    fonte_num = _fonte(int(11 * escala))
+    fonte_num = _fonte(int(fonte_un * escala), livro=rotulos_inteligentes)
+    caixas = None
+    if rotulos_inteligentes and not com_linhas:
+        caixas, conflitos = posicionar_rotulos(pts_img, raio_esc, fonte_num,
+                                               largura, altura)
+        print(f"   rotulos: {conflitos} conflito(s) restante(s)")
     for idx, (x, y) in enumerate(pts_img, start=1):
         draw.ellipse([x - raio_esc, y - raio_esc, x + raio_esc, y + raio_esc], fill="black")
-        if not com_linhas:
+        if caixas is not None:
+            bb = fonte_num.getbbox(str(idx))
+            bx0, by0 = caixas[idx - 1][0], caixas[idx - 1][1]
+            draw.text((bx0 - bb[0], by0 - bb[1]), str(idx), fill="black", font=fonte_num)
+        elif not com_linhas:
             dx = (8 if x < largura / 2 else -8 - 6 * len(str(idx))) * escala
             draw.text((x + dx, y - 6 * escala), str(idx), fill="black", font=fonte_num)
 
     img.save(caminho_png)
 
 
-def gerar_puzzle(nome_forma, funcao_contorno, n_pontos, espacamento_min, escala):
+def gerar_puzzle(nome_forma, funcao_contorno, n_pontos, espacamento_min, escala,
+                 rotulos_inteligentes=False, fonte_un=11):
     denso, rotulo = funcao_contorno()
     pontos = reamostrar_por_arco(denso, n_pontos)
     verificar_contorno(pontos, n_pontos, espacamento_min)
 
     prefixo = f"noite2_ligar_pontos_{nome_forma}"
     desenhar_ligar_pontos(pontos, f"{OUT_DIR}/{prefixo}.png",
-                           com_linhas=False, escala=escala)
+                           com_linhas=False, escala=escala,
+                           rotulos_inteligentes=rotulos_inteligentes, fonte_un=fonte_un)
     desenhar_ligar_pontos(pontos, f"{OUT_DIR}/{prefixo}_gabarito.png",
                            com_linhas=True, escala=escala)
 
@@ -322,11 +461,19 @@ def gerar_puzzle(nome_forma, funcao_contorno, n_pontos, espacamento_min, escala)
 
 
 if __name__ == "__main__":
-    gerar_puzzle("hanukia", contorno_hanukia, 30, espacamento_min=8, escala=4.0)
+    # `python gerar_ligar_pontos.py menora` regera so a menora (a hanukia aprovada
+    # nao muda).
+    arg = sys.argv[1] if len(sys.argv) > 1 else ""
+    so_menora = arg == "menora"
+    if not so_menora:
+        gerar_puzzle("hanukia", contorno_hanukia, 30, espacamento_min=8, escala=4.0)
     # espacamento minimo um pouco mais permissivo que a hanukia: com 80
     # pontos numa silhueta de 7 bracos ha, por geometria, um ou dois vales
     # mais apertados perto das juncoes entre bracos de alturas muito
     # diferentes; ainda assim o contorno permanece fechado e simples
     # (sem auto-intersecao), verificado abaixo.
-    gerar_puzzle("menora", contorno_menora, 80, espacamento_min=3.5, escala=4.0)
+    # Menora: rotulos por busca sem colisao (fora do contorno quando possivel),
+    # fonte do livro (Atkinson Hyperlegible Bold), maior que antes.
+    gerar_puzzle("menora", contorno_menora, 80, espacamento_min=3.5, escala=4.0,
+                 rotulos_inteligentes=True, fonte_un=14)
     print("Puzzles de ligar os pontos gerados e verificados com sucesso.")
