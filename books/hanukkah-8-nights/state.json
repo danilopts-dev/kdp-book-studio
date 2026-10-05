@@ -133,9 +133,9 @@
       "stage": "build",
       "agent": "main",
       "instructions": "pipelines/stages/build.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "64 páginas",
+      "updated": "2026-10-05T20:57"
     },
     {
       "id": "editorial",
