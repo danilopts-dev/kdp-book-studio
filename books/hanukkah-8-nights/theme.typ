@@ -91,9 +91,10 @@
 #let puzzle(file, w: 4.8in, h: auto) = align(center, image(_pz + file, width: w, height: h, fit: "contain"))
 
 // Caixa "What's a...?"
-#let whats-a(term, body) = block(width: 100%, above: 0.12in, below: 0.12in, breakable: false,
+// `a: false` para termos sem artigo (ex.: "What's gelt?").
+#let whats-a(term, body, a: true) = block(width: 100%, above: 0.12in, below: 0.12in, breakable: false,
   stroke: 1.6pt + ink, radius: 10pt, inset: (x: 14pt, y: 11pt), {
-    text(font: display, weight: "bold", size: 12pt, tracking: 0.06em, upper([What's a #term?]))
+    text(font: display, weight: "bold", size: 12pt, tracking: 0.06em, upper([What's #if a [a ]#term?]))
     v(0.03in)
     text(size: 12.5pt, body)
   })
@@ -165,9 +166,9 @@
   })
 
 // Placar de um passo só: uma linha por jogador com N círculos
-#let scoreboard(..names, circles: 10) = block(width: 100%, above: 0.1in, below: 0.1in, breakable: false, {
+#let scoreboard(..names, circles: 10, label-w: 1.4in) = block(width: 100%, above: 0.1in, below: 0.1in, breakable: false, {
   for n in names.pos() {
-    grid(columns: (1.4in, 1fr), align: horizon, row-gutter: 0.1in,
+    grid(columns: (label-w, 1fr), align: horizon, row-gutter: 0.1in,
       text(font: display, weight: "bold", size: 13pt, n),
       stack(dir: ltr, spacing: 8pt, ..range(circles).map(_ => circle(radius: 0.13in, stroke: 1.4pt + ink))))
     v(0.08in)

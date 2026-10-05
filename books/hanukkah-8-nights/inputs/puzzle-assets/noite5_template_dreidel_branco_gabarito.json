@@ -1,0 +1,30 @@
+{
+  "faces": [
+    {
+      "posicao": 0,
+      "inicial_latina": "N",
+      "nome": "Nun",
+      "significado_fora_de_israel": "Nes (a miracle)"
+    },
+    {
+      "posicao": 1,
+      "inicial_latina": "G",
+      "nome": "Gimel",
+      "significado_fora_de_israel": "Gadol (great)"
+    },
+    {
+      "posicao": 2,
+      "inicial_latina": "H",
+      "nome": "Hei",
+      "significado_fora_de_israel": "Haya (happened)"
+    },
+    {
+      "posicao": 3,
+      "inicial_latina": "S",
+      "nome": "Shin",
+      "significado_fora_de_israel": "Sham (there)"
+    }
+  ],
+  "nota_israel": "Em Israel, a face Shin e substituida por Pei (Sham/'there' vira Po/'here'), porque o milagre aconteceu la. Variante regional, nao erro; ver revisao-religiosa.md.",
+  "verso_em_branco": true
+}

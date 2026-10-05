@@ -60,9 +60,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "artes completas",
-      "updated": "2026-10-05T13:43"
+      "status": "done",
+      "note": "7 págs; template do dreidel sem hebraico",
+      "updated": "2026-10-05T18:08"
     },
     {
       "id": "unit:n6",
