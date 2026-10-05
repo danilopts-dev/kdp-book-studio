@@ -100,8 +100,8 @@ Some things have a date on them, and some only have a rule of thumb. Use the tab
   align: (left + horizon, left + horizon, left + horizon),
   table.header(_wk-head[Item], _wk-head[What to check], _wk-head[Then]),
   [*Medicines* (prescription and over-the-counter)], [The expiration date printed on the label or package.], [Expired or no longer needed: see the disposal page. Unsure? Ask your pharmacist.],
-  [*Sunscreen*], [A printed expiration date. U.S. rules require one, unless the product is stable for at least 3 years. No date means treat it as expired 3 years after you bought it.], [Expired or undated and old: Toss. Write the purchase date on new ones with a marker.],
-  [*Makeup and skin care*], [No U.S. law requires an expiration date on cosmetics, so look for a date or open-jar symbol on the package. If it smells, looks or feels different than it used to, or you can't remember when you bought it, let it go.], [Toss. Write the open date on new ones with a marker.],
+  [*Sunscreen*], [The printed expiration date. In the U.S., sunscreen is regulated as a drug, so it is required to carry one.], [Past its date, or you can't find a date: Toss. Write the purchase date on new ones with a marker.],
+  [*Makeup and skin care*], [No U.S. law requires an expiration date on cosmetics. Makers usually suggest replacing mascara two to four months after you buy it. If a product smells, looks or feels different than it used to, or you can't remember when you bought it, let it go.], [Toss. Write the open date on new ones with a marker.],
 )
 #v(0.05in)
 #text(size: 0.8em, style: "italic")[This is general information, not medical advice. Sources: U.S. Food and Drug Administration (fda.gov).]
@@ -118,23 +118,23 @@ Some things have a date on them, and some only have a rule of thumb. Use the tab
 
 == Getting Rid of Old Medicines
 
-Don't toss pills in the trash loose, and don't flush them unless the label says to. The U.S. Food and Drug Administration (FDA) recommends these options, starting with take-back.
+Don't toss pills in the trash loose, and don't flush any medicine unless it is on the FDA flush list. The U.S. Food and Drug Administration (FDA) recommends these options, in this order.
 
 #v(0.1in)
 #block(stroke: 1pt + luma(120), inset: 12pt, radius: 4pt, width: 100%, breakable: false)[
-  *1. Use a drug take-back option when you can.* Many pharmacies, hospitals, clinics and police stations accept unused medicines. Some pharmacies sell or give out prepaid mail-back envelopes. The U.S. Drug Enforcement Administration also holds National Prescription Drug Take Back events.
+  *1. Use a drug take-back option when you can.* Take-back locations are often at a local pharmacy or a police station, and the U.S. Drug Enforcement Administration (DEA) website can find one near you by zip code. Another option is a prepaid drug mail-back envelope, which you fill, seal and drop at any U.S. Post Office or postal drop box.
 ]
 #v(0.1in)
 #block(stroke: 1pt + luma(120), inset: 12pt, radius: 4pt, width: 100%, breakable: false)[
-  *2. If there's no take-back option, most medicines can go in the household trash.* Take the medicine out of its container and mix it with something unappealing, such as used coffee grounds, dirt or cat litter. Seal the mixture in a zip bag, a can or another container that won't leak. Throw it away.
+  *2. No take-back option? Check the flush list.* A short list of medicines, such as some opioids, can be dangerous with a single dose if a child or pet gets to them. If your medicine is on the FDA flush list (on the FDA page named below), flush it right away. Flush only what is on that list.
 ]
 #v(0.1in)
 #block(stroke: 1pt + luma(120), inset: 12pt, radius: 4pt, width: 100%, breakable: false)[
-  *3. A short list of medicines is meant to be flushed.* Check the FDA flush list (on the FDA page named below) or the package directions before you decide. Flush only if the medicine is on that list.
+  *3. Not on the flush list? Use the household trash.* Mix the medicine with something unappealing, such as dirt, cat litter or used coffee grounds. Don't crush pills. Put the mixture in a sealed plastic bag and throw it away.
 ]
 
 #v(0.15in)
-Before you recycle or toss an empty bottle, scratch out your name and prescription number on the label.
+Before you recycle or toss the empty packaging, scratch out your name and other personal information on the prescription label. Sprays, inhalers and other unusual forms can have their own instructions: check the paper that came with the medicine or ask your pharmacist.
 
 #v(0.05in)
 #text(size: 0.8em, style: "italic")[Source: FDA, "Disposal of Unused Medicines: What You Should Know," fda.gov/drugs/safe-disposal-medicines/disposal-unused-medicines-what-you-should-know. Check that page for the current flush list. This is general information, not medical advice.]

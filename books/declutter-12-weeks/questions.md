@@ -5,27 +5,19 @@ BLOQUEANTE impede a etapa indicada. ASSUMIDA já foi decidida pelo padrão mais 
 
 ## Abertas — precisam de você
 
-- [ ] [BLOQUEANTE p/ cover e listing] (cover) **Arte da capa.** O estúdio gera o guia de capa (medidas, lombada pelas 122 páginas, área segura), mas a arte da frente e do verso é sua. Coloque em `inputs/cover-front.png` (e `inputs/cover-back.png`, se tiver). Sem ela não sai o PDF da capa nem os prompts do Google Flow para o A+, que usam a capa como referência em todas as imagens.
+- [ ] [BLOQUEANTE p/ cover e listing] (cover) **Arte da capa.** Pendente, a pedido do Danilo (2026-10-05). O estúdio gera o guia de capa (medidas e lombada pelas 122 páginas); a arte é do Danilo, em `inputs/cover-front.png` (e `cover-back.png`, opcional). Destrava o PDF da capa e os prompts do Google Flow para o A+.
 
-- [ ] [ASSUMIDA] (listing) **Confirmar a keyword "decluttering workbook" no Publisher Rocket.** Ela foi escolhida com base na receita da SERP (análise de 21/09 no Drive, SellerSprite): cerca de $61k/mês, com workbooks guiados KDP vendendo $540–1.700/mês. A análise não traz volume de busca. Se o Rocket mostrar volume baixo para esse termo, o título aprovado ainda funciona, mas as 7 keywords do backend podem precisar de ajuste.
+## Em produção (fora do livro)
 
-- [ ] [ASSUMIDA] (unit:wk01, wk03) **Conferir três fatos de saúde/alimentos.** Foram confirmados só por resultados de busca, porque o fetch direto no site oficial foi bloqueado. Basta abrir as páginas e conferir se o texto do livro bate:
-  - wk01, descarte de remédios (programas de take-back; lixo comum misturado com borra de café ou areia de gato; a "flush list" só para os remédios listados): https://www.fda.gov/drugs/safe-disposal-medicines/disposal-unused-medicines-what-you-should-know
-  - wk01, protetor solar tem data de validade obrigatória, exceto se estável por 3 anos; cosméticos não têm validade exigida por lei nos EUA: https://www.fda.gov/cosmetics/cosmetics-labeling/shelf-life-and-expiration-dating-cosmetics
-  - wk03, datas em alimentos são estimativa de qualidade e não são exigidas por lei federal, exceto em fórmula infantil: https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/food-product-dating
-  (Os fatos do IRS na wk09 e na Part 3 foram conferidos direto no irs.gov e não precisam de revisão.)
-
-- [ ] [ASSUMIDA] (unit:wk09) **Prazos que não são do IRS na tabela de documentos.** A tabela "How Long to Keep Your Papers" mistura regras oficiais do IRS (marcadas "IRS: …") com hábitos comuns para contas, garantias e apólices (marcados "general habit, not a rule"). Confirmar se você quer manter essas linhas de hábito ou deixar só o que é regra oficial.
-
-- [ ] [ASSUMIDA] (unit:intro, wk00) **Método de desempate.** O livro inteiro usa duas regras que não estavam no TOC e foram criadas na introdução: (1) a pergunta "If this were gone tomorrow, would I go out and buy it again?" (sim = Keep; não = sai); (2) um valor mínimo de venda que o leitor define na Week 0 (abaixo dele, Donate; igual ou acima, Sell). Não existe caixa "maybe": na dúvida, o item fica como "Keep for now" e é revisto no reset mensal da Part 4. Confirmar que esse é o método que você quer como marca do livro.
-
-- [ ] [ASSUMIDA] (matter) **Conteúdo do Printable Declutter Kit.** A página do bônus e os textos do Brevo prometem 3 itens: o flowchart Keep / Donate / Sell / Toss, checklists por cômodo para reimprimir a cada reset e um tracker de 12 semanas para a geladeira. O PDF do kit no OneDrive está protegido por senha e não deu para conferir. Confirmar que ele tem exatamente esses 3 itens (ou me dizer o que tem, que eu ajusto o texto).
-
-- [ ] [ASSUMIDA] (intake, matter) **Referências ao livro irmão.** O livro cita o *House Cleaning Checklist Planner* (na wk10, na Part 4, na Conclusion e no Final Words) com esse título exato. Confirmar se é o título como aparece na Amazon.
-
-- [ ] [ASSUMIDA] (conclusion, matter) **Promessa de série.** A Conclusion diz que há outros livros a caminho, cada um sobre uma parte da casa (closets, cozinha, garagem, papelada, downsizing), sem citar títulos. Se a série não for sair, troco por uma frase que não prometa lançamentos.
+- [ ] (bônus) **Printable Declutter Kit.** Ainda não criado (2026-10-05). Deve ter exatamente os 3 itens que o livro e o Brevo prometem: flowchart Keep / Donate / Sell / Toss, checklists por cômodo para cada reset mensal e tracker de 12 semanas para a geladeira.
 
 ## Resolvidas
+- [x] (listing) **Keywords.** Danilo não usa Publisher Rocket; ficam as 7 keywords definidas no listing (2026-10-05).
+- [x] (unit:wk01, wk03) **Fatos FDA e USDA.** Conferidos em 2026-10-05 contra as páginas oficiais enviadas pelo Danilo (cópias em `inputs/reference/sources/`). Corrigido: (1) ordem da FDA para remédios agora é take-back → flush list → lixo (antes o lixo vinha antes da flush list); (2) protetor solar: removida a exceção de "estável por 3 anos" e a regra de "3 anos após a compra", que não constam da fonte; fica só "é regulado como medicamento e precisa ter validade impressa"; (3) take-back: só farmácia e delegacia, busca por CEP no site da DEA e envelope pré-pago pelos Correios (removidos hospitais, clínicas e o Take Back Day); (4) cosméticos: removido o "open-jar symbol", incluído o rímel de 2 a 4 meses; (5) wk03: datas de comida indicam qualidade, não segurança; descartar pelo estado do alimento, não só pela data.
+- [x] (unit:wk09) **Linhas de hábito na tabela de documentos** (contas, garantias, apólices como "general habit, not a rule"): aprovadas como estão (2026-10-05).
+- [x] (unit:intro, wk00) **Método de desempate:** a pergunta "If this were gone tomorrow, would I go out and buy it again?" e o valor mínimo de venda definido na Week 0 foram aprovados (2026-10-05).
+- [x] (intake, matter) **Livro irmão.** São duas edições com o mesmo título principal: "House Cleaning Checklist Planner: Weekly & Monthly Cleaning Checklists, Home Routines, and Declutter Tools to Keep Your Home Organized" (P&B, ASIN B0G4FBVC3X) e "House Cleaning Checklist Planner: Full Color Weekly and Monthly Cleaning Checklists, Home Routines, and Declutter Tools to Keep Your Home Organized" (colorida, ASIN B0GTRDW4RQ). O miolo cita o título principal; o Final Words diz que existe nas duas edições.
+- [x] (conclusion, matter) **Série.** Dizer só que outros livros da Emily virão, sem temas nem títulos (o próximo é o End of Life Planner, fora do tema casa). Conclusion e Final Words ajustados (2026-10-05).
 
 - [x] (intake, listing) **Título e subtítulo.** Aprovados em 2026-09-30: "The 12-Week Decluttering Workbook" / "15 Minutes a Day, One Room a Week: Keep, Donate, Sell or Toss Your Way Through the Whole House, No Storage Bins Required". Keyword primária no book.yaml: decluttering workbook.
 - [x] (intake) **Nome jurídico no copyright:** Read Publishing LLC (confirmado pelo Danilo).

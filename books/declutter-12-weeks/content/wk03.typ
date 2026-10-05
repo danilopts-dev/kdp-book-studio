@@ -83,7 +83,7 @@ Put everything that lives on your counters in the list below. Then decide if it 
 
 == Pantry: Check, Count, Combine
 
-Go through each shelf and look at the dates. Dates on food are usually "best by" or "use by" dates. When a date is clearly past, or the package is open and stale, let it go. Write down duplicates so you stop buying a fourth jar of the same thing.
+Go through each shelf and look at the dates. Most are "best if used by" or "use by" dates, which tell you about quality, not safety. When a date is past, look at the food: if it smells, looks or tastes off, or the package is open and stale, let it go. Write down duplicates so you stop buying a fourth jar of the same thing.
 
 #v(0.15in)
 #_wk-table(
@@ -113,7 +113,7 @@ Go through each shelf and look at the dates. Dates on food are usually "best by"
 
 == Fridge, Freezer and the Food Bank
 
-Go shelf by shelf. Toss what is expired, moldy or unrecognizable. Whatever is still good but you know you won't eat, such as sealed, unexpired pantry items, can go to a food bank. Fresh and opened food usually can't be donated.
+Go shelf by shelf. Toss what is moldy, smells off or is unrecognizable. Whatever is still good but you know you won't eat, such as sealed, unexpired pantry items, can go to a food bank. Fresh and opened food usually can't be donated.
 
 #v(0.1in)
 #_wk-table(

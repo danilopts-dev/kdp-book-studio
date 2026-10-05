@@ -123,7 +123,7 @@ You made a few hundred small decisions, 15 minutes at a time. Nobody handed you 
 The house will not stay this way on its own, and that is fine. Use the monthly 15-minute reset and one in, one out from Part 4. They take little time, and they keep the work from piling up again.
 
 #v(0.1in)
-You can go further whenever you want to. The other books in this series take on a single area in depth: closets, the kitchen, the garage, paperwork and downsizing. If one area stayed hard for you, pick that book next. If you want to keep the house clean now that it's clear, the #emph[House Cleaning Checklist Planner] builds a routine in the same 15-minute blocks.
+If you want to keep the house clean now that it's clear, the #emph[House Cleaning Checklist Planner] builds a routine in the same 15-minute blocks. More books from Emily P. Harper are on the way, and the Final Words page at the back tells you where to find them.
 
 #v(0.3in)
 #checklist("Before I close this book", (
