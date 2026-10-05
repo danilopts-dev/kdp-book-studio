@@ -174,11 +174,11 @@
   })
 
 // Placar de um passo só: uma linha por jogador com N círculos
-#let scoreboard(..names, circles: 10, label-w: 1.4in) = block(width: 100%, above: 0.1in, below: 0.1in, breakable: false, {
+#let scoreboard(..names, circles: 10, label-w: 1.4in, r: 0.13in, size: 13pt) = block(width: 100%, above: 0.1in, below: 0.1in, breakable: false, {
   for n in names.pos() {
     grid(columns: (label-w, 1fr), align: horizon, row-gutter: 0.1in,
-      text(font: display, weight: "bold", size: 13pt, n),
-      stack(dir: ltr, spacing: 8pt, ..range(circles).map(_ => circle(radius: 0.13in, stroke: 1.4pt + ink))))
+      text(font: display, weight: "bold", size: size, n),
+      stack(dir: ltr, spacing: 8pt, ..range(circles).map(_ => circle(radius: r, stroke: 1.4pt + ink))))
     v(0.08in)
   }
 })

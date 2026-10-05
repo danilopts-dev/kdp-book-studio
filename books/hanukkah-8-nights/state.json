@@ -93,9 +93,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "artes completas",
-      "updated": "2026-10-05T13:43"
+      "status": "done",
+      "note": "6 págs; quiz conferido contra as noites 1-7",
+      "updated": "2026-10-05T18:24"
     },
     {
       "id": "unit:after",
