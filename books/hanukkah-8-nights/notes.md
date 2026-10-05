@@ -18,3 +18,7 @@ Regras completas do livro: `legacy/docs/reguas-operacionais.md` (valem aqui; os 
 # Continuidade
 
 Texto de todas as noites, front matter, mini-guia, cartão de bênçãos e back matter já está **escrito e aprovado** em `legacy/manuscript/`. Falta diagramar no engine do estúdio (as tarefas `unit:*` são de diagramação, não de redação). Temas de puzzle já usados (não repetir): N1 nomes da história; N2 hanukiá/menorá; N3 símbolos jarro/vela/dreidel/estrela/hanukiá/moeda; N4 contagem de velas; N5 letras do dreidel; N6 cozinha e frituras; N7 moedas/tzedaká.
+
+- **N1 (diagramada):** 6 páginas (story + What's a Maccabee? numa só; ★ labirinto; ★ caça-palavras; ★★ labirinto; ★★ Hammer; Before the Candles). Padrão: 1 atividade por página, puzzle de ~5.9in de largura, nível marcado por `activity`.
+- Componentes: `story`, `art("11.png")` largura total (faixa 7.2in), `whats-a` + `art("12.png", w:100%)` em grid (1fr, 2.5in), `maze-ends(start, finish, arquivo, w: 6in)`, `puzzle(...)`, `word-list(...)` (3 colunas), `draw-box(5.7in, body: image(13.png, height 5.3in))`, `before-candles` com `subhead`/`joke`/`blessing` e `art("14.png", w: 85%)` no fim.
+- Para as noites 2-8: puzzle PNG com margem branca grande deve ser recortado antes (como `cacapalavras_noite1_grade.png`; `place`/`move` com clip no Typst deslocou a imagem); manter 8-10 páginas só se houver material, N1 cabe em 6.

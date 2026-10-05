@@ -16,9 +16,9 @@
       "kind": "typst",
       "agent": "activity-builder",
       "instructions": "pipelines/stages/unit-typst.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "6 págs diagramadas; revisão sem 🔴",
+      "updated": "2026-10-05T17:20"
     },
     {
       "id": "unit:n2",
