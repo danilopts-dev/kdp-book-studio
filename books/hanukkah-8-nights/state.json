@@ -124,9 +124,9 @@
       "stage": "matter",
       "agent": "writer",
       "instructions": "pipelines/stages/matter.md",
-      "status": "blocked",
-      "note": "falta URL real do bônus",
-      "updated": "2026-10-05T13:31"
+      "status": "done",
+      "note": "front 4 págs; QR do bônus temporário; título com 33.png",
+      "updated": "2026-10-05T20:57"
     },
     {
       "id": "build",

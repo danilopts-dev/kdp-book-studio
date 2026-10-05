@@ -4,24 +4,23 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 
 ## Abertas
 
-- [ ] [BLOQUEANTE] (matter) Link/QR do bônus Family Pack: o texto aprovado usa `readpublishingco.com/hanukkah-pack`, que era placeholder. Qual é a URL real (e o QR)?
 - [ ] [ASSUMIDA] (unit:n1) Ilustração 1.4 (hanukiá da Noite 1): no `ilustracoes-prompts-geracao.md` de 30/09 estava "não aprovada" (4 suportes de um lado, 5 do outro), mas já existe `14.png` do mesmo dia. Assumido que `14.png` é a versão corrigida; confirmar visualmente.
 - [ ] [ASSUMIDA] (unit:n2) Ilustração 2.4 (menorá de 7 braços) existe, mas depende de o revisor religioso confirmar 7 braços x 8+1. Usar `24.png` e revisar depois.
 - [ ] [ASSUMIDA] (unit:n8) 81 e 83 saíram do gerador com 1131 px de largura; ampliadas 2x (306 DPI em 7.4in) com traço reforçado. Originais em `inputs/illustrations/_raw/`. As demais artes novas ficam em ~265-355 DPI nas larguras previstas.
 - [ ] [ASSUMIDA] (unit:n7) 7.3 (ícones gelt + caixa) e 7.4 (6 ícones dos vales) vieram como uma imagem cada, com os ícones soltos: recortar cada ícone na diagramação (por código ou Canva). A FM.1 (`FM1.png`) também foi gerada; ainda depende da revisão religiosa do mini-guia.
 - [ ] [ASSUMIDA] (unit:n5) `noite5_template_dreidel.png` é 1679x938 em RGBA (transparência): converter para fundo branco na diagramação.
-- [ ] [ASSUMIDA] (copyright) O texto antigo do copyright dizia "Published by Golden Chapter Press" (resquício do livro 12). Assumido: imprint Jonah Feldman / Read Publishing Co. Confirmar a linha do editor.
+- [x] [ASSUMIDA] (copyright) O texto antigo do copyright dizia "Published by Golden Chapter Press" (resquício do livro 12). Assumido: imprint Jonah Feldman / Read Publishing Co. Confirmar a linha do editor.
 - [ ] [ASSUMIDA] (build) Tipografia: Atkinson Hyperlegible 13pt no texto + Barlow nos títulos (já em `fonts/`; a Andika, fonte infantil, não está em `fonts/`). No projeto antigo a fonte ficou para depois do piloto. Gutter 0.65". Tema em `theme.typ`.
 - [ ] [ASSUMIDA] (answer-key) Answer key montada a partir dos gabaritos existentes (`*_gabarito.png/.json`), sem regerar puzzles. Os PDFs piloto antigos estão desatualizados (decisão 48) e NÃO foram trazidos.
 - [ ] [ASSUMIDA] (matter) Mini-guia de acendimento e cartão de bênçãos (`legacy/manuscript/`) escritos, mas as grafias e o mini-guia ainda dependem do revisor religioso humano antes de publicar (ver `legacy/docs/revisao-religiosa.md`).
 - [ ] [ASSUMIDA] (editorial) Meta de publicação original era 12/10/2026 (Hanucá começa em 4/dez). Se mantida, o prazo é curto: ver plano no chat.
 
 - [ ] [ASSUMIDA] (planejamento) Páginas: a Noite 1 diagramada ocupa 6 páginas (o TOC estimava ~10). Se as 8 noites seguirem esse padrão o miolo fica em ~65-75 páginas, abaixo das 96-104 do TOC. Decidir ao fim das noites: aceitar o número menor (menor custo de impressão, preço $9.99 continua viável) ou acrescentar atividades/páginas de colorir/bônus. Não parei a produção por isso.
-- [ ] [ASSUMIDA] (matter) Página de título mostra "Jonah Feldman" duas vezes (autor + imprint). Resolver na tarefa `matter`: mostrar o nome uma vez.
+- [x] [ASSUMIDA] (matter) Página de título mostra "Jonah Feldman" duas vezes (autor + imprint). Resolver na tarefa `matter`: mostrar o nome uma vez.
 
 - [ ] [ASSUMIDA] (unit:n2) DECISÃO SUA: o "ligar os pontos até 30" (hanukkiah, ★) já aprovado não forma uma hanukkiah quando ligado: o gabarito é um serrote assimétrico, e os rótulos 13/16, 14/17 e 15/18 ficam colados. Mantido como está (a diagramação segue). Para corrigir, preciso da sua autorização para redesenhar a silhueta (braços curvos, 30 pontos) e sobrescrever `inputs/puzzle-assets/noite2_ligar_pontos_hanukia*.png` e o recorte.
 
-- [ ] [ASSUMIDA] (unit:n3) A `33.png` (hanukkiah com 1 vela acesa) saiu da Noite 3: ficaria solta (a noite 3 teria 3 velas) e a lista de ilustrações a marca como reserva. Fica disponível para outro uso (ex.: fechamento do bônus). As páginas do jarro diferente e do Before the Candles ficaram com bastante branco, por falta de conteúdo aprovado.
+- [ ] [ASSUMIDA] (unit:n3) A `33.png` (hanukkiah com 1 vela acesa) saiu da Noite 3: ficaria solta (a noite 3 teria 3 velas) e a lista de ilustrações a marca como reserva. USADA na página de título (o texto aprovado pedia hanukkiah com uma vela acesa abaixo do título). As páginas do jarro diferente e do Before the Candles ficaram com bastante branco, por falta de conteúdo aprovado.
 
 - [ ] [ASSUMIDA] (unit:n4) As artes 42b e 42d (passos do acendimento) mostram a hanukkiah com 8 velas e a 42c com 3, mas a Noite 4 conta 4 velas + shamash na atividade seguinte. Mantidas (arte aprovada); pode confundir a criança. Sugestão: regerar 42b/42d (e 42c) com 4 velas.
 
@@ -61,3 +60,11 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 
 ## ASSUMIDA/AJUSTE SUGERIDO (answer-key): Gelt Math 2 (Night 5)
 O enunciado impresso diz "share equally with 4 cousins (you get a share too)", o que dá 5 pessoas (24/5 não é inteiro), mas a linha impressa na página é "24 / 4 = ___" e o gabarito do estúdio é 6. O answer-key usa 6 (coerente com a operação impressa). Sugestão para o n5.typ: "24 gelt coins to share equally among you and 3 cousins" (4 pessoas), ou trocar para 25 moedas / 5 pessoas. Não alterado aqui.
+- [x] [BLOQUEANTE] (matter) Link/QR do bônus Family Pack: o texto aprovado usa `readpublishingco.com/hanukkah-pack`, que era placeholder. Qual é a URL real (e o QR)? → Danilo (2026-10-05): "deixe um placeholder na URL e pode seguir". Seguiu com QR temporário (caixa tracejada "QR CODE"), sem URL impressa. ANTES DO UPLOAD: gerar `inputs/bonus-qr.png` com a URL real e trocar `has-bonus-qr` para `true` em `theme.typ`.
+
+## Matter (front matter)
+- ASSUMIDA (matter, copyright): padrão do declutter-12-weeks (Copyright © 2026 Read Publishing LLC. All rights reserved. / Published by Read Publishing LLC / www.readpublishingco.com · hello@readpublishingco.com), mantendo do texto aprovado a exceção de fotocópia, a nota de uso pessoal e não comercial, o parágrafo "retells the story" e "First edition, 2026". "Golden Chapter Press" removido. A frase "The activities and puzzle pages in the Answer Key are intended for personal, non-commercial use." foi mantida como aprovada, embora a redação seja estranha (o Answer Key não tem páginas de puzzle); ajustar só se o Danilo quiser.
+- ASSUMIDA (matter, página de título): `imprint_name: ''` e `copyright_holder: Read Publishing LLC` em book.yaml; a página de título mostra título, subtítulo e autor uma vez. Efeito colateral: o texto da lombada da capa usa imprint_name (vazio), conferir ao fazer a capa.
+- ASSUMIDA (matter, how-to-use): página 1 = "How This Book Works" (texto aprovado); página 2 = "Lighting the Hanukkiah" com o mini-guia revisto de 26/09/2026 (substitui a página 2 do front-matter-texto.md) + `FM1.png` (3 velas na direita + shamash, sem chamas e sem setas, a arte gerada não as traz) depois do parágrafo "Set up the candles" e a frase do Family Pack. O markdown do engine não chama `bonus-qr`, então a frase é "Scan the code at the end of this book to get your copy." (aponta para o QR da página final); nenhuma URL impressa.
+- ASSUMIDA (matter, layout): texto a 13pt do tema, sem componente novo; as duas páginas ficam com bastante branco embaixo. As linhas ★ e ★★ viraram parágrafos separados (o conversor junta linhas seguidas). Front matter = 4 páginas (título, copyright, 2 de how-to-use); Noite 1 na p5; template do dreidel na p33 e frente do Coupon Book na p47 (ímpares, versos em branco nas p34 e p48).
+- [ ] [ASSUMIDA] (matter) Páginas de how-to-use em markdown: a primeira fica com ~40% de branco embaixo (o engine não controla o tamanho por página). Aceitável; melhoraria só com componente próprio para front matter.

@@ -269,3 +269,33 @@
 
 // Origem da resposta (ex.: "Night 4") em cinza, 11pt.
 #let ak-src(t) = text(size: 11pt, fill: mid)[(#t)]
+
+// ---------------------------------------------------------------- front matter (sobrescreve title-page/plain-page do lib.typ)
+// Página de título: pedido do texto aprovado, "hanukkiah simples com uma vela acesa abaixo do título" (33.png).
+#let title-page(title, subtitle: none, author: none, imprint: none) = {
+  page(header: none, footer: none)[
+    #set par(justify: false, first-line-indent: 0em)
+    #v(1.1in)
+    #align(center, text(font: display, size: 44pt, weight: "bold", tracking: 0.01em, title))
+    #if subtitle != none { v(0.22in); align(center, text(size: 17pt, fill: mid, subtitle)) }
+    #v(0.45in)
+    #align(center, image(_ill + "33.png", width: 3.6in))
+    #v(1fr)
+    #if author != none { align(center, text(font: display, size: 18pt, weight: "bold", tracking: 0.12em, upper(author))) }
+    #if imprint != none { v(0.12in); align(center, text(size: 11pt, imprint)) }
+    #v(0.45in)
+  ]
+}
+
+// Páginas de matter em Markdown (how-to-use): mesmo estilo das noites, texto maior, títulos em Barlow.
+#let plain-page(body) = page(header: none, footer: none)[
+  #set heading(outlined: false)
+  #set text(size: 14.5pt)
+  #set par(leading: 0.85em, spacing: 1.25em, justify: false, first-line-indent: 0em)
+  #show heading.where(level: 1): it => {
+    [#metadata("end") <chap-end>]
+    set par(justify: false, first-line-indent: 0em)
+    block(width: 100%, above: 0pt, below: 0.28in, text(font: display, size: 32pt, weight: "bold", it.body))
+  }
+  #body
+]
