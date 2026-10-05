@@ -72,7 +72,7 @@
 #v(0.05in)
 #stack(dir: ttb, spacing: 0.14in,
   _prob(1, [You win 12 gelt coins in the first round and 9 more in the second round. How many gelt coins do you have now?], [12 + 9]),
-  _prob(2, [You have 24 gelt coins to share equally with 4 cousins (you get a share too). How many coins does each person get?], [24 / 4]),
+  _prob(2, [You have 24 gelt coins to share equally with 3 cousins (you get a share too). How many coins does each person get?], [24 / 4]),
   _prob(3, [You start the game with 18 gelt coins. You spin a Gimel and win 14 more coins from the pot. Then you spin a Hei and have to put half of your coins back in the pot. How many coins do you have left?], [(18 + 14) / 2]),
   _prob(4, [Four cousins count their gelt after the tournament: 15, 22, 18, and 27 coins. How many gelt coins did the whole family win tonight?], [15 + 22 + 18 + 27]))
 

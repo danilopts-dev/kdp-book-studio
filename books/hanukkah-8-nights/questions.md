@@ -25,6 +25,8 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 
 - [ ] [ASSUMIDA] (unit:n4) As artes 42b e 42d (passos do acendimento) mostram a hanukkiah com 8 velas e a 42c com 3, mas a Noite 4 conta 4 velas + shamash na atividade seguinte. Mantidas (arte aprovada); pode confundir a criança. Sugestão: regerar 42b/42d (e 42c) com 4 velas.
 
+- [ ] [ASSUMIDA] (unit:n5) CORREÇÃO no texto aprovado: Gelt Math problema 2 dizia "share equally with 4 cousins (you get a share too)" = 5 partes, e 24 / 5 não é inteiro, mas a página imprime "24 / 4" e a resposta é 6. Troquei para "3 cousins" (você + 3 primos = 4 partes: 24 / 4 = 6), mantendo a conta e a resposta. O manuscrito original em `legacy/` e o JSON `noite5_problemas_gelt.json` ainda dizem 4 cousins.
+
 ## Resolvidas
 - [x] [BLOQUEANTE] (unit:n2) Falta a ilustração 2.2/2.3 (Templo bagunçado, base do jogo dos erros): `inputs/illustrations/22.png` — prompt pronto em `legacy/docs/ilustracoes-prompts-geracao.md`; recorte final 7.4x3.0 in. → GERADA em 2026-10-05 via codex com referências 11/21/14 (arquivos em inputs/illustrations/).
 - [x] [BLOQUEANTE] (unit:n5) Falta a ilustração 5.2 (dreidel grande em branco, 4x4 in): `inputs/illustrations/52.png`. A 5.1 (`51.png`) existe. → GERADA em 2026-10-05 via codex com referências 11/21/14 (arquivos em inputs/illustrations/).
@@ -56,3 +58,6 @@ Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marqu
 - [ASSUMIDA] (unit:after) Bônus só com QR code, sem URL em texto (o manuscrito diz "Scan the code below or visit [readpublishingco.com/hanukkah-pack]"; ficou só "Scan the code below with your phone's camera."). Mesmo critério do declutter-12-weeks. O placeholder da URL não é impresso em lugar nenhum.
 - [ ] PENDENTE (unit:after/matter) A página final ainda precisa do QR real: hoje mostra caixa tracejada vazia (2.0in). Quando `inputs/bonus-qr.png` existir, trocar `#let has-bonus-qr = false` para `true` em `theme.typ` (o mesmo QR serve ao front matter).
 - [ASSUMIDA] (unit:after) Placar do dreidel com 5 caixinhas por jogador (como no manuscrito), sem pontuação; enfeite da página 1 é uma hanukkiah desenhada em Typst (não existe arte em inputs/illustrations).
+
+## ASSUMIDA/AJUSTE SUGERIDO (answer-key): Gelt Math 2 (Night 5)
+O enunciado impresso diz "share equally with 4 cousins (you get a share too)", o que dá 5 pessoas (24/5 não é inteiro), mas a linha impressa na página é "24 / 4 = ___" e o gabarito do estúdio é 6. O answer-key usa 6 (coerente com a operação impressa). Sugestão para o n5.typ: "24 gelt coins to share equally among you and 3 cousins" (4 pessoas), ou trocar para 25 moedas / 5 pessoas. Não alterado aqui.

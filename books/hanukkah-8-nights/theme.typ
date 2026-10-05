@@ -226,3 +226,46 @@
   box(width: w, height: w, stroke: (paint: ink, thickness: 1.6pt, dash: "dashed"), radius: 8pt,
     align(center + horizon, text(font: display, weight: "bold", size: 16pt, tracking: 0.06em, upper[QR code])))
 }
+
+// ---------------------------------------------------------------- answer key (content/answer-key.typ)
+// Faixa de noite: selo "NIGHT n" + título da noite + filete.
+#let ak-night(n, title) = block(width: 100%, above: 0.2in, below: 0.12in, sticky: true,
+  grid(columns: (auto, auto, 1fr), column-gutter: 10pt, align: horizon,
+    box(fill: ink, radius: 8pt, inset: (x: 10pt, top: 4.5pt, bottom: 5.5pt),
+      text(fill: white, font: display, size: 12pt, weight: "bold", tracking: 0.14em)[NIGHT #n]),
+    text(font: display, size: 14pt, weight: "bold", tracking: 0.04em, upper(title)),
+    line(length: 100%, stroke: 1.2pt + soft)))
+
+// Cartão de resposta: título "Night N · ★ Título" (level 1 = ★, 2 = ★★, 0 = sem estrela; o título é o mesmo texto impresso na noite)
+// + corpo. `tall: true` reserva 2 linhas de título para alinhar os corpos de cartões lado a lado.
+#let ak-card(n, level, title, body, tall: true) = block(width: 100%, breakable: false, {
+  let stars = ("", "★ ", "★★ ").at(level)
+  block(width: 100%, height: if tall { 0.4in } else { auto }, below: 0.06in,
+    text(font: display, size: 11.5pt, weight: "bold", tracking: 0.03em, upper("Night " + str(n) + " · " + stars + title)))
+  body
+})
+
+// Grade de cartões (2 por linha por padrão; 3 para itens pequenos; `cols` também aceita um array de larguras). Use grid.cell(rowspan: 2, ...) quando um cartão alto cobrir duas linhas.
+#let ak-grid(cols: 2, ..cells) = grid(columns: if type(cols) == int { (1fr,) * cols } else { cols }, column-gutter: 0.25in, row-gutter: 0.2in,
+  align: top + left, ..cells)
+
+// Imagem de gabarito (inputs/puzzle-assets), largura da célula, com filete fino opcional.
+#let ak-img(file, frame: false, w: 100%) = block(width: w, stroke: if frame { 1pt + ink } else { none }, radius: 3pt, clip: true,
+  image(_pz + file, width: 100%))
+
+// Labirinto resolvido + rótulos (entrada → saída) lidos do <nome>_gabarito.json.
+#let ak-maze(name) = {
+  let d = json(_pz + name + "_gabarito.json")
+  stack(spacing: 5pt, image(_pz + name + "_gabarito_key.png", width: 100%),
+    text(font: display, size: 11pt, weight: "bold", tracking: 0.04em, upper(d.rotulo_inicio + " → " + d.rotulo_fim)))
+}
+
+// Resposta grande (ex.: "Jar C").
+#let ak-big(t) = text(font: display, size: 20pt, weight: "bold", tracking: 0.03em, t)
+
+// Lista de respostas numeradas: pares (rótulo, conteúdo).
+#let ak-list(size: 12.5pt, ..items) = grid(columns: (auto, 1fr), column-gutter: 9pt, row-gutter: 7pt, align: (right + top, left + top),
+  ..items.pos().map(((l, b)) => (text(font: display, weight: "bold", size: size, l), text(size: size, b))).flatten())
+
+// Origem da resposta (ex.: "Night 4") em cinza, 11pt.
+#let ak-src(t) = text(size: 11pt, fill: mid)[(#t)]
