@@ -133,7 +133,9 @@
 // Rótulos de entrada/saída acima e abaixo de um labirinto.
 // Labirinto com rótulos NA abertura: lê rotulos e posição da entrada (esquerda) e da saída (direita) do <name>_gabarito.json.
 // Ex.: #align(center, maze-ends("labirinto_facil")). O PNG é quadrado e sem texto.
-#let maze-ends(name, w: 4.95in, side: 1.15in) = {
+// Opcional: `icon-in` / `icon-out` (arquivos de inputs/illustrations) desenham um ícone sob o rótulo de entrada
+// e sobre o rótulo de saída, dentro da margem lateral (`icon-w` de largura).
+#let maze-ends(name, w: 4.95in, side: 1.15in, icon-in: none, icon-out: none, icon-w: 0.9in) = {
   let d = json(_pz + name + "_gabarito.json")
   let lab(t) = text(font: display, size: 10.5pt, weight: "bold", tracking: 0.03em, upper(t))
   let yi = d.abertura_entrada.y_rel * w
@@ -142,6 +144,12 @@
     place(left + top, dx: side, image(_pz + name + ".png", width: w))
     place(left + top, dy: yi - 0.1in, box(width: side - 0.07in, align(right, lab(d.rotulo_inicio + " →"))))
     place(left + top, dx: side + w + 0.07in, dy: yo - 0.1in, box(width: side - 0.07in, align(left, lab("→ " + d.rotulo_fim))))
+    if icon-in != none {
+      place(left + top, dx: side - 0.07in - icon-w, dy: yi + 0.3in, image(_ill + icon-in, width: icon-w))
+    }
+    if icon-out != none {
+      place(left + top, dx: side + w + 0.07in, dy: yo - 0.1in - 0.15in - icon-w * 0.8, image(_ill + icon-out, width: icon-w))
+    }
   })
 }
 
