@@ -1,0 +1,83 @@
+slug: hanukkah-8-nights
+title: 8 Nights of Hanukkah Activity Book
+subtitle: Stories, Puzzles, and Family Fun for Every Night of the Holiday
+author: Jonah Feldman
+imprint: jonah-feldman
+imprint_name: Jonah Feldman
+copyright_holder: Jonah Feldman
+year: 2026
+type: activity
+language: en-US
+market: US
+trim: 8.5x11
+bleed: false
+paper: bw-white
+large_print: false
+primary_keyword: ''
+reader: Kids 6-10 (two levels, 6-7 and 8-10) and the parents or grandparents who buy the book and light the candles with them. Families of every level of Jewish knowledge.
+positioning: Activity book for ages 6-10 organized by the 8 nights of Hanukkah. Each night has a piece of the story, activities at two levels tied to the night's theme, and a joke, riddle or game to do before the candles. Every night stands alone, so starting on night 3 loses nothing.
+require_sources: true
+target_pages: 96-104
+style:
+  inside: 0.65            # a KDP rejeitou o livro 12 com gutter no mínimo exato
+  outside: 0.6
+  size: 14
+  body_font: [Andika, Atkinson Hyperlegible Next, Verdana, Arial]
+  heading_font: [Andika, Atkinson Hyperlegible Next, Verdana, Arial]
+front:
+- title
+- copyright
+- how-to-use
+back: []
+cover: {}
+units:
+- id: n1
+  kind: typst
+  title: 'Night 1: Judah Says No'
+  pages: 8-10
+  brief: "Fonte aprovada: legacy/manuscript/noite-1-texto.md. Story + What's a Maccabee?; ★ labirinto 12x12 'Escape to the Hills' + caça-palavras 10x10 (H/V); ★★ labirinto 18x18 + 'Why is Judah called the Hammer?' (desenho para completar); Before the Candles: piada + 3 bênçãos (transliteração + inglês). Arte em inputs/illustrations (11, 12, 13, 14) e puzzle-assets (cacapalavras_noite1, labirinto_facil, labirinto_medio)."
+- id: n2
+  kind: typst
+  title: 'Night 2: The Temple Is a Mess'
+  pages: 8-10
+  brief: "Fonte: legacy/manuscript/noite-2-texto.md. Story + menorah vs. hanukkiah; ★ jogo dos 5 erros + ligar pontos até 30 (hanukiá); ★★ 10 erros + ligar pontos até 80 (menorá, 7 braços) com quadro da diferença; Before the Candles: charada. Arte: 21, 22 (AINDA NÃO GERADA, base dos erros), 24; puzzle-assets noite2_*."
+- id: n3
+  kind: typst
+  title: 'Night 3: One Little Jar of Oil'
+  pages: 8-10
+  brief: "Fonte: legacy/manuscript/noite-3-texto.md. Story + What's a miracle?; ★ sudoku 4x4 de símbolos + 'Which jar is different?'; ★★ sudoku 6x6 + lógica 'Which jar is the pure one?'; Before the Candles: 'Guess How Long It Burns'. Arte: 30, 31, 32, 33; puzzle-assets noite3_*."
+- id: n4
+  kind: typst
+  title: 'Night 4: Light It Right'
+  pages: 8-10
+  brief: "Fonte: legacy/manuscript/noite-4-texto.md. Story + What's a shamash?; ★ 'Number the Steps' + 'How many candles tonight?'; ★★ 'How many candles in all eight nights?' (44, com o shamash) + 'Design Your Own Hanukkiah'; Before the Candles: piada. Arte: 41, 42a-d, 43."
+- id: n5
+  kind: typst
+  title: 'Night 5: Spin the Dreidel'
+  pages: 8-10
+  brief: "Fonte: legacy/manuscript/noite-5-texto.md. Story (dreidel como lenda) + What's gelt?; ★ ligar letra ao significado + colorir dreidel; ★★ 'Gelt Math' + 'Design a Dreidel' para recortar (verso em branco); Before the Candles: torneio de dreidel com placar de tracinhos. Arte: 51, 52 (NÃO GERADA); puzzle-assets noite5_*."
+- id: n6
+  kind: typst
+  title: 'Night 6: Everything Fried'
+  pages: 9-10
+  brief: "Fonte: legacy/manuscript/noite-6-texto.md. Story + What's a latke? / sufganiyah?; receita de latke (com um adulto, passos da criança marcados); ★ caça-palavras 10x10 da cozinha + 'Latkes or Sufganiyot?'; ★★ 'The Great Latke Disaster' (completar a história) + caça-palavras 14x14 com 8 direções; Before the Candles: charada + piada. Arte: 61, 62 (NÃO GERADAS); puzzle-assets noite6_*."
+- id: n7
+  kind: typst
+  title: 'Night 7: Give Some Light Away'
+  pages: 8-9
+  brief: "Fonte: legacy/manuscript/noite-7-texto.md. Story + What's tzedakah?; ★ 'Count the Gelt' + labirinto 12x12 até a caixa de tzedaká; ★★ 'Split and Save' + Coupon Book (frente e verso em branco); Before the Candles: 'Who Gets the Coupon?'. Arte: 71-75 (NÃO GERADAS); puzzle-assets noite7_*."
+- id: n8
+  kind: typst
+  title: 'Night 8: All Eight Lights'
+  pages: 7-8
+  brief: "Fonte: legacy/manuscript/noite-8-texto.md. Story + What's Hanukkah?; ★ página grande para colorir (hanukiá acesa); ★★ Family Hanukkah Quiz (10 perguntas, placar pais x crianças); certificado 'Official Hanukkah Expert'; Before the Candles: 3 piadas, a criança escolhe. Arte: 81, 82, 83 (NÃO GERADAS)."
+- id: after
+  kind: typst
+  title: After Hanukkah
+  pages: 2
+  brief: "Fonte: legacy/manuscript/back-matter-texto.md. My Hanukkah Memory Page + página final (próximo da série Seder Night + link do bônus)."
+- id: answer-key
+  kind: typst
+  title: Answer Key
+  pages: 8
+  brief: "Respostas de todos os puzzles por noite e nível. Os puzzles são PNGs de legacy/scripts (cada script gera puzzle e gabarito juntos; ver legacy/scripts/montar_answer_key.py) e entram como inputs/puzzle-assets/*_gabarito.png/.json. Montar com os gabaritos existentes, sem regerar puzzle."

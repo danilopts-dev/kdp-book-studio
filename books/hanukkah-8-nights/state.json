@@ -1,0 +1,177 @@
+{
+  "tasks": [
+    {
+      "id": "intake",
+      "stage": "intake",
+      "agent": "main",
+      "instructions": "pipelines/stages/intake.md",
+      "status": "done",
+      "note": "migrado do projeto antigo; TOC v2, textos e artes copiados",
+      "updated": "2026-10-05T13:30"
+    },
+    {
+      "id": "unit:n1",
+      "stage": "unit",
+      "unit": "n1",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:n2",
+      "stage": "unit",
+      "unit": "n2",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "blocked",
+      "note": "falta ilustração 22",
+      "updated": "2026-10-05T13:31"
+    },
+    {
+      "id": "unit:n3",
+      "stage": "unit",
+      "unit": "n3",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:n4",
+      "stage": "unit",
+      "unit": "n4",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:n5",
+      "stage": "unit",
+      "unit": "n5",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "blocked",
+      "note": "falta ilustração 52",
+      "updated": "2026-10-05T13:31"
+    },
+    {
+      "id": "unit:n6",
+      "stage": "unit",
+      "unit": "n6",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "blocked",
+      "note": "faltam ilustrações 61, 62",
+      "updated": "2026-10-05T13:31"
+    },
+    {
+      "id": "unit:n7",
+      "stage": "unit",
+      "unit": "n7",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "blocked",
+      "note": "faltam ilustrações 71-75",
+      "updated": "2026-10-05T13:31"
+    },
+    {
+      "id": "unit:n8",
+      "stage": "unit",
+      "unit": "n8",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "blocked",
+      "note": "faltam ilustrações 81-83",
+      "updated": "2026-10-05T13:31"
+    },
+    {
+      "id": "unit:after",
+      "stage": "unit",
+      "unit": "after",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "unit:answer-key",
+      "stage": "unit",
+      "unit": "answer-key",
+      "kind": "typst",
+      "agent": "activity-builder",
+      "instructions": "pipelines/stages/unit-typst.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "matter",
+      "stage": "matter",
+      "agent": "writer",
+      "instructions": "pipelines/stages/matter.md",
+      "status": "blocked",
+      "note": "falta URL real do bônus",
+      "updated": "2026-10-05T13:31"
+    },
+    {
+      "id": "build",
+      "stage": "build",
+      "agent": "main",
+      "instructions": "pipelines/stages/build.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "editorial",
+      "stage": "editorial",
+      "agent": "book-editor",
+      "instructions": "pipelines/stages/editorial.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "listing",
+      "stage": "listing",
+      "agent": "listing-writer",
+      "instructions": "pipelines/stages/listing.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "cover",
+      "stage": "cover",
+      "agent": "main",
+      "instructions": "pipelines/stages/cover.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    },
+    {
+      "id": "finalize",
+      "stage": "finalize",
+      "agent": "main",
+      "instructions": "pipelines/stages/finalize.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
+    }
+  ]
+}

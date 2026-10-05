@@ -1,0 +1,11 @@
+{
+  "linhas": 2,
+  "colunas": 4,
+  "indice_0_based": 4,
+  "posicao_linha_coluna_1_based": [
+    2,
+    1
+  ],
+  "padrao_comum": "linhas_retas",
+  "padrao_diferente": "bolinhas"
+}

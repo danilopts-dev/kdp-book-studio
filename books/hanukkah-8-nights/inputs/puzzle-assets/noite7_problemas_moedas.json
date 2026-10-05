@@ -1,0 +1,28 @@
+[
+  {
+    "id": "moedas_1",
+    "enunciado": "You have 12 gelt coins. You want to give some to tzedakah and save the rest in 3 equal piles for later. If you split all 12 coins into 3 equal piles, how many coins are in each pile?",
+    "operacao": "12 / 3",
+    "resposta": 4
+  },
+  {
+    "id": "moedas_2",
+    "enunciado": "You have 20 gelt coins. First, you put 4 coins in the tzedakah box. Then you split the coins that are left into 4 equal jars to save. How many coins go in each jar?",
+    "operacao": "(20 - 4) / 4",
+    "resposta": 4,
+    "duas_etapas": true
+  },
+  {
+    "id": "moedas_3",
+    "enunciado": "Your family collected 30 gelt coins for tzedakah tonight. You want to put an equal number of coins into 5 different tzedakah boxes for 5 different causes. How many coins go in each box?",
+    "operacao": "30 / 5",
+    "resposta": 6
+  },
+  {
+    "id": "moedas_4",
+    "enunciado": "You earned 24 gelt coins from your grandparents and 12 more from your aunt and uncle. You decide to split everything evenly: half for tzedakah, half to save. How many coins go to tzedakah?",
+    "operacao": "(24 + 12) / 2",
+    "resposta": 18,
+    "duas_etapas": true
+  }
+]

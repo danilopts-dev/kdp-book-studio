@@ -1,0 +1,13 @@
+{
+  "atividade": "Count the Gelt (\u2605)",
+  "grupos": [
+    {
+      "id": "grupo_a",
+      "total": 8
+    },
+    {
+      "id": "grupo_b",
+      "total": 13
+    }
+  ]
+}

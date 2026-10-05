@@ -1,0 +1,27 @@
+[
+  {
+    "id": "gelt_1",
+    "enunciado": "You win 12 gelt coins in the first round and 9 more in the second round. How many gelt coins do you have now?",
+    "operacao": "12 + 9",
+    "resposta": 21
+  },
+  {
+    "id": "gelt_2",
+    "enunciado": "You have 24 gelt coins to share equally with 4 cousins (you get a share too). How many coins does each person get?",
+    "operacao": "24 / 4",
+    "resposta": 6
+  },
+  {
+    "id": "gelt_3",
+    "enunciado": "You start the dreidel game with 18 gelt coins. You spin a Gimel and win 14 more coins from the pot. Then you spin a Hei and have to put half of your coins back in the pot. How many coins do you have left?",
+    "operacao": "(18 + 14) / 2",
+    "resposta": 16,
+    "duas_etapas": true
+  },
+  {
+    "id": "gelt_4",
+    "enunciado": "Four cousins count their gelt after the tournament: 15, 22, 18, and 27 coins. How many gelt coins did the whole family win tonight?",
+    "operacao": "15 + 22 + 18 + 27",
+    "resposta": 82
+  }
+]
