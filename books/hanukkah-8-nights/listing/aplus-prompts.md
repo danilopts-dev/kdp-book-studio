@@ -21,7 +21,7 @@ Gerados a partir do plano de A+ em `listing.md` (copy dos 5 módulos). Flow: mod
 | 5 Key Benefits (como funciona) | Capa final + `inputs/illustrations/32.png` (família com o relógio, Noite 3) |
 
 Artes reais disponíveis em `inputs/illustrations/` (para trocas ou reforço de referência): `11.png`, `12.png`, `13.png`, `14.png`, `21.png`, `22.png`, `24.png`, `24_menorah.png`, `30.png`, `31.png`, `32.png`, `33.png`, `41.png`, `42a.png`, `42b.png`, `42c.png`, `42d.png`, `43.png`, `51.png`, `52.png`, `61.png`, `62.png`, `71.png`, `72.png`, `73.png`, `73_box.png`, `73_gelt.png`, `74.png`, `74_book.png`, `74_broom.png`, `74_die.png`, `74_die_fix.png`, `74_heart.png`, `74_plate.png`, `74_sun.png`, `75.png`, `81.png`, `82.png`, `83.png`, `FM1.png`.
-Evitar como referência: `14.png` (versão ainda a confirmar visualmente, ver questions.md) e a página de ligar os pontos da Noite 2 (p14 e p16, ponto fraco já registrado na revisão editorial; não usar no Inside Pages).
+Evitar como referência: `14.png` (versão ainda a confirmar visualmente, ver questions.md) e a página de ligar os pontos da Noite 2 (p16 e p19, ponto fraco já registrado na revisão editorial; não usar no Inside Pages).
 
 ---
 
