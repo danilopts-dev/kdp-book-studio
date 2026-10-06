@@ -2,7 +2,7 @@
 
 This week has two tracks. Pick the one that fits your home. If you have kids at home, take the kids' track. If you don't, take the hobby track: the craft table, the sewing corner, the tool bench, the half-finished projects.
 
-On the kids' track, the goal is not a perfect playroom. It is a room a child can actually use. Many parents find that kids play longer with fewer choices out, so the plan is to keep a smaller set out and rotate the rest. Ask your child to help with each decision. Even a young child can say "keep" or "let go," and a child who helped choose usually lets the toy go more easily. Never sneak anything out of the house. Trust is worth more than space.
+On the kids' track, the goal is not a perfect playroom. It is a room a child can actually use. Many parents find that kids play longer with fewer choices out, so the plan is to keep a smaller set out and rotate the rest. Ask your child to help with each decision. Even a young child can say "keep" or "let go," and a child who helped choose often lets the toy go more easily. Never sneak anything out of the house. Trust is worth more than space.
 
 On the hobby track, the goal is to find out what you still do. Supplies you bought for a hobby you dropped two years ago are not a promise. Stalled projects get a decision, not a guilt pile.
 

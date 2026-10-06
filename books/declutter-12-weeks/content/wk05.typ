@@ -4,7 +4,7 @@ The living room belongs to everyone, which is why it fills up so easily. The rem
 
 This week you work in zones: the media area, the shelves, the coffee table and side tables, and the decorations. Take one zone at a time, sort every item into the four boxes (Keep, Donate, Sell, Toss) and put the Keep items back in a place that makes sense. Old electronics, DVDs and books may reach your sell threshold from Week 0. Check what a device does before you donate it, and wipe personal data first.
 
-This is also the one room you don't decide alone. On page 5 of this week, you and the people you live with agree on what stays in the living room. Ask before you toss anything that isn't yours. Then stop when the timer rings.
+This is also the one room you don't decide alone. On page 5 of this week, you and the people you live with agree on what stays in the living room. Ask before you toss anything that isn't yours.
 
 == This Week, 15 Minutes a Day
 

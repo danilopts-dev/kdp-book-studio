@@ -1,6 +1,6 @@
 # Your Printable Declutter Kit
 
-Some pages work better on a wall than inside a book. The Printable Declutter Kit is a free PDF with the sheets I wanted taped up where I could see them while I worked, so you can print them as often as you need.
+Some pages work better on a wall than inside a book. The Printable Declutter Kit is a free PDF with the sheets that work best taped up where you can see them while you work, so you can print them as often as you need.
 
 What's in the kit:
 

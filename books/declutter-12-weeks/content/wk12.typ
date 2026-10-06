@@ -12,7 +12,7 @@ Work in 15-minute blocks and stop when the timer rings. If a box feels heavy, cl
 #_wk-daily((
   [*Gather and look.* Bring the boxes to one table. Do not sort yet.],
   [*Photos.* Pick one stack. Keep the ones you love.],
-  [*Kids' drawings and school work.* Choose favorites. Fill in page 3.],
+  [*Kids' drawings and school work.* Choose favorites. Fill in page 4.],
   [*Letters, cards and papers.* Read a few. Sort what you want to keep.],
   [*Heirlooms and keepsakes.* Write each story on page 3.],
   [*Things that belong to others.* Make your list on page 5.],

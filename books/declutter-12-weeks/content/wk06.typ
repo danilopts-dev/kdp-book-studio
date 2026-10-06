@@ -15,7 +15,7 @@ You also get a page to describe how you want the room to look. Write it down bef
   [*Under the bed.* Pull everything out, look at each item and sort it. Log it on page 3 of this week.],
   [*The clothes chair.* Sort the pile into clean, dirty and "not sure." Use page 4 of this week.],
   [*Dresser top and windowsill.* Trays, jewelry dishes, loose change, receipts and old perfume bottles.],
-  [*Floor, corners and walls.* Baskets, shoes, books, décor and anything that landed and stayed.],
+  [*Floor, corners and walls.* Baskets, shoes, books, decor and anything that landed and stayed.],
   [*Out the door.* Take out the Toss and Donate boxes. Look at page 5 of this week and write down what you see. Count.],
 ))
 
@@ -144,7 +144,7 @@ Describe how you want the room to look and feel, then compare it with what you s
 Decide where each box is headed while the room is fresh in your mind. A box that has a destination actually leaves the house.
 
 #_wk-where(
-  [Books, unopened toiletries, bedding and décor in good shape. Check what the place accepts before you go.],
+  [Books, unopened toiletries, bedding and decor in good shape. Check what the place accepts before you go.],
   [Furniture, lamps, frames and anything worth at least your sell threshold from Week 0.],
   [Broken items, dried-out pens, worn pillows, old receipts and anything you can't donate. Recycle what you can.],
 )

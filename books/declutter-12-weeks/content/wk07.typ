@@ -1,10 +1,10 @@
 = Week 7 — The Closet
 
-The closet is the biggest week in the book, and the most rewarding. Clothes take up more room than almost anything else in the house, and they are also the easiest things to sell. Many pieces you no longer wear are worth \$20 or more to someone else.
+The closet is the biggest week in the book, and the most rewarding. Clothes take up more room than almost anything else in the house, and they are some of the easiest things to sell. Some of the pieces you no longer wear may be worth \$20 or more to someone else.
 
 The work is simple. Take everything out of one section at a time, look at each piece and sort it into the four boxes: Keep, Donate, Sell, Toss. To help, there are two quick tests. First, the reverse-hanger test: turn every hanger backward, and each time you wear something, hang it back the right way. Anything still backward after a month or two is telling you something. Second, the tie-breaker from the start of this book: if it were gone tomorrow, would you go out and buy it again?
 
-Expect three groups to be tricky: clothes that don't fit, the "when I lose weight" clothes, and party clothes you wear once a year. Pages 3 and 4 give each group its own space. Pick up the "not sure" bag from Week 6 too. Anything worth at least your sell threshold goes to the Sell Tracker in Part 3.
+Expect three groups to be tricky: clothes that don't fit, the "when I lose weight" clothes, and party clothes you wear once a year. Page 4 gives each group its own space. Pick up the "not sure" bag from Week 6 too. Anything worth at least your sell threshold goes to the Sell Tracker in Part 3.
 
 #v(0.05in)
 == This Week, 15 Minutes a Day
@@ -12,7 +12,7 @@ Expect three groups to be tricky: clothes that don't fit, the "when I lose weigh
 #_wk-daily((
   [*Set up.* Clear a spot for the four boxes, then start the reverse-hanger test. Turn every hanger backward.],
   [*Shirts and tops.* Take out one section at a time. Try on anything you're unsure about.],
-  [*Pants, skirts and dresses.* Sort each piece. Move the ones that don't fit to page 3 of this week.],
+  [*Pants, skirts and dresses.* Sort each piece. Move the ones that don't fit to page 4 of this week.],
   [*Jackets, sweaters and coats.* Check the collars, cuffs and elbows. Keep what you reached for this year.],
   [*Shoes and accessories.* Belts, scarves, ties, hats and jewelry. Pair up shoes and check the soles.],
   [*Party clothes and the "not sure" bag.* Go through both. Use page 4 of this week.],
@@ -113,7 +113,7 @@ Three groups hold the most "maybe" in a closet. Be kind and honest: clothes that
 
 == What Sells, What Goes
 
-Clothes are the most sellable thing in your house. Use the page to plan the Sell box before you list anything. The list itself goes in the Sell Tracker in Part 3.
+Clothes are some of the most sellable things in your house. Use the page to plan the Sell box before you list anything. The list itself goes in the Sell Tracker in Part 3.
 
 #v(0.15in)
 #_wk-table(

@@ -4,9 +4,9 @@
 
 The entryway is the first thing you see when you come home and the last thing you pass on the way out. It is also where everything lands: coats, shoes, bags, keys, mail, the umbrella you used once. Because it is small and busy, clutter builds up here faster than almost anywhere else.
 
-This week you will work through it one layer at a time: the coat closet first, then shoes, bags, small accessories and finally keys and mail. Take everything out of one space, put it on the floor or a table and sort it into the four boxes: Keep, Donate, Sell, Toss. Coats take the most room, so start there. A coat nobody has worn in two winters is taking up room that a coat you wear needs.
+This week you will work through it one layer at a time: the coat closet first, then shoes, bags, small accessories and finally keys and mail. Take everything out of one space, put it on the floor or a table and sort it into the four boxes: Keep, Donate, Sell, Toss. Coats take the most room, so start there. A coat nobody has worn in two winters is taking up room a coat you wear needs.
 
-The last step is the one that keeps the entryway clear. By Day 6 you will set up a landing zone: one spot for everything that comes into the house, so it stops spreading to the counter and the stairs. The pages ahead help you plan it. When the timer rings, stop and pick it up tomorrow.
+The last step is the one that keeps the entryway clear. By Day 6 you will set up a landing zone: one spot for everything that comes into the house, so it stops spreading to the counter and the stairs. The pages ahead help you plan it. Each day, stop at the timer and leave the rest for tomorrow.
 
 #v(0.05in)
 == This Week, 15 Minutes a Day

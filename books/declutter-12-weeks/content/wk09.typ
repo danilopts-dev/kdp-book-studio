@@ -1,6 +1,6 @@
 = Week 9 — The Home Office and the Paper Pile
 
-Paper is what stalls most people. Each sheet feels like a small decision, and there are hundreds of them. So this week runs on rules, not on feelings. Once you know how long a document matters, most of the pile decides itself.
+Paper stalls a lot of people. Each sheet feels like a small decision, and there are hundreds of them. So this week runs on rules, not on feelings. Once you know how long a document matters, most of the pile decides itself.
 
 Start with the desk, not the pile. Clear the surface and the drawers first, so you have room to work. Then go through the paper in one direction: one stack at a time, every sheet into Keep, Shred, Recycle or "Needs action." Shred and Recycle both count as Toss. Do not read what you can skip. If a sheet needs an action, do it in the next 15 minutes or write the task down and move on.
 
@@ -98,7 +98,7 @@ A scan is worth it for papers you might need again but do not need to hold. A sh
 
 #v(0.15in)
 #checklist(none, (
-  [Anything with an account number, Social Security number or birth date goes in the shred bag],
+  [Anything with an account number, Social Security number or birth date that I don't need to keep goes in the shred bag],
   [Originals I must keep as paper (birth certificates, deeds, titles) are in one folder],
   [Scans have clear names and are backed up in a second place],
   [I shredded or recycled only what was past its time on page 3],
