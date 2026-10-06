@@ -20,7 +20,7 @@ Estado: **miolo pronto e sem 🔴**; faltam capa (arte), bônus (PDF + QR) e a r
 
 ## Antes de subir (gates)
 1. **Capa:** gerar a arte (frente e verso) a partir do guia; faixa "Ages 6-10" na frente. `inputs/cover-front.png`, `cover-back.png`, depois `./st cover hanukkah-8-nights`.
-2. **Bônus Family Pack:** o QR real do formulário Brevo já está no livro (página 58). Falta produzir o PDF (cartão de bênçãos com `legacy/manuscript/bonus-cartao-bencaos.md`, regras do dreidel + placar, 8 etiquetas), subir no OneDrive, trocar o link provisório do template id 22 no Brevo e testar o fluxo. Passo a passo em `listing/bonus-brevo.md`.
+2. **Bônus Family Pack:** o QR real do formulário Brevo já está no livro (página 58). O PDF do bônus está pronto (`build/hanukkah-8-nights-family-pack.pdf`, 3 páginas). Falta pegar o link de compartilhamento do OneDrive, trocar o link provisório do template id 22 no Brevo e testar o fluxo. Passo a passo em `listing/bonus-brevo.md`.
 3. **Revisor religioso humano:** mini-guia de acendimento, 3 bênçãos da Noite 1, Shehecheyanu, quadro menorá x hanukkiah, letra Pei, cartão com nikud (`legacy/docs/revisao-religiosa.md`, `legacy/docs/hebraico-para-revisao.md`).
 4. **Ligar os pontos da Noite 2** (hanukkiah 30 e menorá 80): ao ligar, não formam a figura prometida. Recomendação: autorizar redesenho em arquivos `_v2`. É o ponto mais fraco do miolo.
 

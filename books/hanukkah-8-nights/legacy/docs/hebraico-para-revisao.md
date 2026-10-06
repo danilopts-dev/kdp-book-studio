@@ -117,3 +117,10 @@ Transliteração e inglês: idênticos à Noite 1 (aprovados).
 ## Atualização editorial (2026-10-05, diagramação final)
 
 O miolo diagramado NÃO tem letra hebraica em script em nenhuma página (conferido por código em `content/*` e `theme.typ`, e visualmente nas artes 51, 83 e 42b). Na Noite 5, a página "Match the Letter" e o template "Design a Dreidel" usam só Nun, Gimel, Hei, Shin em transliteração (iniciais latinas N, G, H, S no template); a tabela acima, que fala em נ ג ה ש, descreve o plano antigo. O que o revisor humano precisa ver no miolo: as três bênçãos da Noite 1 (transliteração + inglês), "Nes Gadol Haya Sham/Po" (Noite 5), "gemilut chasadim" (Noite 7), o mini-guia "Lighting the Hanukkiah" (front matter) e o quadro menorá x hanukiá (Noite 2). O único script hebraico (com nikud) fica no cartão de bênçãos do bônus (`legacy/manuscript/bonus-cartao-bencaos.md`), ainda sem PDF.
+
+---
+
+## BÔNUS: 8 Nights Family Pack (PDF gratuito, 2026-10-06)
+
+**Página:** 1 do PDF `build/hanukkah-8-nights-family-pack.pdf`, cartão "Hanukkah Blessings" (fonte: `bonus/family-pack.typ`).
+**Hebraico em script, com nikud:** as 3 bênçãos do cartão (acendimento, milagres, Shehecheyanu), idênticas ao texto de `manuscrito/bonus-cartao-bencaos.md` (conferido por código). Transliteração e inglês iguais aos da Noite 1. Nome divino abreviado como יְיָ, com a linha de aviso de respeito. Pendente de revisor humano: grafia, nikud e o aviso.
