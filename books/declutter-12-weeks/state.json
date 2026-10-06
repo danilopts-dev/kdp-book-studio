@@ -228,9 +228,9 @@
       "stage": "listing",
       "agent": "listing-writer",
       "instructions": "pipelines/stages/listing.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "blocked",
+      "note": "aguarda arte da capa e aprovação do A+ (aplus-prompts)",
+      "updated": "2026-10-06T21:32"
     },
     {
       "id": "cover",
