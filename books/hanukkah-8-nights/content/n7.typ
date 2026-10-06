@@ -41,6 +41,52 @@
 
 #pagebreak()
 
+// ---- Expansão (2026-10-06): as duas páginas novas entram ANTES do Coupon Book (paridade da página de recorte)
+#activity(1, "Which Pile Has More?")[Look at each pair of coin piles. Fill in the circle under the pile that has more coins.]
+
+#let _pl = json(_pz + "extra_n7_pilhas_logica.json").piles.pairs
+#let _coin-h = 0.18in
+#let _pile(n) = box(width: 1.2in, height: 9 * _coin-h + 0.04in, {
+  for i in range(n) {
+    place(bottom + center, dx: if calc.even(i) { 0.025in } else { -0.025in }, dy: -i * _coin-h,
+      rect(width: 0.95in, height: _coin-h, fill: white, stroke: 1.5pt + ink, radius: 4pt))
+  }
+})
+#let _pick = circle(radius: 0.16in, stroke: 1.6pt + ink)
+
+#v(0.06in)
+#grid(columns: (1fr, 1fr), column-gutter: 0.2in, row-gutter: 0.25in,
+  .._pl.map(p => block(width: 100%, breakable: false, stroke: 1.4pt + ink, radius: 10pt, inset: (x: 12pt, y: 10pt), {
+    grid(columns: (0.36in, 1fr, 1fr), align: (top, center + bottom, center + bottom), row-gutter: 0.1in,
+      box(width: 0.36in, height: 0.36in, radius: 50%, fill: ink,
+        align(center + horizon, text(fill: white, font: display, weight: "bold", size: 14pt, str(p.n)))),
+      _pile(p.left), _pile(p.right),
+      [], _pick, _pick)
+  })))
+
+#pagebreak()
+
+#activity(2, "Who Gets What?")[Four kids each did a different kind act. Use the clues to find who did what. Mark ✓ or X in the grid.]
+
+#let _lg = json(_pz + "extra_n7_pilhas_logica.json").who_gets_what
+#let _acts = ("hug", "dishes", "story", "toys")
+
+#v(0.06in)
+#stack(dir: ttb, spacing: 0.1in, .._lg.clues.enumerate().map(((i, c)) => block(width: 100%, breakable: false,
+  grid(columns: (0.4in, 1fr), column-gutter: 12pt, align: horizon,
+    box(width: 0.4in, height: 0.4in, radius: 50%, fill: ink,
+      align(center + horizon, text(fill: white, font: display, weight: "bold", size: 16pt, str(i + 1)))),
+    text(size: 15.5pt, c)))))
+
+#v(0.2in)
+#table(columns: (1.3in, 1.45in, 1.45in, 1.45in, 1.45in), rows: (1.3in, 0.95in, 0.95in, 0.95in, 0.95in),
+  stroke: 1.5pt + ink, align: center + horizon, inset: 6pt,
+  [],
+  .._acts.map(a => stack(dir: ttb, spacing: 4pt,
+    image(_ill + _lg.acts.at(a).icon, width: 0.7in, height: 0.7in, fit: "contain"),
+    text(font: display, weight: "bold", size: 12pt, tracking: 0.04em, upper(_lg.acts.at(a).label)))),
+  .._lg.kids.map(k => (text(font: display, weight: "bold", size: 17pt, k), [], [], [], [])).flatten())
+
 // ---- Coupon Book (frente e verso com a MESMA grade; a grade fica em posição fixa para alinhar no duplex)
 #let _cw = 3.5in
 #let _ch = 2.2in

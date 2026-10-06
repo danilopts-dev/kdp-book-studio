@@ -18,7 +18,7 @@ primary_keyword: ''
 reader: Kids 6-10 (two levels, 6-7 and 8-10) and the parents or grandparents who buy the book and light the candles with them. Families of every level of Jewish knowledge.
 positioning: Activity book for ages 6-10 organized by the 8 nights of Hanukkah. Each night has a piece of the story, activities at two levels tied to the night's theme, and a joke, riddle or game to do before the candles. Every night stands alone, so starting on night 3 loses nothing.
 require_sources: true
-target_pages: 96-104
+target_pages: 82
 style:
   inside: 0.65            # a KDP rejeitou o livro 12 com gutter no mínimo exato
   outside: 0.6

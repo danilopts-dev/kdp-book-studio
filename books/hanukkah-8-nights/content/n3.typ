@@ -33,6 +33,13 @@
 
 #pagebreak()
 
+#activity(1, "Follow the Oil")[Help the oil find its way! Start at the jar and trace the one path through the maze to the menorah.]
+
+#v(0.1in)
+#align(center, maze-ends("extra_n3_labirinto_oleo", w: 5.2in, side: 1.0in))
+
+#pagebreak()
+
 #activity(2, "Symbol Sudoku (6x6)")[Fill the grid so every row, column, and box has all six symbols, each one only once.]
 
 #symbol-key(("noite3_sym_jar.png", "Jar"), ("noite3_sym_candle.png", "Candle"), ("noite3_sym_dreidel.png", "Dreidel"), ("noite3_sym_star.png", "Star"), ("noite3_sym_hanukkiah.png", "Hanukkiah"), ("noite3_sym_coin.png", "Gelt coin"))
@@ -73,6 +80,24 @@
   text(size: 12pt, fill: mid)[Clue 2 is made up just for this puzzle.],
   block(stroke: 1.6pt + ink, radius: 10pt, inset: (x: 14pt, y: 9pt),
     text(font: display, weight: "bold", size: 13pt, tracking: 0.04em)[THE PURE JAR IS JAR #box(width: 0.6in, stroke: (bottom: 1.4pt + ink), [])]))
+
+#pagebreak()
+
+#activity(2, "Oil Math")[Solve each problem. Remember: one jar holds oil for 1 day, and Hanukkah lasts 8 days.]
+
+#let _om = json(_pz + "extra_n3_oilmath.json").problems
+#v(0.05in)
+#for p in _om {
+  block(width: 100%, breakable: false, above: 0.14in, below: 0.14in, stroke: 1.6pt + ink, radius: 10pt, inset: (x: 18pt, y: 20pt), {
+    grid(columns: (0.62in, 1fr), column-gutter: 0.12in, align: top,
+      box(width: 0.46in, height: 0.46in, radius: 50%, fill: ink, align(center + horizon, text(fill: white, font: display, weight: "bold", size: 16pt, str(p.id)))),
+      {
+        text(size: 16.5pt, p.text)
+        v(0.3in)
+        align(right, text(font: display, weight: "bold", size: 14pt, tracking: 0.05em)[ANSWER: #box(width: 1.1in, stroke: (bottom: 1.6pt + ink), []) #text(size: 13pt, weight: "regular", tracking: 0em, fill: mid, p.unit)])
+      })
+  })
+}
 
 #pagebreak()
 

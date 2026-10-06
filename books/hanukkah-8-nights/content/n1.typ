@@ -30,6 +30,23 @@
 
 #pagebreak()
 
+#activity(1, "Unscramble the Words")[These words from tonight's story are all mixed up. Read the clue, then write the word in the boxes.]
+
+#let _un = json(_pz + "extra_n1_unscramble.json").items
+#v(0.04in)
+#for (i, it) in _un.enumerate() {
+  block(width: 100%, breakable: false, above: 0pt, below: 0pt, stroke: (bottom: 1pt + soft), inset: (top: 0.07in, bottom: 0.06in), {
+    grid(columns: (0.62in, 2.5in, 1fr), column-gutter: 0.1in, align: horizon,
+      box(width: 0.44in, height: 0.44in, radius: 50%, fill: ink, align(center + horizon, text(fill: white, font: display, weight: "bold", size: 15pt, str(i + 1)))),
+      text(font: display, size: 27pt, weight: "bold", tracking: 0.16em, it.scrambled),
+      stack(dir: ltr, spacing: 6pt, ..range(it.length).map(_ => box(width: 0.36in, height: 0.44in, stroke: (bottom: 1.8pt + ink)))))
+    v(0.07in)
+    pad(left: 0.72in, text(size: 13pt, it.clue))
+  })
+}
+
+#pagebreak()
+
 #activity(2, "Back to Modiin (The Hard Way)")[This trail has more twists. Start where the family hides in the hills and find the one true path back down to warn the next village. Watch out for the dead ends, a soldier could be waiting around any of them!]
 
 #align(center, maze-ends("labirinto_medio"))
@@ -41,6 +58,31 @@
 Finish the drawing below: give Judah his hammer, his shield, and a look on his face that says he is not backing down.]
 
 #draw-box(5.7in, body: image("/books/hanukkah-8-nights/inputs/illustrations/13.png", height: 5.3in))
+
+#pagebreak()
+
+#activity(2, "Crack the Code")[Each number stands for a letter: A is 1, B is 2, and so on. Decode the numbers to read a line from tonight's story.]
+
+#let _cell(l, n) = block(width: 100%, stroke: 1.2pt + ink, inset: (y: 7pt), align(center, stack(spacing: 4pt,
+  text(font: display, weight: "bold", size: 21pt, l), text(size: 14pt, fill: mid, str(n)))))
+#block(width: 100%, above: 0.22in, below: 0.1in, breakable: false, {
+  _kicker(size: 10pt)[The code]
+  v(0.06in)
+  grid(columns: (1fr,) * 13, column-gutter: 4pt, row-gutter: 7pt,
+    ..range(1, 27).map(n => _cell(str.from-unicode(64 + n), n)))
+})
+
+#let _cd = json(_pz + "extra_n1_codigo.json").lines
+#v(0.3in)
+#_kicker(size: 10pt)[The message]
+#v(0.18in)
+#for line in _cd {
+  block(width: 100%, breakable: false, above: 0.04in, below: 0.4in,
+    stack(dir: ltr, spacing: 0.36in, ..line.map(word =>
+      stack(dir: ltr, spacing: 4pt, ..word.map(n => stack(spacing: 6pt,
+        box(width: 0.56in, align(center, text(font: display, weight: "bold", size: 22pt, str(n)))),
+        box(width: 0.56in, height: 0.62in, stroke: 1.6pt + ink)))))))
+}
 
 #pagebreak()
 

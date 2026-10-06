@@ -1,0 +1,122 @@
+{
+  "linhas": 12,
+  "colunas": 10,
+  "seed": 2723,
+  "grade": [
+    "....C.S...",
+    "FLOUR.T...",
+    "....E.O...",
+    "....A.V.B.",
+    "..BIMUELOS",
+    "P.......W.",
+    "A...H.SALT",
+    "N...O.U..O",
+    "C...N.G..W",
+    "APPLESAUCE",
+    "K...Y.R..L",
+    "EGG......."
+  ],
+  "across": [
+    {
+      "n": 3,
+      "answer": "FLOUR",
+      "clue": "Powder made from ground wheat. The latke recipe needs some.",
+      "r": 1,
+      "c": 0
+    },
+    {
+      "n": 5,
+      "answer": "BIMUELOS",
+      "clue": "Little puffs of fried dough that many Sephardic families make (see the story).",
+      "r": 4,
+      "c": 2
+    },
+    {
+      "n": 8,
+      "answer": "SALT",
+      "clue": "A little of this white seasoning goes into the latke mix.",
+      "r": 6,
+      "c": 6
+    },
+    {
+      "n": 10,
+      "answer": "APPLESAUCE",
+      "clue": "Sweet, smooth latke topping made from a fruit that grows on trees.",
+      "r": 9,
+      "c": 0
+    },
+    {
+      "n": 11,
+      "answer": "EGG",
+      "clue": "Crack one open and add it to the latke mix.",
+      "r": 11,
+      "c": 0
+    }
+  ],
+  "down": [
+    {
+      "n": 1,
+      "answer": "CREAM",
+      "clue": "Sour ___: a tangy white topping for latkes.",
+      "r": 0,
+      "c": 4
+    },
+    {
+      "n": 2,
+      "answer": "STOVE",
+      "clue": "Where a grown-up heats the oil and the pan.",
+      "r": 0,
+      "c": 6
+    },
+    {
+      "n": 4,
+      "answer": "BOWL",
+      "clue": "Round dish for mixing the grated potato and onion.",
+      "r": 3,
+      "c": 8
+    },
+    {
+      "n": 6,
+      "answer": "PANCAKE",
+      "clue": "Flat and round, like a latke made of potato.",
+      "r": 5,
+      "c": 0
+    },
+    {
+      "n": 7,
+      "answer": "HONEY",
+      "clue": "Sticky, golden sweetness made by bees.",
+      "r": 6,
+      "c": 4
+    },
+    {
+      "n": 8,
+      "answer": "SUGAR",
+      "clue": "Sweet white powder dusted on sufganiyot.",
+      "r": 6,
+      "c": 6
+    },
+    {
+      "n": 9,
+      "answer": "TOWEL",
+      "clue": "Clean cloth for squeezing extra liquid out of the potatoes.",
+      "r": 6,
+      "c": 9
+    }
+  ],
+  "palavras": [
+    "APPLESAUCE",
+    "TOWEL",
+    "SALT",
+    "HONEY",
+    "SUGAR",
+    "BOWL",
+    "PANCAKE",
+    "BIMUELOS",
+    "STOVE",
+    "CREAM",
+    "EGG",
+    "FLOUR"
+  ],
+  "verificado": "toda palavra cabe; todas as sequencias de 2+ letras (across e down) sao palavras da lista; todas conectadas; numeracao em ordem de leitura"
+}

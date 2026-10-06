@@ -91,6 +91,13 @@ Makes about 12 latkes. A grown-up handles the grater, the stove, and the hot oil
 
 #pagebreak()
 
+#activity(1, "Latke Maze")[The potato is ready for the pan! Start at the potato and find the one path through the maze to the plate.]
+
+#v(0.1in)
+#align(center, maze-ends("extra_n6_labirinto_latke", w: 5.2in, side: 1.0in))
+
+#pagebreak()
+
 #activity(2, "The Great Latke Disaster")[Fill in the blanks before you read the story out loud. Ask family members for a word each, without telling them the story first, it's funnier that way.]
 
 #let _n = state("blank-n", 0)
@@ -131,6 +138,30 @@ Makes about 12 latkes. A grown-up handles the grater, the stove, and the hot oil
 #puzzle("noite6_cacapalavras_14x14_grade.png", w: 6.0in)
 
 #word-list("SUFGANIYAH", "DOUGHNUT", "TRADITION", "GRIDDLE", "PLATTER", "CRISPY", "SIZZLE", "FAMILY", "JELLY", "GRATER")
+
+#pagebreak()
+
+#activity(2, "Hanukkah Food Crossword")[Use the clues to fill in the grid. Words go across and down. The small numbers show where each word starts.]
+
+#let _cw = json(_pz + "extra_n6_palavras_cruzadas_gabarito.json")
+#let _cl(it) = grid(columns: (0.38in, 1fr), column-gutter: 4pt, align: top,
+  text(font: display, weight: "bold", size: 13pt, [#it.n.]),
+  text(size: 12.5pt, it.clue))
+
+#v(0.02in)
+#puzzle("extra_n6_palavras_cruzadas_grade.png", w: auto, h: 4.55in)
+#v(0.08in)
+#grid(columns: (1fr, 1fr), column-gutter: 0.25in, align: top,
+  {
+    text(font: display, weight: "bold", size: 12pt, tracking: 0.1em)[ACROSS]
+    v(0.05in)
+    stack(dir: ttb, spacing: 0.09in,.._cw.across.map(_cl))
+  },
+  {
+    text(font: display, weight: "bold", size: 12pt, tracking: 0.1em)[DOWN]
+    v(0.05in)
+    stack(dir: ttb, spacing: 0.09in, .._cw.down.map(_cl))
+  })
 
 #pagebreak()
 

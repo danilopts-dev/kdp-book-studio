@@ -65,6 +65,21 @@
 
 #pagebreak()
 
+#activity(1, "Draw the Candles")[Draw the right number of candles for Night 2, Night 4, and Night 6, starting from the right. Don't forget the shamash!]
+
+#v(0.1in)
+#for n in json(_pz + "extra_n4_hanukkiahs.json").draw_the_candles.nights {
+  block(width: 100%, breakable: false, above: 0.1in, below: 0.2in, {
+    grid(columns: (1fr, auto), align: bottom,
+      text(font: display, weight: "bold", size: 20pt, tracking: 0.08em)[NIGHT #n],
+      text(size: 14pt)[I drew #box(width: 0.5in, stroke: (bottom: 1.4pt + ink), []) candles.])
+    v(0.04in)
+    align(center, hanukkiah-draw(n, w: 5.9in, empty: true))
+  })
+}
+
+#pagebreak()
+
 #activity(2, "How Many Candles in All Eight Nights?")[Every night, you light one more candle than the night before, plus the shamash. Add them up, night by night, to find the grand total for the whole holiday.]
 
 #let _hd(t) = text(font: display, size: 12.5pt, weight: "bold", tracking: 0.04em, upper(t))
@@ -89,6 +104,22 @@
 
 #v(0.1in)
 #draw-box(7.55in, body: image(_ill + "43.png", width: 7.1in, height: 7.3in, fit: "contain"))
+
+#pagebreak()
+
+#activity(2, "Which Night Is It?")[Count the Hanukkah candles on each hanukkiah to find the night. The shamash doesn't count! Then add up the candles in all four pictures.]
+
+#for it in json(_pz + "extra_n4_hanukkiahs.json").which_night.items {
+  block(width: 100%, breakable: false, above: 0.06in, below: 0.1in,
+    grid(columns: (4.5in, 1fr), column-gutter: 0.2in, align: horizon,
+      hanukkiah-draw(it.night, w: 4.4in),
+      block(width: 100%, stroke: 1.4pt + ink, radius: 8pt, inset: (x: 10pt, y: 12pt),
+        text(font: display, weight: "bold", size: 16pt, tracking: 0.05em)[NIGHT #box(width: 0.6in, stroke: (bottom: 1.6pt + ink), [])])))
+}
+
+#v(0.08in)
+#block(width: 100%, breakable: false, stroke: 1.6pt + ink, radius: 10pt, inset: (x: 16pt, y: 12pt),
+  text(font: display, weight: "bold", size: 15pt, tracking: 0.04em)[HANUKKAH CANDLES IN ALL FOUR PICTURES: #box(width: 0.8in, stroke: (bottom: 1.4pt + ink), [])])
 
 #pagebreak()
 

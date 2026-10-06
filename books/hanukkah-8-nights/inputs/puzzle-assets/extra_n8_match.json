@@ -1,0 +1,98 @@
+{
+  "left": [
+    {
+      "night": 1,
+      "title": "Judah Says No"
+    },
+    {
+      "night": 2,
+      "title": "The Temple Is a Mess"
+    },
+    {
+      "night": 3,
+      "title": "One Little Jar of Oil"
+    },
+    {
+      "night": 4,
+      "title": "Light It Right"
+    },
+    {
+      "night": 5,
+      "title": "Spin the Dreidel"
+    },
+    {
+      "night": 6,
+      "title": "Everything Fried"
+    }
+  ],
+  "right": [
+    {
+      "pos": 1,
+      "fact": "The story says one small jar of oil burned for eight days.",
+      "night": 3
+    },
+    {
+      "pos": 2,
+      "fact": "Families eat latkes and sufganiyot, foods fried in oil.",
+      "night": 6
+    },
+    {
+      "pos": 3,
+      "fact": "The story says kids spun a top to hide their studying.",
+      "night": 5
+    },
+    {
+      "pos": 4,
+      "fact": "A man from Modiin said no to the king's soldiers.",
+      "night": 1
+    },
+    {
+      "pos": 5,
+      "fact": "The Maccabees swept and scrubbed the broken Temple.",
+      "night": 2
+    },
+    {
+      "pos": 6,
+      "fact": "The hanukkiah goes where neighbors can see it.",
+      "night": 4
+    }
+  ],
+  "answers": [
+    {
+      "night": 1,
+      "title": "Judah Says No",
+      "fact_position": 4,
+      "fact": "A man from Modiin said no to the king's soldiers."
+    },
+    {
+      "night": 2,
+      "title": "The Temple Is a Mess",
+      "fact_position": 5,
+      "fact": "The Maccabees swept and scrubbed the broken Temple."
+    },
+    {
+      "night": 3,
+      "title": "One Little Jar of Oil",
+      "fact_position": 1,
+      "fact": "The story says one small jar of oil burned for eight days."
+    },
+    {
+      "night": 4,
+      "title": "Light It Right",
+      "fact_position": 6,
+      "fact": "The hanukkiah goes where neighbors can see it."
+    },
+    {
+      "night": 5,
+      "title": "Spin the Dreidel",
+      "fact_position": 3,
+      "fact": "The story says kids spun a top to hide their studying."
+    },
+    {
+      "night": 6,
+      "title": "Everything Fried",
+      "fact_position": 2,
+      "fact": "Families eat latkes and sufganiyot, foods fried in oil."
+    }
+  ]
+}

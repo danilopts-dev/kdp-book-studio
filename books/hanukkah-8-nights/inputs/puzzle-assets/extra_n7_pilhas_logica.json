@@ -1,0 +1,136 @@
+{
+  "piles": {
+    "pairs": [
+      {
+        "n": 1,
+        "left": 5,
+        "right": 7,
+        "more": "right",
+        "difference": 2
+      },
+      {
+        "n": 2,
+        "left": 9,
+        "right": 6,
+        "more": "left",
+        "difference": 3
+      },
+      {
+        "n": 3,
+        "left": 4,
+        "right": 8,
+        "more": "right",
+        "difference": 4
+      },
+      {
+        "n": 4,
+        "left": 8,
+        "right": 6,
+        "more": "left",
+        "difference": 2
+      },
+      {
+        "n": 5,
+        "left": 3,
+        "right": 6,
+        "more": "right",
+        "difference": 3
+      },
+      {
+        "n": 6,
+        "left": 7,
+        "right": 4,
+        "more": "left",
+        "difference": 3
+      }
+    ],
+    "answers": [
+      "right",
+      "left",
+      "right",
+      "left",
+      "right",
+      "left"
+    ],
+    "verificacao": "diferenca >= 2, maior alterna D/E, <= 9 moedas por pilha"
+  },
+  "who_gets_what": {
+    "kids": [
+      "Ben",
+      "Mia",
+      "Sam",
+      "Zoe"
+    ],
+    "acts": {
+      "hug": {
+        "icon": "74_heart.png",
+        "label": "Big Hug",
+        "inf": "give the hug",
+        "past": "gave the hug"
+      },
+      "dishes": {
+        "icon": "74_plate.png",
+        "label": "Dishes",
+        "inf": "help with the dishes",
+        "past": "helped with the dishes"
+      },
+      "story": {
+        "icon": "74_book.png",
+        "label": "Story",
+        "inf": "read the story",
+        "past": "read the story"
+      },
+      "toys": {
+        "icon": "74_die_fix.png",
+        "label": "Toys",
+        "inf": "put the toys away",
+        "past": "put the toys away"
+      }
+    },
+    "clues": [
+      "Zoe did not read the story.",
+      "Sam did not read the story.",
+      "Neither Sam nor Zoe put the toys away.",
+      "Zoe did not help with the dishes.",
+      "Mia did not help with the dishes or read the story."
+    ],
+    "clue_tuples": [
+      [
+        "not",
+        "Zoe",
+        "story"
+      ],
+      [
+        "not",
+        "Sam",
+        "story"
+      ],
+      [
+        "neither",
+        "Sam",
+        "Zoe",
+        "toys"
+      ],
+      [
+        "not",
+        "Zoe",
+        "dishes"
+      ],
+      [
+        "not2",
+        "Mia",
+        "dishes",
+        "story"
+      ]
+    ],
+    "solution": {
+      "Ben": "story",
+      "Mia": "toys",
+      "Sam": "dishes",
+      "Zoe": "hug"
+    },
+    "n_solutions_bruteforce": 1,
+    "permutations_checked": 24,
+    "redundant_clues": []
+  }
+}

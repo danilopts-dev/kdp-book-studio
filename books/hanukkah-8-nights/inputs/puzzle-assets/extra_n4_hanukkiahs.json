@@ -1,0 +1,103 @@
+{
+  "draw_the_candles": {
+    "nights": [
+      2,
+      4,
+      6
+    ],
+    "items": [
+      {
+        "night": 2,
+        "hanukkah_candles": 2,
+        "shamash": 1,
+        "positions_lit": [
+          8,
+          7
+        ]
+      },
+      {
+        "night": 4,
+        "hanukkah_candles": 4,
+        "shamash": 1,
+        "positions_lit": [
+          8,
+          7,
+          6,
+          5
+        ]
+      },
+      {
+        "night": 6,
+        "hanukkah_candles": 6,
+        "shamash": 1,
+        "positions_lit": [
+          8,
+          7,
+          6,
+          5,
+          3,
+          2
+        ]
+      }
+    ],
+    "answer": "Night 2 = 2 candles + shamash; Night 4 = 4 + shamash; Night 6 = 6 + shamash"
+  },
+  "which_night": {
+    "items": [
+      {
+        "night": 5,
+        "hanukkah_candles_shown": 5,
+        "shamash_shown_lit": true,
+        "positions_lit": [
+          8,
+          7,
+          6,
+          5,
+          3
+        ]
+      },
+      {
+        "night": 2,
+        "hanukkah_candles_shown": 2,
+        "shamash_shown_lit": true,
+        "positions_lit": [
+          8,
+          7
+        ]
+      },
+      {
+        "night": 7,
+        "hanukkah_candles_shown": 7,
+        "shamash_shown_lit": true,
+        "positions_lit": [
+          8,
+          7,
+          6,
+          5,
+          3,
+          2,
+          1
+        ]
+      },
+      {
+        "night": 3,
+        "hanukkah_candles_shown": 3,
+        "shamash_shown_lit": true,
+        "positions_lit": [
+          8,
+          7,
+          6
+        ]
+      }
+    ],
+    "answers_by_picture": [
+      5,
+      2,
+      7,
+      3
+    ],
+    "total_hanukkah_candles": 17,
+    "total_with_shamash_counted": 21,
+    "note": "pergunta impressa: velas de Hanukkah (sem os shamashes) nas 4 figuras = 17"
+  }
+}

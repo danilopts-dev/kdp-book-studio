@@ -16,7 +16,7 @@ Gerados a partir do plano de A+ em `listing.md` (copy dos 5 módulos). Flow: mod
 |---|---|
 | 1 Hero | Capa final + `inputs/illustrations/12.png` (hanukkiah, referência de traço e do objeto central) |
 | 2 Comparison & Value | Capa final |
-| 3 Inside Pages Preview | Capa final + 2 páginas reais do miolo: p19 (Symbol Sudoku 4x4, Noite 3) e p38 (receita de latke, Noite 6). Exportar de `build/hanukkah-8-nights-interior.pdf` com `./st preview hanukkah-8-nights "19,38"` ou em PNG a ~150 ppi. Reexportar se o miolo mudar. |
+| 3 Inside Pages Preview | Capa final + 2 páginas reais do miolo: p23 (Symbol Sudoku 4x4, Noite 3) e p48 (receita de latke, Noite 6). Exportar de `build/hanukkah-8-nights-interior.pdf` com `./st preview hanukkah-8-nights "19,38"` ou em PNG a ~150 ppi. Reexportar se o miolo mudar. |
 | 4 Use Case (as 8 noites) | Capa final + referências de traço, uma por noite: `11.png` (N1), `21.png` (N2), `30.png` (N3), `41.png` (N4), `51.png` (N5), `61.png` (N6), `71.png` (N7), `82.png` (N8). Se o Flow limitar o número de anexos, usar `11.png`, `30.png`, `51.png`, `61.png` e `82.png`. |
 | 5 Key Benefits (como funciona) | Capa final + `inputs/illustrations/32.png` (família com o relógio, Noite 3) |
 
@@ -129,6 +129,6 @@ Do not add any logos, watermarks, Hebrew letters, or extra text beyond what is s
 ## Antes de gerar (pendências)
 
 1. Capa final em arquivo (anexo obrigatório de todos os prompts).
-2. Exportar as páginas p19 e p38 do miolo para o banner 3 (e conferir de novo se o miolo mudar de página).
+2. Exportar as páginas p23 e p48 do miolo para o banner 3 (e conferir de novo se o miolo mudar de página).
 3. Bônus: o módulo 5 não menciona o Family Pack. Só acrescentar "free printable bonus" quando o QR real e o PDF do bônus existirem.
 4. Conferir o hebraico: nenhum banner leva letras hebraicas; se o Flow gerar alguma, descartar a variação.

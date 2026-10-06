@@ -1,0 +1,150 @@
+{
+  "patterns": [
+    {
+      "kind": "letters",
+      "shown": [
+        "N",
+        "G",
+        "H",
+        "N",
+        "G",
+        "H",
+        "N",
+        "G"
+      ],
+      "answer": "H",
+      "rule": "ciclo de 3 (Nun, Gimel, Hei)",
+      "rules_that_fit": [
+        "periodic"
+      ]
+    },
+    {
+      "kind": "letters",
+      "shown": [
+        "S",
+        "S",
+        "N",
+        "S",
+        "S",
+        "N",
+        "S",
+        "S"
+      ],
+      "answer": "N",
+      "rule": "ciclo de 3 (Shin, Shin, Nun)",
+      "rules_that_fit": [
+        "periodic"
+      ]
+    },
+    {
+      "kind": "letters",
+      "shown": [
+        "G",
+        "H",
+        "H",
+        "S",
+        "S",
+        "S",
+        "N",
+        "N"
+      ],
+      "answer": "N",
+      "rule": "blocos que crescem 1, 2, 3, 4 (o bloco da Nun ainda esta no 2, falta a 3a Nun)",
+      "rules_that_fit": [
+        "grow"
+      ]
+    },
+    {
+      "kind": "shapes",
+      "shown": [
+        "circle",
+        "square",
+        "triangle",
+        "diamond",
+        "triangle",
+        "square",
+        "circle",
+        "square"
+      ],
+      "answer": "triangle",
+      "rule": "vai e volta sobre 4 formas",
+      "rules_that_fit": [
+        "bounce",
+        "periodic"
+      ]
+    },
+    {
+      "kind": "shapes",
+      "shown": [
+        "circle",
+        "circle",
+        "square",
+        "square",
+        "triangle",
+        "triangle",
+        "circle",
+        "circle",
+        "square"
+      ],
+      "answer": "square",
+      "rule": "cada forma duas vezes, ciclo de 3 formas",
+      "rules_that_fit": [
+        "periodic"
+      ]
+    },
+    {
+      "kind": "numbers",
+      "shown": [
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "answer": 24,
+      "rule": "soma 4 a cada passo (gelt no pote)",
+      "rules_that_fit": [
+        "arith",
+        "diff2"
+      ]
+    }
+  ],
+  "answers": [
+    "H",
+    "N",
+    "N",
+    "triangle",
+    "square",
+    24
+  ],
+  "answers_text": [
+    "Hei",
+    "Nun",
+    "Nun",
+    "triangle",
+    "square",
+    "24"
+  ],
+  "tally_chart": {
+    "letters": [
+      {
+        "name": "Nun",
+        "letter_script": "נ"
+      },
+      {
+        "name": "Gimel",
+        "letter_script": "ג"
+      },
+      {
+        "name": "Hei",
+        "letter_script": "ה"
+      },
+      {
+        "name": "Shin",
+        "letter_script": "ש"
+      }
+    ],
+    "spins": 20,
+    "answer": "sem resposta unica (depende das giradas)"
+  }
+}

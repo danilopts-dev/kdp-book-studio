@@ -39,6 +39,13 @@
 
 #pagebreak()
 
+#activity(1, "Clean-Up Maze")[The Temple needs sweeping! Start at the broom and find the one path through the maze to the Temple door.]
+
+#v(0.1in)
+#align(center, maze-ends("extra_n2_labirinto_limpeza", w: 5.2in, side: 1.0in))
+
+#pagebreak()
+
 #activity(2, "Spot the 10 Differences")[Look closer this time. The same two Temple scenes hide 10 differences between them now, not just 5. Circle every one you find.]
 
 #spot-diff("noite2_erros10_antes.png", "noite2_erros10_depois.png", 10)
@@ -54,6 +61,14 @@
   [Lights], [7 (an oil lamp on each branch)], [9 candle holders (8 Hanukkah lights + 1 shamash)],
   [Lit], [Every day, as part of the Temple service], [One more candle each of the 8 nights],
   [Job of the extra candle], [No extra candle], [The shamash lights all the others])
+
+#pagebreak()
+
+#activity(2, "Temple Word Search")[These words from the big clean-up are hiding in the grid. Look across, down, and diagonally. No words go backward.]
+
+#puzzle("extra_n2_cacapalavras_templo_grade.png", w: 6.3in)
+
+#word-list("ALTAR", "COBWEBS", "SCRUBBED", "JERUSALEM", "FLOORS", "BROKEN", "SWEPT", "CLEAN", "DUST", "PIECES", "SLEEVES", "BROOM")
 
 #pagebreak()
 

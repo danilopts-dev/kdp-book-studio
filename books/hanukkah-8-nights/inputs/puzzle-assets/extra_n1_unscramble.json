@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "answer": "KING",
+      "scrambled": "GNKI",
+      "clue": "Antiochus was one. He ruled the land of Judea.",
+      "length": 4
+    },
+    {
+      "answer": "TOWN",
+      "scrambled": "NWOT",
+      "clue": "Mattathias lived in Modiin, a small ___.",
+      "length": 4
+    },
+    {
+      "answer": "TOOLS",
+      "scrambled": "STLOO",
+      "clue": "Hammers and saws are ___. The family grabbed theirs.",
+      "length": 5
+    },
+    {
+      "answer": "SONS",
+      "scrambled": "NSSO",
+      "clue": "Mattathias had five of them.",
+      "length": 4
+    },
+    {
+      "answer": "COLD",
+      "scrambled": "DCOL",
+      "clue": "The opposite of hot. Up in the hills, the family was ___.",
+      "length": 4
+    },
+    {
+      "answer": "FREE",
+      "scrambled": "EEFR",
+      "clue": "Not stuck and not trapped. In the hills, the family was ___.",
+      "length": 4
+    },
+    {
+      "answer": "CANDLES",
+      "scrambled": "ADLSENC",
+      "clue": "The king said no more Shabbat ___.",
+      "length": 7
+    },
+    {
+      "answer": "HEBREW",
+      "scrambled": "BHEWRE",
+      "clue": "The king said no more speaking this language in the streets.",
+      "length": 6
+    }
+  ]
+}

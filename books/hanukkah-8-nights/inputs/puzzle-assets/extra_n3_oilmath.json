@@ -1,0 +1,58 @@
+{
+  "facts": {
+    "jar_days": 1,
+    "miracle_days": 8
+  },
+  "problems": [
+    {
+      "id": 1,
+      "text": "One small jar had oil for 1 day. The story says it burned for 8 days. How many extra days of light was that?",
+      "expression": "burn - jar",
+      "params": {
+        "jar": 1,
+        "burn": 8
+      },
+      "answer": 7,
+      "unit": "extra days"
+    },
+    {
+      "id": 2,
+      "text": "It's day 3 of the miracle. The oil must last until day 8. How many more days are left?",
+      "expression": "burn - now",
+      "params": {
+        "burn": 8,
+        "now": 3
+      },
+      "answer": 5,
+      "unit": "days left"
+    },
+    {
+      "id": 3,
+      "text": "Imagine the Maccabees had 5 small jars, and each jar holds oil for 1 day. How many more jars would they need for 8 days?",
+      "expression": "burn - have",
+      "params": {
+        "burn": 8,
+        "have": 5
+      },
+      "answer": 3,
+      "unit": "more jars"
+    },
+    {
+      "id": 4,
+      "text": "Imagine every jar holds oil for 1 day. Each Hanukkah has 8 days. How many jars would you need for 2 Hanukkahs in a row?",
+      "expression": "days * years",
+      "params": {
+        "days": 8,
+        "years": 2
+      },
+      "answer": 16,
+      "unit": "jars"
+    }
+  ],
+  "answers": [
+    7,
+    5,
+    3,
+    16
+  ]
+}

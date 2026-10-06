@@ -51,6 +51,66 @@
 
 #pagebreak()
 
+// ---- Expansão (2026-10-06): as duas páginas novas entram ANTES de Design a Dreidel (paridade da página de recorte)
+#activity(1, "Dreidel Tally Chart")[Spin your dreidel 20 times. After each spin, make one tally mark under the letter it shows. Then see which letter won!]
+
+#let _tl(n) = block(width: 100%, height: 1.55in, stroke: 1.6pt + ink, radius: 10pt, inset: (x: 6pt),
+  align(center + horizon, stack(dir: ttb, spacing: 9pt,
+    text(font: heb-font, size: 56pt, lang: "he", top-edge: "bounds", bottom-edge: "bounds")[#_heb.at(n)],
+    text(font: display, weight: "bold", size: 15pt, tracking: 0.04em, n))))
+#let _tbox = block(width: 100%, height: 3.3in, stroke: 1.6pt + ink, radius: 10pt, [])
+
+#v(0.08in)
+#block(width: 100%, breakable: false, stroke: 1.4pt + ink, radius: 10pt, inset: (x: 14pt, y: 10pt), {
+  text(font: display, weight: "bold", size: 12pt, tracking: 0.08em)[SPINS: CROSS OFF ONE CIRCLE EACH TIME]
+  v(0.08in)
+  for _ in range(2) {
+    grid(columns: (1fr,) * 10, row-gutter: 0.1in, align: center,
+      ..range(10).map(_ => circle(radius: 0.15in, stroke: 1.4pt + ink)))
+    v(0.1in)
+  }
+})
+
+#v(0.14in)
+#grid(columns: (1fr,) * 4, column-gutter: 0.16in, row-gutter: 0.1in,
+  .._heb.keys().map(n => _tl(n)),
+  .._heb.keys().map(_ => _tbox))
+
+#v(0.16in)
+#block(width: 100%, breakable: false, fill: tint, radius: 12pt, inset: (x: 18pt, y: 14pt),
+  text(font: display, weight: "bold", size: 19pt, tracking: 0.04em)[WHICH LETTER WON? #h(8pt) #box(width: 2.4in, height: 0.34in, stroke: (bottom: 1.6pt + ink), [])])
+
+#pagebreak()
+
+#activity(2, "What Comes Next? Dreidel Patterns")[Each row follows a pattern. Figure out what comes next, then write or draw it in the empty box.]
+
+#let _pat = json(_pz + "extra_n5_padroes.json").patterns
+#let _nm = ("N": "Nun", "G": "Gimel", "H": "Hei", "S": "Shin")
+#let _chip(body) = box(width: 0.58in, height: 0.54in, stroke: 1.4pt + ink, radius: 8pt, align(center + horizon, body))
+#let _shape(k) = {
+  if k == "circle" { circle(radius: 0.2in, fill: ink) }
+  else if k == "square" { rect(width: 0.37in, height: 0.37in, fill: ink) }
+  else if k == "triangle" { polygon(fill: ink, (0.2in, 0pt), (0.4in, 0.36in), (0pt, 0.36in)) }
+  else { polygon(fill: ink, (0.2in, 0pt), (0.4in, 0.2in), (0.2in, 0.4in), (0pt, 0.2in)) }
+}
+#let _item(x) = {
+  if type(x) == int { text(font: display, weight: "bold", size: 20pt, str(x)) }
+  else if x in _nm { text(font: display, weight: "bold", size: 12.5pt, _nm.at(x)) }
+  else { _shape(x) }
+}
+#let _blankchip = box(width: 0.58in, height: 0.54in, stroke: (paint: ink, thickness: 1.6pt, dash: "dashed"), radius: 8pt, [])
+
+#v(0.1in)
+#for (i, s) in _pat.enumerate() {
+  block(width: 100%, breakable: false, above: 0.0in, below: 0.3in, stroke: 1.4pt + ink, radius: 10pt, inset: (x: 12pt, y: 16pt),
+    grid(columns: (0.42in, 1fr), column-gutter: 12pt, align: horizon,
+      box(width: 0.42in, height: 0.42in, radius: 50%, fill: ink,
+        align(center + horizon, text(fill: white, font: display, weight: "bold", size: 17pt, str(i + 1)))),
+      stack(dir: ltr, spacing: 4pt, ..s.shown.map(x => _chip(_item(x))), _blankchip)))
+}
+
+#pagebreak()
+
 #activity(2, "Design a Dreidel")[Cut along the solid lines, fold along the dashed lines, and glue the gray tabs. Color each face before you fold, it's much easier that way. When it's dry, give it a spin!]
 
 #v(1fr)

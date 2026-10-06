@@ -21,6 +21,23 @@
 
 #pagebreak()
 
+#activity(1, "Match the Night")[Draw a line from each night to what that night's story was about.]
+
+#let _mdot = circle(radius: 0.1in, fill: ink, stroke: 1.4pt + ink)
+#let _mn = json(_pz + "extra_n8_match.json")
+#let _mleft(it) = block(width: 100%, height: 0.98in, stroke: 1.6pt + ink, radius: 10pt, inset: (x: 12pt),
+  align(left + horizon, stack(dir: ttb, spacing: 5pt,
+    text(font: display, weight: "bold", size: 12pt, tracking: 0.14em, [NIGHT #it.night]),
+    text(font: display, weight: "bold", size: 16pt, it.title))))
+#let _mright(it) = block(width: 100%, height: 0.98in, stroke: 1.6pt + ink, radius: 10pt, inset: (x: 12pt),
+  align(left + horizon, text(size: 14pt, it.fact)))
+
+#v(0.15in)
+#grid(columns: (2.55in, 0.4in, 1fr, 0.4in, 3.0in), row-gutter: 0.27in, align: horizon,
+  .._mn.left.enumerate().map(((i, l)) => (_mleft(l), align(center + horizon, _mdot), [], align(center + horizon, _mdot), _mright(_mn.right.at(i)))).flatten())
+
+#pagebreak()
+
 // ---- Family Hanukkah Quiz (perguntas 1-5 e 6-10; respostas só no answer-key)
 #let _q(n, body) = block(width: 100%, breakable: false, above: 0.0in, below: 0.0in,
   grid(columns: (0.42in, 1fr), column-gutter: 16pt, align: top,
@@ -68,6 +85,14 @@
     v(0.14in)
   }
 })
+
+#pagebreak()
+
+#activity(2, "Night by Night Word Search")[Words from all eight nights are hiding here. Look across, down, and diagonally. No words go backward.]
+
+#puzzle("extra_n8_cacapalavras_noites_grade.png", w: 5.8in)
+
+#word-list("DREIDEL", "SHAMASH", "HANUKKIAH", "MIRACLE", "TZEDAKAH", "WINDOW", "DEDICATION", "GRATITUDE", "SOLDIERS", "NEIGHBORS", "SECRET", "FRIED")
 
 #pagebreak()
 

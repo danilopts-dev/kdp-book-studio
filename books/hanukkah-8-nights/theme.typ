@@ -218,6 +218,48 @@
         text(font: display, size: 12pt, weight: "bold", tracking: 0.03em, upper(l)))))
   })
 
+// Hanukkiah desenhada em código (P&B, escala por `w`). 9 posições; a central (4) é o shamash.
+// Noite n: n velas, a partir da direita (como no Family Pack). `shamash: true` = vela do shamash acesa e mais alta.
+// `empty: true` = só a base e os suportes (shamash em pedestal mais alto), para a criança desenhar as velas.
+// Geometria igual à do bonus/family-pack.typ (proporções de 2.3in de largura x 0.82in de altura), multiplicada por w/2.3in.
+#let hanukkiah-draw(n, w: 2.3in, empty: false, shamash: true) = {
+  let k = w / 2.3in
+  let order = (8, 7, 6, 5, 3, 2, 1, 0)
+  let lit = order.slice(0, n)
+  let step = w / 9
+  let cw = 0.1in * k
+  let ch = 0.3in * k
+  let base = 0.64in * k
+  let sw = calc.max(1.2pt, 1.2pt * calc.min(k, 1.6))
+  let fl(fw, fh) = polygon(fill: white, stroke: sw + ink,
+    (0.5 * fw, 0pt), (0.78 * fw, 0.42 * fh), (fw, 0.7 * fh), (0.78 * fw, 0.95 * fh), (0.5 * fw, fh),
+    (0.22 * fw, 0.95 * fh), (0pt, 0.7 * fh), (0.22 * fw, 0.42 * fh))
+  box(width: w, height: 0.82in * k, {
+    place(left + top, dy: base, dx: 0.04 * w, rect(width: 0.92 * w, height: 0.045in * k, fill: ink, radius: 2pt))
+    place(left + top, dy: base + 0.045in * k, dx: w / 2 - 0.2in * k, rect(width: 0.4in * k, height: 0.05in * k, fill: ink, radius: 2pt))
+    for i in range(9) {
+      let x = step * i + step / 2 - cw / 2
+      if empty {
+        if i == 4 {
+          place(left + top, dx: x - cw * 0.25, dy: base - 0.2in * k, rect(width: cw * 1.5, height: 0.2in * k, fill: white, stroke: sw + ink))
+        } else {
+          place(left + top, dx: x - cw * 0.25, dy: base - 0.07in * k, rect(width: cw * 1.5, height: 0.07in * k, fill: white, stroke: sw + ink))
+        }
+      } else if i == 4 {
+        if shamash {
+          place(left + top, dx: x, dy: base - 0.42in * k, rect(width: cw, height: 0.42in * k, fill: white, stroke: 1.1 * sw + ink))
+          place(left + top, dx: x - 0.005in * k, dy: base - 0.42in * k - 0.19in * k, fl(0.11in * k, 0.17in * k))
+        }
+      } else if i in lit {
+        place(left + top, dx: x, dy: base - ch, rect(width: cw, height: ch, fill: white, stroke: sw + ink))
+        place(left + top, dx: x - 0.005in * k, dy: base - ch - 0.18in * k, fl(0.11in * k, 0.17in * k))
+      } else {
+        place(left + top, dx: x, dy: base - 0.06in * k, rect(width: cw, height: 0.06in * k, fill: white, stroke: sw + ink))
+      }
+    }
+  })
+}
+
 // QR code do bônus (página final). Enquanto não houver arte, mostra a caixa tracejada vazia do mesmo tamanho.
 #let has-bonus-qr = true  // QR do formulário Brevo "Hanukkah 8 Nights" (inputs/bonus-qr.png, 06/10/2026)
 #let bonus-qr(w: 1.6in) = if has-bonus-qr {
@@ -255,9 +297,9 @@
   image(_pz + file, width: 100%))
 
 // Labirinto resolvido + rótulos (entrada → saída) lidos do <nome>_gabarito.json.
-#let ak-maze(name) = {
+#let ak-maze(name, w: 100%) = {
   let d = json(_pz + name + "_gabarito.json")
-  stack(spacing: 5pt, image(_pz + name + "_gabarito_key.png", width: 100%),
+  stack(spacing: 5pt, image(_pz + name + "_gabarito_key.png", width: w),
     text(font: display, size: 11pt, weight: "bold", tracking: 0.04em, upper(d.rotulo_inicio + " → " + d.rotulo_fim)))
 }
 
