@@ -88,7 +88,7 @@
 
 #v(0.05in)
 #stack(dir: ttb, spacing: 0.16in,
-  _prob(1, [You have 12 gelt coins. You want to give some to tzedakah and save the rest in 3 equal piles for later. If you split all 12 coins into 3 equal piles, how many coins are in each pile?]),
+  _prob(1, [You have 12 gelt coins. You split all of them into 3 equal piles: one to give to tzedakah, one to save, and one to spend. How many coins are in each pile?]),
   _prob(2, [You have 20 gelt coins. First, you put 4 coins in the tzedakah box. Then you split the coins that are left into 4 equal jars to save. How many coins go in each jar?]),
   _prob(3, [Your family collected 30 gelt coins for tzedakah tonight. You want to put an equal number of coins into 5 different tzedakah boxes for 5 different causes. How many coins go in each box?]),
   _prob(4, [You earned 24 gelt coins from your grandparents and 12 more from your aunt and uncle. You decide to split everything evenly: half for tzedakah, half to save. How many coins go to tzedakah?]))

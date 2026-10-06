@@ -113,3 +113,7 @@ Transliteração e inglês: idênticos à Noite 1 (aprovados).
 | 2-4, 6, 8 | — | Nenhuma | Confirmado, sem pendência (Noite 6 cita "bimuelos", palavra ladina, não hebraica) |
 
 **Pendência ainda fora do escopo das Noites 1-8 (lembrete mantido):** o cartão de bênçãos completas de Hanucá do Bonus Family Pack (hebraico, transliteração, inglês), já listado [REVISAR] no TOC, ainda não foi escrito.
+
+## Atualização editorial (2026-10-05, diagramação final)
+
+O miolo diagramado NÃO tem letra hebraica em script em nenhuma página (conferido por código em `content/*` e `theme.typ`, e visualmente nas artes 51, 83 e 42b). Na Noite 5, a página "Match the Letter" e o template "Design a Dreidel" usam só Nun, Gimel, Hei, Shin em transliteração (iniciais latinas N, G, H, S no template); a tabela acima, que fala em נ ג ה ש, descreve o plano antigo. O que o revisor humano precisa ver no miolo: as três bênçãos da Noite 1 (transliteração + inglês), "Nes Gadol Haya Sham/Po" (Noite 5), "gemilut chasadim" (Noite 7), o mini-guia "Lighting the Hanukkiah" (front matter) e o quadro menorá x hanukiá (Noite 2). O único script hebraico (com nikud) fica no cartão de bênçãos do bônus (`legacy/manuscript/bonus-cartao-bencaos.md`), ainda sem PDF.

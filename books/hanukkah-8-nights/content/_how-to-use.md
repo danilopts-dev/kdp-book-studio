@@ -10,9 +10,9 @@ Each night has two levels of activities. Look for the stars next to the title:
 
 **★★** activities are for kids who want more of a challenge, around ages 8 to 10.
 
-Nobody has to pick just one level. A seven year old who loves a challenge can try the ★★ page, and an older kid having an off night can go back to ★. The stars are a starting point, not a rule.
+Nobody has to pick just one level. A seven-year-old who loves a challenge can try the ★★ page, and an older kid having an off night can go back to ★. The stars are a starting point, not a rule.
 
-Most of the story and the "Before the Candles" page are for reading together as a family. The puzzle pages are built for a kid to do mostly on their own, with a grown up nearby to help if a word is tricky or a maze gets frustrating.
+Most of the story and the "Before the Candles" page are for reading together as a family. The puzzle pages are built for a kid to do mostly on their own, with a grown-up nearby to help if a word is tricky or a maze gets frustrating.
 
 <!-- pagebreak -->
 

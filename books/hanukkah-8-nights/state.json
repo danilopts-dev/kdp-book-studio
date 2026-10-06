@@ -142,9 +142,9 @@
       "stage": "editorial",
       "agent": "book-editor",
       "instructions": "pipelines/stages/editorial.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "0 🔴; 2 correções de matemática; 3 🟠 abertos",
+      "updated": "2026-10-05T21:04"
     },
     {
       "id": "listing",
