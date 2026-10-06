@@ -9,7 +9,7 @@ BLOQUEANTE impede a etapa indicada. ASSUMIDA já foi decidida pelo padrão mais 
 
 ## Em produção (fora do livro)
 
-- [ ] (bônus) **Printable Declutter Kit.** Ainda não criado (2026-10-05). Deve ter exatamente os 3 itens que o livro e o Brevo prometem: flowchart Keep / Donate / Sell / Toss, checklists por cômodo para cada reset mensal e tracker de 12 semanas para a geladeira.
+- [ ] (bônus) **Printable Declutter Kit — subir no Brevo.** PDF criado em 2026-10-06 (`bonus/printable-declutter-kit.pdf`, 15 págs, US Letter, P&B; fonte editável `bonus/kit.typ`). Tem os 3 itens prometidos: fluxograma Keep / Donate / Sell / Toss (p. 2), checklists dos 12 cômodos para o reset mensal (p. 3-14) e tracker de 12 semanas para a geladeira (p. 15), mais uma página de como usar. Falta só você anexar o PDF na automação do Brevo e testar o QR.
 
 ## Resolvidas
 - [x] (listing) **Keywords.** Danilo não usa Publisher Rocket; ficam as 7 keywords definidas no listing (2026-10-05).
