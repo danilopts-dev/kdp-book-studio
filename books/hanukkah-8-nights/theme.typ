@@ -218,7 +218,7 @@
   })
 
 // QR code do bônus (página final). Enquanto não houver arte, mostra a caixa tracejada vazia do mesmo tamanho.
-#let has-bonus-qr = false  // trocar para true quando inputs/bonus-qr.png existir
+#let has-bonus-qr = true  // QR do formulário Brevo "Hanukkah 8 Nights" (inputs/bonus-qr.png, 06/10/2026)
 #let bonus-qr(w: 1.6in) = if has-bonus-qr {
   image("/books/hanukkah-8-nights/inputs/bonus-qr.png", width: w, height: w, fit: "contain")
 } else {
