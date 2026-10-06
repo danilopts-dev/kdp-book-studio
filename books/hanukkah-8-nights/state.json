@@ -160,9 +160,9 @@
       "stage": "cover",
       "agent": "main",
       "instructions": "pipelines/stages/cover.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "guia gerado; capa final pendente de arte",
+      "updated": "2026-10-05T21:08"
     },
     {
       "id": "finalize",
