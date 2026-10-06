@@ -169,9 +169,9 @@
       "stage": "finalize",
       "agent": "main",
       "instructions": "pipelines/stages/finalize.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "READY.md; pendências: capa, bônus, revisor religioso",
+      "updated": "2026-10-05T21:08"
     }
   ]
 }
