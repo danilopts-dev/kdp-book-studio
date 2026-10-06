@@ -207,3 +207,26 @@ Atualizado em 26/09/2026, depois da revisão cruzada (ver seção no topo).
 | — | Cartão de bênçãos completas (as três bênçãos, hebraico + transliteração + inglês) | Bonus Family Pack | Sim | **Escrito em 26/09** (`manuscrito/bonus-cartao-bencaos.md`). Pendente: aprovação do Danilo e grafia do hebraico com nikud |
 
 **Pendências reais (26/09/2026):** aprovar o mini-guia de acendimento (#1) e o cartão de bênçãos do Bonus, ambos escritos em 26/09. O cartão traz hebraico com nikud, texto novo que não passou pela checagem cruzada das IAs. Pontos novos a olhar: nota de sexta-feira no mini-guia (Hanucá 2026 começa numa sexta), uso de יְיָ no nome divino e aviso de "respectful place" no cartão.
+
+---
+
+## Revisão cruzada 2 (06/10/2026): Grok, ChatGPT e Qwen sobre o livro quase final
+
+Vale o mesmo aviso da rodada de 26/09: isto **não substitui o revisor humano**. As três IAs leram os textos (o ChatGPT sem ver o PDF). Nenhuma apontou conteúdo ofensivo ou erro de letra no hebraico.
+
+| # | Ponto | Quem | Situação |
+|---|---|---|---|
+| 1 | Hebraico das 3 bênçãos, transliteração, traduções, יְיָ, "la'avoteinu" (versão tradicional): corretos | Grok, ChatGPT, Qwen | Confirmado. Conferido por código que o hebraico do PDF do bônus é idêntico ao texto aprovado |
+| 2 | Nikud e renderização da fonte no cartão do bônus: só um humano fecha | Grok, ChatGPT, Qwen | PDF conferido a 450 DPI (marcas no lugar, sem deslocamento visível). **Pendente: revisor humano** |
+| 3 | Cabeçalho "Only on Night 1: The Shehecheyanu" é absoluto demais (a decisão 45 já suavizou o texto) | ChatGPT | **APLICADO**: virou "The Shehecheyanu: The First Night You Light" (igual ao cartão do bônus) |
+| 4 | Dreidel só com iniciais latinas N/G/H/S enfraquece a atividade que ensina as letras; usar a letra hebraica grande + nome transliterado (letras isoladas não são nome divino) | ChatGPT | **DECISÃO SUA** (contraria a decisão 49: sem hebraico em script no miolo). Grok considerou a decisão 49 sensata |
+| 5 | Instrução do "Match the Letter": "to what it stands for" sugere tradução; "nothing/everything/half" são ações do jogo | ChatGPT | **PROPOSTO**: "Draw a line from each letter to what it tells you to do in the game." (muda o texto aprovado) |
+| 6 | Tradução: acrescentar "Adonai" antes de "our God" e "His" antes de "commandments" | ChatGPT | **PROPOSTO** (afeta N1, cartão do bônus). Grok e Qwen aceitaram o texto atual |
+| 7 | Transliteração: "v'higiyanu" em vez de "v'higianu"; manter uma só grafia em todo o livro | ChatGPT, Qwen | **PROPOSTO** (baixo risco). Grafia "Hanukkah" conferida: não há variante no miolo |
+| 8 | Cartão com nome divino: tratar como cartão para guardar (não recortar), e orientar a procurar uma sinagoga para descartar exemplar gasto (genizá) | ChatGPT | Cartão já é para guardar, sem recorte. **PROPOSTO** acrescentar uma frase de genizá ao aviso de respeito |
+| 9 | Quadro menorá x hanukkiah não pode dizer que "menorah" só serve para 7 braços | ChatGPT | Verificado: o livro diz "hanukkiah, also called a Hanukkah menorah". Sem problema |
+| 10 | "Gemilut chasadim" e tzedaká não são categorias totalmente separadas | ChatGPT | Verificado: a N7 só diz que ajudar assim é gemilut chasadim. Sem problema |
+| 11 | Agradecimento a revisores judeus no colofão | Grok | Opcional; só faz sentido depois do revisor humano |
+| 12 | Controle editorial desatualizado ("bônus não foi escrito") | ChatGPT | Corrigido: o PDF do bônus existe desde 06/10 |
+
+Nota: "Chanukah puzzle book for kids" aparece só como keyword do backend do listing (variante de busca intencional).
