@@ -151,9 +151,9 @@
       "stage": "listing",
       "agent": "listing-writer",
       "instructions": "pipelines/stages/listing.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "listing + A+ + prompts do Flow; keywords a validar",
+      "updated": "2026-10-05T21:08"
     },
     {
       "id": "cover",
