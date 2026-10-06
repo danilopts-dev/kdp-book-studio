@@ -51,14 +51,14 @@ Finish the drawing below: give Judah his hammer, his shield, and a look on his f
   #subhead[The Blessings]
   Before you light the candles, say these two blessings together. You'll say them every night of Hanukkah. The first thanks God for the mitzvah, the commandment, of lighting the Hanukkah candles. The second remembers the miracles of long ago.
 
-  #blessing("Baruch atah Adonai, Eloheinu melech ha'olam, asher kid'shanu b'mitzvotav v'tzivanu l'hadlik ner shel Hanukkah.", "Blessed are You, our God, Ruler of the universe, who made us holy with commandments and commanded us to light the Hanukkah candles.")
+  #blessing("Baruch atah Adonai, Eloheinu melech ha'olam, asher kid'shanu b'mitzvotav v'tzivanu l'hadlik ner shel Hanukkah.", "Blessed are You, Adonai our God, Ruler of the universe, who made us holy with commandments and commanded us to light the Hanukkah candles.")
 
-  #blessing("Baruch atah Adonai, Eloheinu melech ha'olam, she'asah nisim la'avoteinu bayamim hahem baz'man hazeh.", "Blessed are You, our God, Ruler of the universe, who worked miracles for our ancestors in those days, at this season.")
+  #blessing("Baruch atah Adonai, Eloheinu melech ha'olam, she'asah nisim la'avoteinu bayamim hahem baz'man hazeh.", "Blessed are You, Adonai our God, Ruler of the universe, who worked miracles for our ancestors in those days, at this season.")
 
   #subhead[The Shehecheyanu: The First Night You Light]
   Tonight only, add a third blessing, the Shehecheyanu. It's said the first time you light Hanukkah candles each year, so light number one gets its own special thank-you.
 
-  #blessing("Baruch atah Adonai, Eloheinu melech ha'olam, shehecheyanu v'kiy'manu v'higianu laz'man hazeh.", "Blessed are You, our God, Ruler of the universe, who has kept us alive, sustained us, and brought us to this season.")
+  #blessing("Baruch atah Adonai, Eloheinu melech ha'olam, shehecheyanu v'kiy'manu v'higiyanu laz'man hazeh.", "Blessed are You, Adonai our God, Ruler of the universe, who has kept us alive, sustained us, and brought us to this season.")
 ]
 
 #art("14.png", w: 85%)

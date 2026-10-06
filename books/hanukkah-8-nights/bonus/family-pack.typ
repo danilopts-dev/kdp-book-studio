@@ -55,24 +55,24 @@
 #blessing(1, "For lighting the Hanukkah candles", "every night",
   [בָּרוּךְ אַתָּה יְיָ אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם, אֲשֶׁר קִדְּשָׁנוּ בְּמִצְוֹתָיו, וְצִוָּנוּ לְהַדְלִיק נֵר שֶׁל חֲנֻכָּה.],
   [Baruch atah Adonai, Eloheinu melech ha'olam, asher kid'shanu b'mitzvotav v'tzivanu l'hadlik ner shel Hanukkah.],
-  [Blessed are You, our God, Ruler of the universe, who made us holy with commandments and commanded us to light the Hanukkah candles.])
+  [Blessed are You, Adonai our God, Ruler of the universe, who made us holy with commandments and commanded us to light the Hanukkah candles.])
 
 #blessing(2, "For the miracles", "every night",
   [בָּרוּךְ אַתָּה יְיָ אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם, שֶׁעָשָׂה נִסִּים לַאֲבוֹתֵינוּ בַּיָּמִים הָהֵם בַּזְּמַן הַזֶּה.],
   [Baruch atah Adonai, Eloheinu melech ha'olam, she'asah nisim la'avoteinu bayamim hahem baz'man hazeh.],
-  [Blessed are You, our God, Ruler of the universe, who worked miracles for our ancestors in those days, at this season.])
+  [Blessed are You, Adonai our God, Ruler of the universe, who worked miracles for our ancestors in those days, at this season.])
 
 #blessing(3, "Shehecheyanu", "the first night you light",
   [בָּרוּךְ אַתָּה יְיָ אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם, שֶׁהֶחֱיָנוּ וְקִיְּמָנוּ וְהִגִּיעָנוּ לַזְּמַן הַזֶּה.],
-  [Baruch atah Adonai, Eloheinu melech ha'olam, shehecheyanu v'kiy'manu v'higianu laz'man hazeh.],
-  [Blessed are You, our God, Ruler of the universe, who has kept us alive, sustained us, and brought us to this season.])
+  [Baruch atah Adonai, Eloheinu melech ha'olam, shehecheyanu v'kiy'manu v'higiyanu laz'man hazeh.],
+  [Blessed are You, Adonai our God, Ruler of the universe, who has kept us alive, sustained us, and brought us to this season.])
 
 #v(0.14in)
 #line(length: 100%, stroke: 1.2pt + ink)
 #v(0.04in)
 #align(center)[
   #text(style: "italic", size: 12pt)[Light the candles from left to right, newest candle first. Happy Hanukkah!] \
-  #text(style: "italic", size: 10.5pt, fill: mid)[This card contains Hebrew blessings with God's name. Please keep it in a respectful place.]
+  #text(style: "italic", size: 10.5pt, fill: mid)[This card contains Hebrew blessings with God's name. Please keep it in a respectful place. If it wears out, please ask a rabbi or your synagogue how to retire it respectfully.]
 ]
 
 // ------------------------------------------------------------------ página 2: regras do dreidel + placar

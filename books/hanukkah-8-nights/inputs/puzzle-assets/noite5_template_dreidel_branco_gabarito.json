@@ -2,25 +2,25 @@
   "faces": [
     {
       "posicao": 0,
-      "inicial_latina": "N",
+      "letra_hebraica": "נ",
       "nome": "Nun",
       "significado_fora_de_israel": "Nes (a miracle)"
     },
     {
       "posicao": 1,
-      "inicial_latina": "G",
+      "letra_hebraica": "ג",
       "nome": "Gimel",
       "significado_fora_de_israel": "Gadol (great)"
     },
     {
       "posicao": 2,
-      "inicial_latina": "H",
+      "letra_hebraica": "ה",
       "nome": "Hei",
       "significado_fora_de_israel": "Haya (happened)"
     },
     {
       "posicao": 3,
-      "inicial_latina": "S",
+      "letra_hebraica": "ש",
       "nome": "Shin",
       "significado_fora_de_israel": "Sham (there)"
     }

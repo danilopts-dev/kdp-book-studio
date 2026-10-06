@@ -15,25 +15,31 @@
 
 #pagebreak()
 
-#activity(1, "Match the Letter to Its Meaning")[A dreidel has four Hebrew letters, one on each side. Draw a line from each letter to what it stands for.]
+#activity(1, "Match the Letter to Its Meaning")[A dreidel has four Hebrew letters, one on each side. Draw a line from each letter to what it tells you to do in the game.]
 
 #let _dot = circle(radius: 0.1in, fill: ink, stroke: 1.4pt + ink)
 #let _mbox(t) = block(width: 100%, height: 1.0in, stroke: 1.6pt + ink, radius: 10pt, inset: (x: 14pt),
   align(center + horizon, text(font: display, weight: "bold", size: 24pt, tracking: 0.03em, t)))
-#let _mrow(l, r) = (_mbox(l), align(center + horizon, _dot), [], align(center + horizon, _dot), _mbox(r))
+#let _heb = ("Nun": "נ", "Gimel": "ג", "Hei": "ה", "Shin": "ש")
+#let _lbox(n) = block(width: 100%, height: 1.0in, stroke: 1.6pt + ink, radius: 10pt, inset: (x: 14pt),
+  align(center + horizon, stack(dir: ttb, spacing: 7pt,
+    text(font: heb-font, size: 38pt, lang: "he", top-edge: "bounds", bottom-edge: "bounds")[#_heb.at(n)],
+    text(font: display, weight: "bold", size: 13pt, tracking: 0.04em, n))))
+#let _mrow(l, r) = (_lbox(l), align(center + horizon, _dot), [], align(center + horizon, _dot), _mbox(r))
+#let _hl(g) = text(font: heb-font, size: 1.3em, lang: "he")[#g]
 
 #v(0.2in)
 #grid(columns: (2.2in, 0.4in, 1fr, 0.4in, 2.2in), row-gutter: 0.34in,
-  .._mrow[Nun][Everything],
-  .._mrow[Gimel][Put one in],
-  .._mrow[Hei][Nothing],
-  .._mrow[Shin][Half])
+  .._mrow("Nun")[Everything],
+  .._mrow("Gimel")[Put one in],
+  .._mrow("Hei")[Nothing],
+  .._mrow("Shin")[Half])
 
 #v(0.45in)
 #block(width: 100%, fill: tint, radius: 12pt, inset: (x: 20pt, y: 16pt), breakable: false, {
   text(font: display, weight: "bold", size: 12.5pt, tracking: 0.06em, upper[What do the letters spell?])
   v(0.04in)
-  text(size: 14pt)[Put the four letters together (Nun, Gimel, Hei, Shin) and they stand for a whole sentence: *Nes Gadol Haya Sham,* "A great miracle happened there." In Israel, dreidels swap the Shin for a *Pei,* so the sentence becomes *Nes Gadol Haya Po,* "A great miracle happened here," because that's where it happened. Same story, two dreidels.]
+  text(size: 14pt)[Put the four letters together (Nun #_hl[נ], Gimel #_hl[ג], Hei #_hl[ה], Shin #_hl[ש]) and they stand for a whole sentence: *Nes Gadol Haya Sham,* "A great miracle happened there." In Israel, dreidels swap the Shin for a *Pei* (#_hl[פ]), so the sentence becomes *Nes Gadol Haya Po,* "A great miracle happened here," because that's where it happened. Same story, two dreidels.]
 })
 
 #pagebreak()

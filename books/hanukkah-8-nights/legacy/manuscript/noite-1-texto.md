@@ -82,19 +82,19 @@ Before you light the candles, say these two blessings together. You'll say them 
 
 > Baruch atah Adonai, Eloheinu melech ha'olam, asher kid'shanu b'mitzvotav v'tzivanu l'hadlik ner shel Hanukkah.
 >
-> Blessed are You, our God, Ruler of the universe, who made us holy with commandments and commanded us to light the Hanukkah candles.
+> Blessed are You, Adonai our God, Ruler of the universe, who made us holy with commandments and commanded us to light the Hanukkah candles.
 
 > Baruch atah Adonai, Eloheinu melech ha'olam, she'asah nisim la'avoteinu bayamim hahem baz'man hazeh.
 >
-> Blessed are You, our God, Ruler of the universe, who worked miracles for our ancestors in those days, at this season.
+> Blessed are You, Adonai our God, Ruler of the universe, who worked miracles for our ancestors in those days, at this season.
 
 **ONLY ON NIGHT 1: THE SHEHECHEYANU**
 
 Tonight only, add a third blessing, the Shehecheyanu. It's said the first time you light Hanukkah candles each year, so light number one gets its own special thank-you.
 
-> Baruch atah Adonai, Eloheinu melech ha'olam, shehecheyanu v'kiy'manu v'higianu laz'man hazeh.
+> Baruch atah Adonai, Eloheinu melech ha'olam, shehecheyanu v'kiy'manu v'higiyanu laz'man hazeh.
 >
-> Blessed are You, our God, Ruler of the universe, who has kept us alive, sustained us, and brought us to this season.
+> Blessed are You, Adonai our God, Ruler of the universe, who has kept us alive, sustained us, and brought us to this season.
 
 *(Nota de produção, revisada em 26/09/2026: todas as noites têm duas bênçãos, a do acendimento ("l'hadlik ner shel Hanukkah") e a dos milagres ("she'asah nisim"); a Noite 1 soma uma terceira, a Shehecheyanu. A versão anterior do piloto omitia a bênção "she'asah nisim", erro corrigido nesta revisão. A Shehecheyanu é dita na primeira vez que a pessoa acende no ano, o que para quase todas as famílias é a Noite 1; o texto evita dizer "exclusiva da Noite 1" de forma absoluta. Grafia "Hanukkah" dentro da bênção unificada com o resto do livro. As três bênçãos seguem marcadas [REVISAR] em `revisao-religiosa.md` e `hebraico-para-revisao.md`.)*
 

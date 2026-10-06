@@ -17,6 +17,7 @@
 #let tint = luma(244)
 #let display = ("Barlow", "Bahnschrift", "Verdana")
 #let body-font = ("Atkinson Hyperlegible", "Verdana")
+#let heb-font = ("Times New Roman", "Arial")  // só letras isoladas do dreidel (N5); decisão 06/10/2026
 #let _ill = "/books/hanukkah-8-nights/inputs/illustrations/"
 #let _pz = "/books/hanukkah-8-nights/inputs/puzzle-assets/"
 

@@ -31,7 +31,7 @@ Gelt means "money" in Yiddish. Today it's usually chocolate coins wrapped in gol
 
 **MATCH THE LETTER TO ITS MEANING**
 
-A dreidel has four Hebrew letters, one on each side. Draw a line from each letter to what it stands for.
+A dreidel has four Hebrew letters, one on each side. Draw a line from each letter to what it tells you to do in the game.
 
 | Letter | | Meaning |
 |---|---|---|

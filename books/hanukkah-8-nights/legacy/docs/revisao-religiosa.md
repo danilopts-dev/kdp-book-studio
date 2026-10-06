@@ -51,7 +51,7 @@ O material foi passado por quatro modelos externos. Nenhum apontou conteúdo ofe
 **Status: [REVISAR]**
 **Texto proposto no piloto:**
 > Baruch atah Adonai, Eloheinu melech ha'olam, asher kid'shanu b'mitzvotav v'tzivanu l'hadlik ner shel Chanukah.
-> Blessed are You, our God, Ruler of the universe, who made us holy with commandments and commanded us to light the Hanukkah candles.
+> Blessed are You, Adonai our God, Ruler of the universe, who made us holy with commandments and commanded us to light the Hanukkah candles.
 
 **Fonte:** formulação padrão da bênção do acendimento de Hanucá, recitada nas 8 noites, presente em praticamente todo sidur e hagadá de Hanucá.
 **O que precisa de validação humana:** grafia exata da transliteração (existem variantes ortográficas aceitas) e se o livro deve trazer também o script hebraico além da transliteração e do inglês.
@@ -59,8 +59,8 @@ O material foi passado por quatro modelos externos. Nenhum apontou conteúdo ofe
 ### 3. Shehecheyanu, exclusiva da 1ª noite
 **Status: [REVISAR]**
 **Texto proposto no piloto:**
-> Baruch atah Adonai, Eloheinu melech ha'olam, shehecheyanu v'kiy'manu v'higianu laz'man hazeh.
-> Blessed are You, our God, Ruler of the universe, who has kept us alive, sustained us, and brought us to this season.
+> Baruch atah Adonai, Eloheinu melech ha'olam, shehecheyanu v'kiy'manu v'higiyanu laz'man hazeh.
+> Blessed are You, Adonai our God, Ruler of the universe, who has kept us alive, sustained us, and brought us to this season.
 
 **Fonte:** a Shehecheyanu é dita na primeira vez que se cumpre uma mitzvá sazonal num ciclo, prática amplamente documentada e consensual entre as correntes do judaísmo para a primeira noite de Hanucá.
 **O que precisa de validação humana:** confirmar que a nota de produção do texto (dita só na noite 1, não repetida) está correta para todas as correntes que o livro pretende servir, e que não há exceção relevante a mencionar (ex. quem acende depois do pôr do sol tarde na primeira noite ainda diz a bênção).
@@ -219,14 +219,16 @@ Vale o mesmo aviso da rodada de 26/09: isto **não substitui o revisor humano**.
 | 1 | Hebraico das 3 bênçãos, transliteração, traduções, יְיָ, "la'avoteinu" (versão tradicional): corretos | Grok, ChatGPT, Qwen | Confirmado. Conferido por código que o hebraico do PDF do bônus é idêntico ao texto aprovado |
 | 2 | Nikud e renderização da fonte no cartão do bônus: só um humano fecha | Grok, ChatGPT, Qwen | PDF conferido a 450 DPI (marcas no lugar, sem deslocamento visível). **Pendente: revisor humano** |
 | 3 | Cabeçalho "Only on Night 1: The Shehecheyanu" é absoluto demais (a decisão 45 já suavizou o texto) | ChatGPT | **APLICADO**: virou "The Shehecheyanu: The First Night You Light" (igual ao cartão do bônus) |
-| 4 | Dreidel só com iniciais latinas N/G/H/S enfraquece a atividade que ensina as letras; usar a letra hebraica grande + nome transliterado (letras isoladas não são nome divino) | ChatGPT | **DECISÃO SUA** (contraria a decisão 49: sem hebraico em script no miolo). Grok considerou a decisão 49 sensata |
-| 5 | Instrução do "Match the Letter": "to what it stands for" sugere tradução; "nothing/everything/half" são ações do jogo | ChatGPT | **PROPOSTO**: "Draw a line from each letter to what it tells you to do in the game." (muda o texto aprovado) |
-| 6 | Tradução: acrescentar "Adonai" antes de "our God" e "His" antes de "commandments" | ChatGPT | **PROPOSTO** (afeta N1, cartão do bônus). Grok e Qwen aceitaram o texto atual |
-| 7 | Transliteração: "v'higiyanu" em vez de "v'higianu"; manter uma só grafia em todo o livro | ChatGPT, Qwen | **PROPOSTO** (baixo risco). Grafia "Hanukkah" conferida: não há variante no miolo |
-| 8 | Cartão com nome divino: tratar como cartão para guardar (não recortar), e orientar a procurar uma sinagoga para descartar exemplar gasto (genizá) | ChatGPT | Cartão já é para guardar, sem recorte. **PROPOSTO** acrescentar uma frase de genizá ao aviso de respeito |
+| 4 | Dreidel só com iniciais latinas N/G/H/S enfraquece a atividade que ensina as letras; usar a letra hebraica grande + nome transliterado (letras isoladas não são nome divino) | ChatGPT | **APLICADO em 06/10/2026** (Danilo aprovou a recomendação): letra hebraica grande + nome transliterado no molde do dreidel e no exercício "Match the Letter", e as letras também na nota "What do the letters spell?" (Pei incluída). Exceção à decisão 49: só essas 4 letras isoladas (+ Pei); o resto do miolo segue só com transliteração |
+| 5 | Instrução do "Match the Letter": "to what it stands for" sugere tradução; "nothing/everything/half" são ações do jogo | ChatGPT | **APLICADO em 06/10/2026**: "...to what it tells you to do in the game." |
+| 6 | Tradução: acrescentar "Adonai" antes de "our God" e "His" antes de "commandments" | ChatGPT | **APLICADO em 06/10/2026, só "Adonai"** ("Blessed are You, Adonai our God, ..."). "His" NÃO entrou: a regra 7 do livro é neutralidade entre as correntes e "His" põe gênero em Deus; "with commandments" é a tradução comum e segura. Livro (N1) e cartão do bônus |
+| 7 | Transliteração: "v'higiyanu" em vez de "v'higianu"; manter uma só grafia em todo o livro | ChatGPT, Qwen | **APLICADO em 06/10/2026**: "v'higiyanu" na N1 e no cartão. Grafia "Hanukkah" conferida em todo o miolo |
+| 8 | Cartão com nome divino: tratar como cartão para guardar (não recortar), e orientar a procurar uma sinagoga para descartar exemplar gasto (genizá) | ChatGPT | **APLICADO em 06/10/2026** só no cartão do Family Pack: "If it wears out, please ask a rabbi or your synagogue how to retire it respectfully." (o miolo só tem transliteração e não precisa) |
 | 9 | Quadro menorá x hanukkiah não pode dizer que "menorah" só serve para 7 braços | ChatGPT | Verificado: o livro diz "hanukkiah, also called a Hanukkah menorah". Sem problema |
 | 10 | "Gemilut chasadim" e tzedaká não são categorias totalmente separadas | ChatGPT | Verificado: a N7 só diz que ajudar assim é gemilut chasadim. Sem problema |
 | 11 | Agradecimento a revisores judeus no colofão | Grok | Opcional; só faz sentido depois do revisor humano |
 | 12 | Controle editorial desatualizado ("bônus não foi escrito") | ChatGPT | Corrigido: o PDF do bônus existe desde 06/10 |
 
 Nota: "Chanukah puzzle book for kids" aparece só como keyword do backend do listing (variante de busca intencional).
+
+**Resumo (06/10/2026):** os itens 3 a 8 acima estão fechados. Continua pendente o **revisor humano** (nikud e fonte do cartão, mini-guia, bênçãos, Shehecheyanu, quadro menorá x hanukkiah, Pei, as 4 letras do dreidel).

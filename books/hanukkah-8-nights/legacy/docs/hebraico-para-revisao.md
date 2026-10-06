@@ -14,7 +14,7 @@ Toda página com letra ou palavra hebraica (transliterada ou em script) entra aq
 > Baruch atah Adonai, Eloheinu melech ha'olam, asher kid'shanu b'mitzvotav v'tzivanu l'hadlik ner shel Hanukkah.
 
 **Tradução usada:**
-> Blessed are You, our God, Ruler of the universe, who made us holy with commandments and commanded us to light the Hanukkah candles.
+> Blessed are You, Adonai our God, Ruler of the universe, who made us holy with commandments and commanded us to light the Hanukkah candles.
 
 ---
 
@@ -23,16 +23,16 @@ Toda página com letra ou palavra hebraica (transliterada ou em script) entra aq
 > Baruch atah Adonai, Eloheinu melech ha'olam, she'asah nisim la'avoteinu bayamim hahem baz'man hazeh.
 
 **Tradução usada:**
-> Blessed are You, our God, Ruler of the universe, who worked miracles for our ancestors in those days, at this season.
+> Blessed are You, Adonai our God, Ruler of the universe, who worked miracles for our ancestors in those days, at this season.
 
 ---
 
 **Página:** Before the Candles, bloco "Only on Night 1: the Shehecheyanu" (3ª bênção)
 **Texto no piloto:**
-> Baruch atah Adonai, Eloheinu melech ha'olam, shehecheyanu v'kiy'manu v'higianu laz'man hazeh.
+> Baruch atah Adonai, Eloheinu melech ha'olam, shehecheyanu v'kiy'manu v'higiyanu laz'man hazeh.
 
 **Tradução usada:**
-> Blessed are You, our God, Ruler of the universe, who has kept us alive, sustained us, and brought us to this season.
+> Blessed are You, Adonai our God, Ruler of the universe, who has kept us alive, sustained us, and brought us to this season.
 
 **Pendências para o revisor (as três bênçãos):** confirmar a grafia das transliterações (variantes aceitas: "l'hadlik"/"lehadlik", "kid'shanu"/"kidshanu", "nisim"/"nissim", "bayamim"/"ba-yamim"). As revisões externas confirmaram os textos como padrão. Decidido pelo Danilo em 26/09/2026: script hebraico entra só no cartão de bênçãos do Bonus (as três bênçãos, hebraico + transliteração + inglês); no miolo, só transliteração + inglês.
 
@@ -124,3 +124,11 @@ O miolo diagramado NÃO tem letra hebraica em script em nenhuma página (conferi
 
 **Página:** 1 do PDF `build/hanukkah-8-nights-family-pack.pdf`, cartão "Hanukkah Blessings" (fonte: `bonus/family-pack.typ`).
 **Hebraico em script, com nikud:** as 3 bênçãos do cartão (acendimento, milagres, Shehecheyanu), idênticas ao texto de `manuscrito/bonus-cartao-bencaos.md` (conferido por código). Transliteração e inglês iguais aos da Noite 1. Nome divino abreviado como יְיָ, com a linha de aviso de respeito. Pendente de revisor humano: grafia, nikud e o aviso.
+
+---
+
+## NIGHT 5: letras do dreidel (06/10/2026)
+
+**Páginas:** exercício "Match the Letter to Its Meaning" e nota "What do the letters spell?" (N5), e o molde "Design a Dreidel" (N5, `noite5_template_dreidel_branco.png`).
+**Hebraico em script (letras isoladas, em Times New Roman embutido):** נ (Nun), ג (Gimel), ה (Hei), ש (Shin) e פ (Pei, só na nota sobre Israel). Cada letra aparece com o nome transliterado.
+**Observação:** exceção à decisão 49, aprovada pelo Danilo em 06/10/2026 após a revisão cruzada 2. Pendente de revisor humano.

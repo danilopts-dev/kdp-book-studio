@@ -1,6 +1,6 @@
 """
 gerar_template_dreidel_latino.py
-VARIANTE SEM HEBRAICO (decisao 49): iniciais latinas N, G, H, S no lugar das letras hebraicas, sem titulo na imagem,
+VARIANTE COM LETRAS HEBRAICAS ISOLADAS (decisao de 06/10/2026, excecao a decisao 49): letra hebraica grande + nome transliterado embaixo em cada face, sem titulo na imagem,
 fundo branco opaco, 400 dpi, girado 90 graus (retrato) para ocupar a pagina inteira.
 (baseado em gerar_template_dreidel.py)
 
@@ -18,13 +18,14 @@ import json
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+plt.rcParams["font.family"] = ["Times New Roman", "Arial"]
 from matplotlib.patches import Polygon, FancyBboxPatch
 
 OUT_PNG = "inputs/puzzle-assets/noite5_template_dreidel_branco.png"
 OUT_JSON = "inputs/puzzle-assets/noite5_template_dreidel_branco_gabarito.json"
 
 # Letras hebraicas das 4 faces, na ordem tradicional (fora de Israel).
-LETRAS = ["N", "G", "H", "S"]  # iniciais latinas: Nun, Gimel, Hei, Shin
+LETRAS = ["נ", "ג", "ה", "ש"]  # Nun, Gimel, Hei, Shin (letras isoladas; nao sao nome divino)
 NOMES = ["Nun", "Gimel", "Hei", "Shin"]
 SIGNIFICADOS = ["Nes (a miracle)", "Gadol (great)", "Haya (happened)", "Sham (there)"]
 
@@ -35,7 +36,7 @@ TAB = 0.35  # profundidade das abas de cola
 def texto_face(ax, x0, y0, letra_idx):
     ax.text(
         x0 + S / 2, y0 + S / 2, LETRAS[letra_idx],
-        ha="center", va="center", fontsize=44, fontweight="bold",
+        ha="center", va="center", fontsize=54, fontweight="bold",
     )
     ax.text(
         x0 + S / 2, y0 + 0.14, NOMES[letra_idx],
@@ -109,7 +110,7 @@ def main():
 
     gabarito = {
         "faces": [
-            {"posicao": i, "inicial_latina": LETRAS[i], "nome": NOMES[i],
+            {"posicao": i, "letra_hebraica": LETRAS[i], "nome": NOMES[i],
              "significado_fora_de_israel": SIGNIFICADOS[i]}
             for i in range(4)
         ],

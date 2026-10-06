@@ -15,7 +15,7 @@ Say the first two blessings every night, before you light the candles. On the fi
 
 Baruch atah Adonai, Eloheinu melech ha'olam, asher kid'shanu b'mitzvotav v'tzivanu l'hadlik ner shel Hanukkah.
 
-Blessed are You, our God, Ruler of the universe, who made us holy with commandments and commanded us to light the Hanukkah candles.
+Blessed are You, Adonai our God, Ruler of the universe, who made us holy with commandments and commanded us to light the Hanukkah candles.
 
 ---
 
@@ -25,7 +25,7 @@ Blessed are You, our God, Ruler of the universe, who made us holy with commandme
 
 Baruch atah Adonai, Eloheinu melech ha'olam, she'asah nisim la'avoteinu bayamim hahem baz'man hazeh.
 
-Blessed are You, our God, Ruler of the universe, who worked miracles for our ancestors in those days, at this season.
+Blessed are You, Adonai our God, Ruler of the universe, who worked miracles for our ancestors in those days, at this season.
 
 ---
 
@@ -33,15 +33,15 @@ Blessed are You, our God, Ruler of the universe, who worked miracles for our anc
 
 בָּרוּךְ אַתָּה יְיָ אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם, שֶׁהֶחֱיָנוּ וְקִיְּמָנוּ וְהִגִּיעָנוּ לַזְּמַן הַזֶּה.
 
-Baruch atah Adonai, Eloheinu melech ha'olam, shehecheyanu v'kiy'manu v'higianu laz'man hazeh.
+Baruch atah Adonai, Eloheinu melech ha'olam, shehecheyanu v'kiy'manu v'higiyanu laz'man hazeh.
 
-Blessed are You, our God, Ruler of the universe, who has kept us alive, sustained us, and brought us to this season.
+Blessed are You, Adonai our God, Ruler of the universe, who has kept us alive, sustained us, and brought us to this season.
 
 ---
 
 *Light the candles from left to right, newest candle first. Happy Hanukkah!*
 
-*This card contains Hebrew blessings with God's name. Please keep it in a respectful place.*
+*This card contains Hebrew blessings with God's name. Please keep it in a respectful place. If it wears out, please ask a rabbi or your synagogue how to retire it respectfully.*
 
 ---
 
