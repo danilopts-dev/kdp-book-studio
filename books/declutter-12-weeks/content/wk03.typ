@@ -16,9 +16,9 @@ Work one zone a day. Take everything out, wipe the shelf and sort as you put thi
 #_wk-daily((
   [*Counters, part one.* Clear the main counter. Put back only what you use every day.],
   [*Counters, part two.* Small appliances, the paper pile, the fruit bowl and the corner nobody looks at.],
-  [*Pantry, top shelves.* Take everything out. Check the dates. Set aside what has expired.],
+  [*Pantry, top shelves.* Take everything out. Check the dates. Set aside what is past its date or looks off.],
   [*Pantry, lower shelves.* Sort, and group duplicates together.],
-  [*Fridge.* Shelves, door and drawers. Toss what has expired or gone off.],
+  [*Fridge.* Shelves, door and drawers. Toss anything spoiled, unsafe or that you know you won't eat.],
   [*Freezer and spices.* Anything you can't identify or won't eat goes. Check the spice dates.],
   [*Out the door.* Take out the Toss and Donate boxes, bring the food donation to a drop-off, and count.],
 ))
@@ -143,7 +143,7 @@ Decide where each box is headed while the room is fresh in your mind. A box that
 #_wk-where(
   [Sealed, unexpired food for a food bank, plus working dishes and small appliances worth less than your sell threshold. Check what the place accepts before you go.],
   [Small appliances in good shape. Only what is worth at least your sell threshold from Week 0.],
-  [Expired and opened food, stale spices, freezer-burned items and broken gadgets. Recycle the packaging you can.],
+  [Spoiled food, opened food you won't use, stale spices, freezer-burned items and broken gadgets. Recycle the packaging you can.],
 )
 
 #pagebreak()
