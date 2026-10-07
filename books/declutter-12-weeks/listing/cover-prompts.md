@@ -58,3 +58,23 @@ A short rule, then four bullet points with small square checkboxes instead of do
 Closing line (bold, medium size): "No organizing system to learn. No containers to buy."
 
 Leave a clean empty white rectangle of 2 x 1.2 inches (about 22% of the page width) in the bottom-right corner for the barcode, with no text or decoration. No other text anywhere.
+
+---
+
+# Frente do zero (sem imagem de referência) — 2026-10-07
+
+```
+Create a finished book front cover, portrait 2:3, photorealistic lifestyle photograph with typography. Scene: a wide light-oak bookshelf with two bays and five shelves, filling most of the frame, in a bright, calm living room with a warm off-white wall, a woven jute rug on a light wood floor, a leafy pothos plant trailing from the top shelf and an olive tree in the right corner. Eye-level, straight-on camera.
+
+A single thin white diagonal line runs from the top-left corner area to the bottom-right corner area, crossing the center of the shelves. At the exact center of the diagonal sits a round white badge with a thin black outline. The diagonal divides the photo into two zones:
+- LOWER-LEFT of the diagonal (everything on the left of the badge, including the lower shelves of the right bay that fall below the line): clearly MESSY. Overflowing baskets with fabric spilling out, mismatched boxes with the lids off, crooked piles of unsorted papers and magazines, books toppled and stacked at random angles, tangled cables, a bowl crammed with small items, clothes draped over a shelf edge. All neutral, no readable labels. This zone sits in soft, subtle shade, slightly cooler and dimmer.
+- UPPER-RIGHT of the diagonal (everything on the right of the badge, including the upper shelves of the left bay that fall above the line): clearly TIDY but NOT empty. Shelves are full and orderly: books lined up by height, a few matching baskets, a pencil cup, ceramic vases, a wooden bowl, small plants, with comfortable space between objects. This zone is bathed in warm golden natural sunlight from a window on the right, with soft light patches on the wall and shelves.
+Keep the light difference subtle and natural, so the cover feels calm, not dramatic. Warm neutral palette: cream, oak, soft gray, sage green.
+
+The top 30% of the image is a clean, soft, uncluttered wall area for the title. Add this text, crisp and perfectly spelled, in a bold modern geometric sans-serif (Barlow style), dark charcoal (#1F1F1F), centered:
+Title in three stacked lines, very large: "THE 12-WEEK" / "DECLUTTERING" / "WORKBOOK".
+Under the title, a short thick rule, then the subtitle in medium weight: "15 Minutes a Day, One Room a Week".
+Inside the round badge, in black bold: "15" very large, with "MIN / A DAY" in small caps under it.
+At the bottom, over the rug, on a semi-transparent white band: "EMILY P. HARPER" in bold letter-spaced caps.
+No other text anywhere. No logos, no people, no watermarks. Sharp focus, realistic proportions, no distorted objects. Keep all text and the badge inside the central 84% of the image height; the top and bottom 8% stay as plain background for trimming.
+```
