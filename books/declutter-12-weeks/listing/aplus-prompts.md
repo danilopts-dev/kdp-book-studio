@@ -22,8 +22,12 @@ Gerados em 2026-10-07 a partir do plano de A+ aprovado pelo Danilo na mesma data
 
 ## Módulo 1 — Hero
 
-**Anexos**
-- [ ] `books/declutter-12-weeks/inputs/cover-front.png` (obrigatório)
+**Anexos (nesta ordem; anexe os 3 arquivos)**
+- [ ] 1) `books/declutter-12-weeks/inputs/cover-front.png` (capa, obrigatório)
+- [ ] 2) Página do miolo A, exportada do PDF final (escolha do Danilo, vai na página ESQUERDA do livro aberto)
+- [ ] 3) Página do miolo B, exportada do PDF final (escolha do Danilo, vai na página DIREITA do livro aberto)
+
+Exporte as páginas inteiras, sem corte, em PNG de pelo menos 130 ppi (as de `listing/aplus-assets/` servem de modelo).
 
 **Texto exato na imagem**
 - Headline: "Clear the whole house in 12 weeks, fifteen minutes at a time."
@@ -38,7 +42,7 @@ Banner purpose: Hero.
 
 Visual style: Match the exact color palette, typography and photographic style of the attached book cover: a warm, realistic photo look with natural sunlight coming from the right, cream walls, light oak wood, soft gray and sage green (#8FA98B) accents, and bold Barlow-style sans-serif type in dark charcoal (#1F1F1F). Mood: calm, practical and quietly aspirational, never salesy.
 
-Layout: 16:9 landscape banner. Place the attached book cover on the left third, large and prominent, standing slightly angled with a soft natural shadow, exactly as designed (do not redraw or alter the cover, its text or its artwork). On the right two thirds, a bright, empty kitchen counter in a sunlit kitchen: clean light countertop, a plain ceramic mug and a yellow pencil resting on an open workbook. The open workbook's pages must be only blurred, abstract light-gray shapes with no readable text. Keep the area on the upper right of the counter as calm, uncluttered cream wall so the text sits on clean space, on a solid cream panel if needed. Keep the cover, headline and body inside the central 88% of the width and 90% of the height.
+Layout: 16:9 landscape banner. Place the attached book cover on the left third, large and prominent, standing slightly angled with a soft natural shadow, exactly as designed (do not redraw or alter the cover, its text or its artwork). On the right two thirds, a bright, empty kitchen counter in a sunlit kitchen: clean light countertop, a plain ceramic mug and a yellow pencil resting beside a workbook lying open, seen from a slightly raised angle. The open workbook must show the two attached interior pages exactly as they are: attached page A is the entire left page and attached page B is the entire right page, each filling its page edge to edge, with the same layout, tables, checkboxes and words, only with natural perspective, soft lighting and a subtle paper curve. Do NOT redraw, rewrite, summarize, translate or invent any page content, and do NOT create any other pages; the printed text on those two pages should stay as small and sharp as in the attachments. The book is a white-paper, black-and-white interior with an 8.5 x 11 inch page proportion, so each page is taller than it is wide. Keep the area on the upper right of the counter as calm, uncluttered cream wall so the text sits on clean space, on a solid cream panel if needed. Keep the cover, headline and body inside the central 88% of the width and 90% of the height.
 
 Text to render exactly as written, spelled correctly, in bold Barlow-style sans-serif, dark charcoal on a clean cream area, large and easy to read at small size (do not paraphrase, do not add any other text):
 Headline (largest, bold, two lines at most): "Clear the whole house in 12 weeks, fifteen minutes at a time."
@@ -46,10 +50,12 @@ Body (smaller, regular weight, below the headline, left-aligned): "A fill-in wor
 
 Audience: adults, mostly women, who want a calmer home and are tired of cleanouts that never stick. The imagery should feel like a real, tidy home, not a stock-photo showroom.
 
-Do not add any people, hands, logos, watermarks, labels, price tags, badges or extra text beyond what is specified above. No text on the mug, the pencil or the open book.
+Do not add any people, hands, logos, watermarks, labels, price tags, badges or extra text beyond what is specified above. No text on the mug or the pencil. The only text inside the open book is the text already printed on the two attached interior pages.
 ```
 
-Variante sem texto (se o texto sair errado): repita o prompt removendo o bloco "Text to render" e acrescente "Leave the right side of the counter wall as a large clean cream area for text. Render no text at all."
+Variante sem texto (se o texto da headline ou do body sair errado): repita o prompt removendo o bloco "Text to render" e acrescente "Leave the upper right of the counter wall as a large clean cream area for text. Render no headline or body text. Keep the two interior pages exactly as attached."
+
+Plano B (se o Flow reescrever ou deformar as páginas do livro aberto): peça só a cena, com o livro aberto e as páginas em branco e planas, e cole as duas páginas reais por cima no Canva (transformar com leve perspectiva). Esse caminho garante páginas fiéis.
 
 ---
 
