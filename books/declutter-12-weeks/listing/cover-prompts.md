@@ -78,3 +78,17 @@ Inside the round badge, in black bold: "15" very large, with "MIN / A DAY" in sm
 At the bottom, over the rug, on a semi-transparent white band: "EMILY P. HARPER" in bold letter-spaced caps.
 No other text anywhere. No logos, no people, no watermarks. Sharp focus, realistic proportions, no distorted objects. Keep all text and the badge inside the central 84% of the image height; the top and bottom 8% stay as plain background for trimming.
 ```
+
+---
+
+# Ajuste 1 da frente (usar na mesma conversa do ChatGPT) — 2026-10-07
+
+```
+Keep this exact image: same composition, same camera angle, same diagonal line and badge, same text (title, subtitle, badge text and author, spelled exactly as is), same typography, same rug, same plants, same lighting (shade on the lower-left, warm sunlight on the upper-right). Change only the contents of the shelves:
+
+1) LOWER-LEFT (messy side): reduce the mess by about 40%. It should read as "a bit disorganized", not a hoarder's pile. Fewer items overall: one basket with a blanket spilling out slightly, one leaning stack of books and papers, one open box, a few loose items on the floor. Remove the pile of clothes, the tangled cables and the bowl crammed with small items. Leave some visible empty shelf space so it looks messy but believable.
+
+2) UPPER-RIGHT (tidy side): make it noticeably cleaner and more minimal, about 40% fewer objects, but not empty. Each shelf holds only two or three items with generous space between them: for example one short row of books, one vase, one small plant, one wooden bowl. Keep the framed picture on the top shelf, remove the pencil cup and the extra plants and vases. Lots of calm negative space, oak shelf boards clearly visible.
+
+Do not change anything else. No new text, no new objects outside the shelves.
+```
