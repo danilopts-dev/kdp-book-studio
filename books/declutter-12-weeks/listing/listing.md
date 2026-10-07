@@ -84,7 +84,7 @@ Auditoria human-voice (2026-10-06):
 
 ## A+ Content — plano de módulos (970 x 600)
 
-Plano de 5 módulos (Hero, Problema/Contexto, Inside Pages Preview, Comparação e Valor, Fechamento). Aguarda aprovação do Danilo.
+Plano de 5 módulos (Hero, Problema/Contexto, Inside Pages Preview, Comparação e Valor, Fechamento). Aprovado pelo Danilo em 2026-10-07.
 
 **Módulo 1 — Hero**
 - Visual: capa à esquerda; à direita, foto de uma bancada de cozinha vazia com uma xícara e um lápis sobre o livro aberto.
@@ -114,4 +114,4 @@ Plano de 5 módulos (Hero, Problema/Contexto, Inside Pages Preview, Comparação
 
 ## Prompts do Google Flow
 
-Pendentes (`listing/aplus-prompts.md` não foi gerado, de propósito). Precisam: (1) aprovação do plano de A+ acima; (2) a arte final da capa (`inputs/cover-front.png`), anexada em todos os prompts; (3) as páginas do miolo do módulo 3 exportadas como imagem do PDF final (Week 7, The Closet, e sua página de Count; uma página do Sell Tracker na Part 3). Nenhum prompt é gerado sem a capa.
+Gerados em `listing/aplus-prompts.md` (2026-10-07): um prompt por módulo, com checklist de anexos. A capa final (`inputs/cover-front.png`) vai em todos os prompts. Módulo 3: páginas reais em `listing/aplus-assets/` (week07-opener.png, week07-count.png e sell-tracker.png, a última da seção Where It All Went). Módulo 5: `before-after.png`.
