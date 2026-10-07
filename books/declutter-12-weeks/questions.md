@@ -5,7 +5,9 @@ BLOQUEANTE impede a etapa indicada. ASSUMIDA já foi decidida pelo padrão mais 
 
 ## Abertas — precisam de você
 
-- [ ] [BLOQUEANTE p/ cover e listing] (cover) **Arte da capa.** Pendente, a pedido do Danilo (2026-10-05). O estúdio gera o guia de capa (medidas e lombada pelas 122 páginas); a arte é do Danilo, em `inputs/cover-front.png` (e `cover-back.png`, opcional). Destrava o PDF da capa e os prompts do Google Flow para o A+.
+
+- [ ] [ASSUMIDA] (listing) **A+ Content adiado.** Listing (títulos, keywords, descrição) está completo e a capa pronta. O plano de A+ (5 módulos, em `listing/listing.md`) aguarda a sua aprovação; `listing/aplus-prompts.md` só sai depois dela e das páginas do miolo exportadas como imagem. Marquei `listing` como feito para liberar o finalize; o A+ pode subir depois da publicação.
+- [ ] [ASSUMIDA] (cover) **Arte da capa gerada por IA em 1086 × 1448 (≈126 ppi na capa).** Ampliada para ≈300 ppi com Lanczos; funciona para o KDP, mas fica um pouco macia nas letras pequenas. Se o gerador tiver upscale 2K/4K, substitua `inputs/cover-front.png` e `cover-back.png` e rode `./st cover declutter-12-weeks --pages 122`.
 
 ## Em produção (fora do livro)
 

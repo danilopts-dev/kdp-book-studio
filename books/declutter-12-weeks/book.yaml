@@ -27,7 +27,7 @@ front:
 back:
 - bonus
 - final-words
-cover: {}
+cover: {background: '#E1D1C0', spine_text: 'THE 12-WEEK DECLUTTERING WORKBOOK     EMILY P. HARPER', spine_font: Barlow, spine_color: '#1F1F1F'}
 units:
 - id: intro
   kind: prose
