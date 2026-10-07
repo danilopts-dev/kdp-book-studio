@@ -92,3 +92,23 @@ Keep this exact image: same composition, same camera angle, same diagonal line a
 
 Do not change anything else. No new text, no new objects outside the shelves.
 ```
+
+---
+
+# Frente v3, do zero: diagonal do tamanho da estante, sol vindo da direita — 2026-10-07
+
+```
+Create a finished book front cover, portrait 3:4, photorealistic lifestyle photograph with typography. Scene: one wide light-oak bookshelf with two bays and four shelves, centered in the lower-middle of the frame, in a bright, calm room with a warm off-white wall and a light wood floor with a small jute rug at the bottom. A trailing pothos plant hangs at the top-left of the shelf and an olive tree stands at the right edge. Eye-level, straight-on camera.
+
+A single white diagonal line runs exactly from the TOP-LEFT CORNER of the bookshelf to its BOTTOM-RIGHT CORNER, so the line is the same size as the bookshelf and does not extend beyond it. At the exact center of the line sits a round white badge with a thin black outline. The line divides the shelves into two zones:
+- LOWER-LEFT of the line: clearly MESSY, but believable and not exaggerated. Plastic bins with clothes hanging out, a tangled charger cable, a leaning stack of loose papers, a few books fallen sideways, a cardboard box, a crumpled towel. Some empty space is visible on the shelves.
+- UPPER-RIGHT of the line: clean, tidy and minimal, but not empty. Two or three items per shelf with generous space between them: a short row of books, a small plant, a ceramic vase, a woven basket, a stack of two books. The oak boards are clearly visible and the shelves feel calm.
+Lighting: warm golden natural sunlight comes from the right side of the frame, through a window outside the picture. It lights the right and upper part of the shelf more strongly, with soft light patches and gentle shadows on the shelf and wall. Do NOT add any artificial shade or darkening on the left side; the left simply receives less light because it is farther from the window. Keep the effect subtle and natural. Palette: cream, oak, soft gray, sage green.
+
+The top 30% of the image is a clean, soft, uncluttered wall area for the title. Add this text, crisp and perfectly spelled, in a bold modern geometric sans-serif (Barlow style), dark charcoal (#1F1F1F), centered:
+Title in three stacked lines, very large: "THE 12-WEEK" / "DECLUTTERING" / "WORKBOOK".
+Under the title, a short thick rule, then the subtitle in medium weight: "15 Minutes a Day, One Room a Week".
+Inside the round badge, in black bold: "15" very large, with "MIN / A DAY" in small caps under it.
+At the bottom, over the rug, on a semi-transparent white band: "EMILY P. HARPER" in bold letter-spaced caps.
+No other text anywhere. No logos, no people, no watermarks. Sharp focus, realistic proportions, no distorted objects. Keep all text and the badge inside the central 88% of the image height; the top and bottom 6% stay as plain background for trimming.
+```
