@@ -84,7 +84,7 @@ Copy the totals from the "Keep / Donate / Sell / Toss Count" page at the end of 
 
 == Your Scoreboard
 
-Four numbers sum up the 12 weeks. Take the first three from your counts and from "Part 3 Totals", and work out the fourth below.
+Four numbers sum up the 12 weeks. Take the first three from your counts and from "Selling and Donating Totals", and work out the fourth below.
 
 #v(0.15in)
 #_styled-table(head: false,
@@ -92,8 +92,8 @@ Four numbers sum up the 12 weeks. Take the first three from your counts and from
   inset: (x: 10pt, y: 19pt),
   align: (left + horizon, center + horizon),
   [*Items out* \ #text(size: 0.85em)[Donate + Sell + Toss, from the weekly counts]], [],
-  [*Money earned* \ #text(size: 0.85em)["All sold" from Part 3 Totals]], [\$],
-  [*Value donated* \ #text(size: 0.85em)["All donated" from Part 3 Totals]], [\$],
+  [*Money earned* \ #text(size: 0.85em)["All sold" from Selling and Donating Totals]], [\$],
+  [*Value donated* \ #text(size: 0.85em)["All donated" from Selling and Donating Totals]], [\$],
   [*Hours invested* \ #text(size: 0.85em)[Worked out below]], [],
 )
 
@@ -120,7 +120,7 @@ Most days you used a single 15-minute block. Count the days you did the work, in
 You made a few hundred small decisions, 15 minutes at a time. Nobody handed you a finished room. You built these results one drawer and one shelf at a time.
 
 #v(0.1in)
-The house will not stay this way on its own, and that is fine. Use the monthly 15-minute reset and one in, one out from Part 4. They take little time, and they keep the work from piling up again.
+The house will not stay this way on its own, and that is fine. Use the monthly 15-minute reset and one in, one out from Keep It Clear. They take little time, and they keep the work from piling up again.
 
 #v(0.1in)
 If you want to keep the house clean now that it's clear, the #emph[House Cleaning Checklist Planner] builds a routine in the same 15-minute blocks. More books from Emily P. Harper are on the way, and the Final Words page at the back tells you where to find them.

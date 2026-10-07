@@ -66,7 +66,7 @@
   Key content:
   - O teste do cabide virado
   - Roupas que não servem, roupas "para quando eu emagrecer", roupas de festa
-  - Ligação direta com o Sell Tracker (Parte 3)
+  - Ligação direta com o Sell Tracker (seção Where It All Went)
 
 **WEEK 8 — Kids' Rooms and Toys (or the Hobby Room)**
   Purpose: versão com filhos e versão sem filhos na mesma semana.
@@ -90,7 +90,7 @@
   Purpose: o maior volume do livro, com tarefas maiores divididas em blocos de 15 minutos.
   Key content:
   - Ferramentas, decoração de datas festivas, caixas nunca abertas desde a última mudança
-  - Planejamento de uma garage sale (liga com a Parte 3)
+  - Planejamento de uma garage sale (liga com a seção Where It All Went)
 
 **WEEK 12 — Sentimental Things, Saved for Last on Purpose**
   Purpose: a semana mais difícil, quando a pessoa já tem prática de decidir.
@@ -99,14 +99,14 @@
   - Heranças, desenhos dos filhos, cartas e fotos
   - O que fazer com o que é de outra pessoa da família
 
-**PART 3 — Where It All Went: Selling and Donating**
+**WHERE IT ALL WENT — Selling and Donating** (antes "Part 3"; renomeado em 2026-10-07 por não existir Part 1 e 2)
   Purpose: mostra o resultado do destralhe em dinheiro e em doação, o que motiva e ajuda na hora do imposto.
   Key content:
   - Guia rápido de onde vender e onde doar cada tipo de item (roupa, móvel, eletrônico, livro, material de construção)
   - Sell Tracker: item, onde anunciou, preço pedido, preço vendido, data
   - Donation Log: item, estado, valor justo de mercado, instituição, recibo guardado; nota sobre recibos e sobre o Form 8283 para doações não monetárias acima de $500 [REVISAR]
 
-**PART 4 — Keep It Clear**
+**AFTER WEEK 12 — Keep It Clear** (antes "Part 4")
   Purpose: evita que a casa volte ao que era e entrega a pessoa ao próximo livro.
   Key content:
   - Reset mensal de 15 minutos por cômodo

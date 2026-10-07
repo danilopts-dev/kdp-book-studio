@@ -129,7 +129,7 @@ Pick up one item and answer the questions in order. There is no "maybe" box.
 )
 
 // ---------- Páginas 3-14: checklists por cômodo ----------
-// (semana, cômodo, tarefas do reset). Cômodos idênticos aos do livro (Week 0, Part 4).
+// (semana, cômodo, tarefas do reset). Cômodos idênticos aos do livro (Week 0, Keep It Clear).
 #let rooms = (
   ("Week 1", "Bathroom", (
     [Counter and sink are clear. Only what I used today is out],

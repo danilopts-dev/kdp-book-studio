@@ -4,7 +4,7 @@ This is the biggest volume in the house. The garage, basement, attic and storage
 
 Pick one area and one shelf, corner or stack per day. Sort into the four boxes as you go. Tools you have never used and duplicates are easy to let go. Holiday decorations get one honest count. A box you have not opened since the last move is a good sign you do not need what is inside, but look before you decide.
 
-Page 3 is a garage sale planning page, and it links to the Sell Tracker and the Donation Log in Part 3. One rule for the whole week: paint, chemicals, batteries and broken electronics do not go in the trash or the donate box. Check your local household hazardous waste guidelines first.
+Page 3 is a garage sale planning page, and it links to the Sell Tracker and the Donation Log in Where It All Went. One rule for the whole week: paint, chemicals, batteries and broken electronics do not go in the trash or the donate box. Check your local household hazardous waste guidelines first.
 
 #v(0.05in)
 == This Week, 15 Minutes a Day
@@ -51,7 +51,7 @@ List each place where things pile up. Pick a day for each one, and break the big
 
 == Plan Your Garage Sale
 
-A garage sale makes sense when you have a lot of things worth at least your sell threshold and a free weekend. If you do not, skip it and use the donate box. Use this page to decide. Log every item you plan to sell in the Sell Tracker in Part 3, and log what is left over in the Donation Log.
+A garage sale makes sense when you have a lot of things worth at least your sell threshold and a free weekend. If you do not, skip it and use the donate box. Use this page to decide. Log every item you plan to sell in the Sell Tracker in Where It All Went, and log what is left over in the Donation Log.
 
 #v(0.1in)
 #_wk-table(
@@ -146,7 +146,7 @@ The garage and attic hold a lot, so plan where each box is going before you fill
 
 #_wk-where(
   [Tools, sports gear and decorations in good shape. Many donation centers take tools and household goods. Ask what they accept and whether they offer pickup for larger items before you go.],
-  [Anything worth at least your sell threshold from Week 0. Good tools, bikes, sports gear and furniture. Online marketplace, local consignment shop or a garage sale. Log each one in the Sell Tracker in Part 3.],
+  [Anything worth at least your sell threshold from Week 0. Good tools, bikes, sports gear and furniture. Online marketplace, local consignment shop or a garage sale. Log each one in the Sell Tracker in Where It All Went.],
   [Broken tools, rusted gear and worn-out items. Check your local household hazardous waste guidelines for paint, chemicals, batteries and broken electronics.],
 )
 

@@ -6,7 +6,7 @@ If the book helped, I'd be grateful for a short review on Amazon. Tell other rea
 
 If something in these pages was confusing, or you have an idea for making the next edition better, I'd like to hear it. You can write to me at **hello@readpublishingco.com**. Every message is read by a person, though a reply can take a few days.
 
-Once the clutter is out, the *House Cleaning Checklist Planner* picks up where Part 4 leaves off, with weekly and monthly checklists and cleaning routines for every room. It comes in a black-and-white edition and a full-color one. More books are on the way, and you can find the planner and everything else I publish at **www.readpublishingco.com/#emily**.
+Once the clutter is out, the *House Cleaning Checklist Planner* picks up where Keep It Clear leaves off, with weekly and monthly checklists and cleaning routines for every room. It comes in a black-and-white edition and a full-color one. More books are on the way, and you can find the planner and everything else I publish at **www.readpublishingco.com/#emily**.
 
 With thanks,
 

@@ -4,7 +4,7 @@ The closet is the biggest week in the book, and the most rewarding. Clothes take
 
 The work is simple. Take everything out of one section at a time, look at each piece and sort it into the four boxes: Keep, Donate, Sell, Toss. To help, there are two quick tests. First, the reverse-hanger test: turn every hanger backward, and each time you wear something, hang it back the right way. Anything still backward after a month or two is telling you something. Second, the tie-breaker from the start of this book: if it were gone tomorrow, would you go out and buy it again?
 
-Expect three groups to be tricky: clothes that don't fit, the "when I lose weight" clothes, and party clothes you wear once a year. Page 4 gives each group its own space. Pick up the "not sure" bag from Week 6 too. Anything worth at least your sell threshold goes to the Sell Tracker in Part 3.
+Expect three groups to be tricky: clothes that don't fit, the "when I lose weight" clothes, and party clothes you wear once a year. Page 4 gives each group its own space. Pick up the "not sure" bag from Week 6 too. Anything worth at least your sell threshold goes to the Sell Tracker in Where It All Went.
 
 #v(0.05in)
 == This Week, 15 Minutes a Day
@@ -16,7 +16,7 @@ Expect three groups to be tricky: clothes that don't fit, the "when I lose weigh
   [*Jackets, sweaters and coats.* Check the collars, cuffs and elbows. Keep what you reached for this year.],
   [*Shoes and accessories.* Belts, scarves, ties, hats and jewelry. Pair up shoes and check the soles.],
   [*Party clothes and the "not sure" bag.* Go through both. Use page 4 of this week.],
-  [*Out the door.* Take out the Toss and Donate boxes. Log the Sell box in the Sell Tracker in Part 3. Count.],
+  [*Out the door.* Take out the Toss and Donate boxes. Log the Sell box in the Sell Tracker in Where It All Went. Count.],
 ))
 
 #pagebreak()
@@ -113,7 +113,7 @@ Three groups hold the most "maybe" in a closet. Be kind and honest: clothes that
 
 == What Sells, What Goes
 
-Clothes are some of the most sellable things in your house. Use the page to plan the Sell box before you list anything. The list itself goes in the Sell Tracker in Part 3.
+Clothes are some of the most sellable things in your house. Use the page to plan the Sell box before you list anything. The list itself goes in the Sell Tracker in Where It All Went.
 
 #v(0.15in)
 #_wk-table(
@@ -136,7 +136,7 @@ Clothes are some of the most sellable things in your house. Use the page to plan
 #checklist(none, (
   [Every piece in the Sell box is worth at least my sell threshold],
   [I checked each piece for stains, holes and missing buttons],
-  [The pieces are listed in the Sell Tracker in Part 3],
+  [The pieces are listed in the Sell Tracker in Where It All Went],
   [Anything that didn't sell by my deadline moves to the Donate box],
 ))
 #_wk-field([*My deadline for selling:* #_wk-date], above: 0.25in)
@@ -150,7 +150,7 @@ Decide where each box is headed while the closet is fresh in your mind. A box th
 
 #_wk-where(
   [Clean clothes in good shape, coats, shoes, belts and bags. A coat in winter is especially welcome. Check what the place accepts before you go.],
-  [Anything worth at least your sell threshold from Week 0. Online marketplace, local consignment shop or a garage sale. Log each one in the Sell Tracker in Part 3.],
+  [Anything worth at least your sell threshold from Week 0. Online marketplace, local consignment shop or a garage sale. Log each one in the Sell Tracker in Where It All Went.],
   [Stained, torn or worn-out pieces, single socks and shoes without a pair. Ask if your area has a textile recycling drop-off.],
 )
 

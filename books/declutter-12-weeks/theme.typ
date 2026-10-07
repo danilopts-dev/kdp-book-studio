@@ -33,7 +33,7 @@
   set par(leading: 0.68em, spacing: 1.05em, justify: false, first-line-indent: 0em)
   set strong(delta: 300)
 
-  // Aberturas: "Week N — Título" ganha o bloco numérico; "Part 3 — Título", "Introduction — Título" etc. ganham kicker.
+  // Aberturas: "Week N — Título" ganha o bloco numérico; "Where It All Went — Título", "Introduction — Título" etc. ganham kicker.
   show heading.where(level: 1): it => {
     let t = _plain(it.body)
     let m = t.match(regex("^Week (\d+) — (.+)$"))

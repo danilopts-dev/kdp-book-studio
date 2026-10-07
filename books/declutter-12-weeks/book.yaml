@@ -86,7 +86,7 @@ units:
   title: Week 7 — The Closet
   brief: 'Fixed sections every week (identical layout wk01-wk12): ''This Week, 15 Minutes a Day'' (7 daily tasks with checkboxes, room-specific) and ''Keep / Donate / Sell / Toss Count'' (weekly tally).
     Open with a short guidance page (150-250 words, human-voice-writing rules). Clothes: biggest volume and most sellable items. The reverse-hanger test. Clothes that don''t fit, ''when I lose weight''
-    clothes, party clothes. Direct link to the Sell Tracker in Part 3.'
+    clothes, party clothes. Direct link to the Sell Tracker in Where It All Went.'
   target_pages: 7
 - id: wk08
   kind: typst
@@ -114,7 +114,7 @@ units:
   title: Week 11 — Garage, Basement, Attic and Storage
   brief: 'Fixed sections every week (identical layout wk01-wk12): ''This Week, 15 Minutes a Day'' (7 daily tasks with checkboxes, room-specific) and ''Keep / Donate / Sell / Toss Count'' (weekly tally).
     Open with a short guidance page (150-250 words, human-voice-writing rules). Biggest volume; bigger jobs broken into 15-minute blocks. Tools, holiday decorations, boxes unopened since the last move.
-    Garage sale planning page (links to Part 3).'
+    Garage sale planning page (links to Where It All Went).'
   target_pages: 7
 - id: wk12
   kind: typst
@@ -125,14 +125,14 @@ units:
   target_pages: 7
 - id: part3
   kind: typst
-  title: 'Part 3 — Where It All Went: Selling and Donating'
+  title: 'Where It All Went — Selling and Donating'
   target_pages: 14
   brief: Result in money and donations. Quick guide of where to sell and where to donate by item type (clothes, furniture, electronics, books, building materials) — generic channel types, no endorsements.
     Sell Tracker (item, where listed, asking price, sold price, date). Donation Log (item, condition, fair market value, organization, receipt kept); note on receipts and Form 8283 for noncash donations
     over $500 [VERIFY on irs.gov; informational, not tax advice].
 - id: part4
   kind: typst
-  title: Part 4 — Keep It Clear
+  title: After Week 12 — Keep It Clear
   target_pages: 6
   brief: Stop the house from sliding back; hand off to the next book. Monthly 15-minute reset per room (tracker). The one-in, one-out rule. Where the House Cleaning Checklist Planner routine picks up the
     work.
