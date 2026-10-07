@@ -38,10 +38,12 @@ Nenhuma repete o título 1 literalmente. Todas ASSUMIDAS, sem volume de busca va
 
 ## 4. Descrição (HTML para o campo do KDP)
 
+Atualizada em 2026-10-07 para o miolo final (82 páginas, 6 a 7 atividades por noite) e para o bônus funcionando. Mudanças em relação à versão de 2026-10-05: "more than 80 pages"; parágrafo das noites cita os tipos de puzzle (mazes, word searches, crossword, secret code); horário por noite trocado pela formulação do editor ("do the story and a few puzzles; no need to do every page"); lista "A few things you'll find inside" refeita com os puzzles novos; parágrafo "A free printable bonus" entrou. Ligar os pontos NÃO é citado (item fraco da revisão editorial, ainda sem decisão).
+
 ```html
 <p><b>It's the third night of Hanukkah, the kids have energy to burn, and the candles are still an hour off.</b> This book gives that hour something to do.</p>
 
-<p>8 Nights of Hanukkah Activity Book has one chapter for each night of the holiday, for kids ages 6 to 10. Every chapter opens with a short piece of the Hanukkah story, then moves to puzzles, drawing pages, and games built around that night's theme. Each one ends with a joke, a riddle, or a family game to play right before the candles. Plan on 20 to 30 minutes a night. Every night stands alone, so if the book arrives late or you open it on Night 3, you haven't missed anything.</p>
+<p>8 Nights of Hanukkah Activity Book has one chapter for each night of the holiday, for kids ages 6 to 10, with more than 80 pages in all. Every chapter opens with a short piece of the Hanukkah story, then moves to six or seven activities built around that night's theme: mazes, word searches, a crossword, a secret code to crack, and more. Each night ends with a joke, a riddle, or a family game to play right before the candles. There is plenty on every night, so do the story and a few puzzles; no need to do every page. Every night stands alone, so if the book arrives late or you open it on Night 3, you haven't missed anything.</p>
 
 <p><b>Two levels on every night.</b> Kids between 6 and 10 are at very different places with a pencil, so each activity is marked with one star (warm-up, for ages 6 to 7) or two stars (challenge, for ages 8 to 10). A seven-year-old and a ten-year-old can sit at the same table, open to the same night, and each have pages that fit.</p>
 
@@ -49,12 +51,16 @@ Nenhuma repete o título 1 literalmente. Todas ASSUMIDAS, sem volume de busca va
 
 <p><b>A few things you'll find inside:</b></p>
 <ul>
-<li>Symbol sudoku on Night 3, with oil jars, candles, dreidels, and stars in place of numbers</li>
+<li>Symbol sudoku, 4x4 and 6x6, with oil jars, candles, dreidels, and stars in place of numbers</li>
+<li>Logic puzzles such as which jar holds the pure oil and who gets what, plus dreidel patterns and math with gelt and coins</li>
+<li>Spot-the-difference pages, scrambled words to unscramble, and a page where you draw the candles on the hanukkiah to work out which night it is</li>
 <li>A latke recipe on Night 6 to make with a grown-up, with the kid's steps marked, plus a fill-in-the-blanks story called "The Great Latke Disaster"</li>
 <li>A dreidel to cut out and fold on Night 5, and a coupon book to cut out and give to the family on Night 7</li>
-<li>A family quiz on Night 8 and an "Official Hanukkah Expert" certificate</li>
+<li>A family quiz with a scoreboard on Night 8, an "Official Hanukkah Expert" certificate, and a memory page</li>
 <li>A complete answer key at the back</li>
 </ul>
+
+<p><b>A free printable bonus.</b> Scan the code near the end of the book, just before the answer key, to get the 8 Nights Family Pack: a blessings card with the Hebrew, transliteration, and English, the dreidel rules with a scoreboard for all eight nights, and eight gift tags.</p>
 
 <p>Pages are 8.5 x 11 inches, black and white, with room to write and color.</p>
 
@@ -63,47 +69,52 @@ Nenhuma repete o título 1 literalmente. Todas ASSUMIDAS, sem volume de busca va
 <p>Add it to your cart, set it next to the hanukkiah, and start with whichever night comes first.</p>
 ```
 
-Linha opcional do bônus (NÃO entra na descrição agora): acrescentar como parágrafo antes do último só quando o QR real estiver no livro e o PDF do bônus existir: `<p>Scan the code at the back of the book for a free printable bonus.</p>`.
-
-Contagem: 410 palavras (faixa de 300 a 600).
+Tamanho: 3089 caracteres incluindo HTML (limite do KDP: 4000), 541 palavras (faixa de 300 a 600).
 
 ## 5. Plano de A+ (5 módulos, 970 x 600 px)
 
-Ordem: Hero, Comparison & Value, Inside Pages Preview, Use Case (as 8 noites), Key Benefits (como funciona). Substitui o Lifestyle porque o ângulo forte do livro é competitivo e estrutural. O bônus não tem módulo próprio porque o PDF e o QR ainda não existem (ver módulo 5).
+Ordem: Hero, Comparison & Value, Inside Pages Preview, Use Case (as 8 noites), Key Benefits (como funciona). Substitui o Lifestyle porque o ângulo forte do livro é competitivo e estrutural. O bônus agora funciona (QR no livro, p74, formulário e e-mail testados): entra como frase no módulo 5 e como item do módulo 2, sem módulo próprio.
+
+Argumento interno (NÃO vai em texto de A+ nem de descrição, e nenhum concorrente é citado): os concorrentes de 8.5 x 11 têm 68 a 94 páginas; este tem 82 páginas com 6 a 7 atividades por noite. Por isso o módulo 1 diz "more than 80 pages".
 
 ### Módulo 1: Hero
 - Visual: capa grande de um lado; do outro, fundo com hanukkiah em line art e fundo claro.
 - Headline: One Book for All Eight Nights of Hanukkah
-- Body: Each night has a short story, activities at two levels, and a joke or game to play before the candles. Start on any night.
+- Body: More than 80 pages: a short story, puzzles at two levels, and a game to play before the candles on every night. Start on any night.
+- Frases no Flow: More than 80 pages | Two levels | A game before the candles
 
 ### Módulo 2: Comparison & Value
 - Visual: composição dividida. À esquerda, este livro com quatro checks; à direita, um livro genérico sem marca, em cinza, com os mesmos pontos riscados ou vazios.
 - Headline: Made for the Whole Table
-- Body (lado do livro): Two levels on every night, ages 6-7 and ages 8-10. | "What's a...?" boxes explain the words. | Every night stands alone. | Answer key included.
+- Body (lado do livro): Two levels on every night, ages 6-7 and ages 8-10. | "What's a...?" boxes explain the words. | Every night stands alone. | Full answer key and a free printable bonus.
 - Rótulo do lado genérico: A typical activity book.
 - Observação: o lado genérico não nomeia nem imita nenhum concorrente real.
 
 ### Módulo 3: Inside Pages Preview
-- Visual: duas páginas reais do miolo lado a lado (sudoku de símbolos da Noite 3 e a receita de latke da Noite 6), levemente inclinadas sobre uma mesa clara.
+- Visual: três páginas reais do miolo lado a lado, levemente inclinadas sobre uma mesa clara: Crack the Code (Noite 1, p11), sudoku de símbolos 4x4 (Noite 3, p23) e receita de latke (Noite 6, p48). Conferidas no PDF com `./st preview` em 2026-10-07. Reserva: a página de palavras cruzadas de comidas (Noite 6, p54) no lugar da p11, se o Flow distorcer a p11; se distorcer qualquer página, voltar para duas páginas (p23 e p48).
 - Headline: Real Pages, Ready for Pencils
-- Body: Symbol sudoku with oil jars and dreidels. A latke recipe to make with a grown-up. A dreidel to cut out and a coupon book to give away.
+- Body: Symbol sudoku with oil jars and dreidels. A secret code to crack. A latke recipe to make with a grown-up. Mazes, word searches, a crossword, and logic puzzles on the other nights.
+- Frases no Flow: Symbol sudoku | A secret code to crack | A latke recipe to make with a grown-up
 
 ### Módulo 4: Use Case & Versatility (as 8 noites)
 - Visual: oito painéis pequenos numerados de 1 a 8, cada um com um ícone em line art do tema da noite (jarro, hanukkiah, dreidel, latke, moeda, e assim por diante). Os títulos das noites entram como legenda depois, no Canva, se couberem.
 - Headline: Eight Nights, Eight Themes
-- Body: Judah Says No. The Temple Is a Mess. One Little Jar of Oil. Light It Right. Spin the Dreidel. Everything Fried. Give Some Light Away. All Eight Lights.
+- Body: Judah Says No. The Temple Is a Mess. One Little Jar of Oil. Light It Right. Spin the Dreidel. Everything Fried. Give Some Light Away. All Eight Lights. Mazes, word searches, sudoku, a crossword, and a family quiz are spread across the nights.
+- Frase curta dentro da imagem (Flow): New puzzles every night. A frase do Body acima é só para o Canva, se couber.
 
 ### Módulo 5: Key Benefits & Features (como funciona)
-- Visual: três ícones em sequência: livro aberto, estrelas, vela com sombra de relógio ou família ao redor de uma mesa.
+- Visual: três ícones em sequência: livro aberto, estrelas, vela com sombra de relógio ou família ao redor de uma mesa. Faixa discreta embaixo para a frase do bônus.
 - Headline: How Each Night Works
 - Body: Read tonight's short story. Pick your level, one star or two. Play the joke, riddle, or game before you light the candles.
-- Frase de bônus (só quando o QR e o PDF existirem; senão o módulo fica sem ela): Scan the code at the back of the book for a free printable bonus.
+- Frase de bônus (já pode entrar: QR no livro e PDF funcionando): Scan the code near the end of the book for a free printable bonus.
+- Observação: não desenhar QR code nem desenho de código na imagem (o Flow inventa um QR falso); só o texto.
 
-## 6. Auditoria de voz (human-voice-writing): RODADA em 2026-10-05
+## 6. Auditoria de voz (human-voice-writing): rodada em 2026-10-07
 
-Escopo: títulos, subtítulos, keywords, descrição e copy do A+.
-- Script: travessão longo/meia-risca = 0 (listing.md e aplus-prompts.md); "Christmas"/Natal = 0 nos textos publicáveis e nos prompts; vocabulário proibido (navigate, journey, unlock, elevate, empower, perfect, ultimate, comprehensive, best-selling, gluten) = 0; "not X, it's Y" = 0; frases de 6 palavras ou menos na descrição = 1 de 17 (6%, meta abaixo de 15%).
-- Leitura frase a frase: removidas duas tríades da primeira versão ("write, draw, and color" virou "write and color"; a lista de termos da caixa What's a...? caiu para dois exemplos); a frase sobre "outros activity books" foi trocada por uma sobre a faixa 6-10 (sem afirmar nada sobre concorrentes); fechos de parágrafo sem slogan.
-- Detalhes concretos só deste livro: sudoku de símbolos (jarros, velas, dreidels, estrelas), receita de latke com passos da criança marcados, "The Great Latke Disaster", dreidel e coupon book para recortar, certificado "Official Hanukkah Expert".
-- Resíduo aceito: o subtítulo 1 ("Stories, Puzzles, and Family Fun...") tem uma tríade, mas é o subtítulo já impresso na página de título; trocar só se o Danilo escolher outro. A headline do módulo 5 do A+ lista três passos reais do livro (história, nível, jogo), não uma tríade retórica.
-- Claims: sem promessa de resultado, sem "best-seller", sem saúde, sem afirmação religiosa de jeito certo. A descrição só afirma o que o miolo entrega (conferido contra o PDF: Noite 3 p18-23, Noite 5 p30-36, Noite 6 p37-43, Noite 7 p44-50, Noite 8 p51-56, Answer Key p59-64).
+Escopo: títulos, subtítulos, keywords, descrição e copy do A+ (listing.md e aplus-prompts.md).
+- Script (descrição): 3089 caracteres com HTML; 541 palavras; travessão longo/meia-risca = 0; "Christmas"/Natal = 0; vocabulário proibido (navigate, journey, unlock, elevate, empower, perfect, ultimate, comprehensive, best-selling, gluten, robust, seamless) = 0; "not X, it's Y" = 0; frases de 6 palavras ou menos = 4 de 30, todas rótulos em negrito de parágrafo ("Two levels on every night.", "A few things you'll find inside:", "A free printable bonus.", "Who it's for:"); sem elas, 0 frases curtas de corpo (meta abaixo de 15%: ok).
+- Script (arquivos): travessão longo/meia-risca e "Christmas" = 0 em listing.md e aplus-prompts.md fora das listas de proibições dos prompts (que citam árvore, bola, meia e vermelho e verde só para vetar; a palavra "Christmas" não aparece).
+- Leitura frase a frase: as listas novas ficaram em 2, 3 ou 4 itens com conteúdo concreto do livro (jarro puro, quem ganha o quê, gelt e moedas, "The Great Latke Disaster"); a lista de tipos de puzzle do parágrafo das noites termina em "and more" em vez de enumerar tudo; nenhum parágrafo fecha em frase-sentença; o fecho "Add it to your cart..." foi mantido (aprovado em 2026-10-05). O parágrafo do bônus é descritivo (o que vem no PDF) e sem promessa de resultado.
+- Títulos e subtítulos: inalterados. Resíduo aceito: o subtítulo 1 ("Stories, Puzzles, and Family Fun for Every Night of the Holiday") tem uma tríade, mas é o subtítulo já impresso na página de título; trocar só se o Danilo escolher outro. Os títulos 1 a 3 e os subtítulos 2 e 3 não têm padrão proibido. A headline do módulo 5 do A+ lista três passos reais do livro (história, nível, jogo), não uma tríade retórica.
+- Claims: sem promessa de resultado, sem "best-seller", sem saúde, sem afirmação religiosa de jeito certo, neutro entre as correntes, zero Natal. "More than 80 pages" confere com o miolo (82 páginas). A descrição só afirma o que o miolo entrega (conferido contra o PDF e `notes.md`: cifra N1 p11, sudoku 4x4 N3 p23, dreidel N5, latke N6 p48, crossword N6 p54, Coupon Book N7, quiz e certificado N8, memórias, Answer Key de 8 páginas, QR do bônus antes do Answer Key). O hebraico só aparece nas quatro letras do dreidel e no PDF do bônus; a descrição diz "blessings card with the Hebrew" só para o bônus.
+- Pendências que podem exigir ajuste de frase: revisor religioso humano ainda não passou (mini-guia, bênçãos, cartão do bônus com hebraico); capa final ainda não existe (anexo obrigatório dos prompts de A+).

@@ -1,6 +1,6 @@
 # How This Book Works
 
-Welcome! This book has one part for each of the eight nights of Hanukkah. Read one night at a time, right before you light the candles, and you're done for the day. Most nights take about 20 to 30 minutes from start to finish.
+Welcome! This book has one part for each of the eight nights of Hanukkah. Read one night at a time, right before you light the candles, and you're done for the day. Most nights take about 20 to 30 minutes for the story and a few puzzles. You never have to do every page, so pick the ones that look fun and come back to the rest any time.
 
 You don't have to start on Night 1. If tonight is the third night of Hanukkah, turn to Night 3 and start there. Every night stands on its own, so nobody is behind.
 
@@ -30,4 +30,4 @@ Most of the story and the "Before the Candles" page are for reading together as 
 
 Families have their own customs, like exactly when to light the shamash or where the hanukkiah stands. If your family does something differently, do it your way.
 
-**Want more?** The free 8 Nights Family Pack has a printable blessing card, dreidel rules, and gift tags for all eight nights. Scan the code at the end of this book to get your copy.
+**Want more?** The free 8 Nights Family Pack has a printable blessing card, dreidel rules, and gift tags for all eight nights. Scan the code near the end of this book, just before the Answer Key, to get your copy.

@@ -1,36 +1,45 @@
-# 8 Nights of Hanukkah Activity Book — READY (2026-10-05)
+# 8 Nights of Hanukkah Activity Book: READY (atualizado em 2026-10-07)
 
-Estado: **miolo pronto e sem 🔴**; faltam capa (arte), bônus (PDF + QR) e a revisão religiosa humana antes do upload.
+Estado: **miolo pronto, sem 🔴, 82 páginas** (revisão editorial final em `reviews/editorial-final.md`). O bônus (formulário Brevo, e-mail, QR, PDF) está funcionando. **Faltam: capa (arte), revisor humano (hebraico e mini-guia) e a sua decisão sobre o "ligar os pontos" da Noite 2.**
 
 ## Arquivos
 | Arquivo | Onde |
 |---|---|
 | Miolo (PDF, 82 págs) | `build/hanukkah-8-nights-interior.pdf` (cópia em `Entrega/` no OneDrive, via `./st publish`) |
+| Bônus gratuito (PDF, 3 págs) | `build/hanukkah-8-nights-family-pack.pdf` (fonte: `bonus/family-pack.typ`; também em `Entrega/`) |
 | Guia da capa (corte, lombada, área segura) | `build/hanukkah-8-nights-cover-guide.pdf` |
 | Medidas da capa | `listing/cover-specs.md` |
-| Listing (títulos, keywords, descrição HTML, A+) | `listing/listing.md` |
-| Prompts do Google Flow para o A+ | `listing/aplus-prompts.md` |
-| Relatório editorial | `reviews/editorial.md` |
+| Listing (títulos, keywords, descrição HTML, A+) | `listing/listing.md`, `listing/aplus-prompts.md` |
+| Bônus no Brevo (passo a passo e registros) | `listing/bonus-brevo.md` |
+| Para o revisor humano | `reviews/revisor-humano.md` (e `Entrega/Para o revisor/` no OneDrive) |
+| Relatórios editoriais | `reviews/editorial.md` (05/10) e `reviews/editorial-final.md` (07/10) |
 
 ## Especificações KDP
-- Trim 8.5 x 11 in, miolo P&B em papel branco, 82 páginas, sem sangria no miolo, gutter 0.65 in.
-- Capa colorida fosca, lombada 0.1847 in (texto na lombada permitido, 80+ páginas, mas fina), capa completa 17.4347 x 11.25 in com sangria.
+- Trim 8.5 x 11 in, miolo P&B em papel branco, **82 páginas** (par), sem sangria no miolo, gutter 0.65 in.
+- Capa colorida fosca, lombada 0.1847 in (texto na lombada permitido, 80+ páginas, mas é fina: uma linha pequena), capa completa 17.4347 x 11.25 in com sangria.
 - Inglês americano. Lançamento previsto $9.99. Hanucá 2026: 4 a 12 de dezembro.
-- Listing recomendado (ASSUMIDA, você escolhe): título 1 + subtítulo 1; keyword primária "Hanukkah activity book" (validar no Publisher Rocket/BookBeam).
+- Listing recomendado (ASSUMIDA, você escolhe): título 1 + subtítulo 1; keyword primária "Hanukkah activity book" (as 7 keywords precisam ser validadas no Publisher Rocket/BookBeam).
 
 ## Antes de subir (gates)
-1. **Capa:** gerar a arte (frente e verso) a partir do guia; faixa "Ages 6-10" na frente. `inputs/cover-front.png`, `cover-back.png`, depois `./st cover hanukkah-8-nights`.
-2. **Bônus Family Pack:** o QR real do formulário Brevo já está no livro (página 58). O PDF do bônus está pronto (`build/hanukkah-8-nights-family-pack.pdf`, 3 páginas). Falta pegar o link de compartilhamento do OneDrive, trocar o link provisório do template id 22 no Brevo e testar o fluxo. Passo a passo em `listing/bonus-brevo.md`.
-3. **Revisor humano (judeu, que leia hebraico):** a revisão por IAs (26/09 e 06/10) está fechada e aplicada; falta a leitura humana do mini-guia de acendimento, das 3 bênçãos (com "Adonai"), do Shehecheyanu, do quadro menorá x hanukkiah, das 4 letras do dreidel + Pei e do cartão do bônus com nikud (`legacy/docs/revisao-religiosa.md`, `legacy/docs/hebraico-para-revisao.md`).
-4. **Ligar os pontos da Noite 2** (hanukkiah 30 e menorá 80): ao ligar, não formam a figura prometida. Recomendação: autorizar redesenho em arquivos `_v2`. É o ponto mais fraco do miolo.
+1. **Capa:** gerar a arte (frente e verso) a partir do guia, com a faixa "Ages 6-10" na frente. Salvar `inputs/cover-front.png` e `cover-back.png` e rodar `./st cover hanukkah-8-nights`. Depois os 5 banners do A+ (dependem da capa).
+2. **Revisor humano (judeu, que leia hebraico):** mandar o pacote `Entrega/Para o revisor/` (2 PDFs, o resumo `revisor-humano.md` e os registros). Aplicar o que ele apontar e reconstruir.
+3. **Ligar os pontos da Noite 2 (decisão sua):** a hanukkiah de 30 pontos vira um serrote e a menorá de 80 parece uma mão (p16 e p19; no key, p76 e p77). Recomendação: autorizar o redesenho em arquivos `_v2`, sem mudar a contagem de páginas.
+4. **Listing:** validar as keywords e escolher título e subtítulo.
+5. **Teste final do bônus** (já testado pelo Danilo em 06/10): rever depois do upload do PDF final, se o PDF do bônus mudar.
 
-## Decisões suas (todas as ASSUMIDAS estão em `questions.md`)
-- **Páginas:** RESOLVIDO em 06/10/2026: expansão de 64 para 82 páginas (+2 por noite e answer-key), aprovada por você. O TOC previa 96-104; os concorrentes de 8.5 x 11 têm 68 a 94. Opcional ainda aberto: galeria de colorir (+4, total 86).
-- **Artes 42b/42c/42d (Noite 4):** mostram 8, 3 e 8 velas; a atividade seguinte conta 4 + shamash. Regerar com 4?
-- **Piadas:** 5 das 7 seguem "Why did X...? Because..."; sugestão de trocar a N8-A e variar a N4.
-- **Copyright:** a linha "puzzle pages in the Answer Key" soa estranha; sugestão: "The activities in this book are intended for personal, non-commercial use."
-- **Texto aprovado alterado por erro de conta/lógica** (conferir): N5 Gelt Math 2 ("3 cousins") e 3 (Hei dá metade ao primo), N7 Split and Save 1 (três pilhas). Respostas iguais.
-- **Imprint:** copyright e "Published by" em Read Publishing LLC (padrão do livro de Declutter); `imprint_name` vazio.
-- **Tipografia:** Atkinson Hyperlegible 13pt + Barlow (a Andika não está em `fonts/`).
-- Ilustração 1.4 (`14.png`) e 2.4 (menorá de 7 braços) assumidas como aprovadas; página 1 do how-to-use com ~40% de branco.
-- Paridade das páginas de recorte (N5 molde do dreidel em p43, N7 Coupon Book em p61): se o número de páginas de qualquer noite mudar, reconferir.
+## Decisões suas ainda abertas (todas em `questions.md`)
+- Ligar os pontos da Noite 2 (acima).
+- Artes 42b/42c/42d (Noite 4): mostram 8, 3 e 8 velas, mas a noite conta 4 + shamash. Regerar com 4?
+- Receita de latke (Noite 6): o passo 1 está marcado "YOUR JOB", mas a introdução diz que o adulto cuida do ralador (segurança). Ajustar?
+- Piadas: 5 das 7 seguem "Why did X...? Because..."; sugestão de trocar a N8-A e variar a N4.
+- Copyright: a frase "puzzle pages in the Answer Key" soa estranha; sugestão: "The activities in this book are intended for personal, non-commercial use."
+- Ilustração 1.4 (`14.png`) e 2.4 (menorá de 7 braços) assumidas como aprovadas.
+- Opcional: galeria de colorir (+4 páginas, total 86; exige gerar 4 ilustrações).
+
+## Já resolvido
+- Expansão de 64 para 82 páginas (06/10), com revisão independente das 16 atividades novas.
+- Decisões religiosas pós-revisão cruzada (letras hebraicas no dreidel, "Adonai", "v'higiyanu", instrução do Match, genizá no cartão).
+- Bônus: lista e formulário no Brevo, template ativo com o link do OneDrive, QR no livro (última página antes do Answer Key), PDF de 3 páginas.
+- Textos aprovados corrigidos por erro de conta/lógica (N5 Gelt Math 2 e 3, N7 Split and Save 1), com as mesmas respostas.
+- Paridade das páginas de recorte: molde do dreidel p43 (verso p44) e Coupon Book p61 (verso p62). Se o número de páginas de qualquer noite mudar, reconferir.
+- Imprint: copyright e "Published by" em Read Publishing LLC; tipografia Atkinson Hyperlegible 13pt + Barlow.

@@ -263,3 +263,29 @@ Próximo passo antes do lote completo de ilustração: gerar 3 imagens de teste 
 ## 53. Mini-guia de acendimento e cartão de bênçãos escritos
 
 Mini-guia (`manuscrito/front-matter-mini-guia-acendimento.md`): mesma sequência de "Number the Steps", sem fixar o momento de acender o shamash; inclui a regra de sexta-feira porque a 1ª noite de 2026 cai numa sexta; não fixa os 30 minutos mínimos. Cartão (`manuscrito/bonus-cartao-bencaos.md`): três bênçãos em hebraico com nikud, transliteração e inglês idênticos à Noite 1; nome divino abreviado como יְיָ por ser material imprimível e descartável, com linha de aviso de respeito. Hanerot Halalu e Maoz Tzur ficaram de fora.
+
+## 54. Promessa de tempo por noite ajustada após a expansão para 82 páginas (07/10/2026)
+
+Com 6 atividades por noite (em vez de 3-4), "20 a 30 minutos" deixou de ser verdadeiro para quem faz todas as páginas. O how-to-use e a descrição do listing passaram a dizer: 20 a 30 minutos para a história e alguns puzzles, sem obrigação de fazer todas as páginas. A referência ao QR no front matter passou a "perto do fim do livro, logo antes do Answer Key" (o QR está na penúltima página antes da chave, p74, e não na última). Origem: revisão editorial final, `reviews/editorial-final.md`.
+
+---
+
+## Decisões no estúdio (06 e 07/10/2026)
+
+## 55. Projeto migrado para o KDP Book Studio
+O livro passou a ser produzido em `books/hanukkah-8-nights/` (repositório do estúdio), com o atalho `Estudio` e a pasta `Entrega/` dentro desta pasta do OneDrive. Os arquivos antigos foram para `_antigo/` (nada foi apagado). Textos, ilustrações e puzzles aprovados foram trazidos sem alteração; os PDFs piloto antigos não, por estarem desatualizados (decisão 48).
+
+## 56. Ilustrações faltantes geradas com referências
+As 13 ilustrações que faltavam (2.2, 5.2, 6.1, 6.2, 7.1 a 7.5, 8.1 a 8.3 e FM.1) foram geradas pelo `codex` com as artes 1.1, 2.1 e 1.4 como referência de estilo (06/10). As páginas inteiras (8.1 e 8.3) foram ampliadas 2x.
+
+## 57. Puzzles da Noite 3 refeitos em alta resolução
+Sudoku 4x4 e 6x6 e "Which jar is different?" redesenhados em 5x a partir dos JSON de gabarito (mesmas soluções). A hanukkiah do sudoku 6x6 foi redesenhada maior.
+
+## 58. Front matter, QR e bônus
+Copyright e "Published by" em Read Publishing LLC. Bônus "8 Nights Family Pack" (cartão de bênçãos, regras do dreidel com placar e 8 etiquetas) produzido em PDF; formulário e e-mail criados no Brevo e testados pelo Danilo; QR no livro. Texto "or visit [url]" removido: o bônus é só por QR.
+
+## 59. Revisão religiosa cruzada 2 (06/10) aplicada
+Aprovado pelo Danilo: letras hebraicas isoladas (נ ג ה ש + פ) no dreidel (exceção à decisão 49), instrução do Match "tells you to do in the game", "Adonai" nas traduções (sem "His"), "v'higiyanu", frase de genizá no cartão e cabeçalho do Shehecheyanu sem "Only". Detalhe em `revisao-religiosa.md`.
+
+## 60. Expansão de 64 para 82 páginas (06/10)
+Aprovada pelo Danilo: +1 atividade ★ e +1 ★★ por noite (16 páginas) e +2 no answer key. Todas geradas por script, com solução verificada, e revisadas de forma independente. Plano e regras em `reviews/expansao-paginas.md`. Motivo: os concorrentes de 8.5 x 11 têm 68 a 94 páginas.

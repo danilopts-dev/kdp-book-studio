@@ -1,6 +1,6 @@
 # Prompts do Google Flow: A+ de "8 Nights of Hanukkah Activity Book"
 
-Gerados a partir do plano de A+ em `listing.md` (copy dos 5 módulos). Flow: modo imagem, 16:9, 4 gerações por prompt, modelo Nano Banana 2. Depois, recortar cada escolhida para 970 x 600 px no Canva antes de subir ao KDP (não subir o 16:9 cru).
+Gerados a partir do plano de A+ em `listing.md` (copy dos 5 módulos). Atualizados em 2026-10-07 para o miolo final de 82 páginas e o bônus funcionando. Flow: modo imagem, 16:9, 4 gerações por prompt, modelo Nano Banana 2. Depois, recortar cada escolhida para 970 x 600 px no Canva antes de subir ao KDP (não subir o 16:9 cru).
 
 ## Regras comuns (valem para os 5 prompts)
 
@@ -9,6 +9,7 @@ Gerados a partir do plano de A+ em `listing.md` (copy dos 5 módulos). Flow: mod
 - Zero Natal: nada de árvore, enfeite de bola, meia de lareira, guirlanda, papai noel, rena, boneco de neve, laço ou presente com cara natalina, nem a combinação vermelho e verde como paleta.
 - Sem letras hebraicas geradas (a IA erra o desenho das letras). Só o texto em inglês pedido em cada prompt.
 - Texto na imagem: só o que cada prompt pede (headline curta e frases curtas). Nada de parágrafos.
+- Nada de QR code desenhado: a IA inventa um QR falso. A frase do bônus entra só como texto.
 
 ## Checklist de anexos (caminhos relativos a `books/hanukkah-8-nights/`)
 
@@ -16,12 +17,12 @@ Gerados a partir do plano de A+ em `listing.md` (copy dos 5 módulos). Flow: mod
 |---|---|
 | 1 Hero | Capa final + `inputs/illustrations/12.png` (hanukkiah, referência de traço e do objeto central) |
 | 2 Comparison & Value | Capa final |
-| 3 Inside Pages Preview | Capa final + 2 páginas reais do miolo: p23 (Symbol Sudoku 4x4, Noite 3) e p48 (receita de latke, Noite 6). Exportar de `build/hanukkah-8-nights-interior.pdf` com `./st preview hanukkah-8-nights "19,38"` ou em PNG a ~150 ppi. Reexportar se o miolo mudar. |
+| 3 Inside Pages Preview | Capa final + 3 páginas reais do miolo: p11 (Crack the Code, Noite 1), p23 (Symbol Sudoku 4x4, Noite 3) e p48 (receita de latke, Noite 6), conferidas no PDF em 2026-10-07. Exportar de `build/hanukkah-8-nights-interior.pdf` com `./st preview hanukkah-8-nights "11,23,48" --ppi 150 --cols 1` (a folha de contato sai em `build/sheet.png`; para anexar uma página por arquivo, exportar cada uma em PNG a ~150 ppi) ou direto do PDF. Reserva: p54 (Hanukkah Food Crossword, Noite 6) no lugar da p11. Se o Flow distorcer alguma página, rodar de novo só com p23 e p48. Reexportar se o miolo mudar. |
 | 4 Use Case (as 8 noites) | Capa final + referências de traço, uma por noite: `11.png` (N1), `21.png` (N2), `30.png` (N3), `41.png` (N4), `51.png` (N5), `61.png` (N6), `71.png` (N7), `82.png` (N8). Se o Flow limitar o número de anexos, usar `11.png`, `30.png`, `51.png`, `61.png` e `82.png`. |
-| 5 Key Benefits (como funciona) | Capa final + `inputs/illustrations/32.png` (família com o relógio, Noite 3) |
+| 5 Key Benefits (como funciona) | Capa final + `inputs/illustrations/32.png` (família com o relógio, Noite 3). Não anexar `bonus-qr.png` (a frase do bônus é só texto). |
 
 Artes reais disponíveis em `inputs/illustrations/` (para trocas ou reforço de referência): `11.png`, `12.png`, `13.png`, `14.png`, `21.png`, `22.png`, `24.png`, `24_menorah.png`, `30.png`, `31.png`, `32.png`, `33.png`, `41.png`, `42a.png`, `42b.png`, `42c.png`, `42d.png`, `43.png`, `51.png`, `52.png`, `61.png`, `62.png`, `71.png`, `72.png`, `73.png`, `73_box.png`, `73_gelt.png`, `74.png`, `74_book.png`, `74_broom.png`, `74_die.png`, `74_die_fix.png`, `74_heart.png`, `74_plate.png`, `74_sun.png`, `75.png`, `81.png`, `82.png`, `83.png`, `FM1.png`.
-Evitar como referência: `14.png` (versão ainda a confirmar visualmente, ver questions.md) e a página de ligar os pontos da Noite 2 (p16 e p19, ponto fraco já registrado na revisão editorial; não usar no Inside Pages).
+Evitar como referência: `14.png` (versão ainda a confirmar visualmente, ver questions.md) e a página de ligar os pontos da Noite 2 (p16 e p19, ponto fraco já registrado na revisão editorial; não usar no Inside Pages nem citar ligar os pontos nos textos).
 
 ---
 
@@ -38,7 +39,7 @@ Layout: 16:9 landscape banner. The book cover is large and prominent on the left
 
 Text to render exactly as written (do not paraphrase, do not add any other text):
 Headline: "One Book for All Eight Nights of Hanukkah"
-Supporting phrases: "A short story" | "Two levels" | "A game before the candles"
+Supporting phrases: "More than 80 pages" | "Two levels" | "A game before the candles"
 
 Audience: parents and grandparents shopping for a Hanukkah activity for kids ages 6 to 10. The mood should feel authentic and warm, not cartoonish or generic stock-like.
 
@@ -58,7 +59,7 @@ Layout: 16:9 landscape banner, split composition. Left half: the attached book c
 
 Text to render exactly as written (do not paraphrase, do not add any other text):
 Headline: "Made for the Whole Table"
-Left lines: "Two levels on every night" | "Words explained, no experience needed" | "Every night stands alone" | "Answer key included"
+Left lines: "Two levels on every night" | "Words explained, no experience needed" | "Every night stands alone" | "Full answer key and a free printable bonus"
 Right label: "A typical activity book"
 
 Audience: parents and grandparents comparing activity books for kids ages 6 to 10. The mood should feel honest and friendly, not aggressive.
@@ -75,11 +76,11 @@ Banner purpose: Inside Pages Preview
 
 Visual style: Match the exact color palette, typography, and illustration style of the attached book cover. Keep the design clean and consistent with the cover's mood: warm and welcoming, with a light storybook feel.
 
-Layout: 16:9 landscape banner. Show the two attached interior pages (the symbol sudoku page and the latke recipe page) side by side, slightly tilted, as if lying on a light wooden table, with a small pencil beside them. Use only the attached pages exactly as they are. Do not invent, redraw, or change any content on the pages, and do not add extra pages. Leave clear negative space on one side so the headline stays legible.
+Layout: 16:9 landscape banner. Show the three attached interior pages (the secret code page, the symbol sudoku page, and the latke recipe page) side by side, slightly overlapping and tilted, as if lying on a light wooden table, with a small pencil beside them. Use only the attached pages exactly as they are. Do not invent, redraw, or change any content on the pages, and do not add extra pages. Leave clear negative space on one side so the headline stays legible.
 
 Text to render exactly as written (do not paraphrase, do not add any other text):
 Headline: "Real Pages, Ready for Pencils"
-Supporting phrases: "Symbol sudoku" | "A latke recipe to make with a grown-up" | "A dreidel to cut out"
+Supporting phrases: "Symbol sudoku" | "A secret code to crack" | "A latke recipe to make with a grown-up"
 
 Audience: parents and grandparents who want to see what the kids will actually be doing. The mood should feel trustworthy and practical.
 
@@ -99,6 +100,7 @@ Layout: 16:9 landscape banner. A tidy row of eight small square vignettes in two
 
 Text to render exactly as written (do not paraphrase, do not add any other text):
 Headline: "Eight Nights, Eight Themes"
+Supporting phrase: "New puzzles every night"
 The numerals 1 to 8, one per vignette, and no other text.
 
 Audience: parents and grandparents who want to see how the book is organized, and that they can start on any night.
@@ -115,11 +117,12 @@ Banner purpose: Key Benefits & Features
 
 Visual style: Match the exact color palette, typography, and illustration style of the attached book cover and the attached family illustration: thick, uniform outlines, simple expressive faces, flat color fills from the cover, no shading. Warm and welcoming.
 
-Layout: 16:9 landscape banner. Three icon-style callouts in a row, each paired with one short phrase underneath: (1) an open book, (2) one star and two stars side by side, (3) a lit candle next to a small clock. Leave clear negative space so the text stays legible.
+Layout: 16:9 landscape banner. Three icon-style callouts in a row, each paired with one short phrase underneath: (1) an open book, (2) one star and two stars side by side, (3) a lit candle next to a small clock. Below the three callouts, a slim, plain banner strip for one line of text. Do not draw a QR code, a barcode, or any code pattern anywhere. Leave clear negative space so the text stays legible.
 
 Text to render exactly as written (do not paraphrase, do not add any other text):
 Headline: "How Each Night Works"
 Supporting phrases: "Read tonight's short story" | "Pick your level, one star or two" | "Play before you light the candles"
+Bottom strip: "Scan the code near the end of the book for a free printable bonus"
 
 Audience: parents and grandparents who want an easy evening routine with the kids. The mood should feel calm and friendly.
 
@@ -128,7 +131,8 @@ Do not add any logos, watermarks, Hebrew letters, or extra text beyond what is s
 
 ## Antes de gerar (pendências)
 
-1. Capa final em arquivo (anexo obrigatório de todos os prompts).
-2. Exportar as páginas p23 e p48 do miolo para o banner 3 (e conferir de novo se o miolo mudar de página).
-3. Bônus: o módulo 5 não menciona o Family Pack. Só acrescentar "free printable bonus" quando o QR real e o PDF do bônus existirem.
-4. Conferir o hebraico: nenhum banner leva letras hebraicas; se o Flow gerar alguma, descartar a variação.
+1. Capa final em arquivo (anexo obrigatório de todos os prompts). Ainda não existe.
+2. Exportar as páginas p11, p23 e p48 do miolo para o banner 3 (e conferir de novo se o miolo mudar de página; hoje são 82 páginas).
+3. Bônus: o banner 5 e o item do banner 2 mencionam o "free printable bonus"; o QR real está no livro (p74) e o formulário e o e-mail foram testados. Se o bônus sair do ar ou mudar, tirar as duas frases.
+4. Conferir o hebraico: nenhum banner leva letras hebraicas; se o Flow gerar alguma, descartar a variação. Conferir também que nenhum banner trouxe QR falso.
+5. Depois do Flow, recortar cada escolhida para 970 x 600 px no Canva.
