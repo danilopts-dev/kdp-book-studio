@@ -95,7 +95,7 @@ Match the item to the kind of place that handles it well. These are channel type
 )
 
 #v(0.15in)
-#text(size: 0.92em)[*Good to know.* Call before you load the car, because donation sites can turn items away. Paint, chemicals, batteries and old electronics may need special handling, so check your local household hazardous waste guidelines. Fees and rules vary. A well-known online marketplace or national thrift chain is an example of a channel type, not a pick.]
+#text(size: 0.92em)[*Good to know.* Call before you load the car, because donation sites can turn items away. Paint, chemicals, batteries and broken electronics may need special handling, so check your local household hazardous waste guidelines. Fees and rules vary. A well-known online marketplace or national thrift chain is an example of a channel type, not a pick.]
 
 #v(0.15in)
 #_wk-field([*Where I will sell first:*], above: 0.1in)

@@ -100,7 +100,7 @@ Some things have a date on them, and some only have a rule of thumb. Use the tab
   align: (left + horizon, left + horizon, left + horizon),
   table.header(_wk-head[Item], _wk-head[What to check], _wk-head[Then]),
   [*Medicines* (prescription and over-the-counter)], [The expiration date printed on the label or package.], [Expired or no longer needed: see the disposal page. Unsure? Ask your pharmacist.],
-  [*Sunscreen*], [The printed expiration date. In the U.S., sunscreen is regulated as a drug, so it is required to carry one.], [Past its date, or you can't find a date: Toss. Write the purchase date on new ones with a marker.],
+  [*Sunscreen*], [The printed expiration date. In the U.S., sunscreen is regulated as a drug, so it normally carries one.], [Past its date, or you can't find a date: Toss. Write the purchase date on new ones with a marker.],
   [*Makeup and skin care*], [No U.S. law requires an expiration date on cosmetics. Makers usually suggest replacing mascara two to four months after you buy it. If a product smells, looks or feels different than it used to, or you can't remember when you bought it, let it go.], [Toss. Write the open date on new ones with a marker.],
 )
 #v(0.05in)

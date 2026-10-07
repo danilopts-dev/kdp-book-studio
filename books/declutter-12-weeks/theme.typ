@@ -202,7 +202,7 @@
   )
   v(0.14in)
   grid(columns: (1fr, 1fr), column-gutter: 0.2in, row-gutter: 0.12in,
-    [*Value of Sell items:* \$ #box(width: 1fr, height: 0.2in, stroke: (bottom: _wk-rule))],
+    [*Estimated value of Sell items:* \$ #box(width: 1fr, height: 0.2in, stroke: (bottom: _wk-rule))],
     [*Value of Donate items:* \$ #box(width: 1fr, height: 0.2in, stroke: (bottom: _wk-rule))],
     [*Minutes this week:* #box(width: 1fr, height: 0.2in, stroke: (bottom: _wk-rule))],
     [*Items out (Donate + Sell + Toss):* #box(width: 1fr, height: 0.2in, stroke: (bottom: _wk-rule))],

@@ -49,7 +49,7 @@ Last, gather what you need from around the house. Nothing on the list costs mone
 
 == Rate Your Rooms
 
-Walk through each space and circle one number. Trust your first reaction. Check the box once you have taken the before photo from the doorway, and remember where you stood so you can take the after photo from the same spot in Week 12.
+Walk through each space and circle one number. Use 2 or 4 if the room falls between two descriptions. Trust your first reaction. Check the box once you have taken the before photo from the doorway, and remember where you stood so you can take the after photo from the same spot in Week 12.
 
 #v(0.1in)
 #block(breakable: false, width: 100%)[
