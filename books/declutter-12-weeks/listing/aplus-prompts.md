@@ -158,6 +158,7 @@ Variante sem texto: remova o bloco "Text to render", deixe a coluna esquerda vaz
   - "Pretty storage ideas"
   - "Same checklist for every room"
   - "No record of what you sold or gave away"
+- Capa do livro genérico: só o título "Home Organizing Ideas", fonte simples (estilo Arial), em capa lisa azul-acinzentada, sem autor, logo ou ilustração. É um título inventado e genérico; se quiser outro, troque nas duas passagens do prompt.
 
 **Prompt**
 
@@ -170,7 +171,7 @@ Visual style: Match the exact color palette, typography and photographic style o
 
 Layout: 16:9 landscape banner on a light cream background. A headline across the top, centered, inside the central 88% of the width. Below it, a split composition with two columns of equal width and a thin soft-gray vertical divider.
 LEFT column (full color, warm sunlight): the attached book cover, large, standing at the top of the column exactly as designed (do not redraw or alter the cover), and under it the four feature lines, each with a sage-green check mark.
-RIGHT column (washed out, slightly desaturated and cooler): a generic, plain, unbranded book standing at the top of the column, with a blank flat light-gray cover and no title, no logo, no author, no publisher mark and no imitation of any real book or brand. Under it the three feature lines in light gray text, with no check marks, as if faded.
+RIGHT column (washed out, slightly desaturated and cooler): a generic, plain, unbranded book standing at the top of the column, with an extremely simple flat cover: a single solid muted blue-gray color, the plain title "Home Organizing Ideas" in a basic sans-serif font (Arial or Helvetica style, regular weight, white or very light gray, centered in the upper half, two lines at most), and nothing else on the cover: no author name, no subtitle, no logo, no publisher mark, no photo, no illustration, no icon, no decoration and no imitation of any real book or brand. Under it the three feature lines in light gray text, with no check marks, as if faded.
 Both books at the same size and height. Keep everything inside the central 88% of the width and 90% of the height.
 
 Text to render exactly as written, spelled correctly, in Barlow-style sans-serif, large and easy to read at small size (do not paraphrase, do not add any other text, do not add column titles or labels):
@@ -184,13 +185,14 @@ Right column, light gray, regular weight, one per line:
 "Pretty storage ideas"
 "Same checklist for every room"
 "No record of what you sold or gave away"
+The only other text allowed is the title printed on the generic book's cover, in a basic sans-serif: "Home Organizing Ideas".
 
 Audience: adults comparing workbooks before buying. Keep the comparison calm and fair; the generic book is simply plain, not mocked.
 
-Do not add any people, hands, logos, watermarks, real competitor books, real brand names, star ratings, badges or extra text beyond what is specified above. The generic book carries no text at all.
+Do not add any people, hands, logos, watermarks, real competitor books, real brand names, star ratings, badges or extra text beyond what is specified above. The generic book carries only its plain title "Home Organizing Ideas" and no other text.
 ```
 
-Variante sem texto: remova o bloco "Text to render", deixe as áreas de texto vazias e acrescente "Render no text at all."
+Variante sem texto: remova o bloco "Text to render", deixe as áreas de texto vazias, tire o título do livro genérico (capa lisa, sem nada) e acrescente "Render no text at all."
 
 ---
 
