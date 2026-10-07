@@ -112,3 +112,29 @@ Inside the round badge, in black bold: "15" very large, with "MIN / A DAY" in sm
 At the bottom, over the rug, on a semi-transparent white band: "EMILY P. HARPER" in bold letter-spaced caps.
 No other text anywhere. No logos, no people, no watermarks. Sharp focus, realistic proportions, no distorted objects. Keep all text and the badge inside the central 88% of the image height; the top and bottom 6% stay as plain background for trimming.
 ```
+
+---
+
+# Verso v2 (combina com a frente v3) — 2026-10-07
+
+Anexar a frente aprovada como referência de estilo, se o ChatGPT/Flow aceitar. Formato 3:4, igual à frente.
+
+```
+Create a book back cover, portrait 3:4, to match the attached front cover (use it only as a style reference: same warm off-white wall, same cream and oak palette, same golden sunlight coming from the right). Do not copy the shelf scene. Background: the same warm off-white wall with soft golden light patches and gentle shadows falling from the upper right, subtle plaster texture, calm and uncluttered. In the bottom 15% of the image, show the top edge of a light oak shelf with one small green plant, a short row of books and a ceramic vase, softly out of focus, as a quiet footer. No people, no logos.
+
+Add this text, crisp and perfectly spelled, in dark charcoal (#1F1F1F). Use a bold modern geometric sans-serif (Barlow style) for the headline and a clean, highly legible humanist sans-serif (Atkinson Hyperlegible style) for the body. Left-aligned, inside a safe margin of at least 10% on every side, with generous spacing between blocks:
+
+Headline (bold, large, up to 4 lines): "Set a timer for 15 minutes, pick up a pencil, and start with the bathroom."
+
+Body (regular, medium size): "Each day you decide about the things in one small part of one room. Each week you move on to the next room. Twelve weeks later, you have been through the whole house."
+
+A short thick rule, then four bullet points, each with a small square checkbox instead of a dot (regular, medium size):
+"7-day task lists for each of the 12 weeks, 15 minutes a day"
+"A weekly count of what you kept, donated, sold and tossed"
+"A Sell Tracker and a Donation Log"
+"A monthly reset tracker to keep every room clear"
+
+Closing line (bold, medium size): "No organizing system to learn. No containers to buy."
+
+In the bottom-right corner, leave a clean, empty, flat white rectangle of 2 x 1.2 inches (about 24% of the page width) for the barcode, with no text, border or decoration inside it, and keep the footer shelf scene away from it. No other text anywhere. Sharp, clean, no distorted letters. Keep all text inside the central 88% of the image height; the top and bottom 6% stay as plain background for trimming.
+```
