@@ -16,6 +16,7 @@
 #let theme(body) = {
   set page(
     margin: (inside: 0.75in, outside: 0.6in, top: 0.65in, bottom: 0.75in),
+    footer-descent: 0.05in,
     header: none,
     footer: context {
       let p = here().page()
