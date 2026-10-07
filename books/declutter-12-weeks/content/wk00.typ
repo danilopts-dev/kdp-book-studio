@@ -26,7 +26,7 @@
 
 = Week 0 — Walk Through Your Home Before You Touch Anything
 
-Before you open a single drawer, take one slow walk through your home with this book and a pencil. Go room by room and don't pick anything up. You are looking at each space the way a visitor would, and giving it an honest number from 1 to 5.
+Before you open a single drawer, take one slow walk through your home with this book and a pencil. Go room by room and don't pick anything up. You are looking at each space the way a visitor would, and giving it an honest number from 1 to 5. This book follows a typical home layout. Yours may differ, with more bedrooms, no garage or a shared space, so use the closest week for each space and adapt the pages to fit your home.
 
 Those numbers matter more than they seem to right now. In Week 12 you will rate the same rooms again, and the gap between the two sets of scores is your proof that 12 weeks of 15-minute blocks did something, which is easy to forget in the middle of a messy Tuesday. Take a photo of each room from the doorway too. Nobody has to see them but you.
 
