@@ -41,7 +41,7 @@ Nenhum.
 
 ## 🟠 MAJOR
 
-[🟠] p16 e p19 (N2, ligar os pontos 30 e 80); gabaritos p76 e p77 — Puzzle · ABERTO (decisão do Danilo)
+[🟠] p16 e p19 (N2, ligar os pontos 30 e 80); gabaritos p76 e p77 — Puzzle · RESOLVIDO em 07/10/2026 com os assets `_v2` (conferir as páginas no próximo build)
 Found: ao ligar, a hanukkiah de 30 pontos vira um serrote e a menorá de 80 pontos vira algo parecido com uma mão; na p16 os rótulos 13/16, 14/17 e 15/18 continuam colados. A instrução da p16 promete "something that will light up this whole book"; a da p19, "the menorah that stood in the Temple".
 Issue: a promessa do TOC não se cumpre e a página ★ é para a criança de 6-7 anos. É a página mais fraca do livro e a que um comprador percebe.
 Fix: pendente, pois exige redesenhar assets aprovados (autorização). Recomendação detalhada em `questions.md` ("Revisão editorial final"): versões `_v2` em arquivos novos, hanukkiah com vértices reais e shamash central, menorá com braços curvos, rótulos pelo `posicionar_rotulos`. Trocar o `puzzle(...)` em `content/n2.typ` e as duas imagens do `answer-key.typ`. Mesma contagem de páginas.

@@ -128,9 +128,9 @@
     text(size: 20pt, a)
   })
   #stack(dir: ttb, spacing: 0.25in,
-    _j("A", [Why did the hanukkiah throw a party on the last night?], [Because it finally had all eight candles to invite!]),
-    _j("B", [What did the first candle say to the last candle on Night 8?], ["Look at us, we really lit up this whole week!"]),
-    _j("C", [Why is Night 8 the hanukkiah's favorite night?], [Because it finally gets to see its whole family, all nine of them, lit up together!]))
+    _j("A", [Knock, knock. Who's there? Oil. Oil who?], [Oil light the last candle with you, so open the door!]),
+    _j("B", [What did the first candle say to the eighth candle on Night 8?], ["Glad you made it! I've been here since Night 1."]),
+    _j("C", [What do you call the last night of Hanukkah, if you're a candle?], [The wick-end, when all eight burn at once!]))
   #v(0.4in)
   #text(font: display, weight: "bold", size: 22pt, tracking: 0.03em)[Which joke did you pick? #box(width: 2.6in, height: 0.34in, stroke: (bottom: 1.6pt + ink), [])]
 ]

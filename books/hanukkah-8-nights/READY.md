@@ -23,20 +23,16 @@ Estado: **miolo pronto, sem 🔴, 82 páginas** (revisão editorial final em `re
 ## Antes de subir (gates)
 1. **Capa:** gerar a arte (frente e verso) a partir do guia, com a faixa "Ages 6-10" na frente. Salvar `inputs/cover-front.png` e `cover-back.png` e rodar `./st cover hanukkah-8-nights`. Depois os 5 banners do A+ (dependem da capa).
 2. **Revisor humano (judeu, que leia hebraico):** mandar o pacote `Entrega/Para o revisor/` (2 PDFs, o resumo `revisor-humano.md` e os registros). Aplicar o que ele apontar e reconstruir.
-3. **Ligar os pontos da Noite 2 (decisão sua):** a hanukkiah de 30 pontos vira um serrote e a menorá de 80 parece uma mão (p16 e p19; no key, p76 e p77). Recomendação: autorizar o redesenho em arquivos `_v2`, sem mudar a contagem de páginas.
+3. ~~Ligar os pontos da Noite 2~~ **Redesenhados em `_v2` (07/10)**: a menorá de 80 pontos ficou claramente uma menorá de 7 braços; a hanukkiah de 30 pontos ficou simétrica, com base e shamash alto, mas ainda um pouco "dentada" (limite dos 30 pontos). Olhe as páginas p16 e p19 e diga se aceita ou se quer subir a hanukkiah para ~40 pontos.
 4. **Listing:** validar as keywords e escolher título e subtítulo.
 5. **Teste final do bônus** (já testado pelo Danilo em 06/10): rever depois do upload do PDF final, se o PDF do bônus mudar.
 
 ## Decisões suas ainda abertas (todas em `questions.md`)
-- Ligar os pontos da Noite 2 (acima).
-- Artes 42b/42c/42d (Noite 4): mostram 8, 3 e 8 velas, mas a noite conta 4 + shamash. Regerar com 4?
-- Receita de latke (Noite 6): o passo 1 está marcado "YOUR JOB", mas a introdução diz que o adulto cuida do ralador (segurança). Ajustar?
-- Piadas: 5 das 7 seguem "Why did X...? Because..."; sugestão de trocar a N8-A e variar a N4.
-- Copyright: a frase "puzzle pages in the Answer Key" soa estranha; sugestão: "The activities in this book are intended for personal, non-commercial use."
-- Ilustração 1.4 (`14.png`) e 2.4 (menorá de 7 braços) assumidas como aprovadas.
+- Hanukkiah de 30 pontos (Noite 2): aceitar o desenho atual ou subir para ~40 pontos (muda o TOC).
 - Opcional: galeria de colorir (+4 páginas, total 86; exige gerar 4 ilustrações).
 
 ## Já resolvido
+- 07/10: receita de latke (adulto ralha), copyright centralizado, piadas variadas (decisão 61), série de acendimento da Noite 4 refeita com a mesma hanukkiah, ligar os pontos em `_v2`, artes 14 e 24 conferidas (ver decisões 62 a 65).
 - Expansão de 64 para 82 páginas (06/10), com revisão independente das 16 atividades novas.
 - Decisões religiosas pós-revisão cruzada (letras hebraicas no dreidel, "Adonai", "v'higiyanu", instrução do Match, genizá no cartão).
 - Bônus: lista e formulário no Brevo, template ativo com o link do OneDrive, QR no livro (última página antes do Answer Key), PDF de 3 páginas.

@@ -29,10 +29,10 @@
 
 #v(0.05in)
 #grid(columns: (1fr, 1fr), column-gutter: 0.3in, row-gutter: 0.22in,
-  _step("42b.png", [Say the blessings together.]),
-  _step("42d.png", [Put the shamash back in its own holder.]),
-  _step("42a.png", [Place tonight's candles in the hanukkiah.]),
-  _step("42c.png", [Use the lit shamash to light tonight's candles.]))
+  _step("42b_v2.png", [Say the blessings together.]),
+  _step("42d_v2.png", [Put the shamash back in its own holder.]),
+  _step("42a_v2.png", [Place tonight's candles in the hanukkiah.]),
+  _step("42c_v2.png", [Use the lit shamash to light tonight's candles.]))
 
 #pagebreak()
 
@@ -126,7 +126,7 @@
 #before-candles[
   #subhead[The Hanukkiah's Joke]
   #v(0.9in)
-  #block(width: 100%, fill: tint, radius: 12pt, inset: 36pt, text(size: 26pt)[Why did the hanukkiah get invited to every party on the street?])
+  #block(width: 100%, fill: tint, radius: 12pt, inset: 36pt, text(size: 26pt)[Which candle on the hanukkiah is the best helper in the whole house?])
   #v(0.8in)
-  #block(width: 100%, fill: tint, radius: 12pt, inset: 36pt, text(size: 26pt)[Because it always knew how to _light up a room_, and everyone could see it coming from the window.])
+  #block(width: 100%, fill: tint, radius: 12pt, inset: 36pt, text(size: 26pt)[The shamash! It's always ready to lend a hand, or a flame, to every other candle.])
 ]

@@ -35,7 +35,7 @@
 #activity(1, "Connect the Dots: The Hanukkiah")[Connect the dots from 1 to 30, then back to 1, to find something that will light up this whole book.]
 
 #v(0.1in)
-#puzzle("noite2_ligar_pontos_hanukia_recorte.png", w: 7.0in)
+#puzzle("noite2_ligar_pontos_hanukia_v2_recorte.png", w: 7.0in)
 
 #pagebreak()
 
@@ -54,7 +54,7 @@
 
 #activity(2, "Connect the Dots: The Temple Menorah")[This one has more dots and more branches. Connect 1 to 80, then back to 1, to see the menorah that stood in the Temple long before the hanukkiah existed.]
 
-#puzzle("noite2_ligar_pontos_menora_recorte.png", w: 4.9in)
+#puzzle("noite2_ligar_pontos_menora_v2_recorte.png", w: 6.3in)
 
 #subhead[How is it different from the hanukkiah?]
 #compare-table(("", "Temple menorah", "Hanukkiah (Hanukkah menorah)"),

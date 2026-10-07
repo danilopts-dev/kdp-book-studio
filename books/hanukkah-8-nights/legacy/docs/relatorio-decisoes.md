@@ -289,3 +289,21 @@ Aprovado pelo Danilo: letras hebraicas isoladas (נ ג ה ש + פ) no dreidel (e
 
 ## 60. Expansão de 64 para 82 páginas (06/10)
 Aprovada pelo Danilo: +1 atividade ★ e +1 ★★ por noite (16 páginas) e +2 no answer key. Todas geradas por script, com solução verificada, e revisadas de forma independente. Plano e regras em `reviews/expansao-paginas.md`. Motivo: os concorrentes de 8.5 x 11 têm 68 a 94 páginas.
+
+## 61. Piadas repetidas refeitas (07/10/2026)
+Autorizado pelo Danilo depois da revisão editorial final: 5 das 7 piadas seguiam "Why did X...? Because...", 3 giravam em torno de a hanukkiah dar festa ou iluminar um ambiente, e "light up" aparecia em N4, N8-B e N8-C. Mantidas: N1 (toolbox) e N6 (latke, "crack up in the pan"), as duas únicas com "Why did...", mais as charadas da N2 e da N6. Trocadas, todas originais e com o vocabulário do livro: N4 virou "Which candle on the hanukkiah is the best helper in the whole house?" / "The shamash! It's always ready to lend a hand, or a flame, to every other candle." (reforça o termo da própria noite). N8-A virou knock-knock ("Oil who?" / "Oil light the last candle with you, so open the door!"). N8-B manteve o formato "What did X say to Y", sem "lit up" ("Glad you made it! I've been here since Night 1."). N8-C virou "What do you call...?" ("The wick-end, when all eight burn at once!"). A decisão 42 vale: as três da Noite 8 continuam usando a última noite como ocasião comum, agora em três formatos diferentes. Resultado: duas piadas com "Why did", nenhuma estrutura repetida entre noites vizinhas, nenhuma de festa ou iluminar ambiente, "light up" só uma vez no livro (instrução do ligar os pontos da N2). Mesmo tamanho aproximado de cada piada, sem mudar o layout; charadas e answer key inalterados.
+
+## 62. "Ligar os pontos" da Noite 2 redesenhados em _v2 (07/10/2026)
+Autorizado pelo Danilo. Arquivos novos `noite2_ligar_pontos_{hanukia,menora}_v2*` (os antigos ficam intactos). Menorá de 80 pontos: silhueta procedural simétrica, 7 braços, claramente reconhecível. Hanukkiah de 30 pontos: 30 vértices desenhados à mão, simétrica, com shamash alto, barra, haste e base; com só 30 pontos não cabem velas de lados paralelos, então ainda lê como candelabro de 9 chamas "dentado". Se o Danilo quiser mais fidelidade, a opção é subir para ~40 pontos (muda o TOC). Rótulos sem colisão (verificado por código).
+
+## 63. Receita de latke: o adulto cuida do ralador (07/10/2026)
+O passo 1 deixou de ser "YOUR JOB": "Grown-up grates the potatoes and onion into a big bowl." Alinha o passo com a introdução ("A grown-up handles the grater, the stove, and the hot oil").
+
+## 64. Série de acendimento da Noite 4 refeita (07/10/2026)
+Os 4 quadros do "Number the Steps" (`42a_v2.png` a `42d_v2.png`) mostram agora a mesma hanukkiah na Noite 4: 4 velas nos suportes da direita, esquerda vazia, shamash no centro. Antes, o número de velas mudava de quadro para quadro (vazia, 8, 3, tudo aceso) e a vela entrava no suporte do centro. As originais (`42a-d.png`) ficam no projeto. Respostas da atividade inalteradas (2, 4, 1, 3).
+
+## 65. Copyright centralizado na página (07/10/2026)
+Pedido do Danilo; texto inalterado.
+
+## 66. Artes 14 e 24 conferidas visualmente (07/10/2026)
+`14.png`: 4 suportes à esquerda, suporte alto do shamash no centro (shamash aceso na mão da mãe), 4 à direita, 1 vela no suporte da ponta direita (Noite 1): correta. `24.png`: menorá do Templo com 7 braços e hanukkiah com 9 suportes (4 + shamash + 4) sem chamas: correta. Seguem na lista do revisor humano.

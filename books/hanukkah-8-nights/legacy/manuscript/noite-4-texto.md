@@ -95,11 +95,11 @@ Here's a blank hanukkiah, just the shape. Draw in the candles, the shamash, and 
 
 **THE HANUKKIAH'S JOKE**
 
-Why did the hanukkiah get invited to every party on the street?
+Which candle on the hanukkiah is the best helper in the whole house?
 
-Because it always knew how to *light up a room*, and everyone could see it coming from the window.
+The shamash! It's always ready to lend a hand, or a flame, to every other candle.
 
-**(31 palavras)**
+**(29 palavras)**
 
 ---
 

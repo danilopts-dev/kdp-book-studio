@@ -46,7 +46,7 @@ Makes about 12 latkes. A grown-up handles the grater, the stove, and the hot oil
 
 **STEPS:**
 
-1. **YOUR JOB: Grate the potatoes and onion** into a big bowl. (Grown-up grates, or watches closely if you help.)
+1. Grown-up grates the potatoes and onion into a big bowl.
 2. **YOUR JOB: Squeeze out the extra liquid** from the grated potato and onion, using a clean towel or your hands over the sink.
 3. **YOUR JOB: Crack the egg** into the bowl with the potato and onion.
 4. **YOUR JOB: Add the flour and salt**, then mix everything together with a spoon.

@@ -46,7 +46,7 @@ Makes about 12 latkes. A grown-up handles the grater, the stove, and the hot oil
 #v(0.06in)
 
 #stack(dir: ttb, spacing: 0.1in,
-  _step(1, job: true)[*Grate the potatoes and onion* into a big bowl. (Grown-up grates, or watches closely if you help.)],
+  _step(1)[Grown-up grates the potatoes and onion into a big bowl.],
   _step(2, job: true)[*Squeeze out the extra liquid* from the grated potato and onion, using a clean towel or your hands over the sink.],
   _step(3, job: true)[*Crack the egg* into the bowl with the potato and onion.],
   _step(4, job: true)[*Add the flour and salt,* then mix everything together with a spoon.],

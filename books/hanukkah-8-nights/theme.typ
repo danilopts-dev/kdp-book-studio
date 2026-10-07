@@ -342,3 +342,10 @@
   }
   #body
 ]
+
+// Página de copyright centrada na página (pedido do Danilo, 07/10/2026); sobrescreve o copyright-page do lib.typ.
+#let copyright-page(body) = page(header: none, footer: none)[
+  #set par(justify: false, first-line-indent: 0em, spacing: 1.1em)
+  #set text(size: 11.5pt)
+  #align(center + horizon, block(width: 5.6in, body))
+]

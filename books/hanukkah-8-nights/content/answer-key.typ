@@ -50,7 +50,7 @@
     v(0.08in)
     _erros-list(range(1, 6))
   }),
-  ak-card(2, 1, "Connect the Dots: The Hanukkiah", align(center, ak-img("noite2_ligar_pontos_hanukia_gabarito_key.png", w: 100%))),
+  ak-card(2, 1, "Connect the Dots: The Hanukkiah", align(center, ak-img("noite2_ligar_pontos_hanukia_v2_gabarito_key.png", w: 100%))),
   ak-card(2, 1, "Clean-Up Maze", ak-maze("extra_n2_labirinto_limpeza")),
   ak-card(2, 2, "Spot the 10 Differences", {
     ak-img("noite2_erros10_gabarito_key.png", frame: true)
@@ -62,7 +62,7 @@
 #v(0.2in)
 // coluna direita mais larga: a grade 14x14 precisa de >= 3.7in para letras >= 9pt
 #ak-grid(cols: (1fr, 3.8in),
-  ak-card(2, 2, "Connect the Dots: The Temple Menorah", align(center, ak-img("noite2_ligar_pontos_menora_gabarito_key.png", w: 88%))),
+  ak-card(2, 2, "Connect the Dots: The Temple Menorah", align(center, ak-img("noite2_ligar_pontos_menora_v2_gabarito_key.png", w: 100%))),
   ak-card(2, 2, "Temple Word Search", ak-img("extra_n2_cacapalavras_templo_gabarito_key.png")),
 )
 
