@@ -6,7 +6,7 @@ The kitchen is the room you use the most, so it collects the most. To keep it fr
 
 The goal is simple: empty counters. Keep out only what you touch every day, like the coffee maker or the dish soap. Everything else needs a home in a cabinet or goes into a box.
 
-Food is a little different. Nobody feels guilty about tossing a stale cracker, but many of us hesitate over food that is still good. Sealed, unexpired food you won't eat can go to Donate. Call your local food bank first and ask what they accept. Open packages and anything past its date go to Toss.
+Food is a little different. Nobody feels guilty about tossing a stale cracker, but many of us hesitate over food that is still good. Sealed, unexpired food you won't eat can go to Donate. Call your local food bank first and ask what they accept. Open packages and anything spoiled or that you won't eat go to Toss. Date labels mostly describe quality, not safety, and the pantry page shows how to check.
 
 Work one zone a day. Take everything out, wipe the shelf and sort as you put things back.
 
@@ -19,7 +19,7 @@ Work one zone a day. Take everything out, wipe the shelf and sort as you put thi
   [*Pantry, top shelves.* Take everything out. Check the dates. Set aside what has expired.],
   [*Pantry, lower shelves.* Sort, and group duplicates together.],
   [*Fridge.* Shelves, door and drawers. Toss what has expired or gone off.],
-  [*Freezer and spices.* Anything with frost, no label or no date goes. Check the spice dates.],
+  [*Freezer and spices.* Anything you can't identify or won't eat goes. Check the spice dates.],
   [*Out the door.* Take out the Toss and Donate boxes, bring the food donation to a drop-off, and count.],
 ))
 
@@ -83,7 +83,7 @@ Put everything that lives on your counters in the list below. Then decide if it 
 
 == Pantry: Check, Count, Combine
 
-Go through each shelf and look at the dates. Most are "best if used by" or "use by" dates, which tell you about quality, not safety. When a date is past, look at the food: if it smells, looks or tastes off, or the package is open and stale, let it go. Write down duplicates so you stop buying a fourth jar of the same thing.
+Go through each shelf and look at the dates. Most are "best if used by" or "use by" dates, which tell you about quality, not safety. When a date is past, look at the food: if it smells or looks off, or the package is open and stale, let it go. Write down duplicates so you stop buying a fourth jar of the same thing.
 
 #v(0.15in)
 #_wk-table(

@@ -33,7 +33,7 @@
   set par(leading: 0.68em, spacing: 1.05em, justify: false, first-line-indent: 0em)
   set strong(delta: 300)
 
-  // Aberturas: "Week N — Título" ganha o bloco numérico; "Part 3 — Título", "Introduction — Título" etc. ganham kicker.
+  // Aberturas: "Week N — Título" ganha o bloco numérico; "Where It All Went — Título", "Introduction — Título" etc. ganham kicker.
   show heading.where(level: 1): it => {
     let t = _plain(it.body)
     let m = t.match(regex("^Week (\d+) — (.+)$"))
@@ -202,7 +202,7 @@
   )
   v(0.14in)
   grid(columns: (1fr, 1fr), column-gutter: 0.2in, row-gutter: 0.12in,
-    [*Value of Sell items:* \$ #box(width: 1fr, height: 0.2in, stroke: (bottom: _wk-rule))],
+    [*Estimated value of Sell items:* \$ #box(width: 1fr, height: 0.2in, stroke: (bottom: _wk-rule))],
     [*Value of Donate items:* \$ #box(width: 1fr, height: 0.2in, stroke: (bottom: _wk-rule))],
     [*Minutes this week:* #box(width: 1fr, height: 0.2in, stroke: (bottom: _wk-rule))],
     [*Items out (Donate + Sell + Toss):* #box(width: 1fr, height: 0.2in, stroke: (bottom: _wk-rule))],

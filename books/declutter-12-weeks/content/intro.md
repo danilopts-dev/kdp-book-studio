@@ -45,7 +45,7 @@ Sentimental things wait until Week 12. By then you will have made a few hundred 
 
 Each week opens with a short page about the room, followed by "This Week, 15 Minutes a Day," which gives you seven small tasks, one per day, with a box to check. After that come the pages specific to that room, and the week closes with your count and a space for notes and wins. You can skip a day. You can also take two weeks for a room if your kitchen is bigger than the plan assumes, since nobody is grading you on the calendar.
 
-Part 3 is where you keep track of everything that went out of the house, with a Sell Tracker and a Donation Log. Part 4 helps you keep the house from filling up again, and when the decluttering is done, the *House Cleaning Checklist Planner* picks up the routine for keeping it clean.
+The section called Where It All Went is where you keep track of everything that went out of the house, with a Sell Tracker and a Donation Log. The section called Keep It Clear helps you keep the house from filling up again, and when the decluttering is done, the *House Cleaning Checklist Planner* picks up the routine for keeping it clean.
 
 Before you start, turn to the Printable Declutter Kit page at the back of this book. It tells you how to get the kit, which is handy if you would rather print fresh sheets than write in the book, or if more than one person in the house wants to follow along.
 

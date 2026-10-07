@@ -141,7 +141,7 @@ Decide where each box is headed while the office is fresh in your mind. A box th
 
 #_wk-where(
   [Books, binders and office supplies in good shape, working equipment with the data erased. Schools, libraries and community groups sometimes take supplies. Ask before you go.],
-  [Anything worth at least your sell threshold from Week 0. A chair, a desk, a monitor or printer in working order. Online marketplace, local consignment shop or a garage sale. Log each one in the Sell Tracker in Part 3.],
+  [Anything worth at least your sell threshold from Week 0. A chair, a desk, a monitor or printer in working order. Online marketplace, local consignment shop or a garage sale. Log each one in the Sell Tracker in Where It All Went.],
   [Expired papers, old receipts and junk mail. Shred anything with personal details. Check your local guidelines for old electronics and ink cartridges.],
 )
 

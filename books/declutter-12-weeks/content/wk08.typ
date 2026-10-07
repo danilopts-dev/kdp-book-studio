@@ -16,7 +16,7 @@ On the hobby track, the goal is to find out what you still do. Supplies you boug
   [*Kids: books and games.* Check the ages on the box. *Hobby:* tools, patterns and how-to books.],
   [*Kids: toy rotation.* Set up the first round on page 4. *Hobby:* the stalled projects. Use page 5.],
   [*Kids: art supplies and the closet shelf.* *Hobby:* the work surface. Clear it, then put back only what you use.],
-  [*Out the door.* Take out the Toss and Donate boxes. Log the Sell box in the Sell Tracker in Part 3. Count.],
+  [*Out the door.* Take out the Toss and Donate boxes. Log the Sell box in the Sell Tracker in Where It All Went. Count.],
 ))
 
 #pagebreak()
@@ -154,7 +154,7 @@ Decide where each box is headed while the room is fresh in your mind. A box that
 
 #_wk-where(
   [Clean toys with all their pieces, books, games and craft supplies in good shape. Schools, daycares and community groups often take art supplies. Ask before you go.],
-  [Anything worth at least your sell threshold from Week 0. Craft supplies, musical instruments and sealed kits sell well. Online marketplace, local consignment shop or a garage sale. Log each one in the Sell Tracker in Part 3.],
+  [Anything worth at least your sell threshold from Week 0. Craft supplies, musical instruments and sealed kits sell well. Online marketplace, local consignment shop or a garage sale. Log each one in the Sell Tracker in Where It All Went.],
   [Broken toys, toys with missing parts, dried-out supplies and scraps too small to use. Check your local guidelines for batteries and paints.],
 )
 

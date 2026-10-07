@@ -104,7 +104,7 @@ Choose favorites, not everything. Many people keep one box for each person in th
 #checklist(none, (
   [Each person's best pieces are in one labeled box],
   [Photos of the rest are saved in one folder, with a backup],
-  [Keepsakes I am unsure about stay in Keep for now, and I will review them at my 15-minute reset in Part 4],
+  [Keepsakes I am unsure about stay in Keep for now, and I will review them at my 15-minute reset in Keep It Clear],
   [Duplicate photos and cards I do not need are in Toss],
 ))
 
@@ -137,7 +137,7 @@ Offer things back in a kind way: "I am making space at home. Would you like this
 #_wk-field([*The date we agreed on:*])
 
 #v(0.2in)
-That is the last room. Part 3 is where you log what you sold and what you donated. In Part 4, you will do a short 15-minute reset each month, so the work you did stays done.
+That is the last room. The section called Where It All Went is where you log what you sold and what you donated. In the section called Keep It Clear, you will do a short 15-minute reset each month, so the work you did stays done.
 
 #pagebreak()
 
@@ -146,8 +146,8 @@ That is the last room. Part 3 is where you log what you sold and what you donate
 Sentimental things do not have to leave the house. Make a plan only for what you choose to send on, and keep the rest in one labeled place.
 
 #_wk-where(
-  [Things others can use and enjoy, such as books, games and household goods that held meaning for you but not for your home now. A thrift store or charity will often take them. For donated items, log them in the Donation Log in Part 3.],
-  [Only if you want to. Some heirlooms and collectibles have value, but keeping them is also fine. If you do sell, log each one in the Sell Tracker in Part 3.],
+  [Things others can use and enjoy, such as books, games and household goods that held meaning for you but not for your home now. A thrift store or charity will often take them. For donated items, log them in the Donation Log in Where It All Went.],
+  [Only if you want to. Some heirlooms and collectibles have value, but keeping them is also fine. If you do sell, log each one in the Sell Tracker in Where It All Went.],
   [Damaged items, duplicate papers and things you kept out of duty. Shred papers with personal information and recycle where you can.],
 )
 

@@ -1,4 +1,4 @@
-// Part 4 — 6 paginas. Reusa helpers _wk-* de wk01.typ.
+// Keep It Clear — 6 paginas. Reusa helpers _wk-* de wk01.typ.
 //  p1 intro | p2-3 tracker mensal (meses 1-6, 7-12) | p4 Keep for now | p5 one in, one out | p6 handoff
 
 #let _p4-rooms = (
@@ -45,13 +45,13 @@
   }
 }
 
-= Part 4 — Keep It Clear
+= After Week 12 — Keep It Clear
 
 #v(0.3in)
 You did the hard part. Every room has been sorted, and the boxes have left the house. Now comes the part that keeps it that way.
 
 #v(0.05in)
-Houses slide back slowly. A few bags land by the door, a drawer fills up, a counter collects mail. None of it feels like much on the day, and it adds up. Part 4 gives you three small habits to stop that.
+Houses slide back slowly. A few bags land by the door, a drawer fills up, a counter collects mail. None of it feels like much on the day, and it adds up. This section gives you three small habits to stop that.
 
 #v(0.1in)
 - *The monthly 15-minute reset.* One 15-minute block per room, once a month, tracked on the next two pages.
@@ -62,7 +62,7 @@ Houses slide back slowly. A few bags land by the door, a drawer fills up, a coun
 You do not need a new system. You already know how to make a decision in 15 minutes. This part only asks you to keep doing it, a little at a time.
 
 #v(0.1in)
-#checklist("Before you start Part 4", (
+#checklist("Before you start this section", (
   [All 12 weeks are done, or I have decided which ones to skip],
   [I know which day of the month works for my reset],
   [I have a pencil and a timer],

@@ -148,7 +148,7 @@ Decide where each box is headed while the closets are fresh in your mind. A box 
 
 #_wk-where(
   [Clean sheets, towels, blankets and pillows in good shape. Shelters, community groups and some thrift shops take linens. Ask what they accept before you go. Unopened products may be welcome too.],
-  [Anything worth at least your sell threshold from Week 0. A nice comforter, a set of quality sheets or an unused appliance from the laundry area. Online marketplace, local consignment shop or a garage sale. Log each one in the Sell Tracker in Part 3.],
+  [Anything worth at least your sell threshold from Week 0. A nice comforter, a set of quality sheets or an unused appliance from the laundry area. Online marketplace, local consignment shop or a garage sale. Log each one in the Sell Tracker in Where It All Went.],
   [Worn, stained or torn linens, and expired products. Use worn towels as rags if you want. Check your local household hazardous waste guidelines for cleaners, and never pour products together.],
 )
 

@@ -90,7 +90,7 @@ Before you start Week 1, print one copy of the flowchart and tape it somewhere y
 
 Put the fridge tracker up on day one. Checking off a whole week where everyone in the house can see it tends to keep you going on the days you would rather skip.
 
-Keep the room checklists in a folder. You'll want a fresh copy for each monthly 15-minute reset in Part 4, once the 12 weeks are done.
+Keep the room checklists in a folder. You'll want a fresh copy for each monthly 15-minute reset in Keep It Clear, once the 12 weeks are done.
 
 One small thing: if you haven't done Week 0 yet, start there, with a pencil. You don't have to touch anything on the first walk through.
 

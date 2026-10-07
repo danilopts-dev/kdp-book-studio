@@ -1,4 +1,4 @@
-// Part 3 — 14 paginas. Reusa helpers _wk-* de wk01.typ.
+// Where It All Went — 14 paginas. Reusa helpers _wk-* de wk01.typ.
 //  p1 intro | p2 guia onde vender/doar | p3 recibos e Form 8283
 //  p4-8 Sell Tracker (5 pgs) | p9-13 Donation Log (5 pgs) | p14 totais
 
@@ -49,7 +49,7 @@
   text(size: 0.95em)[*Value on this page:* \$ #_wk-blank(0.9in) #h(0.3in) *Running total:* \$ #_wk-blank(0.9in)]
 }
 
-= Part 3 — Where It All Went: Selling and Donating
+= Where It All Went — Selling and Donating
 
 By now you have sorted a whole house into four boxes. This part is where you write down what happened to the Sell and Donate boxes. It takes a few minutes each time, and it pays off in three ways.
 
@@ -62,7 +62,7 @@ By now you have sorted a whole house into four boxes. This part is where you wri
 Every week from Week 1 to Week 12 pointed you here. Anything worth at least your sell threshold from Week 0 goes in the Sell Tracker. Everything that went to a charity goes in the Donation Log. Leftovers from a garage sale move from the Sell Tracker to the Donation Log.
 
 #v(0.1in)
-#checklist("Before you start Part 3", (
+#checklist("Before you start this section", (
   [I know my sell threshold from Week 0],
   [I have a folder or envelope for donation receipts],
   [I keep this book near the boxes, with a pencil],
@@ -95,7 +95,7 @@ Match the item to the kind of place that handles it well. These are channel type
 )
 
 #v(0.15in)
-#text(size: 0.92em)[*Good to know.* Call before you load the car, because donation sites can turn items away. Paint, chemicals, batteries and old electronics may need special handling, so check your local household hazardous waste guidelines. Fees and rules vary. A well-known online marketplace or national thrift chain is an example of a channel type, not a pick.]
+#text(size: 0.92em)[*Good to know.* Call before you load the car, because donation sites can turn items away. Paint, chemicals, batteries and broken electronics may need special handling, so check your local household hazardous waste guidelines. Fees and rules vary. A well-known online marketplace or national thrift chain is an example of a channel type, not a pick.]
 
 #v(0.15in)
 #_wk-field([*Where I will sell first:*], above: 0.1in)
@@ -143,7 +143,7 @@ This page is general information from the IRS, not tax advice. Rules change, and
   #pagebreak()
 ]
 
-== Part 3 Totals
+== Selling and Donating Totals
 
 Add the page totals from the Sell Tracker and the Donation Log. Carry these numbers to the Conclusion.
 

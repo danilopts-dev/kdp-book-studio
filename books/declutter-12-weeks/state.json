@@ -228,27 +228,27 @@
       "stage": "listing",
       "agent": "listing-writer",
       "instructions": "pipelines/stages/listing.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "listing completo; A+ plano aguarda aprovação (adiado)",
+      "updated": "2026-10-07T12:27"
     },
     {
       "id": "cover",
       "stage": "cover",
       "agent": "main",
       "instructions": "pipelines/stages/cover.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "capa montada (frente, verso, lombada) a partir da arte do Danilo",
+      "updated": "2026-10-07T12:27"
     },
     {
       "id": "finalize",
       "stage": "finalize",
       "agent": "main",
       "instructions": "pipelines/stages/finalize.md",
-      "status": "pending",
-      "note": "",
-      "updated": ""
+      "status": "done",
+      "note": "READY.md gerado; checagem final 0 críticos",
+      "updated": "2026-10-07T12:28"
     }
   ]
 }
