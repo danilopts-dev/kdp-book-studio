@@ -142,6 +142,23 @@ Do not add any logos, watermarks, or extra text beyond what is specified above.
 4. Generate, keep the best of the 4, discard the rest. Repeat per module.
 5. **Resize before uploading to KDP.** Google Flow outputs 16:9 — Amazon's A+ modules require 970×600px or 970×300px, neither of which is 16:9. Crop/resize each chosen image to the exact module dimension in Canva before uploading (do not upload the raw 16:9 output).
 
+### Bonus Capture Texts (Brevo form + emails), only when the book has a free bonus
+
+Every book that promises a free bonus (PDF, printable kit, family pack) needs the copy for the Brevo capture flow. Write it in the same pass as the listing and save it as `listing/bonus-brevo.md`. Models to follow: `books/declutter-12-weeks/listing/bonus-brevo.md` (full template, double opt-in) and `books/hanukkah-8-nights/listing/bonus-brevo.md` (simple confirmation email). Notes to the Danilo in Portuguese, all copy in US English, in the imprint's voice and signed by the imprint's name (Emily P. Harper, Jonah Feldman / Read Publishing Co, etc.).
+
+**Rules**
+- Name the bonus items exactly as the book's bonus page names them (`content/_bonus.md`, last page before the Answer Key, or the front matter). Same item names, same count. Never promise something the PDF does not contain.
+- The reader is a buyer who already has the book: "You bought the workbook, so this part is on me." Never sell the book again.
+- Short and concrete. One detail only this bonus has (what to print, where to tape it, which night to use it). No hype words, no "journey", no slogan endings. Run the `human-voice-writing` audit on every block.
+- Print instructions: regular US letter-size paper. Always include the line "If the link stops working or the file won't open, just reply to this email and I'll send it again."
+- If the PDF has sacred or sensitive content (e.g. Hebrew blessings with God's name), add the respectful-handling note in the PDF itself, not in the form.
+
+**Deliver these blocks, in this order**
+1. **Form page (landing page):** browser-tab title; headline; subheadline; supporting text (2 sentences); "what's inside" bullets (one line per item); fields (first name optional, email required, with placeholders); required consent checkbox (unchecked by default); button text (action + object, e.g. "Send Me the Kit"); privacy note under the button; **success message** shown after the form is sent (what to do next, check spam/promotions); success message for double opt-in; error message for an invalid email.
+2. **Confirmation email:** only if the form uses double opt-in (subject, preview text, body with a single "Confirm My Email" button, "if you didn't sign up, ignore this"). With a simple confirmation email (the default for Jonah Feldman books), this email IS the delivery email and block 3 is the only email.
+3. **Delivery email:** recommended subject plus 2 alternatives, preview text, sender, body (greeting with `{{contact.FIRSTNAME | default: "there"}}`, one download button with the exact label, 3 short paragraphs on how to use each item, sign-off, P.S. with the "link stops working" line).
+4. **Setup notes for Brevo (Portuguese):** the PDF must exist before the flow goes live; sender physical address (CAN-SPAM); privacy-policy link on readpublishingco.com; the OneDrive share link goes into the download button; after publishing the form, send the final link to generate the QR code for the book's bonus page; test the whole flow (QR, email, download) before the book goes to KDP.
+
 ---
 
 ## Workflow
@@ -151,7 +168,7 @@ When asked to write listing copy:
 1. **Identify what's needed** — full listing or specific element(s)?
 2. **Confirm the book** — title, format, target reader, primary keyword (if already validated)
 3. **Check if primary keyword is known** — if not, ask. Don't guess the search term.
-4. **Deliver in this order:** Title options → Subtitle options → Keywords → Description → A+ Content (module plan) → A+ Content image prompts (only if requested)
+4. **Deliver in this order:** Title options → Subtitle options → Keywords → Description → A+ Content (module plan) → A+ Content image prompts (only if requested) → Bonus Capture Texts (whenever the book promises a free bonus; see that section)
    - If only one element is requested, deliver just that
 5. **For title/subtitle:** Deliver 3 options each, with a one-line rationale per option
 6. **For description and A+:** Deliver one version, optimized

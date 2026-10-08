@@ -1,4 +1,4 @@
-> **ESCOLHA DO DANILO (08/10/2026):** título "8 Nights of Hanukkah Activity Book"; subtítulo "Stories, Puzzles, and Family Fun for Every Night of the Holiday". Pendente: validar as 7 keywords (Publisher Rocket/BookBeam).
+> **ESCOLHA DO DANILO (08/10/2026):** título "8 Nights of Hanukkah Activity Book"; subtítulo "Stories, Puzzles, and Family Fun for Every Night of the Holiday". As 7 keywords foram aprovadas pelo Danilo em 08/10/2026.
 
 # Listing: 8 Nights of Hanukkah Activity Book (Jonah Feldman)
 

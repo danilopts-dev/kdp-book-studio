@@ -1,6 +1,6 @@
 # 8 Nights of Hanukkah Activity Book: READY (atualizado em 2026-10-08)
 
-Estado: **miolo pronto, sem 🔴, 82 páginas**; revisor humano deu ok (ajustes aplicados em 08/10, ver `reviews/revisor-humano-feedback-2026-10-08.md`). Título e subtítulo escolhidos. **Falta: arte da capa (o Danilo gera), validar as 7 keywords e o teste final do bônus.**
+Estado: **miolo pronto, sem 🔴, 82 páginas**; revisor humano deu ok (ajustes aplicados em 08/10, ver `reviews/revisor-humano-feedback-2026-10-08.md`). Título e subtítulo escolhidos. **Falta só a arte da capa (o Danilo gera) e, depois dela, os 5 banners do A+.** Keywords aprovadas e bônus testado no Brevo (08/10).
 
 ## Arquivos
 | Arquivo | Onde |
@@ -22,8 +22,7 @@ Estado: **miolo pronto, sem 🔴, 82 páginas**; revisor humano deu ok (ajustes 
 
 ## Antes de subir (gates)
 1. **Capa:** gerar a arte (frente e verso) a partir do guia, com a faixa "Ages 6-10" na frente. Salvar `inputs/cover-front.png` e `cover-back.png` e rodar `./st cover hanukkah-8-nights`. Depois os 5 banners do A+ (dependem da capa; o banner 3 usa as páginas p11, p23 e p48).
-2. **Listing:** validar as 7 keywords (Publisher Rocket/BookBeam). Título "8 Nights of Hanukkah Activity Book" e subtítulo "Stories, Puzzles, and Family Fun for Every Night of the Holiday" já escolhidos.
-3. **Bônus:** o PDF do Family Pack mudou (nota do Pei). Depois do `./st publish`, conferir o link do e-mail do Brevo (template 22) e repetir o teste do fluxo.
+2. ~~Listing/keywords e bônus~~ aprovados e testados em 08/10 (título e subtítulo escolhidos; 7 keywords aprovadas; fluxo do Brevo testado).
 
 ## Já resolvido
 - 08/10: revisor humano (história da Noite 1, sexta-feira, Pei, oito dias, gelt), hanukkiah de 40 pontos, jogo dos erros com cenas novas (p15 com 5 e p18 com 7), sudoku de formas, jarros, velas e hanukkiahs no traço da ilustração 12, contas mais difíceis, copyright (decisões 67 a 78).

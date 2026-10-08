@@ -1,11 +1,8 @@
 # ESTADO ATUAL (08/10/2026): só estas pendências valem
 
-1. **Capa:** o Danilo gera a arte (frente e verso) e salva `inputs/cover-front.png` e `cover-back.png`; depois `./st cover hanukkah-8-nights` e os 5 banners do A+ (banner 3 usa as páginas p11, p23 e p48 do PDF).
-2. **Keywords do listing:** validar as 7 keywords no Publisher Rocket ou BookBeam antes de colar no KDP. Título e subtítulo já escolhidos.
-3. **Bônus (Family Pack):** o PDF mudou (nota do Pei). Depois do `./st publish`, conferir que o link do OneDrive usado no e-mail do Brevo (template id 22) ainda baixa o arquivo novo e repetir o teste do fluxo (QR, e-mail, download).
-4. Opcional: `./st publish` e push depois de cada rodada de mudanças.
+1. **Capa:** o Danilo gera a arte (frente e verso) e salva `inputs/cover-front.png` e `cover-back.png`; depois `./st cover hanukkah-8-nights` e os 5 banners do A+ (banner 3 usa as páginas p11, p23 e p48 do PDF). **Única pendência.**
 
-Resolvido hoje: revisor humano (ok, ajustes aplicados), hanukkiah de 40 pontos, jogo dos erros (p15, p18), formas do sudoku, velas e hanukkiahs, contas mais difíceis, título e subtítulo. Os itens "[ ] [ASSUMIDA]" abaixo são registro histórico das decisões da produção, quase todos já resolvidos; não são pendências.
+Resolvido (08/10): keywords aprovadas pelo Danilo, bônus testado no Brevo, revisor humano (ok, ajustes aplicados), hanukkiah de 40 pontos, jogo dos erros (p15, p18), formas do sudoku, velas e hanukkiahs, contas mais difíceis, título e subtítulo. Os itens "[ ] [ASSUMIDA]" abaixo são registro histórico das decisões da produção, quase todos já resolvidos; não são pendências.
 
 ---
 # Perguntas e decisões
