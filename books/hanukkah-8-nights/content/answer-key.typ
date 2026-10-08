@@ -48,14 +48,14 @@
   ak-card(2, 1, "Spot the 5 Differences", {
     ak-img("noite2_erros5_v3_gabarito_key.png", frame: true)
     v(0.08in)
-    text(size: _ans-size)[Each numbered box marks something that is missing from the bottom picture.]
+    text(size: _ans-size)[Each numbered circle marks something that is missing from the bottom picture.]
   }),
   ak-card(2, 1, "Connect the Dots: The Hanukkiah", align(center, ak-img("noite2_ligar_pontos_hanukia_v2_gabarito_key.png", w: 100%))),
   ak-card(2, 1, "Clean-Up Maze", ak-maze("extra_n2_labirinto_limpeza")),
   ak-card(2, 2, "Spot the 7 Differences", {
     ak-img("noite2_erros7_v3_gabarito_key.png", frame: true)
     v(0.08in)
-    text(size: _ans-size)[Each numbered box marks something that is missing from the bottom picture.]
+    text(size: _ans-size)[Each numbered circle marks something that is missing from the bottom picture.]
   }),
 )
 

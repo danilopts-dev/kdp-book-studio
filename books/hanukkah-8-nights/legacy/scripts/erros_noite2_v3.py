@@ -27,7 +27,7 @@ PZ = ROOT / "inputs" / "puzzle-assets"
 Y0, Y1 = 0, 1024  # cena inteira 3:2 (1536 x 1024)
 
 # cena-base de cada jogo (PNG 1536x1024 gerado) e faixa 2:1 usada no livro
-BASES = {5: "s1_b.png", 7: "s2_b.png"}
+BASES = {5: "s1_b.png", 7: "s2_user_antes.png"}
 SEED = {5: 3, 7: 5}
 
 
@@ -68,29 +68,24 @@ def provisional(n, base):
 
 
 def regioes(antes, depois, n):
-    """Agrupa as diferenças por objeto: pixels de um mesmo componente conexo (traços até 8 px de distância) do
-    `antes` formam uma região; componentes enormes (objeto encostado na parede/coluna) são agrupados por
-    proximidade das próprias diferenças."""
-    A = np.array(antes.convert("L"))
-    d = np.abs(A.astype(int) - np.array(depois.convert("L")).astype(int)) > 60
-    lab_a, _ = ndimage.label(ndimage.binary_dilation(A < 140, iterations=4))
+    """Diferenças = traço escuro de uma imagem sem par escuro na outra a até 3 px (ignora o deslocamento de 1-2 px
+    de imagens regeneradas). Agrupa por proximidade (14 px), descarta ruído (< 40 px de tinta) e funde caixas
+    quase contidas uma na outra (partes do mesmo objeto)."""
+    a = np.array(antes.convert("L")) < 128
+    b = np.array(depois.convert("L")) < 128
+    da = a & ~ndimage.binary_dilation(b, iterations=3)
+    db = b & ~ndimage.binary_dilation(a, iterations=3)
+    d = da | db
+    lab, _ = ndimage.label(ndimage.binary_dilation(d, iterations=14))
     boxes = []
-    for cid in np.unique(lab_a[d]):
-        if cid == 0:
+    for i, sl in enumerate(ndimage.find_objects(lab), 1):
+        m = d & (lab == i)
+        if m.sum() < 40:
             continue
-        comp = lab_a == cid
-        sub = d & comp
-        if comp.sum() < 80000:
-            ys, xs = np.where(sub)
-            boxes.append([int(xs.min()), int(ys.min()), int(xs.max()) + 1, int(ys.max()) + 1])
-        else:
-            lab, _ = ndimage.label(ndimage.binary_dilation(sub, iterations=3))
-            for sl in ndimage.find_objects(lab):
-                ys, xs = sl
-                boxes.append([int(xs.start), int(ys.start), int(xs.stop), int(ys.stop)])
-    boxes = [b_ for b_ in boxes if (b_[2] - b_[0]) * (b_[3] - b_[1]) >= 100]  # ignora ruído de 1-2 px
+        ys, xs = np.where(m)
+        boxes.append([int(xs.min()), int(ys.min()), int(xs.max()) + 1, int(ys.max()) + 1])
     mudou = True
-    while mudou:  # funde caixas quase contidas uma na outra (partes do mesmo objeto, ex.: chama e lamparina)
+    while mudou:
         mudou = False
         for i in range(len(boxes)):
             for j in range(i + 1, len(boxes)):
@@ -111,24 +106,19 @@ def regioes(antes, depois, n):
 
 
 def gabarito(antes, boxes, caminho, n):
+    """Imagem ORIGINAL (o antes) com uma bola cinza e o número em branco em cada diferença (sem destacar a área)."""
     img = antes.convert("L").convert("RGB")
     d = ImageDraw.Draw(img)
     try:
-        f = ImageFont.truetype("arialbd.ttf", 54)
+        f = ImageFont.truetype("arialbd.ttf", 76)
     except OSError:
         f = ImageFont.load_default()
     for i, (x, y, w, h) in enumerate(boxes, 1):
-        pad = 12
-        x0, y0, x1, y1 = x - pad, y - pad, x + w + pad, y + h + pad
-        for t in range(0, int(x1 - x0), 30):  # tracejado
-            d.line([(x0 + t, y0), (min(x0 + t + 16, x1), y0)], fill=(0, 0, 0), width=7)
-            d.line([(x0 + t, y1), (min(x0 + t + 16, x1), y1)], fill=(0, 0, 0), width=7)
-        for t in range(0, int(y1 - y0), 30):
-            d.line([(x0, y0 + t), (x0, min(y0 + t + 16, y1))], fill=(0, 0, 0), width=7)
-            d.line([(x1, y0 + t), (x1, min(y0 + t + 16, y1))], fill=(0, 0, 0), width=7)
-        r = 36
-        d.ellipse([x0 - r, y0 - r, x0 + r, y0 + r], fill=(0, 0, 0))
-        d.text((x0, y0), str(i), fill=(255, 255, 255), font=f, anchor="mm")
+        cx, cy, r = x + w / 2, y + h / 2, 62
+        cx = min(max(cx, r + 4), img.width - r - 4)
+        cy = min(max(cy, r + 4), img.height - r - 4)
+        d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(105, 105, 105))
+        d.text((cx, cy - 2), str(i), fill=(255, 255, 255), font=f, anchor="mm")
     img.convert("L").save(caminho)
 
 

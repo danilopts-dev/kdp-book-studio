@@ -46,7 +46,7 @@
 
 #pagebreak()
 
-#activity(2, "Spot the 7 Differences")[Look closer this time! These two courtyard pictures hide 7 differences. Circle every one you find in the bottom picture.]
+#activity(2, "Spot the 7 Differences")[Look closer this time! These two olive grove pictures hide 7 differences. Circle every one you find in the bottom picture.]
 
 #spot-diff("noite2_erros7_antes_v3.png", "noite2_erros7_depois_v3_final.png", 7, w: 5.0in)
 
