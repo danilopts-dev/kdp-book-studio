@@ -322,3 +322,6 @@ Pedido do Danilo (p32 e p36: velas toscas). `hk_n0..8.png` e `hk_empty.png` gera
 
 ## 71. Contas mais difíceis (08/10/2026)
 Pedido do Danilo (p45, 57, 59, 63: fácil demais). N5 Gelt Math ★★ (agora multiplicação, divisão por 6, fração de um quarto, metade de 170): 42, 12, 63, 85. N7 Count the Gelt ★ (grupos em fileiras de 10: 17 e 26, soma 43). N7 Which Pile Has More? ★ (pilhas de 8 a 19 moedas em fileiras de 5; escreve cada contagem e a diferença: 14x9, 8x13, 17x11, 12x19). N7 Split and Save ★★ (48/4=12, (85-25)/4=15, 96/6=16, (38+46)/2/3=14). Todas as contas conferidas por código; respostas só no answer key (`extra_n5_v3.json`, `extra_n7_v3.json`).
+
+## 72. Ajustes após conferência do Danilo (08/10/2026)
+Chamas das hanukkiahs encostadas no pavio (p32 e p36). "Draw the Candles" (p33) refeita com a hanukkiah de copos vazios (`hk_empty0.png`, inclusive o copo do shamash) e agora pede só as Noites 3 e 6 (duas figuras grandes, em vez de três pequenas demais para a criança desenhar). "Which Pile Has More?" (p59): cada pilha numa caixinha própria, com espaço entre as duas.

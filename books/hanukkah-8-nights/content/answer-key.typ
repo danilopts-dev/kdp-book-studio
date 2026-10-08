@@ -109,7 +109,7 @@
       ("4", [7 + 1 = *8*])))
     v(0.2in)
     ak-card(4, 1, "Draw the Candles", tall: false, ak-list(size: _ans-size,
-      .._xj("extra_n4_hanukkiahs.json").draw_the_candles.items.map(i => ("Night " + str(i.night), [#i.hanukkah_candles candles + shamash]))))
+      .._xj("extra_n4_v3.json").draw_the_candles.items.map(i => ("Night " + str(i.night), [#i.hanukkah_candles candles + shamash]))))
   },
 )
 

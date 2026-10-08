@@ -52,21 +52,20 @@
 #let _pl = json(_pz + "extra_n7_v3.json").piles
 #let _coin(d) = box(width: d, height: d, radius: 50%, stroke: 1.6pt + ink, inset: 0pt,
   align(center + horizon, text(font: display, weight: "bold", size: d * 0.55)[\$]))
-#let _pile(n) = grid(columns: (0.27in,) * 5, column-gutter: 0.05in, row-gutter: 0.05in, ..range(n).map(_ => _coin(0.27in)))
-#let _cnt = box(width: 0.7in, stroke: (bottom: 1.6pt + ink), [])
+#let _pile(n) = grid(columns: (0.23in,) * 5, column-gutter: 0.035in, row-gutter: 0.035in, ..range(n).map(_ => _coin(0.23in)))
+#let _cnt = box(width: 0.6in, stroke: (bottom: 1.6pt + ink), [])
+// cada pilha numa caixinha própria, com espaço entre as duas (antes pareciam uma coisa só)
+#let _pbox(n) = block(width: 100%, breakable: false, stroke: 1pt + ink, radius: 6pt, inset: (x: 5pt, y: 7pt),
+  align(center, stack(spacing: 0.1in, box(height: 1.1in, align(bottom + center, _pile(n))), [\= #_cnt])))
 
 #v(0.06in)
 #grid(columns: (1fr, 1fr), column-gutter: 0.2in, row-gutter: 0.2in,
-  .._pl.map(p => block(width: 100%, breakable: false, stroke: 1.4pt + ink, radius: 10pt, inset: (x: 12pt, y: 12pt), {
-    grid(columns: (0.4in, 1fr), column-gutter: 0.05in, align: top,
-      box(width: 0.36in, height: 0.36in, radius: 50%, fill: ink,
-        align(center + horizon, text(fill: white, font: display, weight: "bold", size: 14pt, str(p.n)))),
-      [])
-    v(0.04in)
-    grid(columns: (1fr, 1fr), column-gutter: 0.1in, align: center + top, row-gutter: 0.14in,
-      box(height: 1.45in, align(bottom, _pile(p.left))), box(height: 1.45in, align(bottom, _pile(p.right))),
-      [\= #_cnt], [\= #_cnt])
-    v(0.14in)
+  .._pl.map(p => block(width: 100%, breakable: false, stroke: 1.4pt + ink, radius: 10pt, inset: (x: 9pt, y: 10pt), {
+    box(width: 0.36in, height: 0.36in, radius: 50%, fill: ink,
+      align(center + horizon, text(fill: white, font: display, weight: "bold", size: 14pt, str(p.n))))
+    v(0.06in)
+    grid(columns: (1fr, 1fr), column-gutter: 0.3in, _pbox(p.left), _pbox(p.right))
+    v(0.12in)
     align(center, text(size: 14pt)[Bigger pile: #box(width: 0.5in, stroke: (bottom: 1.6pt + ink), []) more coins])
   })))
 

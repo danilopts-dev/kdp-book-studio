@@ -33,5 +33,19 @@
     "with_shamash": 7,
     "empty_holders": 2,
     "tomorrow_with_shamash": 8
+  },
+  "draw_the_candles": {
+    "items": [
+      {
+        "night": 3,
+        "hanukkah_candles": 3,
+        "shamash": 1
+      },
+      {
+        "night": 6,
+        "hanukkah_candles": 6,
+        "shamash": 1
+      }
+    ]
   }
 }

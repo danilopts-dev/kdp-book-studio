@@ -8,7 +8,8 @@ gota (contorno + chama interna) desenhada por cima do pavio.
 
 Uso: python hanukkiah_noites_v3.py
 Saída (inputs/illustrations/): hk_n{0..8}.png  (n velas acesas + shamash aceso; hk_n0 = só o shamash)
-                               hk_empty.png    (copos vazios, sem shamash aceso: para "desenhe as velas")
+                               hk_empty.png    (copos vazios, shamash presente sem chama)
+                               hk_empty0.png   (todos os 9 copos vazios, inclusive o do shamash: para "desenhe as velas")
 """
 import math
 from pathlib import Path
@@ -39,8 +40,11 @@ def cup_mouth(d, cx, cy_mouth, k=SS):
     d.ellipse([(cx - 44) * k, (cy_mouth - 10) * k, (cx + 44) * k, (cy_mouth + 12) * k], outline=0, width=lw)
 
 
-def empty_base():
+def empty_base(shamash_candle=True):
     a = np.array(SRC)
+    if not shamash_candle:  # copo do shamash vazio: apaga a vela alta
+        a[40 + PAD:305 + PAD + 1, int(SH - HALF - 8):int(SH + HALF + 9)] = 255
+        a[306 + PAD:317 + PAD, int(SH - 30):int(SH + 31)] = 255
     for c in CX:
         a[CANDLE_TOP:CANDLE_CUT + 9, int(c - HALF - 8):int(c + HALF + 9)] = 255
         a[CANDLE_CUT + 1:394 + PAD, int(c - 30):int(c + 31)] = 255
@@ -64,8 +68,8 @@ def flame(d, cx, y_wick, h=74, w=46, k=SS):
     d.line([(x * k, y * k) for x, y in inner], fill=0, width=4 * k, joint="curve")
 
 
-def render(n, out, shamash_lit=True, flames=True):
-    base = empty_base()
+def render(n, out, shamash_lit=True, flames=True, shamash_candle=True):
+    base = empty_base(shamash_candle)
     a = np.array(base)
     srcA = np.array(SRC.resize((W * SS, H * SS), Image.LANCZOS))
     # shamash: sempre presente (vela alta no copo central)
@@ -81,15 +85,17 @@ def render(n, out, shamash_lit=True, flames=True):
         a[ya:yb, xa:xb] = np.minimum(a[ya:yb, xa:xb], srcA[ya:yb, xa:xb])
     img = Image.fromarray(a)
     d = ImageDraw.Draw(img)
+    if not shamash_candle:
+        cup_mouth(d, SH, 306 + PAD)
     for i, c in enumerate(CX):          # copos sem vela: boca aberta
         if i not in chosen:
             cup_mouth(d, c, 386 + PAD)
     # shamash: reaplica a vela alta e o copo original (o copo central não foi apagado)
     if flames:
         for i in chosen:
-            flame(d, CX[i], 177 + PAD)
+            flame(d, CX[i], 197 + PAD)
         if shamash_lit:
-            flame(d, SH, 47 + PAD)
+            flame(d, SH, 64 + PAD)
     img = img.resize((W, H), Image.LANCZOS)
     img.save(out, dpi=(300, 300))
 
@@ -98,12 +104,13 @@ def main():
     for n in range(0, 9):
         render(n, ILL / f"hk_n{n}.png")
     render(0, ILL / "hk_empty.png", shamash_lit=False, flames=False)
+    render(0, ILL / "hk_empty0.png", shamash_lit=False, flames=False, shamash_candle=False)
     # corta a margem branca com a MESMA caixa em todas (a n8 é a maior): alinhamento idêntico entre as figuras
     ref = np.array(Image.open(ILL / "hk_n8.png").convert("L")) < 128
     ys, xs = np.where(ref)
     pad = 14
     box = (max(0, xs.min() - pad), max(0, ys.min() - pad), min(W, xs.max() + pad), min(H, ys.max() + pad))
-    for f in [f"hk_n{n}.png" for n in range(9)] + ["hk_empty.png"]:
+    for f in [f"hk_n{n}.png" for n in range(9)] + ["hk_empty.png", "hk_empty0.png"]:
         Image.open(ILL / f).crop(box).save(ILL / f, dpi=(300, 300))
     print("[OK] hk_n0..hk_n8.png, hk_empty.png; caixa", box)
 

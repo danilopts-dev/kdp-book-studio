@@ -53,16 +53,16 @@
 
 #pagebreak()
 
-#activity(1, "Draw the Candles")[Draw the right number of candles for Night 2, Night 4, and Night 6, starting from the right. Don't forget the shamash!]
+#activity(1, "Draw the Candles")[Draw the right number of candles for Night 3 and Night 6, starting from the right. Don't forget the shamash!]
 
-#v(0.1in)
-#for n in json(_pz + "extra_n4_hanukkiahs.json").draw_the_candles.nights {
-  block(width: 100%, breakable: false, above: 0.1in, below: 0.2in, {
+#v(0.05in)
+#for n in json(_pz + "extra_n4_v3.json").draw_the_candles.items.map(i => i.night) {
+  block(width: 100%, breakable: false, above: 0.05in, below: 0.12in, {
     grid(columns: (1fr, auto), align: bottom,
       text(font: display, weight: "bold", size: 20pt, tracking: 0.08em)[NIGHT #n],
       text(size: 14pt)[I drew #box(width: 0.5in, stroke: (bottom: 1.4pt + ink), []) candles.])
-    v(0.04in)
-    align(center, hanukkiah-draw(n, w: 5.9in, empty: true))
+    v(0.02in)
+    align(center, image(_ill + "hk_empty0.png", width: 4.1in))
   })
 }
 
