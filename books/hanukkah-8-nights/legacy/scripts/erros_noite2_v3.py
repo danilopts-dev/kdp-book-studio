@@ -27,7 +27,7 @@ PZ = ROOT / "inputs" / "puzzle-assets"
 Y0, Y1 = 0, 1024  # cena inteira 3:2 (1536 x 1024)
 
 # cena-base de cada jogo (PNG 1536x1024 gerado) e faixa 2:1 usada no livro
-BASES = {5: "s1_b.png", 7: "s2_user_antes.png"}
+BASES = {5: "s1_user_antes.png", 7: "s2_user_antes.png"}
 SEED = {5: 3, 7: 5}
 
 
@@ -68,6 +68,15 @@ def provisional(n, base):
 
 
 def regioes(antes, depois, n):
+    """Tenta agrupar com raios decrescentes até achar exatamente n regiões."""
+    for dil in (14, 12, 10, 8, 6, 4):
+        d, boxes = _regioes(antes, depois, dil)
+        if len(boxes) == n:
+            break
+    return d, boxes
+
+
+def _regioes(antes, depois, dil):
     """Diferenças = traço escuro de uma imagem sem par escuro na outra a até 3 px (ignora o deslocamento de 1-2 px
     de imagens regeneradas). Agrupa por proximidade (14 px), descarta ruído (< 40 px de tinta) e funde caixas
     quase contidas uma na outra (partes do mesmo objeto)."""
@@ -76,7 +85,7 @@ def regioes(antes, depois, n):
     da = a & ~ndimage.binary_dilation(b, iterations=3)
     db = b & ~ndimage.binary_dilation(a, iterations=3)
     d = da | db
-    lab, _ = ndimage.label(ndimage.binary_dilation(d, iterations=14))
+    lab, _ = ndimage.label(ndimage.binary_dilation(d, iterations=dil))
     boxes = []
     for i, sl in enumerate(ndimage.find_objects(lab), 1):
         m = d & (lab == i)
@@ -113,8 +122,18 @@ def gabarito(antes, boxes, caminho, n):
         f = ImageFont.truetype("arialbd.ttf", 76)
     except OSError:
         f = ImageFont.load_default()
-    for i, (x, y, w, h) in enumerate(boxes, 1):
-        cx, cy, r = x + w / 2, y + h / 2, 62
+    r = 62
+    pts = [[min(max(x + w / 2, r + 4), img.width - r - 4), min(max(y + h / 2, r + 4), img.height - r - 4)] for x, y, w, h in boxes]
+    for _ in range(40):  # afasta bolas que se sobrepõem
+        for i in range(len(pts)):
+            for j in range(i + 1, len(pts)):
+                dx, dy = pts[j][0] - pts[i][0], pts[j][1] - pts[i][1]
+                dist = (dx * dx + dy * dy) ** 0.5 or 1.0
+                if dist < 2 * r + 8:
+                    k = (2 * r + 8 - dist) / 2 / dist
+                    pts[i][0] -= dx * k; pts[i][1] -= dy * k
+                    pts[j][0] += dx * k; pts[j][1] += dy * k
+    for i, (cx, cy) in enumerate(pts, 1):
         cx = min(max(cx, r + 4), img.width - r - 4)
         cy = min(max(cy, r + 4), img.height - r - 4)
         d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(105, 105, 105))
