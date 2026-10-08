@@ -121,3 +121,8 @@ O enunciado impresso diz "share equally with 4 cousins (you get a share too)", o
 - [ ] [ASSUMIDA] (listing, A+) Banner 3 passa a usar 3 páginas (p11 cifra, p23 sudoku 4x4, p48 latke; reserva p54 crossword), conferidas no PDF em 2026-10-07. Se o Flow distorcer páginas com 3 anexos, voltar para p23 e p48. A skill sugere 1 a 2 páginas; usei 3 por autorização do briefing.
 - [ ] [ASSUMIDA] (listing, A+) O argumento "concorrentes de 8.5 x 11 têm 68 a 94 páginas" fica só como nota interna no plano; nenhum texto publicável cita concorrentes. Hero diz "More than 80 pages". Módulo 5 e módulo 2 trazem a frase do bônus como texto, sem QR desenhado.
 - [x] [ASSUMIDA] (copyright, receita, piadas, 07/10/2026) Pedidos do Danilo aplicados: copyright centralizado, passo 1 da receita sem YOUR JOB (adulto ralha), piadas variadas (decisão 61), série 42 refeita, ligar os pontos em _v2.
+
+## Revisão do Danilo (2026-10-08)
+- [ ] [BLOQUEANTE para fechar o livro] (unit:n2, p15 e p18) Jogo dos erros: o Danilo apaga 5 / 10 objetos das cenas no Canva e devolve `noite2_erros{5,10}_depois_v3.png`. Até lá o PDF tem o depois provisório automático.
+- [x] [ASSUMIDA] (unit:n3, p23 e p26) Sudokus com formas simples (círculo, quadrado, triângulo, estrela, coração, +) no lugar dos símbolos temáticos; perde-se o tema Hanucá nos símbolos, mas a criança consegue desenhar. Listing e A+ ajustados.
+- [ ] [ASSUMIDA] (unit:n4) A página "Draw the Candles" (p33) ainda usa as velas desenhadas em código; se o Danilo quiser o mesmo traço das novas hanukkiahs, `hk_empty.png` serve de base (precisa copo vazio também no shamash).

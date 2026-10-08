@@ -8,8 +8,8 @@
 
 #let _ans-size = 13pt
 // Cartoes com titulo de uma linha nao reservam 2 linhas (economiza altura; o corpo nao precisa alinhar com o vizinho)
-#let _short = ("Escape to the Hills", "Word Hunt: Night 1", "Clean-Up Maze", "Spot the 10 Differences", "Symbol Sudoku (4x4)",
-  "Which Jar Is Different?", "Follow the Oil", "Symbol Sudoku (6x6)", "Which Jar Is the Pure One?", "Oil Math", "Gelt Math",
+#let _short = ("Escape to the Hills", "Word Hunt: Night 1", "Clean-Up Maze", "Spot the 10 Differences", "Shape Sudoku (4x4)",
+  "Which Jar Is Different?", "Follow the Oil", "Shape Sudoku (6x6)", "Which Jar Is the Pure One?", "Oil Math", "Gelt Math",
   "Kitchen Word Search", "Latke Maze", "Count the Gelt", "Which Pile Has More?", "Who Gets What?", "Split and Save",
   "Bring the Gelt to the Tzedakah Box", "Match the Night", "Night by Night Word Search")
 #let _ak-card = ak-card
@@ -46,16 +46,16 @@
 
 #ak-grid(
   ak-card(2, 1, "Spot the 5 Differences", {
-    ak-img("noite2_erros5_gabarito_key.png", frame: true)
+    ak-img("noite2_erros5_v3_gabarito_key.png", frame: true)
     v(0.08in)
-    _erros-list(range(1, 6))
+    text(size: _ans-size)[Each numbered box marks something that is missing from the bottom picture.]
   }),
   ak-card(2, 1, "Connect the Dots: The Hanukkiah", align(center, ak-img("noite2_ligar_pontos_hanukia_v2_gabarito_key.png", w: 100%))),
   ak-card(2, 1, "Clean-Up Maze", ak-maze("extra_n2_labirinto_limpeza")),
   ak-card(2, 2, "Spot the 10 Differences", {
-    ak-img("noite2_erros10_gabarito_key.png", frame: true)
+    ak-img("noite2_erros10_v3_gabarito_key.png", frame: true)
     v(0.08in)
-    _erros-list(range(1, 11))
+    text(size: _ans-size)[Each numbered box marks something that is missing from the bottom picture.]
   }),
 )
 
@@ -74,14 +74,14 @@
 #ak-night(3, "One Little Jar of Oil")
 
 #ak-grid(
-  ak-card(3, 1, "Symbol Sudoku (4x4)", ak-img("noite3_sudoku4x4_gabarito_key.png")),
+  ak-card(3, 1, "Shape Sudoku (4x4)", ak-img("noite3_sudoku4x4_v3_gabarito_key.png")),
   ak-card(3, 1, "Which Jar Is Different?", {
-    ak-img("noite3_jarro_diferente_gabarito_key.png", frame: true)
+    align(center, ak-img("noite3_jarros_v3_gabarito_key.png", frame: true, w: 2.75in))
     v(0.1in)
-    text(size: _ans-size)[The circled jar has dots instead of stripes.]
+    text(size: _ans-size)[The circled jar has only 3 triangles. All the others have 4.]
   }),
   ak-card(3, 1, "Follow the Oil", ak-maze("extra_n3_labirinto_oleo")),
-  ak-card(3, 2, "Symbol Sudoku (6x6)", ak-img("noite3_sudoku6x6_gabarito_key.png")),
+  ak-card(3, 2, "Shape Sudoku (6x6)", ak-img("noite3_sudoku6x6_v3_gabarito_key.png")),
   ak-card(3, 2, "Which Jar Is the Pure One?", {
     ak-big[Jar C]
     v(0.1in)
@@ -102,11 +102,11 @@
     ("3", [Use the lit shamash to light tonight's candles.]),
     ("4", [Put the shamash back in its own holder.]))),
   {
-    ak-card(4, 1, "How Many Candles Tonight?", {
-      ak-big[5 candles]
-      v(0.08in)
-      text(size: 14pt)[4 candles + 1 shamash = 5]
-    })
+    ak-card(4, 1, "How Many Candles Tonight?", ak-list(size: _ans-size,
+      ("1", [*6* candles]),
+      ("2", [6 + 1 = *7*]),
+      ("3", [8 − 6 = *2* empty holders]),
+      ("4", [7 + 1 = *8*])))
     v(0.2in)
     ak-card(4, 1, "Draw the Candles", tall: false, ak-list(size: _ans-size,
       .._xj("extra_n4_hanukkiahs.json").draw_the_candles.items.map(i => ("Night " + str(i.night), [#i.hanukkah_candles candles + shamash]))))
@@ -133,12 +133,16 @@
 
 #v(0.2in)
 #{
-  let wn = _xj("extra_n4_hanukkiahs.json").which_night
+  let wn = _xj("extra_n4_v3.json").which_night
   ak-card(4, 2, "Which Night Is It?", tall: false, {
     ak-list(size: _ans-size,
-      ..wn.items.zip(("Top", "2nd", "3rd", "Bottom")).map(((it, l)) => (l, [Night *#it.night*])))
-    v(0.1in)
-    text(size: _ans-size)[Hanukkah candles in all four pictures: *#wn.total_hanukkah_candles* (the shamash is not counted).]
+      ..wn.items.enumerate().map(((i, it)) => ("Picture " + str(i + 1), [Night *#it.night*])))
+    v(0.08in)
+    ak-list(size: _ans-size,
+      ("Q1", [3 + 8 + 5 + 6 = *#wn.answers.total_candles*]),
+      ("Q2", [22 + 4 = *#wn.answers.flames_with_shamash*]),
+      ("Q3", [Picture *#wn.answers.twice_night3_picture* (Night 6 = 2 × 3)]),
+      ("Q4", [8 − 3 = *#wn.answers.fullest_minus_emptiest*]))
   })
 }
 
@@ -154,10 +158,10 @@
   ak-card(5, 2, "What Comes Next? Dreidel Patterns", ak-list(size: _ans-size,
     .._xj("extra_n5_padroes.json").answers_text.enumerate().map(((i, a)) => (str(i + 1), [*#_cap(a)*])))),
   ak-card(5, 2, "Gelt Math", ak-list(size: _ans-size,
-    ("1", [12 + 9 = *21*]),
-    ("2", [24 / 4 = *6*]),
-    ("3", [(18 + 14) / 2 = *16*]),
-    ("4", [15 + 22 + 18 + 27 = *82*]))),
+    ("1", [3 × 14 = *42*]),
+    ("2", [72 / 6 = *12*]),
+    ("3", [(48 + 36) − (84 / 4) = *63*]),
+    ("4", [(38 + 47 + 29 + 56) / 2 = *85*]))),
 )
 
 
@@ -194,24 +198,26 @@
 
 #{
   let pl = _xj("extra_n7_pilhas_logica.json")
+  let pn = _xj("extra_n7_v3.json")
   let lg = pl.who_gets_what
   ak-grid(
     {
       ak-card(7, 1, "Count the Gelt", ak-list(size: _ans-size,
-        ("Group A", [*8*]),
-        ("Group B", [*13*])))
+        ("Group A", [*17*]),
+        ("Group B", [*26*]),
+        ("Together", [17 + 26 = *43*])))
       v(0.2in)
       ak-card(7, 1, "Which Pile Has More?", ak-list(size: _ans-size,
-        ..pl.piles.pairs.map(p => ("Pair " + str(p.n), [*#_cap(p.more)* pile (#p.left vs #p.right)]))))
+        ..pn.piles.map(p => ("Pair " + str(p.n), [*#_cap(p.more)* pile, #p.left vs #p.right: *#p.by* more]))))
       v(0.2in)
       ak-card(7, 2, "Who Gets What?", ak-list(size: _ans-size,
         ..lg.kids.map(k => (k, [*#lg.acts.at(lg.solution.at(k)).label*]))))
       v(0.2in)
       ak-card(7, 2, "Split and Save", ak-list(size: _ans-size,
-        ("1", [12 / 3 = *4*]),
-        ("2", [(20 - 4) / 4 = *4*]),
-        ("3", [30 / 5 = *6*]),
-        ("4", [(24 + 12) / 2 = *18*])))
+        ("1", [48 / 4 = *12*]),
+        ("2", [(85 − 25) / 4 = *15*]),
+        ("3", [96 / 6 = *16*]),
+        ("4", [(38 + 46) / 2 = 42, then 42 / 3 = *14*])))
     },
     ak-card(7, 1, "Bring the Gelt to the Tzedakah Box", ak-maze("noite7_labirinto_tzedaka")),
   )

@@ -1,0 +1,59 @@
+{
+  "count_the_gelt": {
+    "A": 17,
+    "B": 26,
+    "together": 43
+  },
+  "piles": [
+    {
+      "n": 1,
+      "left": 14,
+      "right": 9,
+      "more": "left",
+      "by": 5
+    },
+    {
+      "n": 2,
+      "left": 8,
+      "right": 13,
+      "more": "right",
+      "by": 5
+    },
+    {
+      "n": 3,
+      "left": 17,
+      "right": 11,
+      "more": "left",
+      "by": 6
+    },
+    {
+      "n": 4,
+      "left": 12,
+      "right": 19,
+      "more": "right",
+      "by": 7
+    }
+  ],
+  "split_and_save": [
+    {
+      "n": 1,
+      "expr": "48 / 4",
+      "answer": 12
+    },
+    {
+      "n": 2,
+      "expr": "(85 - 25) / 4",
+      "answer": 15
+    },
+    {
+      "n": 3,
+      "expr": "96 / 6",
+      "answer": 16
+    },
+    {
+      "n": 4,
+      "expr": "(38 + 46) / 2 / 3",
+      "answer": 14
+    }
+  ]
+}

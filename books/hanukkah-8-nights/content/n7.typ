@@ -14,23 +14,28 @@
 
 #pagebreak()
 
-#activity(1, "Count the Gelt")[Count the coins in each group. Write the total on the line.]
+#activity(1, "Count the Gelt")[Count the coins in each group. Each full row has 10 coins. Write the total on the line, then add the two groups together.]
 
-#let _blank = box(width: 1.5in, height: 0.34in, stroke: (bottom: 1.6pt + ink), [])
-#let _group(label, file) = block(width: 100%, breakable: false, above: 0.0in, below: 0.16in,
-  stroke: 1.4pt + ink, radius: 10pt, inset: (x: 18pt, y: 14pt), {
-    text(font: display, weight: "bold", size: 20pt, tracking: 0.03em)[#label: #h(6pt) #_blank]
+#let _coin(d) = box(width: d, height: d, radius: 50%, stroke: 1.8pt + ink, inset: 0pt,
+  align(center + horizon, text(font: display, weight: "bold", size: d * 0.55)[\$]))
+#let _rows(n, per, d, gap) = grid(columns: (d,) * per, column-gutter: gap, row-gutter: gap, ..range(n).map(_ => _coin(d)))
+#let _blank = box(width: 1.2in, height: 0.34in, stroke: (bottom: 1.6pt + ink), [])
+#let _group(label, n) = block(width: 100%, breakable: false, above: 0.0in, below: 0.14in,
+  stroke: 1.4pt + ink, radius: 10pt, inset: (x: 18pt, y: 12pt), {
+    text(font: display, weight: "bold", size: 19pt, tracking: 0.03em)[#label: #h(6pt) #_blank #h(4pt) #text(size: 14pt, weight: "regular", tracking: 0em)[coins]]
     v(0.1in)
-    align(center, image(_pz + file, width: 6.4in))
+    align(center, _rows(n, 10, 0.36in, 0.08in))
   })
 
-#v(0.1in)
-#_group("Group A", "noite7_contar_moedas_grupo_a_recorte.png")
-#_group("Group B", "noite7_contar_moedas_grupo_b_recorte.png")
+#v(0.08in)
+#_group("Group A", 17)
+#_group("Group B", 26)
+#block(width: 100%, breakable: false, above: 0.0in, below: 0.14in, stroke: 1.6pt + ink, radius: 10pt, inset: (x: 18pt, y: 12pt),
+  text(font: display, weight: "bold", size: 17pt, tracking: 0.03em)[GROUP A + GROUP B TOGETHER: #h(6pt) #box(width: 0.9in, height: 0.3in, stroke: (bottom: 1.6pt + ink), []) #text(size: 13pt, weight: "regular", tracking: 0em)[coins]])
 
 #v(0.02in)
 #whats-a("tzedakah", a: false)[Tzedakah means giving to help people in need, like sharing money or food. It comes from the Hebrew word for justice, because helping is simply the right thing to do. Many families keep a tzedakah box at home.]
-#art("72.png", w: 4.7in, below: 0.0in)
+#art("72.png", w: 2.7in, below: 0.0in)
 
 #pagebreak()
 
@@ -42,26 +47,27 @@
 #pagebreak()
 
 // ---- Expansão (2026-10-06): as duas páginas novas entram ANTES do Coupon Book (paridade da página de recorte)
-#activity(1, "Which Pile Has More?")[Look at each pair of coin piles. Fill in the circle under the pile that has more coins.]
+#activity(1, "Which Pile Has More?")[Count the coins in each pile and write the number under it. Circle the bigger pile, then figure out how many more coins it has.]
 
-#let _pl = json(_pz + "extra_n7_pilhas_logica.json").piles.pairs
-#let _coin-h = 0.18in
-#let _pile(n) = box(width: 1.2in, height: 9 * _coin-h + 0.04in, {
-  for i in range(n) {
-    place(bottom + center, dx: if calc.even(i) { 0.025in } else { -0.025in }, dy: -i * _coin-h,
-      rect(width: 0.95in, height: _coin-h, fill: white, stroke: 1.5pt + ink, radius: 4pt))
-  }
-})
-#let _pick = circle(radius: 0.16in, stroke: 1.6pt + ink)
+#let _pl = json(_pz + "extra_n7_v3.json").piles
+#let _coin(d) = box(width: d, height: d, radius: 50%, stroke: 1.6pt + ink, inset: 0pt,
+  align(center + horizon, text(font: display, weight: "bold", size: d * 0.55)[\$]))
+#let _pile(n) = grid(columns: (0.27in,) * 5, column-gutter: 0.05in, row-gutter: 0.05in, ..range(n).map(_ => _coin(0.27in)))
+#let _cnt = box(width: 0.7in, stroke: (bottom: 1.6pt + ink), [])
 
 #v(0.06in)
-#grid(columns: (1fr, 1fr), column-gutter: 0.2in, row-gutter: 0.25in,
-  .._pl.map(p => block(width: 100%, breakable: false, stroke: 1.4pt + ink, radius: 10pt, inset: (x: 12pt, y: 10pt), {
-    grid(columns: (0.36in, 1fr, 1fr), align: (top, center + bottom, center + bottom), row-gutter: 0.1in,
+#grid(columns: (1fr, 1fr), column-gutter: 0.2in, row-gutter: 0.2in,
+  .._pl.map(p => block(width: 100%, breakable: false, stroke: 1.4pt + ink, radius: 10pt, inset: (x: 12pt, y: 12pt), {
+    grid(columns: (0.4in, 1fr), column-gutter: 0.05in, align: top,
       box(width: 0.36in, height: 0.36in, radius: 50%, fill: ink,
         align(center + horizon, text(fill: white, font: display, weight: "bold", size: 14pt, str(p.n)))),
-      _pile(p.left), _pile(p.right),
-      [], _pick, _pick)
+      [])
+    v(0.04in)
+    grid(columns: (1fr, 1fr), column-gutter: 0.1in, align: center + top, row-gutter: 0.14in,
+      box(height: 1.45in, align(bottom, _pile(p.left))), box(height: 1.45in, align(bottom, _pile(p.right))),
+      [\= #_cnt], [\= #_cnt])
+    v(0.14in)
+    align(center, text(size: 14pt)[Bigger pile: #box(width: 0.5in, stroke: (bottom: 1.6pt + ink), []) more coins])
   })))
 
 #pagebreak()
@@ -128,16 +134,16 @@
       align(center + horizon, text(fill: white, font: display, weight: "bold", size: 17pt, str(n)))),
     {
       text(size: 15.5pt, body)
-      v(0.5in)
+      v(0.42in)
       box(width: 2.2in, stroke: (bottom: 1.6pt + ink), [])
     }))
 
 #v(0.05in)
 #stack(dir: ttb, spacing: 0.16in,
-  _prob(1, [You have 12 gelt coins. You split all of them into 3 equal piles: one to give to tzedakah, one to save, and one to spend. How many coins are in each pile?]),
-  _prob(2, [You have 20 gelt coins. First, you put 4 coins in the tzedakah box. Then you split the coins that are left into 4 equal jars to save. How many coins go in each jar?]),
-  _prob(3, [Your family collected 30 gelt coins for tzedakah tonight. You want to put an equal number of coins into 5 different tzedakah boxes for 5 different causes. How many coins go in each box?]),
-  _prob(4, [You earned 24 gelt coins from your grandparents and 12 more from your aunt and uncle. You decide to split everything evenly: half for tzedakah, half to save. How many coins go to tzedakah?]))
+  _prob(1, [You have 48 gelt coins. You split all of them into 4 equal piles: one to give to tzedakah, one to save, one to spend, and one to share with your sibling. How many coins are in each pile?]),
+  _prob(2, [You have 85 gelt coins. First, you put 25 coins in the tzedakah box. Then you split the coins that are left into 4 equal jars to save. How many coins go in each jar?]),
+  _prob(3, [Your family collected 96 gelt coins for tzedakah tonight. You want to put an equal number of coins into 6 different tzedakah boxes for 6 different causes. How many coins go in each box?]),
+  _prob(4, [You earned 38 gelt coins from your grandparents and 46 more from your aunt and uncle. You give half of everything to tzedakah. Then you split the rest equally into 3 jars to save. How many coins go in each jar?]))
 
 #pagebreak(weak: true)
 

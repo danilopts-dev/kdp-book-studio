@@ -123,24 +123,24 @@
 
 #pagebreak(weak: true)
 
-#activity(2, "Gelt Math")[Solve these gelt problems. Some take two steps, so read carefully before you add.]
+#activity(2, "Gelt Math")[Solve these gelt problems. Most take two steps, so read carefully.]
 
-#let _prob(n, body, op) = block(width: 100%, breakable: false, stroke: 1.4pt + ink, radius: 10pt, inset: (x: 18pt, y: 12pt),
+#let _prob(n, body) = block(width: 100%, breakable: false, stroke: 1.4pt + ink, radius: 10pt, inset: (x: 18pt, y: 10pt),
   grid(columns: (auto, 1fr), column-gutter: 16pt, align: top,
     box(width: 0.42in, height: 0.42in, radius: 50%, fill: ink,
       align(center + horizon, text(fill: white, font: display, weight: "bold", size: 17pt, str(n)))),
     {
-      text(size: 15.5pt, body)
-      v(0.12in)
-      text(size: 20pt)[#op \= #box(width: 1.3in, stroke: (bottom: 1.6pt + ink), [])]
+      text(size: 15pt, body)
+      v(0.1in)
+      align(right, text(font: display, weight: "bold", size: 13pt, tracking: 0.05em)[ANSWER: #box(width: 1.1in, stroke: (bottom: 1.6pt + ink), []) #text(weight: "regular", tracking: 0em)[coins]])
     }))
 
 #v(0.05in)
-#stack(dir: ttb, spacing: 0.14in,
-  _prob(1, [You win 12 gelt coins in the first round and 9 more in the second round. How many gelt coins do you have now?], [12 + 9]),
-  _prob(2, [You have 24 gelt coins to share equally with 3 cousins (you get a share too). How many coins does each person get?], [24 / 4]),
-  _prob(3, [You start the game with 18 gelt coins. You spin a Gimel and win 14 more coins from the pot. Then you give half of your coins to your little cousin. How many coins do you have left?], [(18 + 14) / 2]),
-  _prob(4, [Four cousins count their gelt after the tournament: 15, 22, 18, and 27 coins. How many gelt coins did the whole family win tonight?], [15 + 22 + 18 + 27]))
+#stack(dir: ttb, spacing: 0.1in,
+  _prob(1, [You win 3 rounds of the dreidel game. Each round, you win 14 gelt coins. How many gelt coins did you win in all?]),
+  _prob(2, [You have 72 gelt coins to share equally with your 5 cousins (you get a share too). How many coins does each person get?]),
+  _prob(3, [You start the game with 48 gelt coins. You spin a Gimel and win 36 more coins from the pot. Then you give one fourth of all your coins to your little cousin. How many coins do you have left?]),
+  _prob(4, [Four cousins count their gelt after the tournament: 38, 47, 29, and 56 coins. They put every coin in the middle and give half of the pile to tzedakah. How many coins go to tzedakah?]))
 
 #v(0.14in)
 #whats-a("gelt", a: false)[Gelt means "money" in Yiddish. Today it's usually chocolate coins wrapped in gold foil, given out during Hanukkah. Families use it for games (like the dreidel tournament tonight), for prizes, and sometimes just for a sweet treat after lighting the candles.]

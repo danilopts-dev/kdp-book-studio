@@ -26,9 +26,9 @@
 
 #pagebreak()
 
-#activity(1, "Spot the 5 Differences")[Here's the Temple the Maccabees found, and the Temple after they cleaned it up. Can you spot the 5 things that are missing from the clean Temple?]
+#activity(1, "Spot the 5 Differences")[These two Temple pictures look the same, but they aren't! Look closely at the bottom one. Can you spot the 5 things that are missing?]
 
-#spot-diff("noite2_erros5_antes.png", "noite2_erros5_depois.png", 5)
+#spot-diff("noite2_erros5_antes_v3.png", "noite2_erros5_depois_v3_final.png", 5, w: 6.4in)
 
 #pagebreak()
 
@@ -46,9 +46,9 @@
 
 #pagebreak()
 
-#activity(2, "Spot the 10 Differences")[Look closer this time. The same two Temple scenes hide 10 differences between them now, not just 5. Circle every one you find.]
+#activity(2, "Spot the 10 Differences")[Look closer this time! These two courtyard pictures hide 10 differences. Circle every one you find in the bottom picture.]
 
-#spot-diff("noite2_erros10_antes.png", "noite2_erros10_depois.png", 10)
+#spot-diff("noite2_erros10_antes_v3.png", "noite2_erros10_depois_v3_final.png", 10, w: 6.4in)
 
 #pagebreak()
 

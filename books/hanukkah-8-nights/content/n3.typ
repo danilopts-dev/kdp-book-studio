@@ -16,19 +16,19 @@
 
 #pagebreak()
 
-#activity(1, "Symbol Sudoku (4x4)")[Fill the grid so every row, column, and small box has all four symbols: jar, candle, dreidel, and star.]
+#activity(1, "Shape Sudoku (4x4)")[Fill the grid so every row, column, and small box has all four shapes: circle, square, triangle, and star.]
 
-#symbol-key(("noite3_sym_jar.png", "Jar"), ("noite3_sym_candle.png", "Candle"), ("noite3_sym_dreidel.png", "Dreidel"), ("noite3_sym_star.png", "Star"))
+#symbol-key(("noite3_sym3_circle.png", "Circle"), ("noite3_sym3_square.png", "Square"), ("noite3_sym3_triangle.png", "Triangle"), ("noite3_sym3_star.png", "Star"))
 
-#puzzle("noite3_sudoku4x4_recorte.png", w: 6.3in)
+#puzzle("noite3_sudoku4x4_v3_recorte.png", w: 6.3in)
 
 #pagebreak()
 
-#activity(1, "Which Jar Is Different?")[These eight oil jars look the same. Look closely. Circle the one jar that is different.]
+#activity(1, "Which Jar Is Different?")[These twelve oil jars look the same. Look closely at each one. Circle the one jar that is different.]
 
 #v(1fr)
-#block(width: 100%, stroke: 1.4pt + ink, radius: 8pt, inset: 8pt,
-  align(center, image(_pz + "noite3_jarro_diferente_recorte.png", width: 100%)))
+#block(width: 100%, stroke: 1.4pt + ink, radius: 8pt, inset: 10pt,
+  align(center, image(_pz + "noite3_jarros_v3.png", width: 100%)))
 #v(1.4fr)
 
 #pagebreak()
@@ -40,11 +40,11 @@
 
 #pagebreak()
 
-#activity(2, "Symbol Sudoku (6x6)")[Fill the grid so every row, column, and box has all six symbols, each one only once.]
+#activity(2, "Shape Sudoku (6x6)")[Fill the grid so every row, column, and box has all six shapes, each one only once.]
 
-#symbol-key(("noite3_sym_jar.png", "Jar"), ("noite3_sym_candle.png", "Candle"), ("noite3_sym_dreidel.png", "Dreidel"), ("noite3_sym_star.png", "Star"), ("noite3_sym_hanukkiah.png", "Hanukkiah"), ("noite3_sym_coin.png", "Gelt coin"))
+#symbol-key(("noite3_sym3_circle.png", "Circle"), ("noite3_sym3_square.png", "Square"), ("noite3_sym3_triangle.png", "Triangle"), ("noite3_sym3_star.png", "Star"), ("noite3_sym3_heart.png", "Heart"), ("noite3_sym3_plus.png", "Plus"))
 
-#puzzle("noite3_sudoku6x6_recorte.png", w: 6.4in)
+#puzzle("noite3_sudoku6x6_v3_recorte.png", w: 6.4in)
 
 #pagebreak()
 

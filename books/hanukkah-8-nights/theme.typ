@@ -188,7 +188,7 @@
 // rótulos BEFORE / AFTER e caixinha com N círculos para a criança marcar as diferenças achadas.
 #let spot-diff(before, after, n, w: 100%) = {
   let lab(t) = block(above: 0.08in, below: 0.05in, sticky: true, _kicker(size: 11pt, t))
-  let pic(f) = block(width: w, stroke: 1.4pt + ink, radius: 4pt, clip: true, image(_pz + f, width: 100%))
+  let pic(f) = align(center, block(width: w, stroke: 1.4pt + ink, radius: 4pt, clip: true, image(_pz + f, width: 100%)))
   lab[Before]
   pic(before)
   lab[After]

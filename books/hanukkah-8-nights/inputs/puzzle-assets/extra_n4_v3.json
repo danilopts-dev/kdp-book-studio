@@ -1,0 +1,37 @@
+{
+  "which_night": {
+    "items": [
+      {
+        "night": 3
+      },
+      {
+        "night": 8
+      },
+      {
+        "night": 5
+      },
+      {
+        "night": 6
+      }
+    ],
+    "answers": {
+      "nights": [
+        3,
+        8,
+        5,
+        6
+      ],
+      "total_candles": 22,
+      "flames_with_shamash": 26,
+      "twice_night3_picture": 4,
+      "fullest_minus_emptiest": 5
+    }
+  },
+  "how_many_tonight": {
+    "night": 6,
+    "count": 6,
+    "with_shamash": 7,
+    "empty_holders": 2,
+    "tomorrow_with_shamash": 8
+  }
+}

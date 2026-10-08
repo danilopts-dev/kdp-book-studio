@@ -36,32 +36,20 @@
 
 #pagebreak()
 
-#activity(1, "How Many Candles Tonight?")[It's the 4th night. Count the Hanukkah candles, then add the shamash.]
+#activity(1, "How Many Candles Tonight?")[It's the 6th night. Look at the hanukkiah, then fill in the blanks.]
 
-#let _flame(s) = polygon(fill: none, stroke: 2pt + ink,
-  (0.5 * s, 0pt), (0.95 * s, 0.62 * s), (0.5 * s, 1.0 * s), (0.05 * s, 0.62 * s))
-#let _candle(h, s: 0.52in) = stack(dir: ttb, spacing: 0pt,
-  align(center, stack(dir: ttb, spacing: 0pt, _flame(s * 0.8))),
-  v(0.03in),
-  rect(width: s, height: h, stroke: 2pt + ink, radius: 3pt))
-#let _lbl(t) = text(font: display, weight: "bold", size: 13pt, tracking: 0.06em, upper(t))
+#let _ln(w: 0.7in) = box(width: w, stroke: (bottom: 1.6pt + ink), [])
+#let _q(i, body) = block(width: 100%, breakable: false, above: 0.17in, below: 0.17in,
+  grid(columns: (0.5in, 1fr), column-gutter: 0.1in, align: horizon,
+    box(width: 0.4in, height: 0.4in, radius: 50%, fill: ink, align(center + horizon, text(fill: white, font: display, weight: "bold", size: 14pt, str(i)))),
+    text(size: 16.5pt, body)))
 
+#align(center, image(_ill + "hk_n6.png", width: 5.6in))
 #v(0.1in)
-#block(width: 100%, breakable: false, stroke: 1.6pt + ink, radius: 10pt, inset: (x: 18pt, y: 40pt), {
-  grid(columns: (1fr, auto, auto, auto), column-gutter: 0.3in, align: bottom + center,
-    stack(dir: ttb, spacing: 0.2in,
-      stack(dir: ltr, spacing: 0.4in, ..range(4).map(_ => _candle(3.5in))),
-      _lbl[Hanukkah candles]),
-    text(size: 48pt, weight: "bold", [+]),
-    stack(dir: ttb, spacing: 0.2in, _candle(4.3in), _lbl[Shamash]),
-    [])
-})
-
-#v(0.5in)
-#block(width: 100%, breakable: false, inset: (x: 4pt), {
-  set text(size: 22pt)
-  [4 candles + 1 shamash = #box(width: 0.9in, stroke: (bottom: 1.6pt + ink), []) candles lit tonight]
-})
+#_q(1)[Count the Hanukkah candles (not the shamash): #_ln()]
+#_q(2)[Now add the shamash: #_ln(w: 0.5in) + 1 = #_ln(w: 0.5in) candles lit tonight]
+#_q(3)[8 holders for candles. Empty tonight: 8 − #_ln(w: 0.5in) = #_ln(w: 0.5in)]
+#_q(4)[Tomorrow: 1 more candle, plus the shamash. Candles lit: #_ln(w: 0.5in)]
 
 #pagebreak()
 
@@ -107,19 +95,28 @@
 
 #pagebreak()
 
-#activity(2, "Which Night Is It?")[Count the Hanukkah candles on each hanukkiah to find the night. The shamash doesn't count! Then add up the candles in all four pictures.]
+#activity(2, "Which Night Is It?")[Count the Hanukkah candles on each hanukkiah to find the night. The shamash doesn't count! Then answer the four questions below.]
 
-#for it in json(_pz + "extra_n4_hanukkiahs.json").which_night.items {
-  block(width: 100%, breakable: false, above: 0.06in, below: 0.1in,
-    grid(columns: (4.5in, 1fr), column-gutter: 0.2in, align: horizon,
-      hanukkiah-draw(it.night, w: 4.4in),
-      block(width: 100%, stroke: 1.4pt + ink, radius: 8pt, inset: (x: 10pt, y: 12pt),
-        text(font: display, weight: "bold", size: 16pt, tracking: 0.05em)[NIGHT #box(width: 0.6in, stroke: (bottom: 1.6pt + ink), [])])))
-}
+#let _wn = json(_pz + "extra_n4_v3.json").which_night
+#v(0.05in)
+#grid(columns: (1fr, 1fr), column-gutter: 0.25in, row-gutter: 0.12in,
+  ..range(4).map(i => block(width: 100%, breakable: false, {
+    align(center, image(_ill + "hk_n" + str(_wn.items.at(i).night) + ".png", width: 3.0in))
+    v(0.02in)
+    align(center, block(stroke: 1.4pt + ink, radius: 8pt, inset: (x: 12pt, y: 7pt),
+      text(font: display, weight: "bold", size: 15pt, tracking: 0.05em)[PICTURE #str(i + 1): NIGHT #box(width: 0.5in, stroke: (bottom: 1.6pt + ink), [])]))
+  })))
 
-#v(0.08in)
-#block(width: 100%, breakable: false, stroke: 1.6pt + ink, radius: 10pt, inset: (x: 16pt, y: 12pt),
-  text(font: display, weight: "bold", size: 15pt, tracking: 0.04em)[HANUKKAH CANDLES IN ALL FOUR PICTURES: #box(width: 0.8in, stroke: (bottom: 1.4pt + ink), [])])
+#let _ln2(w: 0.55in) = box(width: w, stroke: (bottom: 1.6pt + ink), [])
+#let _q2(i, body) = block(width: 100%, breakable: false, above: 0.07in, below: 0.07in,
+  grid(columns: (0.45in, 1fr), column-gutter: 0.08in, align: horizon,
+    box(width: 0.36in, height: 0.36in, radius: 50%, fill: ink, align(center + horizon, text(fill: white, font: display, weight: "bold", size: 13pt, str(i)))),
+    text(size: 14.5pt, body)))
+#v(0.1in)
+#_q2(1)[Hanukkah candles in all four pictures (no shamash): #_ln2()]
+#_q2(2)[Add the 4 shamash candles too. How many flames in all? #_ln2()]
+#_q2(3)[Which picture has twice as many candles as Night 3? Picture #_ln2(w: 0.4in)]
+#_q2(4)[Fullest picture minus emptiest picture: #_ln2() candles]
 
 #pagebreak()
 

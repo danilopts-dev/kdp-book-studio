@@ -1,0 +1,9 @@
+{
+  "linhas": 3,
+  "colunas": 4,
+  "posicao_linha_coluna_1_based": [
+    2,
+    3
+  ],
+  "diferenca": "o jarro diferente tem 3 tri\u00e2ngulos na faixa (os outros 11 t\u00eam 4)"
+}

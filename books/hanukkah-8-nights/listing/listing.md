@@ -51,7 +51,7 @@ Atualizada em 2026-10-07 para o miolo final (82 páginas, 6 a 7 atividades por n
 
 <p><b>A few things you'll find inside:</b></p>
 <ul>
-<li>Symbol sudoku, 4x4 and 6x6, with oil jars, candles, dreidels, and stars in place of numbers</li>
+<li>Shape sudoku, 4x4 and 6x6, with circles, squares, triangles, and stars in place of numbers</li>
 <li>Logic puzzles such as which jar holds the pure oil and who gets what, plus dreidel patterns and math with gelt and coins</li>
 <li>Spot-the-difference pages, scrambled words to unscramble, and a page where you draw the candles on the hanukkiah to work out which night it is</li>
 <li>A latke recipe on Night 6 to make with a grown-up, with the kid's steps marked, plus a fill-in-the-blanks story called "The Great Latke Disaster"</li>
@@ -91,10 +91,10 @@ Argumento interno (NÃO vai em texto de A+ nem de descrição, e nenhum concorre
 - Observação: o lado genérico não nomeia nem imita nenhum concorrente real.
 
 ### Módulo 3: Inside Pages Preview
-- Visual: três páginas reais do miolo lado a lado, levemente inclinadas sobre uma mesa clara: Crack the Code (Noite 1, p11), sudoku de símbolos 4x4 (Noite 3, p23) e receita de latke (Noite 6, p48). Conferidas no PDF com `./st preview` em 2026-10-07. Reserva: a página de palavras cruzadas de comidas (Noite 6, p54) no lugar da p11, se o Flow distorcer a p11; se distorcer qualquer página, voltar para duas páginas (p23 e p48).
+- Visual: três páginas reais do miolo lado a lado, levemente inclinadas sobre uma mesa clara: Crack the Code (Noite 1, p11), sudoku de formas 4x4 (Noite 3, p23) e receita de latke (Noite 6, p48). Conferidas no PDF com `./st preview` em 2026-10-07. Reserva: a página de palavras cruzadas de comidas (Noite 6, p54) no lugar da p11, se o Flow distorcer a p11; se distorcer qualquer página, voltar para duas páginas (p23 e p48).
 - Headline: Real Pages, Ready for Pencils
-- Body: Symbol sudoku with oil jars and dreidels. A secret code to crack. A latke recipe to make with a grown-up. Mazes, word searches, a crossword, and logic puzzles on the other nights.
-- Frases no Flow: Symbol sudoku | A secret code to crack | A latke recipe to make with a grown-up
+- Body: Shape sudoku with stars, hearts, and triangles. A secret code to crack. A latke recipe to make with a grown-up. Mazes, word searches, a crossword, and logic puzzles on the other nights.
+- Frases no Flow: Shape sudoku | A secret code to crack | A latke recipe to make with a grown-up
 
 ### Módulo 4: Use Case & Versatility (as 8 noites)
 - Visual: oito painéis pequenos numerados de 1 a 8, cada um com um ícone em line art do tema da noite (jarro, hanukkiah, dreidel, latke, moeda, e assim por diante). Os títulos das noites entram como legenda depois, no Canva, se couberem.

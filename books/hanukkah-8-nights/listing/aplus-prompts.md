@@ -17,7 +17,7 @@ Gerados a partir do plano de A+ em `listing.md` (copy dos 5 módulos). Atualizad
 |---|---|
 | 1 Hero | Capa final + `inputs/illustrations/12.png` (hanukkiah, referência de traço e do objeto central) |
 | 2 Comparison & Value | Capa final |
-| 3 Inside Pages Preview | Capa final + 3 páginas reais do miolo: p11 (Crack the Code, Noite 1), p23 (Symbol Sudoku 4x4, Noite 3) e p48 (receita de latke, Noite 6), conferidas no PDF em 2026-10-07. Exportar de `build/hanukkah-8-nights-interior.pdf` com `./st preview hanukkah-8-nights "11,23,48" --ppi 150 --cols 1` (a folha de contato sai em `build/sheet.png`; para anexar uma página por arquivo, exportar cada uma em PNG a ~150 ppi) ou direto do PDF. Reserva: p54 (Hanukkah Food Crossword, Noite 6) no lugar da p11. Se o Flow distorcer alguma página, rodar de novo só com p23 e p48. Reexportar se o miolo mudar. |
+| 3 Inside Pages Preview | Capa final + 3 páginas reais do miolo: p11 (Crack the Code, Noite 1), p23 (Shape Sudoku 4x4, Noite 3) e p48 (receita de latke, Noite 6), conferidas no PDF em 2026-10-07. Exportar de `build/hanukkah-8-nights-interior.pdf` com `./st preview hanukkah-8-nights "11,23,48" --ppi 150 --cols 1` (a folha de contato sai em `build/sheet.png`; para anexar uma página por arquivo, exportar cada uma em PNG a ~150 ppi) ou direto do PDF. Reserva: p54 (Hanukkah Food Crossword, Noite 6) no lugar da p11. Se o Flow distorcer alguma página, rodar de novo só com p23 e p48. Reexportar se o miolo mudar. |
 | 4 Use Case (as 8 noites) | Capa final + referências de traço, uma por noite: `11.png` (N1), `21.png` (N2), `30.png` (N3), `41.png` (N4), `51.png` (N5), `61.png` (N6), `71.png` (N7), `82.png` (N8). Se o Flow limitar o número de anexos, usar `11.png`, `30.png`, `51.png`, `61.png` e `82.png`. |
 | 5 Key Benefits (como funciona) | Capa final + `inputs/illustrations/32.png` (família com o relógio, Noite 3). Não anexar `bonus-qr.png` (a frase do bônus é só texto). |
 
@@ -76,11 +76,11 @@ Banner purpose: Inside Pages Preview
 
 Visual style: Match the exact color palette, typography, and illustration style of the attached book cover. Keep the design clean and consistent with the cover's mood: warm and welcoming, with a light storybook feel.
 
-Layout: 16:9 landscape banner. Show the three attached interior pages (the secret code page, the symbol sudoku page, and the latke recipe page) side by side, slightly overlapping and tilted, as if lying on a light wooden table, with a small pencil beside them. Use only the attached pages exactly as they are. Do not invent, redraw, or change any content on the pages, and do not add extra pages. Leave clear negative space on one side so the headline stays legible.
+Layout: 16:9 landscape banner. Show the three attached interior pages (the secret code page, the shape sudoku page, and the latke recipe page) side by side, slightly overlapping and tilted, as if lying on a light wooden table, with a small pencil beside them. Use only the attached pages exactly as they are. Do not invent, redraw, or change any content on the pages, and do not add extra pages. Leave clear negative space on one side so the headline stays legible.
 
 Text to render exactly as written (do not paraphrase, do not add any other text):
 Headline: "Real Pages, Ready for Pencils"
-Supporting phrases: "Symbol sudoku" | "A secret code to crack" | "A latke recipe to make with a grown-up"
+Supporting phrases: "Shape sudoku" | "A secret code to crack" | "A latke recipe to make with a grown-up"
 
 Audience: parents and grandparents who want to see what the kids will actually be doing. The mood should feel trustworthy and practical.
 

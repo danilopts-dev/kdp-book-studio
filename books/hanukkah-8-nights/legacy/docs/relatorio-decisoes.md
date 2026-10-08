@@ -307,3 +307,18 @@ Pedido do Danilo; texto inalterado.
 
 ## 66. Artes 14 e 24 conferidas visualmente (07/10/2026)
 `14.png`: 4 suportes à esquerda, suporte alto do shamash no centro (shamash aceso na mão da mãe), 4 à direita, 1 vela no suporte da ponta direita (Noite 1): correta. `24.png`: menorá do Templo com 7 braços e hanukkiah com 9 suportes (4 + shamash + 4) sem chamas: correta. Seguem na lista do revisor humano.
+
+## 67. Jogo dos erros da Noite 2 refeito com cenas completas (08/10/2026)
+Pedido do Danilo (p15 e p18: "horrível e super básico"). Duas cenas completas geradas à parte, cada uma com objetos isolados para apagar à mão no Canva: ★ salão do Templo limpo (12 objetos), ★★ pátio do Templo (16 objetos). O "antes" é a cena cortada em faixa 2:1 (1536x768, `noite2_erros{5,10}_antes_v3.png`); o "depois" é o mesmo arquivo com 5 / 10 objetos apagados. Enquanto o Danilo não entrega o depois feito à mão (`noite2_erros{5,10}_depois_v3.png`, mesmo tamanho), o livro usa um depois PROVISÓRIO automático (`_depois_v3_auto.png`). `legacy/scripts/erros_noite2_v3.py` confere por pixel que há exatamente N regiões diferentes e gera o gabarito numerado (`_v3_gabarito_key.png`). Textos de instrução ajustados (já não é "Templo antes/depois da limpeza"). As artes antigas ficam intactas, sem uso.
+
+## 68. Sudokus da Noite 3 com formas simples (08/10/2026)
+Pedido do Danilo (p23 e p26: símbolos difíceis de desenhar). 4x4: círculo, quadrado, triângulo, estrela. 6x6: + coração e +. Mesmas grades, pistas e soluções únicas dos JSON já aprovados (reverificadas por código); só o desenho muda. Título "Shape Sudoku"; listing e A+ atualizados ("Shape sudoku"). `legacy/scripts/sudoku_formas_v3.py`; assets `_v3`.
+
+## 69. "Which Jar Is Different?" refeito (08/10/2026)
+Pedido do Danilo (p24: tosco). Um jarro ilustrado (alça à direita, selo, faixa de 4 triângulos) repetido 12 vezes em 3 prateleiras; o diferente (linha 2, coluna 3) tem 3 triângulos em vez de 4. Verificado por pixel (11 cópias idênticas). `legacy/scripts/jarro_diferente_v3.py`.
+
+## 70. Velas e hanukkiahs da Noite 4 no traço da `12.png` (08/10/2026)
+Pedido do Danilo (p32 e p36: velas toscas). `hk_n0..8.png` e `hk_empty.png` gerados da própria `12.png` (velas recolocadas por noite, a partir da direita, com chama em gota). p32 vira Noite 6 com 4 perguntas (6, 6+1, 8-6, 7+1); p36 vira 4 hanukkiahs em grade 2x2 (noites 3, 8, 5, 6) + 4 perguntas (22, 26, quadro com o dobro da Noite 3, 8-3). Dados em `extra_n4_v3.json`. A página "Draw the Candles" (p33) não foi mexida: segue com `hanukkiah-draw`.
+
+## 71. Contas mais difíceis (08/10/2026)
+Pedido do Danilo (p45, 57, 59, 63: fácil demais). N5 Gelt Math ★★ (agora multiplicação, divisão por 6, fração de um quarto, metade de 170): 42, 12, 63, 85. N7 Count the Gelt ★ (grupos em fileiras de 10: 17 e 26, soma 43). N7 Which Pile Has More? ★ (pilhas de 8 a 19 moedas em fileiras de 5; escreve cada contagem e a diferença: 14x9, 8x13, 17x11, 12x19). N7 Split and Save ★★ (48/4=12, (85-25)/4=15, 96/6=16, (38+46)/2/3=14). Todas as contas conferidas por código; respostas só no answer key (`extra_n5_v3.json`, `extra_n7_v3.json`).
