@@ -8,7 +8,7 @@
 
 #let _ans-size = 13pt
 // Cartoes com titulo de uma linha nao reservam 2 linhas (economiza altura; o corpo nao precisa alinhar com o vizinho)
-#let _short = ("Escape to the Hills", "Word Hunt: Night 1", "Clean-Up Maze", "Spot the 10 Differences", "Shape Sudoku (4x4)",
+#let _short = ("Escape to the Hills", "Word Hunt: Night 1", "Clean-Up Maze", "Spot the 7 Differences", "Shape Sudoku (4x4)",
   "Which Jar Is Different?", "Follow the Oil", "Shape Sudoku (6x6)", "Which Jar Is the Pure One?", "Oil Math", "Gelt Math",
   "Kitchen Word Search", "Latke Maze", "Count the Gelt", "Which Pile Has More?", "Who Gets What?", "Split and Save",
   "Bring the Gelt to the Tzedakah Box", "Match the Night", "Night by Night Word Search")
@@ -52,8 +52,8 @@
   }),
   ak-card(2, 1, "Connect the Dots: The Hanukkiah", align(center, ak-img("noite2_ligar_pontos_hanukia_v2_gabarito_key.png", w: 100%))),
   ak-card(2, 1, "Clean-Up Maze", ak-maze("extra_n2_labirinto_limpeza")),
-  ak-card(2, 2, "Spot the 10 Differences", {
-    ak-img("noite2_erros10_v3_gabarito_key.png", frame: true)
+  ak-card(2, 2, "Spot the 7 Differences", {
+    ak-img("noite2_erros7_v3_gabarito_key.png", frame: true)
     v(0.08in)
     text(size: _ans-size)[Each numbered box marks something that is missing from the bottom picture.]
   }),

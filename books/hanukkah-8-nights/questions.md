@@ -123,6 +123,6 @@ O enunciado impresso diz "share equally with 4 cousins (you get a share too)", o
 - [x] [ASSUMIDA] (copyright, receita, piadas, 07/10/2026) Pedidos do Danilo aplicados: copyright centralizado, passo 1 da receita sem YOUR JOB (adulto ralha), piadas variadas (decisão 61), série 42 refeita, ligar os pontos em _v2.
 
 ## Revisão do Danilo (2026-10-08)
-- [ ] [BLOQUEANTE para fechar o livro] (unit:n2, p15 e p18) Jogo dos erros: o Danilo apaga 5 / 10 objetos das cenas no Canva e devolve `noite2_erros{5,10}_depois_v3.png`. Até lá o PDF tem o depois provisório automático.
+- [ ] [BLOQUEANTE para fechar o livro] (unit:n2, p15 e p18) Jogo dos erros: o Danilo apaga 5 / 7 objetos das cenas no Canva e devolve `noite2_erros{5,7}_depois_v3.png` (1536x1024). Até lá o PDF tem o depois provisório automático.
 - [x] [ASSUMIDA] (unit:n3, p23 e p26) Sudokus com formas simples (círculo, quadrado, triângulo, estrela, coração, +) no lugar dos símbolos temáticos; perde-se o tema Hanucá nos símbolos, mas a criança consegue desenhar. Listing e A+ ajustados.
 - [ ] [ASSUMIDA] (unit:n4) A página "Draw the Candles" (p33) ainda usa as velas desenhadas em código; se o Danilo quiser o mesmo traço das novas hanukkiahs, `hk_empty.png` serve de base (precisa copo vazio também no shamash).

@@ -325,3 +325,6 @@ Pedido do Danilo (p45, 57, 59, 63: fácil demais). N5 Gelt Math ★★ (agora mu
 
 ## 72. Ajustes após conferência do Danilo (08/10/2026)
 Chamas das hanukkiahs encostadas no pavio (p32 e p36). "Draw the Candles" (p33) refeita com a hanukkiah de copos vazios (`hk_empty0.png`, inclusive o copo do shamash) e agora pede só as Noites 3 e 6 (duas figuras grandes, em vez de três pequenas demais para a criança desenhar). "Which Pile Has More?" (p59): cada pilha numa caixinha própria, com espaço entre as duas.
+
+## 73. Jogo dos erros: cenas coerentes, 5 e 7 diferenças (08/10/2026)
+O Danilo reprovou as cenas com objetos soltos sem sentido. Duas cenas novas, cada uma uma situação só: ★ salão do Templo pronto para acender a menorá (cortina, estandarte, lamparina pendurada, jarros, mesa, cesta de azeitonas, banquinho com lamparina, menorá), ★★ colheita de azeitonas diante do Templo (burro, carroça, jarros, cesta, bacia, sol, nuvens, pássaros, lamparina no portão). Passam a valer **5 e 7 diferenças** (a ★★ deixou de ter 10) e as imagens entram inteiras em 3:2 (5.0in). Os objetos que o Danilo apaga são escolha dele; `erros_noite2_v3.py` confere por pixel que há exatamente 5 / 7 regiões diferentes. Pasta `Para o Canva (jogo dos erros)` no OneDrive tem as cenas e um guia numerado dos objetos fáceis de apagar. Também: p59 com mais espaço entre as moedas e a linha do número.

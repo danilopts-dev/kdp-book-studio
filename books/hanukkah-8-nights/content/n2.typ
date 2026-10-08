@@ -28,7 +28,7 @@
 
 #activity(1, "Spot the 5 Differences")[These two Temple pictures look the same, but they aren't! Look closely at the bottom one. Can you spot the 5 things that are missing?]
 
-#spot-diff("noite2_erros5_antes_v3.png", "noite2_erros5_depois_v3_final.png", 5, w: 6.4in)
+#spot-diff("noite2_erros5_antes_v3.png", "noite2_erros5_depois_v3_final.png", 5, w: 5.0in)
 
 #pagebreak()
 
@@ -46,9 +46,9 @@
 
 #pagebreak()
 
-#activity(2, "Spot the 10 Differences")[Look closer this time! These two courtyard pictures hide 10 differences. Circle every one you find in the bottom picture.]
+#activity(2, "Spot the 7 Differences")[Look closer this time! These two courtyard pictures hide 7 differences. Circle every one you find in the bottom picture.]
 
-#spot-diff("noite2_erros10_antes_v3.png", "noite2_erros10_depois_v3_final.png", 10, w: 6.4in)
+#spot-diff("noite2_erros7_antes_v3.png", "noite2_erros7_depois_v3_final.png", 7, w: 5.0in)
 
 #pagebreak()
 

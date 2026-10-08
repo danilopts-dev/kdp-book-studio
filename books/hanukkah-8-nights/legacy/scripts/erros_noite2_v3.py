@@ -24,15 +24,24 @@ from scipy import ndimage
 ROOT = Path(__file__).resolve().parents[2]
 RAW = ROOT / "inputs" / "illustrations" / "_raw" / "erros"
 PZ = ROOT / "inputs" / "puzzle-assets"
-Y0, Y1 = 128, 896  # faixa 2:1 (1536 x 768)
+Y0, Y1 = 0, 1024  # cena inteira 3:2 (1536 x 1024)
 
-# objetos a apagar no depois provisório: ("comp", x, y) = componente conexo que contém esse ponto;
-# ("box", x0, y0, x1, y1) = retângulo (só onde há espaço branco em volta). Coordenadas no PNG 1536x1024.
-PROVISORIO = {
-    5: [("comp", 330, 800), ("comp", 800, 840), ("comp", 1400, 800), ("box", 1228, 588, 1344, 750), ("box", 1090, 518, 1206, 734)],
-    10: [("comp", 690, 560), ("comp", 700, 240), ("comp", 420, 240), ("comp", 1290, 240), ("comp", 940, 260),
-         ("comp", 80, 800), ("comp", 250, 820), ("comp", 640, 850), ("comp", 840, 850), ("comp", 1460, 820)],
-}
+# cena-base de cada jogo (PNG 1536x1024 gerado) e faixa 2:1 usada no livro
+BASES = {5: "s1_b.png", 7: "s2_b.png"}
+SEED = {5: 3, 7: 5}
+
+
+def isolados(base):
+    """Componentes conexos isolados (objetos soltos, sem encostar em parede/coluna): candidatos a apagar."""
+    a = np.array(base.convert("L"))
+    lab, _ = ndimage.label(ndimage.binary_dilation(a < 140, iterations=4))
+    out = []
+    for i, sl in enumerate(ndimage.find_objects(lab), 1):
+        area = int((lab[sl] == i).sum())
+        ys, xs = sl
+        if 2500 < area < 70000:
+            out.append((xs.start, ys.start, xs.stop, ys.stop, i))
+    return a, lab, out
 
 
 def band(im):
@@ -40,22 +49,21 @@ def band(im):
 
 
 def provisional(n, base):
-    a = np.array(base.convert("L"))
-    dark = a < 140
-    lab, _ = ndimage.label(ndimage.binary_dilation(dark, iterations=4))
+    """Depois provisório: apaga N objetos isolados (bem separados entre si); o Danilo troca pelo feito à mão."""
+    import random
+    a, lab, cand = isolados(base)
+    rnd = random.Random(SEED[n])
+    rnd.shuffle(cand)
+    escolhidos = []
+    for c in cand:
+        if all(c[0] > e[2] + 40 or c[2] < e[0] - 40 or c[1] > e[3] + 40 or c[3] < e[1] - 40 for e in escolhidos):
+            escolhidos.append(c)
+        if len(escolhidos) == n:
+            break
+    assert len(escolhidos) == n, "poucos objetos isolados na cena"
     out = a.copy()
-    for spec in PROVISORIO[n]:
-        if spec[0] == "comp":
-            x, y = spec[1], spec[2]
-            # procura o componente mais próximo do ponto (o ponto pode cair num vazio do desenho)
-            ys, xs = np.where(lab > 0)
-            i = np.argmin((xs - x) ** 2 + (ys - y) ** 2)
-            m = lab == lab[ys[i], xs[i]]
-            m = ndimage.binary_dilation(m, iterations=6)
-            out[m] = 255
-        else:
-            _, x0, y0, x1, y1 = spec
-            out[y0:y1, x0:x1] = 255
+    for *_, i in escolhidos:
+        out[ndimage.binary_dilation(lab == i, iterations=6)] = 255
     return Image.fromarray(out)
 
 
@@ -125,7 +133,7 @@ def gabarito(antes, boxes, caminho, n):
 
 
 def processar(n):
-    base = Image.open(RAW / f"erros{n}_base_a.png").convert("L")
+    base = Image.open(RAW / BASES[n]).convert("L").point(lambda v: 255 if v > 205 else v)  # fundo quase-branco vira branco
     antes = band(base)
     antes.save(PZ / f"noite2_erros{n}_antes_v3.png", dpi=(300, 300))
     manual = PZ / f"noite2_erros{n}_depois_v3.png"
@@ -146,5 +154,5 @@ def processar(n):
 
 
 if __name__ == "__main__":
-    for n in (5, 10):
+    for n in (5, 7):
         processar(n)
