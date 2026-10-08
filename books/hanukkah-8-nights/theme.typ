@@ -3,7 +3,7 @@
 // Os componentes abaixo ficam disponíveis para todas as unidades (content/n1.typ ... n8.typ, after.typ, answer-key.typ).
 //
 // Uso numa noite (nesta ordem; cada noite começa em página nova):
-//   = Night 1 — Judah Says No                     (abertura: selo NIGHT + título)
+//   = Night 1 — Mattathias Says No                     (abertura: selo NIGHT + título)
 //   #story[...parágrafos...]                      (Tonight's Story)
 //   #art("11.png")                                (ilustração de inputs/illustrations/)
 //   #whats-a("Maccabee")[...]                     (caixa What's a...?)

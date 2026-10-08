@@ -1,6 +1,6 @@
-# 8 Nights of Hanukkah Activity Book: READY (atualizado em 2026-10-07)
+# 8 Nights of Hanukkah Activity Book: READY (atualizado em 2026-10-08)
 
-Estado: **miolo pronto, sem 🔴, 82 páginas** (revisão editorial final em `reviews/editorial-final.md`). O bônus (formulário Brevo, e-mail, QR, PDF) está funcionando. **Faltam: capa (arte), revisor humano (hebraico e mini-guia) e a sua decisão sobre o "ligar os pontos" da Noite 2.**
+Estado: **miolo pronto, sem 🔴, 82 páginas**; revisor humano deu ok (ajustes aplicados em 08/10, ver `reviews/revisor-humano-feedback-2026-10-08.md`). Título e subtítulo escolhidos. **Falta: arte da capa (o Danilo gera), validar as 7 keywords e o teste final do bônus.**
 
 ## Arquivos
 | Arquivo | Onde |
@@ -21,17 +21,12 @@ Estado: **miolo pronto, sem 🔴, 82 páginas** (revisão editorial final em `re
 - Listing recomendado (ASSUMIDA, você escolhe): título 1 + subtítulo 1; keyword primária "Hanukkah activity book" (as 7 keywords precisam ser validadas no Publisher Rocket/BookBeam).
 
 ## Antes de subir (gates)
-1. **Capa:** gerar a arte (frente e verso) a partir do guia, com a faixa "Ages 6-10" na frente. Salvar `inputs/cover-front.png` e `cover-back.png` e rodar `./st cover hanukkah-8-nights`. Depois os 5 banners do A+ (dependem da capa).
-2. **Revisor humano (judeu, que leia hebraico):** mandar o pacote `Entrega/Para o revisor/` (2 PDFs, o resumo `revisor-humano.md` e os registros). Aplicar o que ele apontar e reconstruir.
-3. ~~Ligar os pontos da Noite 2~~ **Redesenhados em `_v2` (07/10)**: a menorá de 80 pontos ficou claramente uma menorá de 7 braços; a hanukkiah de 30 pontos ficou simétrica, com base e shamash alto, mas ainda um pouco "dentada" (limite dos 30 pontos). Olhe as páginas p16 e p19 e diga se aceita ou se quer subir a hanukkiah para ~40 pontos.
-4. **Listing:** validar as keywords e escolher título e subtítulo.
-5. **Teste final do bônus** (já testado pelo Danilo em 06/10): rever depois do upload do PDF final, se o PDF do bônus mudar.
-
-## Decisões suas ainda abertas (todas em `questions.md`)
-- Hanukkiah de 30 pontos (Noite 2): aceitar o desenho atual ou subir para ~40 pontos (muda o TOC).
-- Opcional: galeria de colorir (+4 páginas, total 86; exige gerar 4 ilustrações).
+1. **Capa:** gerar a arte (frente e verso) a partir do guia, com a faixa "Ages 6-10" na frente. Salvar `inputs/cover-front.png` e `cover-back.png` e rodar `./st cover hanukkah-8-nights`. Depois os 5 banners do A+ (dependem da capa; o banner 3 usa as páginas p11, p23 e p48).
+2. **Listing:** validar as 7 keywords (Publisher Rocket/BookBeam). Título "8 Nights of Hanukkah Activity Book" e subtítulo "Stories, Puzzles, and Family Fun for Every Night of the Holiday" já escolhidos.
+3. **Bônus:** o PDF do Family Pack mudou (nota do Pei). Depois do `./st publish`, conferir o link do e-mail do Brevo (template 22) e repetir o teste do fluxo.
 
 ## Já resolvido
+- 08/10: revisor humano (história da Noite 1, sexta-feira, Pei, oito dias, gelt), hanukkiah de 40 pontos, jogo dos erros com cenas novas (p15 com 5 e p18 com 7), sudoku de formas, jarros, velas e hanukkiahs no traço da ilustração 12, contas mais difíceis, copyright (decisões 67 a 78).
 - 07/10: receita de latke (adulto ralha), copyright centralizado, piadas variadas (decisão 61), série de acendimento da Noite 4 refeita com a mesma hanukkiah, ligar os pontos em `_v2`, artes 14 e 24 conferidas (ver decisões 62 a 65).
 - Expansão de 64 para 82 páginas (06/10), com revisão independente das 16 atividades novas.
 - Decisões religiosas pós-revisão cruzada (letras hebraicas no dreidel, "Adonai", "v'higiyanu", instrução do Match, genizá no cartão).

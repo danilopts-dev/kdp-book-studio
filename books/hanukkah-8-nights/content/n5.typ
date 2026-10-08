@@ -52,7 +52,7 @@
 #pagebreak()
 
 // ---- Expansão (2026-10-06): as duas páginas novas entram ANTES de Design a Dreidel (paridade da página de recorte)
-#activity(1, "Dreidel Tally Chart")[Spin your dreidel 20 times. After each spin, make one tally mark under the letter it shows. Then see which letter won!]
+#activity(1, "Dreidel Tally Chart")[Spin your dreidel 20 times. After each spin, make one tally mark under the letter it shows (if your dreidel has Pei, mark Shin). Then see which letter won!]
 
 #let _tl(n) = block(width: 100%, height: 1.55in, stroke: 1.6pt + ink, radius: 10pt, inset: (x: 6pt),
   align(center + horizon, stack(dir: ttb, spacing: 9pt,
@@ -156,6 +156,8 @@
     - *Gimel:* take the whole pot! Everyone puts 1 coin back in to start the next round.
     - *Hei:* take half the pot.
     - *Shin:* put 1 coin into the pot.
+
+    If your dreidel has Pei (#_hl[פ]) instead of Shin (#_hl[ש]), follow the same rule: put one in.
 
     If the pot ever runs out, everyone puts 1 coin back in. Keep spinning until someone wins all the gelt, or until it's time to light the candles, whichever comes first.
   ]

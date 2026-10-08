@@ -94,6 +94,8 @@ Families play dreidel in lots of different ways. Here's one easy version. Everyo
   [*Hei:* take half the pot.]
   parbreak()
   [*Shin:* put 1 coin into the pot.]
+  parbreak()
+  [If your dreidel has Pei (#text(font: heb-font, size: 1.2em, lang: "he")[פ]) instead of Shin (#text(font: heb-font, size: 1.2em, lang: "he")[ש]), follow the same rule: put one in.]
 })
 
 If the pot ever runs out, everyone puts 1 coin back in. Keep spinning until someone wins all the gelt, or until it's time to light the candles, whichever comes first.
@@ -107,7 +109,7 @@ Mark one tally line for every round you win.
 #let name-cell = table.cell(align: bottom + left, text(size: 10pt, fill: mid)[Name:])
 #table(
   columns: (1.15in, 1fr, 1fr, 1fr, 1fr),
-  rows: (0.42in,) + (0.5in,) * 8,
+  rows: (0.4in,) + (0.46in,) * 8,
   stroke: 1.1pt + ink,
   inset: 6pt,
   align: horizon + center,

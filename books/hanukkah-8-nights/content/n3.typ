@@ -7,7 +7,7 @@
 
   They chose to light it. The story says the flame from that one small jar didn't go out after a single day. It kept burning, night after night, until new oil was finally ready on the eighth day.
 
-  That's why Hanukkah lasts eight nights: one jar, one day of oil, and eight days of light.
+  According to this beloved tradition, that is why Hanukkah lasts eight nights: one jar, one day of oil, and eight days of light.
 ]
 
 #art("30.png", w: 6.5in, below: 0.04in)

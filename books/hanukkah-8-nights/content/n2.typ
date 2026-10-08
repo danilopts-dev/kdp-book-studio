@@ -32,7 +32,7 @@
 
 #pagebreak()
 
-#activity(1, "Connect the Dots: The Hanukkiah")[Connect the dots from 1 to 30, then back to 1, to find something that will light up this whole book.]
+#activity(1, "Connect the Dots: The Hanukkiah")[Connect the dots from 1 to 40, then back to 1, to find something that will light up this whole book.]
 
 #v(0.1in)
 #puzzle("noite2_ligar_pontos_hanukia_v2_recorte.png", w: 7.0in)

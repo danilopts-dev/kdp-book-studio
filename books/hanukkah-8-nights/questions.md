@@ -1,3 +1,13 @@
+# ESTADO ATUAL (08/10/2026): só estas pendências valem
+
+1. **Capa:** o Danilo gera a arte (frente e verso) e salva `inputs/cover-front.png` e `cover-back.png`; depois `./st cover hanukkah-8-nights` e os 5 banners do A+ (banner 3 usa as páginas p11, p23 e p48 do PDF).
+2. **Keywords do listing:** validar as 7 keywords no Publisher Rocket ou BookBeam antes de colar no KDP. Título e subtítulo já escolhidos.
+3. **Bônus (Family Pack):** o PDF mudou (nota do Pei). Depois do `./st publish`, conferir que o link do OneDrive usado no e-mail do Brevo (template id 22) ainda baixa o arquivo novo e repetir o teste do fluxo (QR, e-mail, download).
+4. Opcional: `./st publish` e push depois de cada rodada de mudanças.
+
+Resolvido hoje: revisor humano (ok, ajustes aplicados), hanukkiah de 40 pontos, jogo dos erros (p15, p18), formas do sudoku, velas e hanukkiahs, contas mais difíceis, título e subtítulo. Os itens "[ ] [ASSUMIDA]" abaixo são registro histórico das decisões da produção, quase todos já resolvidos; não são pendências.
+
+---
 # Perguntas e decisões
 
 Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marque [x] quando resolvida.
@@ -125,4 +135,4 @@ O enunciado impresso diz "share equally with 4 cousins (you get a share too)", o
 ## Revisão do Danilo (2026-10-08)
 - [x] [RESOLVIDA 08/10/2026: imagens do Danilo, 5 e 7 diferenças conferidas por código] (unit:n2, p15 e p18) Jogo dos erros: o Danilo apaga 5 / 7 objetos das cenas no Canva e devolve `noite2_erros{5,7}_depois_v3.png` (1536x1024). Até lá o PDF tem o depois provisório automático.
 - [x] [ASSUMIDA] (unit:n3, p23 e p26) Sudokus com formas simples (círculo, quadrado, triângulo, estrela, coração, +) no lugar dos símbolos temáticos; perde-se o tema Hanucá nos símbolos, mas a criança consegue desenhar. Listing e A+ ajustados.
-- [ ] [ASSUMIDA] (unit:n4) A página "Draw the Candles" (p33) ainda usa as velas desenhadas em código; se o Danilo quiser o mesmo traço das novas hanukkiahs, `hk_empty.png` serve de base (precisa copo vazio também no shamash).
+- [ ] [ASSUMIDA] (unit:n4, RESOLVIDO 08/10/2026) A página "Draw the Candles" usa agora a hanukkiah vazia `hk_empty0.png`; se o Danilo quiser o mesmo traço das novas hanukkiahs, `hk_empty.png` serve de base (precisa copo vazio também no shamash).

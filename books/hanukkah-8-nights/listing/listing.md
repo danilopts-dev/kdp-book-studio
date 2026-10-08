@@ -1,3 +1,5 @@
+> **ESCOLHA DO DANILO (08/10/2026):** título "8 Nights of Hanukkah Activity Book"; subtítulo "Stories, Puzzles, and Family Fun for Every Night of the Holiday". Pendente: validar as 7 keywords (Publisher Rocket/BookBeam).
+
 # Listing: 8 Nights of Hanukkah Activity Book (Jonah Feldman)
 
 Mercado: Amazon.com (US, inglês americano). Lançamento: $9.99. Hanucá 2026: 4 a 12 de dezembro.
@@ -99,7 +101,7 @@ Argumento interno (NÃO vai em texto de A+ nem de descrição, e nenhum concorre
 ### Módulo 4: Use Case & Versatility (as 8 noites)
 - Visual: oito painéis pequenos numerados de 1 a 8, cada um com um ícone em line art do tema da noite (jarro, hanukkiah, dreidel, latke, moeda, e assim por diante). Os títulos das noites entram como legenda depois, no Canva, se couberem.
 - Headline: Eight Nights, Eight Themes
-- Body: Judah Says No. The Temple Is a Mess. One Little Jar of Oil. Light It Right. Spin the Dreidel. Everything Fried. Give Some Light Away. All Eight Lights. Mazes, word searches, sudoku, a crossword, and a family quiz are spread across the nights.
+- Body: Mattathias Says No. The Temple Is a Mess. One Little Jar of Oil. Light It Right. Spin the Dreidel. Everything Fried. Give Some Light Away. All Eight Lights. Mazes, word searches, sudoku, a crossword, and a family quiz are spread across the nights.
 - Frase curta dentro da imagem (Flow): New puzzles every night. A frase do Body acima é só para o Canva, se couber.
 
 ### Módulo 5: Key Benefits & Features (como funciona)

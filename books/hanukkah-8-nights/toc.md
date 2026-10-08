@@ -29,7 +29,7 @@ Cada noite ≈ 10 páginas: Tonight's Story (1) · atividades ★ (3–4) · ati
 - Página de título · Copyright
 - **How This Book Works** (2 págs): uma noite por vez, 20–30 minutos, dá para começar em qualquer noite; o que são os níveis ★ e ★★; o que a criança faz sozinha e o que é em família; mini-guia de acendimento (onde colocar as velas, em que ordem acender, o shamash) [REVISAR]; QR/link para o 8 Nights Family Pack
 
-**NIGHT 1 — Judah Says No**
+**NIGHT 1 — Mattathias Says No**
 - Tonight's Story: Antíoco, a proibição, Mattathias, Judah e a fuga para as montanhas · What's a Maccabee?
 - ★ Labirinto "Escape to the Hills" (fácil) · caça-palavras 10x10 com os nomes da história (só horizontal e vertical)
 - ★★ Labirinto médio · "Why is Judah called the Hammer?" com desenho para completar
@@ -37,7 +37,7 @@ Cada noite ≈ 10 páginas: Tonight's Story (1) · atividades ★ (3–4) · ati
 
 **NIGHT 2 — The Temple Is a Mess**
 - Tonight's Story: os Macabeus encontram o Templo destruído · What's a menorah vs. a hanukkiah?
-- ★ Jogo dos 5 erros (Templo antes/depois) · ligar os pontos até 30: a hanukiá
+- ★ Jogo dos 5 erros (Templo antes/depois) · ligar os pontos até 40: a hanukiá (subiu de 30 em 08/10/2026)
 - ★★ Jogo dos 10 erros · ligar os pontos até 80: a menorá do Templo (7 braços), com quadro da diferença para a hanukiá (8 + shamash) [REVISAR]
 - Before the Candles: charada em família
 

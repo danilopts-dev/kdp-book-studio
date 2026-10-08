@@ -1,11 +1,11 @@
 = Night 7 — Give Some Light Away
 
 #story[
-  Every night of Hanukkah, kids get gelt, coins to spend, save, or share. But gelt has always carried a second job, too.
+  During Hanukkah, many families give children gelt, coins to spend, save, or share. But gelt has always carried a second job, too.
 
   Many families teach a simple rule with the gelt: some coins are just for fun, and some go into the tzedakah box, to help people who need it. A little of each night's gelt goes toward someone else, not just yourself.
 
-  This isn't just a Hanukkah idea. Giving to help others is one of the oldest values in Jewish life, practiced all year, not only in December. Hanukkah just gives kids a fun, hands-on way to try it: real coins, a real box, a real choice about what to do with what you have.
+  This isn't just a Hanukkah idea. Giving to help others is one of the oldest values in Jewish life, practiced all year long. Hanukkah just gives kids a fun, hands-on way to try it: real coins, a real box, a real choice about what to do with what you have.
 
   Tonight, before you spin another dreidel, set a few coins aside. Watch the tzedakah box get a little heavier.
 ]

@@ -334,3 +334,12 @@ O Danilo gerou e editou as duas imagens da p18 (olival perto de Jerusalém, Temp
 
 ## 75. P15 com as imagens do Danilo (salão do Templo), 5 diferenças (08/10/2026)
 Imagens geradas e editadas pelo Danilo (antes `_raw/erros/s1_user_antes.png`, depois `noite2_erros5_depois_v3.png`). Diferenças achadas e conferidas por código: 1 terceiro jarro da mesa, 2 ornamento (flores) da base da menorá, 3 castiçal pequeno à esquerda da cortina, 4 ponta/chama da bacia no suporte, 5 pilha de pães da mesa da direita. Gabarito com bola cinza e número branco; as bolas se afastam quando se sobrepõem. Livro reconstruído: 82 páginas, check do PDF sem críticos.
+
+## 76. Revisão religiosa e histórica aplicada (08/10/2026)
+Ver `reviews/revisor-humano-feedback-2026-10-08.md`. Título da Noite 1 passa a ser "Mattathias Says No" (aprovado pelo Danilo ao aceitar o feedback; era "Judah Says No" no TOC). A ilustração de abertura e a atividade "Why is Judah called the Hammer?" continuam (Judah segue na Noite 1 como o filho que lidera a revolta). Family Pack reconstruído (3 páginas; linha dos Pei; linhas da tabela do placar mais baixas para caber).
+
+## 77. Hanukkiah de ligar os pontos com 40 pontos (08/10/2026)
+O Danilo autorizou subir de 30 para até 40. Nova silhueta (`gerar_ligar_pontos_v2.py`, `vertices_hanukia`): shamash e 8 velas como retângulos de lados verticais e topo chato, vales de fundo chato, corpo em funil, pescoço estreito e base larga; 20 vértices por lado, simetria exata, contorno simples, rótulos sem colisão (verificado por código). Instrução impressa: "from 1 to 40". Mantidos os arquivos `_v2` (sobrescritos pela nova silhueta); os de 30 pontos estão no git.
+
+## 78. Título e subtítulo escolhidos (08/10/2026)
+Título: "8 Nights of Hanukkah Activity Book". Subtítulo: "Stories, Puzzles, and Family Fun for Every Night of the Holiday" (já impresso na página de título e no `book.yaml`).

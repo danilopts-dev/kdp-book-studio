@@ -1,16 +1,16 @@
-= Night 1 — Judah Says No
+= Night 1 — Mattathias Says No
 
 #story[
-  A long time ago, a king named Antiochus ruled over the land of Judea. He wanted everyone in his kingdom to worship the same way he did, and he made a law: no more Shabbat candles, no more Torah, no more speaking Hebrew in the streets. For the Jewish people, that was impossible to accept.
+  A long time ago, a king named Antiochus ruled over the land of Judea. He wanted everyone in his kingdom to worship the same way he did. He made laws against Jewish traditions: no more keeping Shabbat, no more celebrating Jewish holidays, and no more following the teachings of the Torah. For the Jewish people, that was impossible to accept.
 
-  In a small town called Modiin lived an old man named Mattathias and his five sons. When the king's soldiers came asking him to break the law in public, Mattathias said no, and he meant it. He and his sons grabbed their tools, turned the soldiers away, and ran for the hills before the king could send more.
+  In a small town called Modiin lived an old man named Mattathias and his five sons. When the king's soldiers ordered Mattathias to take part in a public ceremony honoring another god, he refused. He and his sons grabbed their tools, left Modiin, and fled into the hills before the king could send more soldiers.
 
   Up in the hills of Judea, they were cold, they were outnumbered, and they were free. That was where the fight for Hanukkah began, one family, one no, one mountain at a time.
 ]
 
-#art("11.png", below: 0.1in)
+#art("11.png", w: 6.0in, below: 0.05in)
 
-#v(0.12in)
+#v(0.06in)
 
 #whats-a("Maccabee")[Mattathias's sons and the fighters who joined them were called the Maccabees. Some say the name comes from a Hebrew word for "hammer," because that's exactly how they fought: small, fast, and impossible to ignore.]
 
@@ -30,7 +30,7 @@
 
 #pagebreak()
 
-#activity(1, "Unscramble the Words")[These words from tonight's story are all mixed up. Read the clue, then write the word in the boxes.]
+#activity(1, "Unscramble the Words")[These words from tonight's story and its world are all mixed up. Read the clue, then write the word in the boxes.]
 
 #let _un = json(_pz + "extra_n1_unscramble.json").items
 #v(0.04in)

@@ -34,14 +34,14 @@ cover: {}
 units:
 - id: n1
   kind: typst
-  title: 'Night 1: Judah Says No'
+  title: 'Night 1: Mattathias Says No'
   pages: 8-10
   brief: "Fonte aprovada: legacy/manuscript/noite-1-texto.md. Story + What's a Maccabee?; ★ labirinto 12x12 'Escape to the Hills' + caça-palavras 10x10 (H/V); ★★ labirinto 18x18 + 'Why is Judah called the Hammer?' (desenho para completar); Before the Candles: piada + 3 bênçãos (transliteração + inglês). Arte em inputs/illustrations (11, 12, 13, 14) e puzzle-assets (cacapalavras_noite1, labirinto_facil, labirinto_medio)."
 - id: n2
   kind: typst
   title: 'Night 2: The Temple Is a Mess'
   pages: 8-10
-  brief: "Fonte: legacy/manuscript/noite-2-texto.md. Story + menorah vs. hanukkiah; ★ jogo dos 5 erros + ligar pontos até 30 (hanukiá); ★★ 10 erros + ligar pontos até 80 (menorá, 7 braços) com quadro da diferença; Before the Candles: charada. Arte: 21, 22 (AINDA NÃO GERADA, base dos erros), 24; puzzle-assets noite2_*."
+  brief: "Fonte: legacy/manuscript/noite-2-texto.md. Story + menorah vs. hanukkiah; ★ jogo dos 5 erros + ligar pontos até 40 (hanukiá); ★★ 10 erros + ligar pontos até 80 (menorá, 7 braços) com quadro da diferença; Before the Candles: charada. Arte: 21, 22 (AINDA NÃO GERADA, base dos erros), 24; puzzle-assets noite2_*."
 - id: n3
   kind: typst
   title: 'Night 3: One Little Jar of Oil'

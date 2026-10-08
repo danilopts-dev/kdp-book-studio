@@ -1,6 +1,6 @@
 """
 gerar_ligar_pontos_v2.py
-Redesenho dos dois "ligar os pontos" da Noite 2 (hanukkiah, 30 pontos; menora do
+Redesenho dos dois "ligar os pontos" da Noite 2 (hanukkiah, 40 pontos desde 08/10/2026; menora do
 Templo, 80 pontos). Os arquivos antigos (noite2_ligar_pontos_hanukia*,
 noite2_ligar_pontos_menora*) NAO sao tocados; a saida tem sufixo _v2.
 
@@ -111,27 +111,25 @@ def area_assinada(pts):
 # ----------------------------------------------------------------------------
 
 def vertices_hanukia():
-    """Metade direita, de cima para baixo (sentido horario na imagem, y para baixo).
-    Eixo: ponta do shamash (x=0) e centro do pe (x=0). 14 vertices por lado + 2 no eixo.
-    9 pontas de vela com passo 46 (shamash 85 mais alto), barra FINA em sorriso, haste fina
-    e base com pe: leitura de candelabro, nao de coroa (uma barra grossa lembrava taca)."""
-    p = 46
-    direita = []
-    for i in range(4):
-        direita.append((p * i + p / 2, 100))   # vale entre velas (base compartilhada)
-        direita.append((p * (i + 1), 0))       # ponta da vela
-    direita += [
-        (4 * p + 8, 126),   # ponta de fora da barra (lado de baixo)
-        (110, 144),         # barra em curva (sorriso)
-        (14, 158),          # barra encontra a haste
-        (14, 236),          # pe da haste
-        (78, 250),          # ombro da base
-        (104, 288),         # canto externo inferior da base
+    """v3 (08/10/2026, 40 pontos, a pedido do Danilo: a de 30 ficava "dentada"). Metade direita, de cima para
+    baixo (sentido horário na imagem, y para baixo); a esquerda é o espelho exato. 20 vértices por lado e NENHUM
+    no eixo. Shamash e velas são retângulos de lados verticais, topo chato e vales de fundo chato (nada de pontas
+    em V); o corpo desce em funil até um pescoço estreito e abre numa base larga. Ponto 1 = canto superior direito
+    do shamash."""
+    p, w, vale = 46, 12, 92.0
+    d = [(10.0, -62.0), (10.0, vale)]                      # shamash: topo e pé
+    for i in range(1, 5):
+        xl, xr = p * i - w, p * i + w
+        d += [(float(xl), vale), (float(xl), 0.0), (float(xr), 0.0)]
+        if i < 4:
+            d.append((float(xr), vale))                    # vale entre velas
+    d += [
+        (float(4 * p + w), 130.0),   # lado de fora do corpo, logo abaixo da última vela
+        (16.0, 196.0),               # pescoço
+        (96.0, 288.0),               # canto externo da base
     ]
-    topo = (0.0, -62.0)
-    centro_pe = (0.0, 276.0)   # base com leve arco para cima no centro
-    esquerda = [(-x, y) for x, y in reversed(direita)]
-    return [topo] + [(float(x), float(y)) for x, y in direita] + [centro_pe] + esquerda
+    esquerda = [(-x, y) for x, y in reversed(d)]
+    return [(float(x), float(y)) for x, y in d] + esquerda
 
 
 # ----------------------------------------------------------------------------
@@ -480,7 +478,7 @@ def gerar(nome, pts, n_alvo, esp_min, escala, fonte_px, raio_px, linha_px):
 if __name__ == "__main__":
     arg = sys.argv[1] if len(sys.argv) > 1 else ""
     if arg in ("", "hanukia"):
-        gerar("hanukia", vertices_hanukia(), 30, esp_min=20, escala=6.4, fonte_px=72, raio_px=17, linha_px=9)
+        gerar("hanukia", vertices_hanukia(), 40, esp_min=18, escala=6.4, fonte_px=72, raio_px=17, linha_px=9)
     if arg in ("", "menora"):
         gerar("menora", vertices_menora(40), 80, esp_min=8, escala=3.9, fonte_px=84, raio_px=16, linha_px=8)
     print("OK")

@@ -23,7 +23,7 @@
 }))
 
 // ================================================================ NIGHT 1
-#ak-night(1, "Judah Says No")
+#ak-night(1, "Mattathias Says No")
 
 #ak-grid(
   ak-card(1, 1, "Escape to the Hills", ak-maze("labirinto_facil", w: 2.9in)),
