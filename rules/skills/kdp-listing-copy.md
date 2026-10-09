@@ -58,6 +58,19 @@ When a new imprint or format is introduced, adapt the voice to match the audienc
 - Deliver as a numbered list of exactly 7, one per line
 - **Deliver one set only** (no alternatives needed — these are exhaustive, not competitive)
 
+### Categories (guidance only, for the KDP category picker)
+
+Deliver this block after the 7 keywords. It is **orientative**: the exact category names change over time and by marketplace, so the Danilo must confirm each one in the KDP category picker for the format and marketplace (Amazon.com for the US). Never present a path as certain; write "closest match to look for".
+
+- **How many:** KDP lets the author pick 3 categories per format when creating the book. Do not promise extra categories: asking KDP Support for more is no longer reliable and Support does not advise on category choice. Amazon may also shelve the book in other browse nodes from the title, subtitle, description and keywords, which cannot be controlled.
+- **Give 3 primary picks + 2 or 3 alternates, in this order of the 3 slots:**
+  1. **The niche or theme node** (e.g. the holiday or topic). Small and specific: it is the easiest place to reach a Best Seller badge, and the badge lifts conversion.
+  2. **The activity-type node** (e.g. activity books, puzzles, games, word search). Bigger and more competitive, but it is where buyers browse by format.
+  3. **The audience or subject node** (e.g. religion/culture, age, grade, or the adult gift angle for senior books).
+- **For each pick:** the likely path in Amazon's taxonomy (Books > ...), one line on why, and one line on the competition ("small shelf" or "crowded shelf").
+- **Method to confirm (include as a short checklist for the Danilo):** open 3 to 5 close competitors on Amazon.com, read the "Best Sellers Rank" lines under Product details to see which categories they sit in, and prefer shelves where the 20th book has a modest rank, so the new book can climb. Choose categories that match what the book actually is; never a category chosen only for volume.
+- **Rules:** a children's activity book is nonfiction, not "juvenile fiction"; match the category to the format the book is (activity/puzzle) and to the theme it teaches; keep the age range (reading age) consistent with the listing; do not mix an adult category into a children's book, or the reverse.
+
 ### Description (Amazon Product Page)
 - This is a sales page, not a summary
 - Structure: Hook → Problem/Context → What makes this different → What's inside (brief) → Who it's for → CTA
@@ -167,7 +180,7 @@ When asked to write listing copy:
 1. **Identify what's needed** — full listing or specific element(s)?
 2. **Confirm the book** — title, format, target reader, primary keyword (if already validated)
 3. **Check if primary keyword is known** — if not, ask. Don't guess the search term.
-4. **Deliver in this order:** Title options → Subtitle options → Keywords → Description → A+ Content (module plan) → A+ Content image prompts (only if requested) → Bonus Capture Texts (whenever the book promises a free bonus; see that section)
+4. **Deliver in this order:** Title options → Subtitle options → Keywords → Categories (guidance) → Description → A+ Content (module plan) → A+ Content image prompts (only if requested) → Bonus Capture Texts (whenever the book promises a free bonus; see that section)
    - If only one element is requested, deliver just that
 5. **For title/subtitle:** Deliver 3 options each, with a one-line rationale per option
 6. **For description and A+:** Deliver one version, optimized

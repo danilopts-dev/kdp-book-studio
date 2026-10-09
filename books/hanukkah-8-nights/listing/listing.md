@@ -38,6 +38,19 @@ Nenhuma repete o título 1 literalmente. Todas ASSUMIDAS, sem volume de busca va
 6. family Hanukkah traditions nightly activities
 7. dreidel latke gelt games and recipes for kids
 
+## 3b. Categorias (orientativas; confirme no seletor do KDP)
+
+O KDP deixa escolher 3 categorias por formato. Os nomes exatos mudam com o tempo; procure o equivalente mais próximo no seletor (Amazon.com, brochura).
+
+| Vaga | Procure algo como | Por quê | Concorrência |
+|---|---|---|---|
+| 1. Tema | Books > Children's Books > Holidays & Celebrations > Hanukkah | A prateleira específica do livro; em novembro e dezembro é a que mais vende e a mais fácil de ganhar selo de Best Seller | Pequena (sazonal) |
+| 2. Tipo | Books > Children's Books > Activities, Crafts & Games > Activity Books (ou Puzzles & Games, se existir) | Onde quem busca por atividades navega | Grande |
+| 3. Público/assunto | Books > Children's Books > Religions > Judaism (ou Jewish) | Pai ou avô buscando livro de cultura judaica | Média |
+
+Alternativas: Holidays & Celebrations (nível acima, sem Hanukkah), Games & Activities > Puzzles, Education & Reference (só se o seletor oferecer algo sobre história ou cultura).
+Como confirmar: abra 3 a 5 livros de Hanukkah de atividades na Amazon.com, leia "Best Sellers Rank" em Product details e veja em quais prateleiras eles estão; prefira onde o 20º livro tem rank modesto. Faixa de idade do livro: 6 a 10 anos. É livro de não ficção/atividade, não escolha "juvenile fiction".
+
 ## 4. Descrição (HTML para o campo do KDP)
 
 Atualizada em 2026-10-07 para o miolo final (82 páginas, 6 a 7 atividades por noite) e para o bônus funcionando. Mudanças em relação à versão de 2026-10-05: "more than 80 pages"; parágrafo das noites cita os tipos de puzzle (mazes, word searches, crossword, secret code); horário por noite trocado pela formulação do editor ("do the story and a few puzzles; no need to do every page"); lista "A few things you'll find inside" refeita com os puzzles novos; parágrafo "A free printable bonus" entrou. Ligar os pontos NÃO é citado (item fraco da revisão editorial, ainda sem decisão).

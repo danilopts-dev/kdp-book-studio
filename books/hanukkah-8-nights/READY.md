@@ -41,6 +41,6 @@ Estado: **miolo pronto, sem 🔴, 82 páginas**; revisor humano deu ok (ajustes 
 - Arquivos: miolo `Entrega/hanukkah-8-nights-interior.pdf`; capa `Entrega/hanukkah-8-nights-cover.pdf`.
 - Título "8 Nights of Hanukkah Activity Book"; subtítulo "Stories, Puzzles, and Family Fun for Every Night of the Holiday"; autor Jonah Feldman; descrição HTML e 7 keywords de `listing/listing.md`; faixa de idade 6 a 10.
 - **Declarar uso de IA** no questionário do KDP: o texto das ilustrações e a capa foram gerados com IA (a pergunta pede "AI-generated images" = sim). Texto: conforme o que o Danilo escreveu/ajustou.
-- Preço de lançamento $9.99. Categorias: escolher no painel (ex.: Children's > Holidays & Celebrations > Hanukkah, e Activity Books); não estão definidas neste repositório.
+- Preço de lançamento $9.99. Categorias: 3 vagas; sugestões orientativas em `listing/listing.md` (seção 3b): Hanukkah, Activity Books e Judaism (confirmar no seletor do KDP).
 - ISBN gratuito do KDP é suficiente (o selo "Read Publishing LLC" aparece como publicador no copyright; no KDP o imprint do ISBN grátis é "Independently published").
 - Depois do upload: conferir no Visualizador do KDP a capa, as 82 páginas e a lombada, e só então publicar. O A+ entra depois.
