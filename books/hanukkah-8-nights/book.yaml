@@ -30,7 +30,7 @@ front:
 - copyright
 - how-to-use
 back: []
-cover: {}
+cover: {spine_text: false, background: "#0a1640"}
 units:
 - id: n1
   kind: typst

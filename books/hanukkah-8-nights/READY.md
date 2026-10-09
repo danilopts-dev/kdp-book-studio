@@ -1,12 +1,13 @@
 # 8 Nights of Hanukkah Activity Book: READY (atualizado em 2026-10-08)
 
-Estado: **miolo pronto, sem 🔴, 82 páginas**; revisor humano deu ok (ajustes aplicados em 08/10, ver `reviews/revisor-humano-feedback-2026-10-08.md`). Título e subtítulo escolhidos. **Falta só a arte da capa (o Danilo gera) e, depois dela, os 5 banners do A+.** Keywords aprovadas e bônus testado no Brevo (08/10).
+Estado: **miolo pronto, sem 🔴, 82 páginas**; revisor humano deu ok (ajustes aplicados em 08/10, ver `reviews/revisor-humano-feedback-2026-10-08.md`). Título e subtítulo escolhidos. **Capa aprovada e montada (09/10); faltam os 5 banners do A+ e o upload no KDP.** Keywords aprovadas e bônus testado no Brevo (08/10).
 
 ## Arquivos
 | Arquivo | Onde |
 |---|---|
 | Miolo (PDF, 82 págs) | `build/hanukkah-8-nights-interior.pdf` (cópia em `Entrega/` no OneDrive, via `./st publish`) |
 | Bônus gratuito (PDF, 3 págs) | `build/hanukkah-8-nights-family-pack.pdf` (fonte: `bonus/family-pack.typ`; também em `Entrega/`) |
+| Capa completa para o KDP (PDF, 17.4347 x 11.25 in) | `build/hanukkah-8-nights-cover.pdf` (arte em `inputs/cover-front.png`, `cover-back.png`, `cover-spine.png`; originais em `inputs/cover-source/`) |
 | Guia da capa (corte, lombada, área segura) | `build/hanukkah-8-nights-cover-guide.pdf` |
 | Medidas da capa | `listing/cover-specs.md` |
 | Listing (títulos, keywords, descrição HTML, A+) | `listing/listing.md`, `listing/aplus-prompts.md` |

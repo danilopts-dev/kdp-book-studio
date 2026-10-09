@@ -1,6 +1,6 @@
 # ESTADO ATUAL (08/10/2026): só estas pendências valem
 
-1. **Capa:** o Danilo gera a arte (frente e verso) e salva `inputs/cover-front.png` e `cover-back.png`; depois `./st cover hanukkah-8-nights` e os 5 banners do A+ (banner 3 usa as páginas p11, p23 e p48 do PDF). **Única pendência.**
+1. **Nenhuma pendência de produção.** Capa aprovada em 09/10/2026 e PDF montado (`build/hanukkah-8-nights-cover.pdf`). Falta só o upload no KDP e os 5 banners do A+ (que usam a capa final).
 
 Resolvido (08/10): keywords aprovadas pelo Danilo, bônus testado no Brevo, revisor humano (ok, ajustes aplicados), hanukkiah de 40 pontos, jogo dos erros (p15, p18), formas do sudoku, velas e hanukkiahs, contas mais difíceis, título e subtítulo. Os itens "[ ] [ASSUMIDA]" abaixo são registro histórico das decisões da produção, quase todos já resolvidos; não são pendências.
 

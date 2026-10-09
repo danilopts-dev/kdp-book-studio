@@ -25,6 +25,7 @@ def build_cover(book: Book, pages: int) -> dict:
     c = kdp.cover_size(st["trim"], pages, paper)
     cov = meta.get("cover") or {}
     front, back = _find(book, "cover-front"), _find(book, "cover-back")
+    spine_img = _find(book, "cover-spine")
     b = kdp.BLEED
     W, H, S, TW = (round(c[k], 4) for k in ("width", "height", "spine", "trim_w"))
     spine_x = round(b + TW, 4)
@@ -69,8 +70,10 @@ def build_cover(book: Book, pages: int) -> dict:
         back_part = (f'#place(top + left, image("{rel(back)}", width: {b + TW}in, height: {H}in, fit: "cover"))'
                      if back else "")
         spine_part = ""
+        if spine_img:  # lombada em degradê feita a partir das bordas da arte (cover-spine.png)
+            spine_part = (f'#place(top + left, dx: {spine_x}in, dy: 0in, image("{rel(spine_img)}", width: {S}in, height: {H}in, fit: "stretch"))\n')
         if c["spine_text_allowed"] and cov.get("spine_text", True) is not False:
-            spine_part = (f"#place(top + left, dx: {spine_x}in, dy: 0in, box(width: {S}in, height: {H}in, "
+            spine_part += (f"#place(top + left, dx: {spine_x}in, dy: 0in, box(width: {S}in, height: {H}in, "
                           f"align(center + horizon, rotate(90deg, reflow: true, text(font: {spine_font}, "
                           f"size: {min(S * 72 * 0.5, 14):.1f}pt, fill: rgb(\"{spine_col}\"), "
                           f"{json.dumps(spine_txt)})))))")

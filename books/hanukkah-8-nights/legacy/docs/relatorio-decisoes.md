@@ -343,3 +343,6 @@ O Danilo autorizou subir de 30 para até 40. Nova silhueta (`gerar_ligar_pontos_
 
 ## 78. Título e subtítulo escolhidos (08/10/2026)
 Título: "8 Nights of Hanukkah Activity Book". Subtítulo: "Stories, Puzzles, and Family Fun for Every Night of the Holiday" (já impresso na página de título e no `book.yaml`).
+
+## 79. Capa aprovada e montada (09/10/2026)
+Conceito 1 (hanukkiah acesa, azul-meia-noite e dourado) com contracapa no mesmo fundo (silhueta noturna da cidade, hanukkiah pequena, dreidel e moedas), sem espaço reservado para código de barras. Frente mantém a cúpula azul ao fundo (escolha do Danilo). Estúdio: `studio/render/cover.py` passou a aceitar `inputs/cover-spine.png` (lombada em degradê). PDF: `build/hanukkah-8-nights-cover.pdf`, 17.4347 x 11.25 in, 82 páginas.
