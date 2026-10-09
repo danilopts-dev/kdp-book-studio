@@ -7,7 +7,7 @@ Estado: **miolo pronto, sem 🔴, 82 páginas**; revisor humano deu ok (ajustes 
 |---|---|
 | Miolo (PDF, 82 págs) | `build/hanukkah-8-nights-interior.pdf` (cópia em `Entrega/` no OneDrive, via `./st publish`) |
 | Bônus gratuito (PDF, 3 págs) | `build/hanukkah-8-nights-family-pack.pdf` (fonte: `bonus/family-pack.typ`; também em `Entrega/`) |
-| Capa completa para o KDP (PDF do Canva, 17.4375 x 11.25 in) | `inputs/cover-final.pdf` (cópia em `build/hanukkah-8-nights-cover.pdf` e em `Entrega/`) |
+| Capa completa para o KDP (PDF do Canva "Cover v2", arte ampliada ~355 DPI, 17.4375 x 11.25 in) | `inputs/cover-final.pdf` (cópia em `build/hanukkah-8-nights-cover.pdf` e em `Entrega/`) |
 | Guia da capa (corte, lombada, área segura) | `build/hanukkah-8-nights-cover-guide.pdf` |
 | Medidas da capa | `listing/cover-specs.md` |
 | Listing (títulos, keywords, descrição HTML, A+) | `listing/listing.md`, `listing/aplus-prompts.md` |

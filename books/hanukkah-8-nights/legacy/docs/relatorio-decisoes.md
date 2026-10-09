@@ -358,3 +358,6 @@ Não aplicado: nada recusado; sem teste físico do dreidel.
 Feedback do Danilo após testar: papel fino amassa com lápis e não gira. Instrução agora: usar como molde em papelão ou papel grosso e girar com canudo ou palito (no lugar do lápis). Correções do desenho do Danilo: aba cinza no lado direito de cada um dos 4 triângulos (colam no triângulo vizinho e fecham a ponta); base de todas as abas tracejada (dobra), não contínua; sem linhas retas sobrando entre as abas de cima (o contorno acompanha o chanfro); linha de corte que faltava na lateral direita da tampa. Tampa: "POKE THE STRAW HERE".
 
 Ajuste (09/10): abas dos triângulos do dreidel redesenhadas como trapézios com a borda externa paralela à dobra (antes saía uma pontinha no canto de cima).
+
+## 83. Capa final v2 (09/10/2026)
+O Danilo ampliou a arte da capa (imagens de 3092 x 3988 px, ~355 DPI) e refez o PDF no Canva ("Hanukkah 8 Nights Cover v2.pdf", 17.4375 x 11.25 in, mesmo layout da v1). Esta é a capa final para o KDP; substitui a v1 (128 DPI).
