@@ -1,13 +1,13 @@
 # 8 Nights of Hanukkah Activity Book: READY (atualizado em 2026-10-08)
 
-Estado: **miolo pronto, sem 🔴, 82 páginas**; revisor humano deu ok (ajustes aplicados em 08/10, ver `reviews/revisor-humano-feedback-2026-10-08.md`). Título e subtítulo escolhidos. **Capa aprovada e montada (09/10); faltam os 5 banners do A+ e o upload no KDP.** Keywords aprovadas e bônus testado no Brevo (08/10).
+Estado: **miolo pronto, sem 🔴, 82 páginas**; revisor humano deu ok (ajustes aplicados em 08/10, ver `reviews/revisor-humano-feedback-2026-10-08.md`). Título e subtítulo escolhidos. **Capa final do Danilo (Canva, 09/10) gravada; PRONTO PARA SUBIR no KDP. Os 5 banners do A+ o Danilo faz depois do upload.** Keywords aprovadas e bônus testado no Brevo (08/10).
 
 ## Arquivos
 | Arquivo | Onde |
 |---|---|
 | Miolo (PDF, 82 págs) | `build/hanukkah-8-nights-interior.pdf` (cópia em `Entrega/` no OneDrive, via `./st publish`) |
 | Bônus gratuito (PDF, 3 págs) | `build/hanukkah-8-nights-family-pack.pdf` (fonte: `bonus/family-pack.typ`; também em `Entrega/`) |
-| Capa completa para o KDP (PDF, 17.4347 x 11.25 in) | `build/hanukkah-8-nights-cover.pdf` (arte em `inputs/cover-front.png`, `cover-back.png`, `cover-spine.png`; originais em `inputs/cover-source/`) |
+| Capa completa para o KDP (PDF do Canva, 17.4375 x 11.25 in) | `inputs/cover-final.pdf` (cópia em `build/hanukkah-8-nights-cover.pdf` e em `Entrega/`) |
 | Guia da capa (corte, lombada, área segura) | `build/hanukkah-8-nights-cover-guide.pdf` |
 | Medidas da capa | `listing/cover-specs.md` |
 | Listing (títulos, keywords, descrição HTML, A+) | `listing/listing.md`, `listing/aplus-prompts.md` |
@@ -34,3 +34,12 @@ Estado: **miolo pronto, sem 🔴, 82 páginas**; revisor humano deu ok (ajustes 
 - Textos aprovados corrigidos por erro de conta/lógica (N5 Gelt Math 2 e 3, N7 Split and Save 1), com as mesmas respostas.
 - Paridade das páginas de recorte: molde do dreidel p43 (verso p44) e Coupon Book p61 (verso p62). Se o número de páginas de qualquer noite mudar, reconferir.
 - Imprint: copyright e "Published by" em Read Publishing LLC; tipografia Atkinson Hyperlegible 13pt + Barlow.
+
+## Checklist de upload no KDP (09/10/2026)
+- Formato: capa em brochura, 8.5 x 11 in, miolo preto e branco em papel branco, capa fosca, 82 páginas, sem sangria no miolo.
+- Arquivos: miolo `Entrega/hanukkah-8-nights-interior.pdf`; capa `Entrega/hanukkah-8-nights-cover.pdf`.
+- Título "8 Nights of Hanukkah Activity Book"; subtítulo "Stories, Puzzles, and Family Fun for Every Night of the Holiday"; autor Jonah Feldman; descrição HTML e 7 keywords de `listing/listing.md`; faixa de idade 6 a 10.
+- **Declarar uso de IA** no questionário do KDP: o texto das ilustrações e a capa foram gerados com IA (a pergunta pede "AI-generated images" = sim). Texto: conforme o que o Danilo escreveu/ajustou.
+- Preço de lançamento $9.99. Categorias: escolher no painel (ex.: Children's > Holidays & Celebrations > Hanukkah, e Activity Books); não estão definidas neste repositório.
+- ISBN gratuito do KDP é suficiente (o selo "Read Publishing LLC" aparece como publicador no copyright; no KDP o imprint do ISBN grátis é "Independently published").
+- Depois do upload: conferir no Visualizador do KDP a capa, as 82 páginas e a lombada, e só então publicar. O A+ entra depois.

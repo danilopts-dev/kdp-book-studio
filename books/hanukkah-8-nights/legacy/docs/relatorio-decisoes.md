@@ -346,3 +346,6 @@ Título: "8 Nights of Hanukkah Activity Book". Subtítulo: "Stories, Puzzles, an
 
 ## 79. Capa aprovada e montada (09/10/2026)
 Conceito 1 (hanukkiah acesa, azul-meia-noite e dourado) com contracapa no mesmo fundo (silhueta noturna da cidade, hanukkiah pequena, dreidel e moedas), sem espaço reservado para código de barras. Frente mantém a cúpula azul ao fundo (escolha do Danilo). Estúdio: `studio/render/cover.py` passou a aceitar `inputs/cover-spine.png` (lombada em degradê). PDF: `build/hanukkah-8-nights-cover.pdf`, 17.4347 x 11.25 in, 82 páginas.
+
+## 80. Capa final: arquivo do Danilo (Canva) (09/10/2026)
+O Danilo montou a capa completa no Canva (17.4375 x 11.25 in, frente e verso em JPEG 1104 x 1424, sem texto na lombada) e pediu para usar. Conferida: dimensões (0.0028 in a mais que o gabarito), texto dentro da área segura, área do código de barras livre, sem fontes a embutir. Substitui a montagem automática do estúdio (movida para `inputs/cover-source/estudio/`). Resolução ~128 DPI: aceita pelo KDP, levemente macia.
