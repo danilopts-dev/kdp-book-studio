@@ -127,9 +127,18 @@
   // aba no lado direito do triângulo i: ponto na aresta (fração f do vértice da base até a ponta) e deslocamento e
   let edge(i, f) = (((i + 1) * s) + f * (-0.5 * s), 2 * s + f * h)
   let tab(i) = {
+    // trapézio com a borda externa paralela à dobra (deslocamento perpendicular e = 0.30in) e pontas chanfradas
     let h1 = edge(i, 0.28)
     let h2 = edge(i, 0.90)
-    (h1, (h1.at(0) + 0.30, h1.at(1) + 0.10), (h2.at(0) + 0.24, h2.at(1) - 0.08), h2)
+    let dx = h2.at(0) - h1.at(0)
+    let dy = h2.at(1) - h1.at(1)
+    let l = calc.sqrt(dx * dx + dy * dy)
+    let u = (dx / l, dy / l)
+    let n = (u.at(1), -u.at(0))
+    let e = 0.30
+    let ch = 0.11
+    (h1, (h1.at(0) + e * n.at(0) + ch * u.at(0), h1.at(1) + e * n.at(1) + ch * u.at(1)),
+     (h2.at(0) + e * n.at(0) - ch * u.at(0), h2.at(1) + e * n.at(1) - ch * u.at(1)), h2)
   }
   let bottom = ()
   for i in (3, 2, 1, 0) {
