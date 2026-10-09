@@ -2,7 +2,7 @@
   "left": [
     {
       "night": 1,
-      "title": "Judah Says No"
+      "title": "Mattathias Says No"
     },
     {
       "night": 2,
@@ -60,7 +60,7 @@
   "answers": [
     {
       "night": 1,
-      "title": "Judah Says No",
+      "title": "Mattathias Says No",
       "fact_position": 4,
       "fact": "A man from Modiin said no to the king's soldiers."
     },

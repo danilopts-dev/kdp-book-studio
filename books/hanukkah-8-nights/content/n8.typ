@@ -1,7 +1,7 @@
 = Night 8 — All Eight Lights
 
 #story[
-  Eight nights ago, this book started with Mattathias saying no to a king, and here you are: all eight candles lit, plus the shamash. That's a lot of light for one small jar of oil to promise.
+  On the first night, this book started with Mattathias saying no to a king. Tonight, you're about to light all eight candles, plus the shamash. That's a lot of light for one small jar of oil to promise.
 
   Hanukkah means "dedication." The word points back to the moment the Maccabees cleaned the Temple and lit it again, dedicating it all over, after it had been taken from them. But the word still does work today. Lighting a full hanukkiah is its own small dedication: to remembering a hard story, to being grateful for what stayed lit, to a family gathered in one room.
 
@@ -129,7 +129,7 @@
   })
   #stack(dir: ttb, spacing: 0.25in,
     _j("A", [Knock, knock. Who's there? Oil. Oil who?], [Oil light the last candle with you, so open the door!]),
-    _j("B", [What did the first candle say to the eighth candle on Night 8?], ["Glad you made it! I've been here since Night 1."]),
+    _j("B", [What did the eighth candle say to the shamash on the last night?], ["Thanks for the light! I've waited all week for my turn."]),
     _j("C", [What do you call the last night of Hanukkah, if you're a candle?], [The wick-end, when all eight burn at once!]))
   #v(0.4in)
   #text(font: display, weight: "bold", size: 22pt, tracking: 0.03em)[Which joke did you pick? #box(width: 2.6in, height: 0.34in, stroke: (bottom: 1.6pt + ink), [])]

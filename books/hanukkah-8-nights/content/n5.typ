@@ -111,10 +111,52 @@
 
 #pagebreak()
 
-#activity(2, "Design a Dreidel")[Cut along the solid lines, fold along the dashed lines, and glue the gray tabs. Color each face before you fold, it's much easier that way. When it's dry, give it a spin!]
+#activity(2, "Design a Dreidel")[Color each face, cut along the solid lines, fold along the dashed lines, and glue the gray tabs. Then poke a sharpened pencil through the X and out the point, and give it a spin!]
+
+// Molde desenhado em vetor (08/10/2026): 4 faces quadradas com a letra em pé, 4 triângulos que formam a ponta
+// (altura 1.25in > metade do lado, então a ponta fica abaixo do prisma), tampa quadrada presa à 2a face,
+// 3 abas cinza para colar a tampa e 1 aba lateral. Linhas contínuas = cortar; tracejadas = dobrar.
+#let _dn(sz: 1.6, t: 0.38, tw: 0.35, h: 1.25) = {
+  let s = sz
+  let P(x, y) = (x * 1in, y * 1in)
+  let poly(pts, fill: white) = polygon(fill: fill, stroke: 1.9pt + ink, ..pts.map(q => P(q.at(0), q.at(1))))
+  let ln(x0, y0, x1, y1) = place(top + left, line(start: P(x0, y0), end: P(x1, y1), stroke: (paint: ink, thickness: 1.3pt, dash: "dashed")))
+  let gray = luma(215)
+  let c = 0.13   // chanfro das abas
+  block(width: (4 * s + tw) * 1in, height: (2 * s + h) * 1in, {
+    // contorno geral (corte)
+    place(top + left, poly((
+      (s, 0), (2 * s, 0), (2 * s, s - t), (2 * s + c, s - t), (3 * s - c, s - t), (3 * s, s - t), (3 * s + c, s - t), (4 * s - c, s - t), (4 * s, s),
+      (4 * s + tw, s + 0.25), (4 * s + tw, 2 * s - 0.25), (4 * s, 2 * s),
+      (3.5 * s, 2 * s + h), (3 * s, 2 * s), (2.5 * s, 2 * s + h), (2 * s, 2 * s), (1.5 * s, 2 * s + h), (s, 2 * s), (0.5 * s, 2 * s + h), (0, 2 * s),
+      (0, s), (c, s - t), (s - c, s - t), (s, s))))
+    // abas cinza: 3 de cima (faces 1, 3 e 4) e a lateral
+    for x0 in (0, 2 * s, 3 * s) {
+      place(top + left, poly(((x0, s), (x0 + c, s - t), (x0 + s - c, s - t), (x0 + s, s)), fill: gray))
+    }
+    place(top + left, poly(((4 * s, s), (4 * s + tw, s + 0.25), (4 * s + tw, 2 * s - 0.25), (4 * s, 2 * s)), fill: gray))
+    // faces: letra em pé + nome
+    for (i, (g, nm)) in (("נ", "Nun"), ("ג", "Gimel"), ("ה", "Hei"), ("ש", "Shin")).enumerate() {
+      place(top + left, dx: (i * s) * 1in, dy: s * 1in, box(width: s * 1in, height: s * 1in,
+        align(center + horizon, stack(dir: ttb, spacing: 6pt,
+          text(font: heb-font, size: 64pt, lang: "he", top-edge: "bounds", bottom-edge: "bounds")[#g],
+          text(font: display, weight: "bold", size: 12pt, tracking: 0.05em, upper(nm))))))
+    }
+    // tampa: X no centro
+    place(top + left, dx: s * 1in, dy: 0in, box(width: s * 1in, height: s * 1in,
+      align(center + horizon, stack(dir: ttb, spacing: 4pt,
+        text(font: display, weight: "bold", size: 40pt)[X],
+        text(font: display, size: 8.5pt, tracking: 0.08em)[POKE THE PENCIL HERE]))))
+    // dobras (tracejadas)
+    ln(s, s, s, 2 * s); ln(2 * s, s, 2 * s, 2 * s); ln(3 * s, s, 3 * s, 2 * s); ln(4 * s, s, 4 * s, 2 * s)
+    ln(0, s, 4 * s, s); ln(0, 2 * s, 4 * s, 2 * s)
+  })
+}
 
 #v(1fr)
-#align(center, image(_pz + "noite5_template_dreidel_branco.png", height: 7.8in, fit: "contain"))
+#align(center, _dn())
+#v(0.15in)
+#align(center, text(size: 13pt)[Fold the four gray tabs and the four pointy triangles inward. Tape the triangle sides together to make the point.])
 #v(1fr)
 
 // Verso em branco de propósito (a criança recorta o template): sem número de página.

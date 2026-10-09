@@ -26,6 +26,7 @@ Estado: **miolo pronto, sem 🔴, 82 páginas**; revisor humano deu ok (ajustes 
 2. ~~Listing/keywords e bônus~~ aprovados e testados em 08/10 (título e subtítulo escolhidos; 7 keywords aprovadas; fluxo do Brevo testado).
 
 ## Já resolvido
+- 09/10: revisões do ChatGPT e do Grok aplicadas (decisão 81): sexta e sábado no acendimento, shamash explícito, títulos, piada, cupom, molde do dreidel, ilustração da Noite 1 e resolução de todas as ilustrações (>= 290 DPI).
 - 08/10: revisor humano (história da Noite 1, sexta-feira, Pei, oito dias, gelt), hanukkiah de 40 pontos, jogo dos erros com cenas novas (p15 com 5 e p18 com 7), sudoku de formas, jarros, velas e hanukkiahs no traço da ilustração 12, contas mais difíceis, copyright (decisões 67 a 78).
 - 07/10: receita de latke (adulto ralha), copyright centralizado, piadas variadas (decisão 61), série de acendimento da Noite 4 refeita com a mesma hanukkiah, ligar os pontos em `_v2`, artes 14 e 24 conferidas (ver decisões 62 a 65).
 - Expansão de 64 para 82 páginas (06/10), com revisão independente das 16 atividades novas.

@@ -9,7 +9,7 @@
 #let display = ("Barlow", "Bahnschrift", "Verdana")
 #let body-font = ("Atkinson Hyperlegible", "Verdana")
 #let heb-font = ("Times New Roman", "Arial")
-#let ill = "/books/hanukkah-8-nights/inputs/illustrations/"
+#let ill = "/books/hanukkah-8-nights/inputs/illustrations_hi/"
 
 #set document(title: "8 Nights Family Pack", author: "Jonah Feldman")
 #set text(font: body-font, size: 12.5pt, fill: ink, lang: "en")

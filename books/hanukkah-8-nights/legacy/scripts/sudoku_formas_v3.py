@@ -25,7 +25,7 @@ import matplotlib.pyplot as plt
 HERE = Path(__file__).resolve().parent
 ASSETS = HERE.parents[1] / "inputs" / "puzzle-assets"
 
-CEL = 360       # px por célula
+CEL = 540       # px por célula (4x4 -> ~2200 px; 349 DPI a 6.3 in)
 FORMAS = ["circle", "square", "triangle", "star", "heart", "plus"]  # ordem 1..N dos JSON
 
 

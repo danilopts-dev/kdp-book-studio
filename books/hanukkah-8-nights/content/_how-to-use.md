@@ -22,11 +22,11 @@ Most of the story and the "Before the Candles" page are for reading together as 
 
 **Set up the candles.** On Night 1, put one candle in the holder on the far right. Each night after that, add one more candle to the left of the last one. The shamash gets its own holder, usually higher or off to the side, and it doesn't count as one of the eight.
 
-![](illustrations/FM1.png "3.4in")
+![](illustrations_hi/FM1.png "2.7in")
 
-**Light them.** Say the blessings first (you'll find them on Night 1). Then use the lit shamash to light tonight's candles, starting with the newest one on the left and moving right. When they're all lit, put the shamash back in its holder and let the candles burn down on their own.
+**Light them.** Say the blessings first (you'll find them on Night 1). Then light the shamash, and use it to light tonight's candles, starting with the newest one on the left and moving right. When they're all lit, put the shamash back in its holder and let the candles burn down on their own.
 
-**Friday:** light the Hanukkah candles before Shabbat begins, and before lighting the Shabbat candles. In traditional observance, use candles that will burn for at least 30 minutes after nightfall.
+**Friday and Saturday:** On Friday, light the Hanukkah candles before Shabbat begins, and before the Shabbat candles. Use candles or oil that will last at least 30 minutes after nightfall. On Saturday night, light them after Shabbat has ended, following your family's custom.
 
 Families have their own customs, like exactly when to light the shamash or where the hanukkiah stands. If your family does something differently, do it your way.
 

@@ -8,7 +8,7 @@
   Up in the hills of Judea, they were cold, they were outnumbered, and they were free. That was where the fight for Hanukkah began, one family, one no, one mountain at a time.
 ]
 
-#art("11.png", w: 6.0in, below: 0.05in)
+#art("11.png", w: 4.1in, below: 0.02in)
 
 #v(0.06in)
 
@@ -53,11 +53,11 @@
 
 #pagebreak()
 
-#activity(2, "Why is Judah called the Hammer?")[Judah, one of Mattathias's sons, led the fighters after his father. People called him Judah Maccabee, Judah "the Hammer," because he hit hard and moved fast, and his small army kept winning battles nobody expected them to win.
+#activity(2, "Why is Judah called the Hammer?")[Judah, one of Mattathias's sons, led the fighters after his father. People called him Judah Maccabee. One explanation of the name is "the Hammer," because he hit hard and moved fast, and his small army kept winning battles nobody expected them to win.
 
 Finish the drawing below: give Judah his hammer, his shield, and a look on his face that says he is not backing down.]
 
-#draw-box(5.7in, body: image("/books/hanukkah-8-nights/inputs/illustrations/13.png", height: 5.3in))
+#draw-box(5.7in, body: image("/books/hanukkah-8-nights/inputs/illustrations_hi/13.png", height: 5.3in))
 
 #pagebreak()
 

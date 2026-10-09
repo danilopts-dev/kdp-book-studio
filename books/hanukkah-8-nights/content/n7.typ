@@ -112,7 +112,7 @@
   _coupon("74_heart.png")[Good for one big hug.],
   _coupon("74_plate.png")[Good for helping with the dishes, no complaining.],
   _coupon("74_book.png")[Good for a story read out loud before bed.],
-  _coupon("74_broom.png")[Good for making someone's bed for them.],
+  _coupon("74_broom.png")[Good for sweeping the floor for someone.],
   _coupon("74_sun.png")[Good for 15 minutes of quiet while someone naps or reads.],
   _coupon("74_die_fix.png")[Good for picking up ten toys, right now, cheerfully.],
 ))

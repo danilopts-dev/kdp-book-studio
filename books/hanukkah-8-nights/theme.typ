@@ -5,7 +5,7 @@
 // Uso numa noite (nesta ordem; cada noite começa em página nova):
 //   = Night 1 — Mattathias Says No                     (abertura: selo NIGHT + título)
 //   #story[...parágrafos...]                      (Tonight's Story)
-//   #art("11.png")                                (ilustração de inputs/illustrations/)
+//   #art("11.png")                                (ilustração de inputs/illustrations_hi/)
 //   #whats-a("Maccabee")[...]                     (caixa What's a...?)
 //   #activity(1, "Escape to the Hills")[instrução] + #puzzle("labirinto_facil.png")
 //   #activity(2, "...")[instrução]
@@ -18,7 +18,7 @@
 #let display = ("Barlow", "Bahnschrift", "Verdana")
 #let body-font = ("Atkinson Hyperlegible", "Verdana")
 #let heb-font = ("Times New Roman", "Arial")  // só letras isoladas do dreidel (N5); decisão 06/10/2026
-#let _ill = "/books/hanukkah-8-nights/inputs/illustrations/"
+#let _ill = "/books/hanukkah-8-nights/inputs/illustrations_hi/"
 #let _pz = "/books/hanukkah-8-nights/inputs/puzzle-assets/"
 
 #let _night-label = state("night-label", "")
