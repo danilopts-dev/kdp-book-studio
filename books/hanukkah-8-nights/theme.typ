@@ -28,6 +28,7 @@
 #let theme(body) = {
   set page(
     margin: (inside: 0.65in, outside: 0.6in, top: 0.6in, bottom: 0.75in),
+    footer-descent: 12%,   // folio a 0.34 in da borda (KDP exige >= 0.25 in; antes ficava a 0.205 in)
     header: none,
     footer: context {
       let p = here().page()

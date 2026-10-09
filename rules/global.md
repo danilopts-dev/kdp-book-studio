@@ -26,3 +26,5 @@ O padrão não é "segue o TOC ao pé da letra", é "entrega a melhor experiênc
 
 ## Imagens do Danilo
 Ficam em `books/<slug>/inputs/`. Nome descritivo (`cover-front.png`, `p07-garden.png`). Se uma imagem for necessária e não existir, é BLOQUEANTE, com a especificação exata (conteúdo, proporção, pixels mínimos).
+
+- **Margens do KDP (miolo):** nenhum objeto, inclusive número de página e rodapé, a menos de 0.25 in da borda de cima, de baixo e externa; gutter de pelo menos 0.375 in até 150 páginas. O Visualizador do KDP bloqueia com "This object is outside the margins". `./st check --pdf` mede isso (`check_margins`).

@@ -187,6 +187,60 @@ def check_pdf(book: Book) -> list[dict]:
     if book.meta.get("large_print") and st["size"] < 16:
         out.append(_f(CRIT, "estilo", "Livro 'large print' com corpo abaixo de 16pt."))
     out += check_images(book, st)
+    out += check_margins(pdf, n)
+    return out
+
+
+_MARGIN_SCRIPT = r'''
+import json, sys
+import pdfplumber
+res = []
+with pdfplumber.open(sys.argv[1]) as pdf:
+    for i, pg in enumerate(pdf.pages, 1):
+        W, H = pg.width, pg.height
+        objs = []
+        for k in ("chars", "rects", "curves", "lines", "images"):
+            objs += [(o["x0"], o["top"], o["x1"], o["bottom"]) for o in getattr(pg, k)]
+        if objs:
+            res.append([i, min(o[0] for o in objs) / 72, min(o[1] for o in objs) / 72,
+                        (W - max(o[2] for o in objs)) / 72, (H - max(o[3] for o in objs)) / 72])
+print(json.dumps(res))
+'''
+
+
+def check_margins(pdf, n_pages: int) -> list[dict]:
+    """Margens do KDP (sem sangria): 0.25 in nas bordas externas, em cima e embaixo; miolo (gutter) 0.375 in até 150
+    páginas, 0.5 até 300. Mede o objeto mais próximo de cada borda de cada página (texto, imagens, traços, número de
+    página). O Visualizador do KDP acusa 'This object is outside the margins' quando falha. Usa pdfplumber no Python
+    do sistema se o venv não o tiver."""
+    import json
+    import subprocess
+    import sys
+    rows = None
+    for py in (sys.executable, "python", "python3"):
+        try:
+            r = subprocess.run([py, "-c", _MARGIN_SCRIPT, str(pdf)], capture_output=True, text=True, timeout=300)
+            if r.returncode == 0 and r.stdout.strip():
+                rows = json.loads(r.stdout.strip().splitlines()[-1])
+                break
+        except Exception:
+            continue
+    if rows is None:
+        return [_f(MIN, "margens", "pdfplumber não disponível: margens do KDP não verificadas (instale-o ou use o Visualizador do KDP).")]
+    gutter = 0.375 if n_pages <= 150 else 0.5 if n_pages <= 300 else 0.625
+    bad_out, bad_in = [], []
+    for i, left, top, right, bottom in rows:
+        inside, outside = (left, right) if i % 2 else (right, left)
+        if min(top, bottom, outside) < 0.25:
+            bad_out.append((i, round(min(top, bottom, outside), 3)))
+        if inside < gutter:
+            bad_in.append((i, round(inside, 3)))
+    out = []
+    if bad_out:
+        out.append(_f(MAJ, "margens", f"{len(bad_out)} páginas com objeto a menos de 0.25 in da borda (KDP: 'outside the margins'); "
+                                    f"ex.: p.{bad_out[0][0]} a {bad_out[0][1]} in. Páginas: {[b[0] for b in bad_out][:12]}"))
+    if bad_in:
+        out.append(_f(MAJ, "margens", f"{len(bad_in)} páginas com objeto a menos de {gutter} in da lombada; ex.: p.{bad_in[0][0]} a {bad_in[0][1]} in."))
     return out
 
 

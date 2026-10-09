@@ -361,3 +361,6 @@ Ajuste (09/10): abas dos triângulos do dreidel redesenhadas como trapézios com
 
 ## 83. Capa final v2 (09/10/2026)
 O Danilo ampliou a arte da capa (imagens de 3092 x 3988 px, ~355 DPI) e refez o PDF no Canva ("Hanukkah 8 Nights Cover v2.pdf", 17.4375 x 11.25 in, mesmo layout da v1). Esta é a capa final para o KDP; substitui a v1 (128 DPI).
+
+## 84. Erro de margens no Visualizador do KDP (09/10/2026)
+O Visualizador do KDP acusou "This object is outside the margins" em 75 páginas: o número de página e o rótulo do rodapé ficavam a 0.205 in da borda de baixo (mínimo do KDP: 0.25 in). Corrigido em `theme.typ` com `footer-descent: 12%` (agora 0.34 in; nenhuma outra borda abaixo de 0.5 in). O estúdio ganhou a checagem `check_margins` em `./st check --pdf` (0.25 in nas bordas externas, em cima e embaixo; gutter 0.375 in até 150 páginas), que reproduz o erro no PDF antigo e passa no novo. Miolo continua com 82 páginas.
