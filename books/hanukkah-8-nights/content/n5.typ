@@ -111,30 +111,49 @@
 
 #pagebreak()
 
-#activity(2, "Design a Dreidel")[Color each face, cut along the solid lines, fold along the dashed lines, and glue the gray tabs. Then poke a sharpened pencil through the X and out the point, and give it a spin!]
+#activity(2, "Design a Dreidel")[Color the faces, cut along the solid lines, fold along the dashed lines, and glue the gray tabs. Then push a straw or a toothpick through the X and out the point, and give it a spin!]
 
-// Molde desenhado em vetor (08/10/2026): 4 faces quadradas com a letra em pé, 4 triângulos que formam a ponta
-// (altura 1.25in > metade do lado, então a ponta fica abaixo do prisma), tampa quadrada presa à 2a face,
-// 3 abas cinza para colar a tampa e 1 aba lateral. Linhas contínuas = cortar; tracejadas = dobrar.
+// Molde em vetor (v2, 09/10/2026, conforme o desenho de correção do Danilo): 4 faces com a letra em pé, 4 triângulos
+// que formam a ponta, cada um com uma aba cinza no lado direito para colar no triângulo vizinho; tampa quadrada presa à
+// 2a face, 3 abas de cima (faces 1, 3 e 4) e 1 aba lateral. Linhas contínuas = cortar; tracejadas = dobrar (inclusive a
+// base de TODAS as abas). O contorno acompanha o chanfro das abas (sem linhas retas sobrando entre elas).
 #let _dn(sz: 1.6, t: 0.38, tw: 0.35, h: 1.25) = {
   let s = sz
   let P(x, y) = (x * 1in, y * 1in)
-  let poly(pts, fill: white) = polygon(fill: fill, stroke: 1.9pt + ink, ..pts.map(q => P(q.at(0), q.at(1))))
+  let pts(a) = a.map(q => P(q.at(0), q.at(1)))
   let ln(x0, y0, x1, y1) = place(top + left, line(start: P(x0, y0), end: P(x1, y1), stroke: (paint: ink, thickness: 1.3pt, dash: "dashed")))
   let gray = luma(215)
-  let c = 0.13   // chanfro das abas
+  let c = 0.13   // chanfro das abas de cima
+  // aba no lado direito do triângulo i: ponto na aresta (fração f do vértice da base até a ponta) e deslocamento e
+  let edge(i, f) = (((i + 1) * s) + f * (-0.5 * s), 2 * s + f * h)
+  let tab(i) = {
+    let h1 = edge(i, 0.28)
+    let h2 = edge(i, 0.90)
+    (h1, (h1.at(0) + 0.30, h1.at(1) + 0.10), (h2.at(0) + 0.24, h2.at(1) - 0.08), h2)
+  }
+  let bottom = ()
+  for i in (3, 2, 1, 0) {
+    bottom += tab(i)
+    bottom += (((i + 0.5) * s, 2 * s + h),)
+    bottom += ((i * s, 2 * s),)
+  }
+  let outline = (
+    (s, 0), (2 * s, 0), (2 * s, s), (2 * s + c, s - t), (3 * s - c, s - t), (3 * s, s), (3 * s + c, s - t), (4 * s - c, s - t), (4 * s, s),
+    (4 * s + tw, s + 0.25), (4 * s + tw, 2 * s - 0.25), (4 * s, 2 * s),
+  ) + bottom + (
+    (0, s), (c, s - t), (s - c, s - t), (s, s),
+  )
   block(width: (4 * s + tw) * 1in, height: (2 * s + h) * 1in, {
-    // contorno geral (corte)
-    place(top + left, poly((
-      (s, 0), (2 * s, 0), (2 * s, s - t), (2 * s + c, s - t), (3 * s - c, s - t), (3 * s, s - t), (3 * s + c, s - t), (4 * s - c, s - t), (4 * s, s),
-      (4 * s + tw, s + 0.25), (4 * s + tw, 2 * s - 0.25), (4 * s, 2 * s),
-      (3.5 * s, 2 * s + h), (3 * s, 2 * s), (2.5 * s, 2 * s + h), (2 * s, 2 * s), (1.5 * s, 2 * s + h), (s, 2 * s), (0.5 * s, 2 * s + h), (0, 2 * s),
-      (0, s), (c, s - t), (s - c, s - t), (s, s))))
-    // abas cinza: 3 de cima (faces 1, 3 e 4) e a lateral
+    // abas cinza (só preenchimento; o corte vem do contorno e a dobra, das linhas tracejadas)
     for x0 in (0, 2 * s, 3 * s) {
-      place(top + left, poly(((x0, s), (x0 + c, s - t), (x0 + s - c, s - t), (x0 + s, s)), fill: gray))
+      place(top + left, polygon(fill: gray, stroke: none, ..pts(((x0, s), (x0 + c, s - t), (x0 + s - c, s - t), (x0 + s, s)))))
     }
-    place(top + left, poly(((4 * s, s), (4 * s + tw, s + 0.25), (4 * s + tw, 2 * s - 0.25), (4 * s, 2 * s)), fill: gray))
+    place(top + left, polygon(fill: gray, stroke: none, ..pts(((4 * s, s), (4 * s + tw, s + 0.25), (4 * s + tw, 2 * s - 0.25), (4 * s, 2 * s)))))
+    for i in range(4) {
+      place(top + left, polygon(fill: gray, stroke: none, ..pts(tab(i))))
+    }
+    // contorno geral (corte)
+    place(top + left, polygon(fill: none, stroke: 1.9pt + ink, ..pts(outline)))
     // faces: letra em pé + nome
     for (i, (g, nm)) in (("נ", "Nun"), ("ג", "Gimel"), ("ה", "Hei"), ("ש", "Shin")).enumerate() {
       place(top + left, dx: (i * s) * 1in, dy: s * 1in, box(width: s * 1in, height: s * 1in,
@@ -146,17 +165,21 @@
     place(top + left, dx: s * 1in, dy: 0in, box(width: s * 1in, height: s * 1in,
       align(center + horizon, stack(dir: ttb, spacing: 4pt,
         text(font: display, weight: "bold", size: 40pt)[X],
-        text(font: display, size: 8.5pt, tracking: 0.08em)[POKE THE PENCIL HERE]))))
-    // dobras (tracejadas)
+        text(font: display, size: 8.5pt, tracking: 0.08em)[POKE THE STRAW HERE]))))
+    // dobras (tracejadas): entre faces, base das abas e da tampa, base dos triângulos e base das abas dos triângulos
     ln(s, s, s, 2 * s); ln(2 * s, s, 2 * s, 2 * s); ln(3 * s, s, 3 * s, 2 * s); ln(4 * s, s, 4 * s, 2 * s)
     ln(0, s, 4 * s, s); ln(0, 2 * s, 4 * s, 2 * s)
+    for i in range(4) {
+      let tt = tab(i)
+      ln(tt.at(0).at(0), tt.at(0).at(1), tt.at(3).at(0), tt.at(3).at(1))
+    }
   })
 }
 
 #v(1fr)
 #align(center, _dn())
 #v(0.15in)
-#align(center, text(size: 13pt)[Fold the four gray tabs and the four pointy triangles inward. Tape the triangle sides together to make the point.])
+#block(width: 100%, fill: tint, radius: 8pt, inset: (x: 12pt, y: 9pt), text(size: 13pt)[*Tip:* thin paper bends. For a dreidel that really spins, trace this pattern onto cardboard or thick paper (or glue the page onto cardboard first). Fold the four pointy triangles inward and glue each gray tab to the next triangle to close the point.])
 #v(1fr)
 
 // Verso em branco de propósito (a criança recorta o template): sem número de página.
