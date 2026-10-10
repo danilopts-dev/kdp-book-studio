@@ -127,6 +127,8 @@ Audience: [target reader / buyer, e.g. "adult children buying a gift for their m
 Do not add any logos, watermarks, or extra text beyond what is specified above.
 ```
 
+**Interior fidelity (mandatory):** when a banner shows the interior (pages, puzzles, vignettes of interior art), it must look like the interior. If `paper` in `book.yaml` is `bw-white` (black-and-white interior), every interior element is drawn in black and white on white paper, no color, no gray shading; only the banner background, the cover, and the lettering carry the cover's colors. Use the book's real interior illustrations as attachments instead of asking the generator to invent them. An Inside Pages Preview or Use Case banner with a colorful interior misleads the buyer. When the plan names example activities, the banner must also say there is more (e.g. a closing phrase "And more, every night"), so the buyer does not think the examples are the whole book.
+
 **Per-type placement instruction** (drop into the `[Placement instruction]` bracket):
 - **Hero:** Book cover large and prominent on one side; themed background related to the book's topic on the other.
 - **Key Benefits & Features:** 3 icon-style callouts, each paired with one supporting phrase.

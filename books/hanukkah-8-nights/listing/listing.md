@@ -111,10 +111,10 @@ Argumento interno (NÃO vai em texto de A+ nem de descrição, e nenhum concorre
 - Visual: três páginas reais do miolo lado a lado, levemente inclinadas sobre uma mesa clara: Crack the Code (Noite 1, p11), sudoku de formas 4x4 (Noite 3, p23) e receita de latke (Noite 6, p48). Conferidas no PDF com `./st preview` em 2026-10-07. Reserva: a página de palavras cruzadas de comidas (Noite 6, p54) no lugar da p11, se o Flow distorcer a p11; se distorcer qualquer página, voltar para duas páginas (p23 e p48).
 - Headline: Real Pages, Ready for Pencils
 - Body: Shape sudoku with stars, hearts, and triangles. A secret code to crack. A latke recipe to make with a grown-up. Mazes, word searches, a crossword, and logic puzzles on the other nights.
-- Frases no Flow: Shape sudoku | A secret code to crack | A latke recipe to make with a grown-up
+- Frases no Flow: Shape sudoku | A secret code to crack | A latke recipe to make with a grown-up | And more, every night
 
 ### Módulo 4: Use Case & Versatility (as 8 noites)
-- Visual: oito painéis pequenos numerados de 1 a 8, cada um com um ícone em line art do tema da noite (jarro, hanukkiah, dreidel, latke, moeda, e assim por diante). Os títulos das noites entram como legenda depois, no Canva, se couberem.
+- Visual: oito painéis pequenos numerados de 1 a 8, cada um com a arte P&B da noite sobre papel branco (o miolo é preto e branco; nada colorido dentro dos painéis): jarro, hanukkiah, dreidel, latke, moeda, e assim por diante. Os títulos das noites entram como legenda depois, no Canva, se couberem.
 - Headline: Eight Nights, Eight Themes
 - Body: Mattathias Says No. The Temple Is a Mess. One Little Jar of Oil. Light It Right. Spin the Dreidel. Everything Fried. Give Some Light Away. All Eight Lights. Mazes, word searches, sudoku, a crossword, and a family quiz are spread across the nights.
 - Frase curta dentro da imagem (Flow): New puzzles every night. A frase do Body acima é só para o Canva, se couber.

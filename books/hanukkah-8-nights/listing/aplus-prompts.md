@@ -14,6 +14,7 @@ O que mudou em relação à versão de 07/10: a capa final é uma ilustração p
 - Nada de QR code desenhado: a IA inventa um QR falso. A frase do bônus entra só como texto.
 - Hanukkiah correta: 8 braços e 9 velas no total, a vela do meio (shamash) mais alta, como na capa.
 - **Margem de segurança (obrigatória, todos os prompts):** o Flow gera 16:9 e o A+ é 970 x 600 (1,62:1), então o corte central tira ~9% da largura. Todo texto, ícone e a capa ficam dentro dos 88% centrais da largura e dos 84% centrais da altura (mín. 6% livre à esquerda e à direita, 8% em cima e embaixo); só fundo, estrelas e brilho vão até a borda. Cada prompt traz o parágrafo "Safe margins" logo depois do Layout.
+- **Miolo é preto e branco (`paper: bw-white`):** tudo que representar o interior do livro (páginas, puzzles, ilustrações das noites) sai em preto e branco, traço preto sobre papel branco, sem cor, sem cinza de sombra. Só o fundo do banner, a capa e o texto levam as cores da capa. Banner colorido mostrando puzzle colorido dá a impressão errada de miolo colorido.
 - Lado do concorrente (banner 2): capa tosca com título diferente do nosso e linhas de texto diferentes das nossas (nunca repetir nem parafrasear os pontos do livro).
 - Ter cuidado para não repetir na imagem o texto que já está na capa (título e subtítulo). A capa aparece como objeto, não como fundo de texto.
 
@@ -26,7 +27,7 @@ Todos os anexos já estão exportados em `build/aplus-anexos/` (fora do git). Se
 | 1 Hero | `build/aplus-anexos/capa-frente.png` |
 | 2 Comparison & Value | `build/aplus-anexos/capa-frente.png` |
 | 3 Inside Pages Preview | `capa-frente.png` + `build/aplus-anexos/p11.png` (Crack the Code, Noite 1), `p23.png` (Shape Sudoku 4x4, Noite 3) e `p48.png` (receita de latke, Noite 6). Conferidas no PDF de 82 páginas em 2026-10-10. Reserva: p54 (Hanukkah Food Crossword, Noite 6) no lugar da p11. Se o Flow distorcer alguma página, rodar de novo só com p23 e p48, ou montar o banner no Canva com as páginas reais. |
-| 4 Use Case (as 8 noites) | `capa-frente.png`. Opcional, só se os ícones saírem fracos: anexar também `inputs/illustrations/11.png`, `21.png`, `30.png`, `41.png`, `51.png`, `61.png`, `71.png`, `82.png` e acrescentar ao prompt "use the attached line drawings only as subject reference, redraw each in the cover's painted style". |
+| 4 Use Case (as 8 noites) | `capa-frente.png` + as 8 artes P&B do miolo, uma por noite: `inputs/illustrations/11.png` (N1), `21.png` (N2), `30.png` (N3), `41.png` (N4), `51.png` (N5), `61.png` (N6), `71.png` (N7), `82.png` (N8). Elas são a referência exata dos tiles (traço preto sobre branco). Se o Flow limitar o número de anexos, usar `capa-frente.png`, `11.png`, `30.png`, `51.png`, `61.png` e `82.png`. Se mesmo assim os tiles saírem coloridos, montar os 8 tiles direto no Canva com as artes reais. |
 | 5 Key Benefits (como funciona) | `capa-frente.png`. Não anexar `bonus-qr.png` (a frase do bônus é só texto). |
 
 Evitar como referência: `inputs/illustrations/14.png` (versão ainda a confirmar visualmente, ver questions.md) e a página de ligar os pontos da Noite 2 (p16 e p19, ponto fraco já registrado na revisão editorial; não usar no Inside Pages nem citar ligar os pontos nos textos).
@@ -89,13 +90,13 @@ Banner purpose: Inside Pages Preview
 
 Visual style: Match the exact color palette, lettering style, and illustration style of the attached book cover: deep midnight-blue starry background, warm gold light, cream lettering, a painted storybook feel. Clean and trustworthy.
 
-Layout: 16:9 landscape banner. Show the three attached interior pages (the secret code page, the shape sudoku page, and the latke recipe page) side by side, slightly overlapping and tilted, as if lying on a warm dark wooden table under soft candle glow, with a yellow pencil beside them and a small gold coin or two. The background behind the table is the same starry navy night as the cover. Use only the attached pages exactly as they are. Do not invent, redraw, or change any content on the pages, and do not add extra pages. Leave clear negative space on one side so the headline stays legible.
+Layout: 16:9 landscape banner. Show the three attached interior pages (the secret code page, the shape sudoku page, and the latke recipe page) side by side, slightly overlapping and tilted, as if lying on a warm dark wooden table under soft candle glow, with a yellow pencil beside them and a small gold coin or two. The three pages stay black and white exactly as attached, with no color added to them. The background behind the table is the same starry navy night as the cover. Use only the attached pages exactly as they are. Do not invent, redraw, or change any content on the pages, and do not add extra pages. Leave clear negative space on one side so the headline stays legible.
 
 Safe margins (mandatory): the banner will be center-cropped from 16:9 to a 970 x 600 px module, so keep every piece of text, every icon, and the book cover fully inside the central 88% of the frame width and the central 84% of the frame height. Nothing important may touch, approach, or be cut by the edges: leave at least 6% empty on the left and right, and 8% on the top and bottom. Only the background, stars, and glow may extend to the edges.
 
 Text to render exactly as written (do not paraphrase, do not add any other text):
 Headline: "Real Pages, Ready for Pencils"
-Supporting phrases: "Shape sudoku" | "A secret code to crack" | "A latke recipe to make with a grown-up"
+Supporting phrases (three examples, then a closing phrase that says there is more): "Shape sudoku" | "A secret code to crack" | "A latke recipe to make with a grown-up" | "And more, every night"
 
 Audience: parents and grandparents who want to see what the kids will actually be doing. The mood should feel trustworthy and practical.
 
@@ -109,9 +110,9 @@ Create a professional Amazon A+ content marketing banner for a children's holida
 
 Banner purpose: Use Case & Versatility (one vignette per night)
 
-Visual style: Match the exact color palette, lettering style, and illustration style of the attached book cover: deep midnight blue, glowing gold, cream, terracotta and soft blue accents, painted storybook feel with a warm glow. Welcoming, clean, not photographic.
+Visual style: The banner background and lettering match the attached book cover: deep midnight blue, glowing gold, cream. BUT the eight tiles represent the book's black-and-white interior, so every tile is drawn as a black-and-white line drawing on plain white paper: thick, uniform black outlines, simple expressive faces, no color, no gray shading, no fills, exactly like a coloring page. The interior of this book is printed in black and white, so no tile may contain any color.
 
-Layout: 16:9 landscape banner on a starry navy background. A tidy grid of eight small rounded square tiles in two rows of four, each tile with a thin gold border and a bold gold numeral from 1 to 8 in the corner. Each tile holds one simple, readable painted icon for that night's theme, in this order: 1 a young man standing firm on a mountain path; 2 a messy old temple room with a fallen broom; 3 a single small terracotta oil jar; 4 a hanukkiah in a window; 5 a spinning wooden dreidel; 6 a pan of golden latkes; 7 a coin dropping into a tzedakah box; 8 a hanukkiah with every candle lit. Keep each icon simple and readable at small size. Leave clear negative space at the top for the headline.
+Layout: 16:9 landscape banner on a starry navy background. A tidy grid of eight equal white paper tiles in two rows of four, each with a thin gold frame around it and a bold black numeral from 1 to 8 in a small white circle in the tile's corner. Each tile shows one of the attached black-and-white line illustrations, in order, as a simple drawing: 1 a young man standing firm on a mountain path; 2 a messy old temple room with a fallen broom; 3 a single small oil jar; 4 a hanukkiah in a window; 5 a spinning dreidel; 6 a pan of latkes; 7 a coin dropping into a tzedakah box; 8 a hanukkiah with every candle lit. Keep each drawing simple and readable at small size. Leave clear negative space at the top for the headline.
 
 Safe margins (mandatory): the banner will be center-cropped from 16:9 to a 970 x 600 px module, so keep every piece of text, every icon, and the book cover fully inside the central 88% of the frame width and the central 84% of the frame height. Nothing important may touch, approach, or be cut by the edges: leave at least 6% empty on the left and right, and 8% on the top and bottom. Only the background, stars, and glow may extend to the edges.
 
@@ -122,7 +123,7 @@ The numerals 1 to 8, one per tile, and no other text.
 
 Audience: parents and grandparents who want to see how the book is organized, and that they can start on any night.
 
-Do not add any logos, watermarks, Hebrew letters, or extra text beyond what is specified above. Do not include evergreen trees, baubles, stockings, wreaths, snowmen, reindeer, or a red-and-green color scheme.
+Do not add any logos, watermarks, Hebrew letters, or extra text beyond what is specified above. Do not color the tiles. Do not include evergreen trees, baubles, stockings, wreaths, snowmen, reindeer, or a red-and-green color scheme.
 ```
 
 ## Banner 5: Key Benefits & Features (como funciona)
