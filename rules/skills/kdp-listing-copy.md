@@ -116,6 +116,8 @@ Visual style: Match the exact color palette, typography, and illustration/photog
 
 Layout: 16:9 landscape banner. [Placement instruction — see per-type notes below]. Leave clear negative space so the text stays legible.
 
+Safe margins (mandatory): the banner will be center-cropped from 16:9 to a 970 x 600 px module, so keep every piece of text, every icon, and the book cover fully inside the central 88% of the frame width and the central 84% of the frame height. Nothing important may touch, approach, or be cut by the edges: leave at least 6% empty on the left and right, and 8% on the top and bottom. Only the background, stars, and glow may extend to the edges.
+
 Text to render exactly as written (do not paraphrase, do not add any other text):
 Headline: "[HEADLINE FROM MODULE PLAN]"
 Supporting phrases: "[BENEFIT PHRASE 1]" | "[BENEFIT PHRASE 2]" | "[BENEFIT PHRASE 3]"
@@ -131,7 +133,7 @@ Do not add any logos, watermarks, or extra text beyond what is specified above.
 - **Lifestyle Scene:** A realistic scene of the target reader/buyer in a natural setting (reading at home, gifting the book, using it with family), book visible in the scene.
 - **Inside Pages Preview:** Showing the *attached* interior pages laid out attractively (fanned, on a table, or as a clean spread) — do not invent generic interior content, use only what's attached.
 - **Use Case & Versatility:** 2–3 small vignettes showing different contexts the book gets used in (gift, travel, group activity, solo).
-- **Comparison & Value:** Split composition — our book with checkmarked benefits on one side, a generic unbranded competitor-style book with plain/greyed-out features on the other. Never use real competitor branding or covers.
+- **Comparison & Value:** Split composition — our book with checkmarked benefits on one side, a generic unbranded competitor-style book with plain/greyed-out features on the other. Never use real competitor branding or covers. The generic book gets a crude, amateur cover with its own plain title (never our title or any part of it) and its own four short greyed-out lines, written differently from ours: the image generator copies the left-side lines to the right side unless the prompt lists the right-side lines explicitly and forbids repeating or paraphrasing the left ones.
 - **Curiosity/Closing:** A warm, inviting closing image that sparks emotion or curiosity about the reading experience — final push toward the buy button.
 
 **Attachment checklist — what to upload in Google Flow for each prompt:**
@@ -153,7 +155,7 @@ Do not add any logos, watermarks, or extra text beyond what is specified above.
 2. Build one prompt per module using the template above.
 3. In Google Flow: image mode, 16:9, 4 generations per prompt, model = Nano Banana 2 (free/no credits). Attach files per the checklist above before submitting each prompt.
 4. Generate, keep the best of the 4, discard the rest. Repeat per module.
-5. **Resize before uploading to KDP.** Google Flow outputs 16:9 — Amazon's A+ modules require 970×600px or 970×300px, neither of which is 16:9. Crop/resize each chosen image to the exact module dimension in Canva before uploading (do not upload the raw 16:9 output).
+5. **Resize before uploading to KDP.** Google Flow outputs 16:9 — Amazon's A+ modules require 970×600px or 970×300px, neither of which is 16:9. Crop/resize each chosen image to the exact module dimension in Canva before uploading (do not upload the raw 16:9 output). The safe-margin paragraph in the template exists so this center crop never cuts text, icons, or the cover; keep it in every prompt of every book.
 
 ### Bonus Capture Texts (Brevo form + email), only when the book has a free bonus
 

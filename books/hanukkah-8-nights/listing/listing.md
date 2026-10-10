@@ -99,10 +99,12 @@ Argumento interno (NÃO vai em texto de A+ nem de descrição, e nenhum concorre
 - Frases no Flow: More than 80 pages | Two levels | A game before the candles
 
 ### Módulo 2: Comparison & Value
-- Visual: composição dividida. À esquerda, este livro com quatro checks; à direita, um livro genérico sem marca, em cinza, com os mesmos pontos riscados ou vazios.
+- Visual: composição dividida. À esquerda, este livro com quatro checks; à direita, um livro genérico de capa tosca (título diferente do nosso), com quatro pontos próprios, em cinza e com círculos vazios.
 - Headline: Made for the Whole Table
 - Body (lado do livro): Two levels on every night, ages 6-7 and ages 8-10. | "What's a...?" boxes explain the words. | Every night stands alone. | Full answer key and a free printable bonus.
 - Rótulo do lado genérico: A typical activity book.
+- Pontos do lado genérico (nunca repetir os do nosso livro): One level for all ages. | Hard words left unexplained. | Hard to start mid-book. | Little more than puzzles.
+- Título na capa genérica: Fun Puzzles for Kids.
 - Observação: o lado genérico não nomeia nem imita nenhum concorrente real.
 
 ### Módulo 3: Inside Pages Preview
