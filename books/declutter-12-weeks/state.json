@@ -206,6 +206,15 @@
       "updated": "2026-09-30T22:30"
     },
     {
+      "id": "bonus",
+      "stage": "bonus",
+      "agent": "main",
+      "instructions": "pipelines/stages/bonus.md",
+      "status": "done",
+      "note": "feito antes da etapa existir",
+      "updated": "2026-10-10T18:40"
+    },
+    {
       "id": "build",
       "stage": "build",
       "agent": "main",

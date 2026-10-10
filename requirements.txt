@@ -4,3 +4,4 @@ pyyaml>=6
 pillow>=10
 holidays>=0.50
 pyluach>=2.2
+segno>=1.5

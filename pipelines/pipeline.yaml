@@ -12,6 +12,9 @@ stages:
   - id: matter          # front/back matter: how-to-use, bônus, pedido de review, about
     agent: writer
     instructions: pipelines/stages/matter.md
+  - id: bonus           # PDF do bônus, textos e e-mail no Brevo, QR. Corre em paralelo: só segura o finalize
+    agent: main
+    instructions: pipelines/stages/bonus.md
   - id: build
     agent: main
     instructions: pipelines/stages/build.md

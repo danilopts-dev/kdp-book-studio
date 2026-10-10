@@ -26,10 +26,60 @@ ICON = {"pending": "·", "in_progress": "▶", "done": "✓", "blocked": "⛔", 
 
 
 def _book(slug: str) -> Book:
+    """Aceita o apelido exato da pasta ou um pedaço do apelido/título ("hanukkah", "planner")."""
     b = Book(slug)
-    if not b.path("book.yaml").exists():
-        sys.exit(f"Livro '{slug}' não existe em books/. Use: python -m studio new {slug} --type ...")
-    return b
+    if b.path("book.yaml").exists():
+        return b
+    term = slug.lower()
+    found = []
+    for d in sorted(BOOKS.glob("*/book.yaml")):
+        name = d.parent.name
+        if name.startswith("_"):
+            continue
+        title = str((yaml.safe_load(d.read_text(encoding="utf-8")) or {}).get("title", "")).lower()
+        if term in name.lower() or term in title:
+            found.append(name)
+    if len(found) == 1:
+        return Book(found[0])
+    if found:
+        sys.exit(f"'{slug}' combina com mais de um livro: {', '.join(found)}")
+    sys.exit(f"Livro '{slug}' não existe em books/. Use: python -m studio new {slug} --type ...")
+
+
+STAGE_LABELS = {
+    "intake": "Ficha técnica (TOC → plano do livro)",
+    "matter": "Páginas de abertura e fechamento",
+    "bonus": "Bônus (PDF, e-mail no Brevo, QR)",
+    "build": "Montagem do PDF",
+    "editorial": "Revisão final do livro",
+    "listing": "Página da Amazon (título, keywords, descrição, A+)",
+    "cover": "Capa",
+    "finalize": "Entrega",
+}
+
+
+def label(book: Book, t: dict) -> str:
+    """Nome legível da tarefa, para falar com o Danilo."""
+    if t.get("unit"):
+        u = next((u for u in book.units if u["id"] == t["unit"]), {})
+        return u.get("title") or t["unit"]
+    return STAGE_LABELS.get(t["id"], t["id"])
+
+
+def open_questions(book: Book) -> tuple[int, int]:
+    """(preciso de você, decidi sozinho) abertas em questions.md."""
+    q = book.path("questions.md")
+    if not q.exists():
+        return 0, 0
+    need = mine = 0
+    for line in q.read_text(encoding="utf-8").splitlines():
+        if not line.startswith("- [ ]"):
+            continue
+        if "BLOQUEANTE" in line or "PRECISO" in line.upper():
+            need += 1
+        else:
+            mine += 1
+    return need, mine
 
 
 def cmd_new(a):
@@ -63,11 +113,11 @@ def cmd_status(a):
     print(f"{b.meta.get('title', a.slug)} — {done}/{len(tasks)} etapas concluídas")
     for t in tasks:
         note = f"  ({t['note']})" if t.get("note") else ""
-        print(f"  {ICON[t['status']]} {t['id']}{note}")
+        print(f"  {ICON[t['status']]} {label(b, t)} [{t['id']}]{note}")
     nt = next_task(b)
-    q = b.path("questions.md")
-    open_q = sum(l.startswith("- [ ]") for l in q.read_text(encoding="utf-8").splitlines()) if q.exists() else 0
-    print(f"Próxima: {nt['id'] if nt else '— livro concluído'} | perguntas abertas: {open_q}")
+    need, mine = open_questions(b)
+    print(f"Próxima: {label(b, nt) + ' [' + nt['id'] + ']' if nt else '— livro concluído'} | "
+          f"preciso do Danilo: {need} | decidi sozinho (conferir): {mine}")
 
 
 def cmd_next(a):
@@ -176,9 +226,40 @@ def cmd_publish(a):
 def cmd_list(a):
     for d in sorted(BOOKS.glob("*/book.yaml")):
         b = Book(d.parent.name)
+        if b.slug.startswith("_") and not a.all:
+            continue
         tasks = b.load_state()["tasks"]
         done = sum(t["status"] in ("done", "skipped") for t in tasks)
-        print(f"{b.slug:30} {done:>3}/{len(tasks):<3} {b.meta.get('title', '')}")
+        need, _ = open_questions(b)
+        state = "pronto" if tasks and done == len(tasks) else f"{done}/{len(tasks)} etapas"
+        wait = f" | preciso do Danilo: {need}" if need else ""
+        print(f"{b.slug:30} {state:14} {b.meta.get('title', '')}{wait}")
+
+
+def cmd_qr(a):
+    from . import extras
+    b = _book(a.slug)
+    if not (a.url or a.placeholder):
+        sys.exit("Passe a URL do formulário do Brevo, ou --placeholder.")
+    print(extras.make_qr(b, None if a.placeholder else a.url))
+
+
+def cmd_bonus(a):
+    from . import extras
+    r = extras.build_bonus(_book(a.slug), preview=a.preview)
+    for name, n in r.items():
+        print(f"{name}: {n} páginas")
+
+
+def cmd_estimate(a):
+    from . import extras
+    print(json.dumps(extras.estimate_pages(_book(a.slug)), ensure_ascii=False, indent=1))
+
+
+def cmd_keywords(a):
+    from . import extras
+    p, msg = extras.keyword_research(_book(a.slug), a.seeds)
+    print(f"{msg} -> {p.relative_to(ROOT)}")
 
 
 def main():
@@ -208,7 +289,19 @@ def main():
     lk = s.add_parser("link"); lk.add_argument("slug"); lk.set_defaults(f=cmd_link)
     pb = s.add_parser("publish"); pb.add_argument("slug"); pb.add_argument("--quiet", action="store_true")
     pb.set_defaults(f=cmd_publish)
-    ls = s.add_parser("list"); ls.set_defaults(f=cmd_list)
+    ls = s.add_parser("list"); ls.add_argument("--all", action="store_true", help="inclui os livros _demo")
+    ls.set_defaults(f=cmd_list)
+    q = s.add_parser("qr", help="QR do bônus em inputs/bonus-qr.png")
+    q.add_argument("slug"); q.add_argument("url", nargs="?")
+    q.add_argument("--placeholder", action="store_true", help="quadrado provisório até o formulário existir")
+    q.set_defaults(f=cmd_qr)
+    bo = s.add_parser("bonus", help="compila bonus/*.typ em build/<livro>-bonus.pdf")
+    bo.add_argument("slug"); bo.add_argument("--preview", action="store_true"); bo.set_defaults(f=cmd_bonus)
+    es = s.add_parser("estimate", help="projeta o total de páginas com as unidades prontas")
+    es.add_argument("slug"); es.set_defaults(f=cmd_estimate)
+    kw = s.add_parser("keywords", help="termos reais do autocomplete de Livros da Amazon.com")
+    kw.add_argument("slug"); kw.add_argument("seeds", nargs="+", help='ex.: "hanukkah activity book" "hanukkah gifts for kids"')
+    kw.set_defaults(f=cmd_keywords)
     a = p.parse_args()
     a.f(a)
 
