@@ -21,4 +21,4 @@ Padrões do engine: 8.5x11, sans, 16pt+, um puzzle por página, answer key no fi
 - Dificuldade consistente dentro da seção; sem saltos.
 - Nenhum anacronismo; nada inadequado para o público.
 - How-to-use presente e simples.
-- Formato ainda sem gerador (palavras cruzadas, labirinto, ligar pontos): criar como `kind: typst` com o conteúdo pronto, ou propor um gerador novo em `studio/generators/` (ASSUMIDA).
+- Formato ainda sem gerador (palavras cruzadas, labirinto, ligar pontos): criar como `kind: typst` com o conteúdo pronto, ou propor um gerador novo em `studio/generators/` (registrar em `reviews/decisoes.md`).

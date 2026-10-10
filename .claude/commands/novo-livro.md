@@ -1,10 +1,16 @@
 ---
-description: Cria um livro novo a partir do TOC aprovado. Uso /novo-livro <slug> <prose|activity|calendar|planner|children> [imprint]
-argument-hint: <slug> <tipo> [imprint]
+description: Cria um livro novo a partir do TOC aprovado. Uso /novo-livro (e cole o TOC), ou /novo-livro <título> [tipo] [imprint]
+argument-hint: [título] [tipo] [imprint]
 ---
 Argumentos: $ARGUMENTS
 
-1. Rode `./st new <slug> --type <tipo>` (com `--imprint <imprint>` se informado; com `--onedrive "NN - Título"` se o Danilo informar a pasta do livro no OneDrive: cria o atalho `Estudio` lá dentro; imprints: golden-chapter, silvia-press, emily-harper, jonah-feldman).
-2. Se o Danilo colou o TOC nesta conversa, grave-o em `books/<slug>/toc.md`. Se não, peça que cole (ou informe o caminho/página do Notion onde está) e pare.
-3. Com o TOC gravado, execute a tarefa `intake` seguindo `pipelines/stages/_protocol.md`.
-4. Reporte em até 5 linhas: unidades criadas, perguntas BLOQUEANTES (se houver) e o próximo comando sugerido (`/proximo <slug>` ou `/tudo <slug>`).
+O Danilo não precisa saber nomes de pasta nem tipos técnicos. Deduza do TOC o que der:
+- **Apelido da pasta**: você cria, curto, em minúsculas e com hífens, a partir do título (ex.: "8 Nights of Hanukkah Activity Book" → `hanukkah-8-nights`). Não pergunte e não mostre ao Danilo.
+- **Tipo**: `prose` (guias, textos), `activity` (puzzles, atividades), `calendar`, `planner` (organizers, trackers), `children` (livro ilustrado). Deduza do TOC; só pergunte se for ambíguo, com as opções em português.
+- **Imprint**: golden-chapter, silvia-press, emily-harper, jonah-feldman. Deduza do TOC/público; pergunte só se não der.
+- **Pasta no OneDrive**: pergunte o nome ("NN - Título", ex.: "16 - Passover Activity Book") se ele não disse.
+
+1. Sem TOC na conversa: peça que cole o TOC aprovado (ou diga onde está no Notion) e pare.
+2. `./st new <apelido> --type <tipo> --imprint <imprint> --onedrive "<pasta>"` (o `--onedrive` cria o atalho do estúdio dentro da pasta do livro).
+3. Grave o TOC em `books/<apelido>/toc.md` e execute a tarefa `intake` seguindo `pipelines/stages/_protocol.md`.
+4. Reporte em até 5 linhas, no formato de CLAUDE.md: quantos capítulos/seções o livro terá, se tem bônus, o que preciso dele (se algo) e como seguir ("é só dizer /proximo ou /tudo").

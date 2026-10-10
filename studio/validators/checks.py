@@ -158,6 +158,12 @@ def check_pdf(book: Book) -> list[dict]:
         out.append(_f(CRIT, "PDF", f"{n} páginas; acima do máximo KDP."))
     if n % 2:
         out.append(_f(REC, "PDF", f"{n} páginas (ímpar); o KDP adiciona uma página em branco no fim."))
+    if book.meta.get("bonus"):
+        from ..extras import qr_status
+        qs = qr_status(book)
+        if qs != "real":
+            out.append(_f(MAJ, "bônus", "QR do bônus ainda provisório (etapa bonus: formulário do Brevo)."
+                          if qs == "placeholder" else "Livro promete bônus, mas não há inputs/bonus-qr.png."))
     for i, p in enumerate(r.pages, 1):
         pw, ph = float(p.mediabox.width) / 72, float(p.mediabox.height) / 72
         if abs(pw - w) > 0.01 or abs(ph - h) > 0.01:

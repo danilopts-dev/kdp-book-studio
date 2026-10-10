@@ -223,9 +223,18 @@
       "stage": "matter",
       "agent": "writer",
       "instructions": "pipelines/stages/matter.md",
-      "status": "blocked",
-      "note": "where-kept/what-this-is/start-here prontos; falta bonus e back-page (links)",
-      "updated": "2026-09-30T22:58"
+      "status": "pending",
+      "note": "bônus não trava mais: QR provisório até a etapa bônus",
+      "updated": "2026-10-10T18:40"
+    },
+    {
+      "id": "bonus",
+      "stage": "bonus",
+      "agent": "main",
+      "instructions": "pipelines/stages/bonus.md",
+      "status": "pending",
+      "note": "",
+      "updated": ""
     },
     {
       "id": "build",

@@ -127,11 +127,15 @@ def set_status(book: Book, task_id: str, status: str, note: str = "") -> dict:
 
 # Etapas que só rodam com tudo o que vem antes concluído (o livro inteiro precisa existir).
 NEEDS_ALL_PREVIOUS = {"build", "editorial", "listing", "cover", "finalize"}
+# Etapas que correm em paralelo: não seguram build/editorial/listing/capa, só a entrega (finalize).
+# O bônus depende de ações do Danilo (link do PDF, formulário no Brevo); enquanto isso o livro segue.
+PARALLEL = {"bonus"}
 
 
 def next_task(book: Book, runnable: bool = False) -> dict | None:
     """Próxima tarefa. Com runnable=True pula as bloqueadas e respeita dependências:
-    unidades e matter só dependem do intake; build em diante dependem de tudo antes."""
+    unidades, matter e bonus só dependem do intake; build em diante dependem de tudo antes
+    (menos do bonus, que só segura o finalize)."""
     tasks = book.load_state()["tasks"]
     ok = ("done", "skipped")
     for i, t in enumerate(tasks):
@@ -143,7 +147,9 @@ def next_task(book: Book, runnable: bool = False) -> dict | None:
             continue
         if t["id"] != "intake" and any(x["id"] == "intake" and x["status"] not in ok for x in tasks):
             return None
-        if t["stage"] in NEEDS_ALL_PREVIOUS and any(x["status"] not in ok for x in tasks[:i]):
+        if t["stage"] in NEEDS_ALL_PREVIOUS and any(
+            x["status"] not in ok and (t["stage"] == "finalize" or x["stage"] not in PARALLEL) for x in tasks[:i]
+        ):
             return None
         return t
     return None

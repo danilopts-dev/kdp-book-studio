@@ -50,13 +50,27 @@ When a new imprint or format is introduced, adapt the voice to match the audienc
 - Max ~150 characters
 - **Always deliver 3 options**, ranked by recommended priority
 
+### Keyword Research (always first: title and subtitle depend on it)
+- Start from 3 to 6 seed phrases taken from the TOC (topic + format, topic + audience, topic + gift, topic + occasion).
+- Expand them with Amazon's Books autocomplete (`./st keywords <slug> "seed" ...` in the studio): every suggestion is a phrase real buyers typed. Count how often each one shows up across expansions as a rough strength signal (it is not search volume).
+- If autocomplete is unavailable, read the titles and subtitles of the 5 to 10 best-selling competitors in the niche; the phrases they repeat are buyer language. Label these "idea (competitors)", never "real search".
+- Never invent search volume. Publisher Rocket / BookBeam validation is optional and Danilo's call; list the top 10 candidates in a small table with empty columns (searches/month, competition) in case he wants to check.
+
+### Primary Keyword
+- Recommend one primary keyword plus 2 alternates, each labeled "real search" or "idea", with one line on why (fit with what the book actually is beats raw popularity).
+- If `primary_keyword` is already validated in book.yaml, use it and skip the recommendation.
+
 ### 7 Listing Keywords (KDP backend keyword fields)
-- These are the 7 keyword phrases entered in KDP's keyword fields (not bullet points)
-- Each phrase: short (up to ~50 characters), customer search-style
+- These are the 7 keyword fields in KDP (not bullet points)
+- Each field: up to 50 characters, customer search-style; a field may hold a longer phrase or two related phrases
 - Cover: primary use case, gift angle, audience descriptor, format/style, related activity types
-- No keyword already present verbatim in the title (Amazon already indexes the title)
-- Deliver as a numbered list of exactly 7, one per line
-- **Deliver one set only** (no alternatives needed — these are exhaustive, not competitive)
+- Do not repeat words already in the title or subtitle (Amazon already indexes them); do not repeat words across fields
+- Deliver as a numbered list of exactly 7, one per line, with the character count, each labeled "real search" or "idea"
+- **Deliver one set only**
+
+### Amazon Ads Launch Terms
+- 15 to 25 search terms for the launch Sponsored Products campaign (manual, exact and phrase match), taken from the research. Real searches first.
+- Include the primary keyword and its close variants, the gift and audience angles, and 3 to 5 long-tail terms that describe this book specifically. No competitor brand names or author names.
 
 ### Categories (guidance only, for the KDP category picker)
 
@@ -169,7 +183,8 @@ Every book that promises a free bonus (PDF, printable kit, family pack) needs th
 **Deliver these blocks, in this order**
 1. **Form page (landing page):** browser-tab title; headline; subheadline; supporting text (2 sentences); "what's inside" bullets (one line per item); fields (first name optional, email required, with placeholders); required consent checkbox (unchecked by default); button text (action + object, e.g. "Send Me the Kit"); privacy note under the button; **success message** shown right after the form is sent (what happens next, check spam/promotions); error message for an invalid email.
 2. **Confirmation email (simple confirmation = delivery email):** recommended subject plus 2 alternatives, preview text, sender, body (greeting with `{{contact.FIRSTNAME | default: "there"}}`, one download button with the exact label, 3 short paragraphs on how to use each item, sign-off, P.S. with the "link stops working" line).
-3. **Setup notes for Brevo (Portuguese):** the form must use "Simple confirmation email" with this template, and the template must be ACTIVE (the form only lists active templates); the PDF must exist before the flow goes live; sender physical address (CAN-SPAM); privacy-policy link on readpublishingco.com; the OneDrive share link goes into the download button; after publishing the form, send the final link to generate the QR code for the book's bonus page; test the whole flow (QR, email, download) before the book goes to KDP.
+3. **Email HTML:** fill `templates/brevo/bonus-email.html` (all placeholders except the PDF link and the first-name tag) and save as `listing/bonus-email.html`. If the TOC promises an email sequence or a reminder, one HTML per email plus the automation steps.
+4. **Form steps for the Danilo (Portuguese, plain words, no technical terms):** duplicate the last book's form in Brevo, paste the texts from block 1, choose "Simple confirmation email" with this book's template (Claude creates it in Brevo, active, once the PDF link exists), pick or create the list in the USA folder, publish, and send the form link back so the studio prints the real QR. Remind: sender physical address (CAN-SPAM) and the privacy-policy link on readpublishingco.com stay as in the duplicated form; test the full flow by phone (QR, email, download) before the book goes to KDP.
 
 ---
 
@@ -179,8 +194,8 @@ When asked to write listing copy:
 
 1. **Identify what's needed** — full listing or specific element(s)?
 2. **Confirm the book** — title, format, target reader, primary keyword (if already validated)
-3. **Check if primary keyword is known** — if not, ask. Don't guess the search term.
-4. **Deliver in this order:** Title options → Subtitle options → Keywords → Categories (guidance) → Description → A+ Content (module plan) → A+ Content image prompts (only if requested) → Bonus Capture Texts (whenever the book promises a free bonus; see that section)
+3. **Check if primary keyword is known** — if not, run the Keyword Research above and recommend one. Don't guess the search term without research.
+4. **Deliver in this order:** Keywords (primary + 7 fields + Ads terms) → Title options → Subtitle options → Categories (guidance) → Description → A+ Content (module plan) → A+ Content image prompts (only if requested). Bonus Capture Texts are a separate pass (the studio's bonus stage).
    - If only one element is requested, deliver just that
 5. **For title/subtitle:** Deliver 3 options each, with a one-line rationale per option
 6. **For description and A+:** Deliver one version, optimized
@@ -217,6 +232,6 @@ These apply specifically to all senior activity books (the primary commercial fo
 - Do not repeat the same phrase across title, subtitle, and description verbatim — vary the language
 - Do not pad the description to hit a word count — tight and specific beats long and generic
 - Do not deliver any prose (description, A+ copy) without first running the audit pass from `human-voice-writing`
-- Do not invent a search term — use the validated keyword from research (Publisher Rocket / BookBeam)
+- Do not invent a search term — use the validated keyword, or the Keyword Research output, and label each term "real search" or "idea"
 - Do not generate A+ image prompts before the module plan copy is approved — copy drives the visuals, not the other way around
 - Do not invent generic "interior pages" content for the Inside Pages Preview banner — always reference the actual attached interior spreads

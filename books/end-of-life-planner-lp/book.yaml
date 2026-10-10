@@ -19,6 +19,11 @@ reader: Adults 60+ organizing their own affairs, and adult children who buy it f
 positioning: The end-of-life planner for people who write slowly — large print, wide lines and a clear order of where to start, built around four weekends. Individual edition (couples edition is a future SKU).
 require_sources: true
 target_pages: 136-150
+bonus:
+  name: Free Bonus Pack
+  items:
+  - Extra Pages Pack
+  - Four-Weekend Plan
 dated: false
 style: {}
 front:
