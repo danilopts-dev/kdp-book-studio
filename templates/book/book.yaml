@@ -17,6 +17,8 @@ large_print: false
 primary_keyword: ""        # validado no Publisher Rocket/BookBeam (nunca inventar)
 reader: ""                 # leitor e comprador exatos
 positioning: ""            # a frase de posicionamento aprovada no TOC
+target_pages: ""           # faixa de páginas do TOC, ex.: "96-104" (usada na projeção depois da 1ª unidade)
+bonus: {}                  # vazio = sem bônus. Ex.: {name: "8 Nights Family Pack", items: ["Blessings card", "Dreidel rules and scoreboard", "8 gift tags"]}
 require_sources: true      # trivia/fatos exigem 'source'
 style: {}                  # sobrescreve o preset (size, body_font, chapter_start, ...)
 front: [title, copyright, toc]

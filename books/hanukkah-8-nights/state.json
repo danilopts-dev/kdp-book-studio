@@ -129,6 +129,15 @@
       "updated": "2026-10-05T20:57"
     },
     {
+      "id": "bonus",
+      "stage": "bonus",
+      "agent": "main",
+      "instructions": "pipelines/stages/bonus.md",
+      "status": "done",
+      "note": "feito em 06/10 (Brevo template 22, QR real)",
+      "updated": "2026-10-10T18:40"
+    },
+    {
       "id": "build",
       "stage": "build",
       "agent": "main",

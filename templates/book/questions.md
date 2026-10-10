@@ -1,7 +1,9 @@
-# Perguntas e decisões
+# Pendências do livro
 
-Formato: `- [ ] [BLOQUEANTE|ASSUMIDA] (etapa) pergunta — assumido: ...`. Marque [x] quando resolvida.
+O que precisa do Danilo fica em "Preciso de você". Detalhes técnicos vão para `reviews/decisoes.md`.
 
-## Abertas
+## Preciso de você
+
+## Decidi sozinho (confira quando puder)
 
 ## Resolvidas

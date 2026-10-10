@@ -1,8 +1,10 @@
 ---
-description: Executa a próxima tarefa do livro (ou as próximas N) e para. Uso /proximo <slug> [N]
-argument-hint: <slug> [N]
+description: Faz a próxima etapa do livro (ou as próximas N) e para. Uso /proximo [livro] [N]
+argument-hint: [livro] [N]
 ---
-Argumentos: $ARGUMENTS (sem slug e com um só livro em books/ sem "_" no início, use esse livro; se houver vários, pergunte qual.)
+Argumentos: $ARGUMENTS
 
-Execute N tarefas (padrão 1) seguindo `pipelines/stages/_protocol.md`, usando `./st next <slug> --runnable` a cada uma. Pare depois da N-ésima, ou antes se não houver tarefa executável.
-Ao final, reporte em até 3 linhas: o que foi feito, perguntas novas e "faltam X tarefas" (de `./st status <slug>`).
+Livro: qualquer pedaço do nome ou do título serve ("hanukkah", "planner"); o `./st` acha a pasta. Sem livro: use o único em andamento (`./st list`); se houver mais de um, pergunte qual, citando os títulos.
+
+Execute N tarefas (padrão 1) seguindo `pipelines/stages/_protocol.md`, usando `./st next <livro> --runnable` a cada uma. Pare depois da N-ésima, ou antes se não houver tarefa executável.
+Ao final, reporte no formato de CLAUDE.md ("Como falar com o Danilo"), em até 4 linhas.
