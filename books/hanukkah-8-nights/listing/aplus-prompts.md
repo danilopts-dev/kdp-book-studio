@@ -60,12 +60,13 @@ Banner purpose: Comparison & Value
 
 Visual style: Match the exact color palette, lettering style, and illustration style of the attached book cover: deep midnight blue, glowing gold, warm cream, soft candlelight, painted storybook feel. Clean and organized, welcoming, not photographic.
 
-Layout: 16:9 landscape banner on a deep navy background with a few small gold stars, split composition. Left half: the attached book cover shown upright, in full color, with four gold check marks beside four short lines of cream text. Right half: a generic, unbranded, plain gray activity book with no cover art, no title, and its four lines greyed out and marked with empty circles. Never use a real competitor's branding or cover. Leave clear negative space so the text stays legible.
+Layout: 16:9 landscape banner on a deep navy background with a few small gold stars, split composition. Left half: the attached book cover shown upright, in full color, with four gold check marks beside four short lines of cream text. Right half: a generic, basic, low-effort activity book with a crude, amateur cover: a flat pale-blue background, one clumsy clip-art dreidel and a few mismatched stars scattered randomly, a plain default-font title "Hanukkah Activity Book" in dull black letters, no polish, no glow, no depth, like a cheap template. The cover has no author name, logo, or brand. Its four matching lines are greyed out and marked with empty circles. Never use a real competitor's branding or cover. Leave clear negative space so the text stays legible.
 
 Text to render exactly as written (do not paraphrase, do not add any other text):
 Headline: "Made for the Whole Table"
 Left lines: "Two levels on every night" | "Words explained, no experience needed" | "Every night stands alone" | "Full answer key and a free printable bonus"
 Right label: "A typical activity book"
+Text on the generic cover (only this): "Hanukkah Activity Book"
 
 Audience: parents and grandparents comparing activity books for kids ages 6 to 10. The mood should feel honest and friendly, not aggressive.
 
